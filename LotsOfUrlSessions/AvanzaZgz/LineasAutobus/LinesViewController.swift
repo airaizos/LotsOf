@@ -20,13 +20,12 @@ final class LinesViewController: UIViewController {
     }
     
     private func setupView() {
-        
+       setupTableView()
     }
     
     private func setupTableView() {
         linesTableView.dataSource = self
         linesTableView.delegate = self
-        
     }
 }
 
@@ -37,6 +36,10 @@ extension LinesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cellViewModel = 
+        let cellViewModel = viewModel.cellViewModel(at: indexPath)
+        guard let cell = linesTableView.dequeueReusableCell(withIdentifier: "lineCell", for: indexPath) as? LineViewCell else { return LineViewCell()
+        }
+        cell.configure(with: cellViewModel)
+        return cell
     }
 }

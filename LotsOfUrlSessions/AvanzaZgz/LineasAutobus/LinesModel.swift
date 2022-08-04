@@ -13,9 +13,9 @@ enum ProviderError: Error {
 
 final class LinesModel {
     
-    var lines: [String]?
+    var lines: [BusLine]?
     
-    func fetchLines(_ completion: @escaping(Result<[String],ProviderError>)-> Void) {
+    func fetchLines(_ completion: @escaping(Result<[BusLine],ProviderError>)-> Void) {
         guard let url = URL(string: "https://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus.json") else {  return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data  else { return }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */; };
 		3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */; };
 		3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */; };
 		3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224DA289A7B34008BEAF0 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewCell.swift; sourceTree = "<group>"; };
 		3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsOfUrlSessions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */,
 				3AF22510289A873D008BEAF0 /* LinesViewController.swift */,
 				3AF2250E289A8733008BEAF0 /* LinesViewController.storyboard */,
+				3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */,
 			);
 			path = LineasAutobus;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
+				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesModel.swift in Sources */,
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3AF2250B289A7B95008BEAF0 /* InitialBuilder.swift in Sources */,

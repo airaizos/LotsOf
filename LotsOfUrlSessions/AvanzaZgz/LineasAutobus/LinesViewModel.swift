@@ -10,18 +10,25 @@ import Foundation
 final class LinesViewModel {
     let model = LinesModel()
     
-    func getLines() -> [String] {
-        var lines = ["Sin Datos"]
+    private var busLines = [BusLine]()
+    
+    func getLines() -> [BusLine] {
+        var lines = [BusLine]()
         
         model.fetchLines({ result in
             switch result {
             case .success(let lineas):
                 lines = lineas
             case .failure:
-                lines = ["No se ha podido descargar"]
+                lines = [BusLine(link:"No se ha podido descargar")]
             }
         })
+        busLines = lines
         return lines
-        
+    }
+    
+    func cellViewModel(at IndexPath: IndexPath) -> BusLineCellViewModel {
+        let busLine = busLines[IndexPath.row]
+        return busLine.toCellViewModel
     }
 }

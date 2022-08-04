@@ -13,7 +13,7 @@ struct Lines: Codable {
 }
 
 struct BusLine: Codable, Equatable {
-    let name: String
+    let link: String
 }
 
 struct BusLineCellViewModel {
@@ -27,6 +27,6 @@ struct BusLineCellViewModel {
 
 extension BusLine {
     var toCellViewModel: BusLineCellViewModel {
-        BusLineCellViewModel(lineLink: name)
+        BusLineCellViewModel(lineLink: link)
     }
 }

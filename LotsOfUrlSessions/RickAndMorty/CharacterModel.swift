@@ -35,3 +35,25 @@ struct CharacterModel: Decodable {
     }
     
 }
+
+struct EpisodeModel: Decodable {
+    let id: Int
+    let name: String
+}
+
+struct LocationModel: Decodable {
+    let id: Int
+    let name: String
+    let dimension: String
+}
+
+struct CharacterBasicInfo {
+    let name: String
+    let image: URL?
+    let firstEpisodeTitle: String
+    let dimension: String
+    
+    static var empty: Self {
+        .init(name: "", image: nil, firstEpisodeTitle: "", dimension: "")
+    }
+}

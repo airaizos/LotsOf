@@ -8,9 +8,12 @@
 import Foundation
 
 final class RickAndMortyViewModel {
+    var characterModel: CharacterBasicInfo = .empty
+    
     func executeRequest() {
-        let characterURL = URL(string: "https://rickandmortyapi.com/api/character/1")!
+        let characterURL = URL(string: "https://rickandmortyapi.com/api/character/5")!
         
+        //Primera Llamada
         URLSession.shared.dataTask(with: characterURL) { data, response, error in
             if let _ = error {
                 print("Error URL Session")
@@ -18,6 +21,36 @@ final class RickAndMortyViewModel {
             if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
                 let characterModel = try! JSONDecoder().decode(CharacterModel.self, from: data)
                 print("\(characterModel.name)")
+                
+                //Segunda llamada
+                let firstEpisodeURL = URL(string: characterModel.episode.first!)!
+                
+                URLSession.shared.dataTask(with: firstEpisodeURL) { data, response, error in
+                    if let _ = error {
+                        print("Error firstEpisodeURL")
+                    }
+                    if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                        let episodeModel = try! JSONDecoder().decode(EpisodeModel.self, from: data)
+                        print("\(episodeModel.name)")
+                        
+                        //Tercera llamada
+                        let characterLocationURL = URL(string: characterModel.locationURL)!
+                        
+                        URLSession.shared.dataTask(with: characterLocationURL) { data, response, error in
+                            if let _ = error {
+                                print("Error Character LocationURL")
+                            }
+                            if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                                let locationModel = try!  JSONDecoder().decode(LocationModel.self, from: data)
+                                print("\(locationModel.dimension)")
+                                
+                                DispatchQueue.main.async {
+                                    self.characterModel = .init(name: characterModel.name, image: URL(string:characterModel.image)!, firstEpisodeTitle: episodeModel.name, dimension: locationModel.dimension)
+                                }
+                            }
+                        }.resume()
+                    }
+                }.resume()
             }
         }.resume()
     }

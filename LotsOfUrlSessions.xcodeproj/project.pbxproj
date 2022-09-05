@@ -15,6 +15,9 @@
 		3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953C28C64B4B001CC044 /* PokemonTableViewCell.swift */; };
 		3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953F28C6526D001CC044 /* RickAndMortyViewModel.swift */; };
 		3A86954228C65350001CC044 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954128C65350001CC044 /* CharacterModel.swift */; };
+		3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */; };
+		3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */; };
+		3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */; };
 		3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */; };
 		3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */; };
 		3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224DA289A7B34008BEAF0 /* ViewController.swift */; };
@@ -60,6 +63,9 @@
 		3A86953C28C64B4B001CC044 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		3A86953F28C6526D001CC044 /* RickAndMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModel.swift; sourceTree = "<group>"; };
 		3A86954128C65350001CC044 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewController.swift; sourceTree = "<group>"; };
+		3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RickAndMortyViewController.storyboard; sourceTree = "<group>"; };
+		3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsOfUrlSessions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,9 @@
 			children = (
 				3A86953F28C6526D001CC044 /* RickAndMortyViewModel.swift */,
 				3A86954128C65350001CC044 /* CharacterModel.swift */,
+				3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */,
+				3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */,
+				3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */,
 			);
 			path = RickAndMorty;
 			sourceTree = "<group>";
@@ -310,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
@@ -342,6 +352,7 @@
 				3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
+				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
 				3A86953728C642A4001CC044 /* Model.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
@@ -353,6 +364,7 @@
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3AF2250B289A7B95008BEAF0 /* InitialBuilder.swift in Sources */,
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,
+				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
 			);

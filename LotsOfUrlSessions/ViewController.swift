@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var pokemonsButton: UIButton!
     
+    @IBOutlet weak var rickAndMortyButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -36,6 +39,19 @@ class ViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: "PokemonsViewController")
         self.present(viewController, animated: true)
         print("pulsado Pokemons")
+    }
+    
+    //MARK: RickAndMorty
+    
+    @IBAction func goToRickAndMorty(_ sender: UIButton) {
+        rickAndMortyButton.addTarget(self, action: #selector(goToRickAndMortyViewController(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func goToRickAndMortyViewController(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "RickAndMortyViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "RickAndMortyViewController")
+        self.present(viewController, animated: true)
+        print("Pulsado RickAndMorty")
     }
     
 }

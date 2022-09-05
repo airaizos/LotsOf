@@ -15,11 +15,11 @@ final class RickAndMortyViewModel {
             if let _ = error {
                 print("Error URL Session")
             }
-            if let data = data, let httpResponse = response as? HTTPURLResponse.statusCode == 200 {
-             
+            if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                let characterModel = try! JSONDecoder().decode(CharacterModel.self, from: data)
+                print("\(characterModel.name)")
             }
-        }
+        }.resume()
     }
-    
 }
 

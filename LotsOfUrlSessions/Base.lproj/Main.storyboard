@@ -44,8 +44,15 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-1E-aLn">
                                                 <rect key="frame" x="96" y="0.0" width="86" height="34.5"/>
+                                                <color key="backgroundColor" red="0.45746928450000002" green="0.33203560110000002" blue="0.53068488840000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Pokemons">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToPokemons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R2N-Vn-pCt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0G-ly-UI9">
                                                 <rect key="frame" x="192" y="0.0" width="86" height="34.5"/>
@@ -85,6 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="busLines" destination="fVN-f9-r0I" id="81X-5c-DgG"/>
+                        <outlet property="pokemonsButton" destination="rbe-1E-aLn" id="cIE-Xj-xf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

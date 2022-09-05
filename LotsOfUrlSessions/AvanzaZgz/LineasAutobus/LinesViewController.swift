@@ -8,7 +8,7 @@
 import UIKit
 
 final class LinesViewController: UIViewController {
-    
+  
     var viewModel = LinesViewModel()
     
     @IBOutlet weak var linesTableView: UITableView!
@@ -24,10 +24,9 @@ final class LinesViewController: UIViewController {
     }
     
     private func setupTableView() {
-        viewModel.getLines()
+   
         linesTableView.dataSource = self
         linesTableView.delegate = self
-        
     }
 }
 

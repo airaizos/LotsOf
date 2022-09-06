@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var rickAndMortyButton: UIButton!
     
+    @IBOutlet weak var emmanuelButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,5 +55,16 @@ class ViewController: UIViewController {
         print("Pulsado RickAndMorty")
     }
     
+    //MARK: Emmanuel
+    @IBAction func goToEmmanuel(_ sender: UIButton) {
+        emmanuelButton.addTarget(self, action: #selector(goToEmmanuelViewController(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func goToEmmanuelViewController(_ sender: UIButton) {
+            let storyboard = UIStoryboard(name: "EmmanuelViewController", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "EmmanuelViewController")
+            self.present(viewController, animated: true)
+            print("goToEmmanuel")
+    }
 }
 

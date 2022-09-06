@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */; };
+		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
+		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
+		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
+		3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */; };
+		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
+		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953428C641A9001CC044 /* PokemonsViewModel.swift */; };
 		3A86953728C642A4001CC044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953628C642A4001CC044 /* Model.swift */; };
 		3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953828C645DA001CC044 /* PokemonsViewController.swift */; };
@@ -55,6 +61,12 @@
 
 /* Begin PBXFileReference section */
 		3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewCell.swift; sourceTree = "<group>"; };
+		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
+		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
+		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
+		3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewModel.swift; sourceTree = "<group>"; };
+		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
+		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A86953228C6416B001CC044 /* URLSessionSwiftBeta.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionSwiftBeta.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
 		3A86953628C642A4001CC044 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -113,6 +125,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
+			isa = PBXGroup;
+			children = (
+				3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */,
+				3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */,
+				3A2FA57528C760930072F90E /* EmmanuelViewController.swift */,
+				3A2FA57728C798890072F90E /* EmmanuelModel.swift */,
+			);
+			path = Emmanuel;
+			sourceTree = "<group>";
+		};
+		3A2FA56C28C74A8F0072F90E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3A86953328C6418A001CC044 /* PokeApi */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +159,7 @@
 		3A86953E28C65237001CC044 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */,
 				3A86953F28C6526D001CC044 /* RickAndMortyViewModel.swift */,
 				3A86954128C65350001CC044 /* CharacterModel.swift */,
 				3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */,
@@ -160,10 +192,12 @@
 		3AF224D5289A7B34008BEAF0 /* LotsOfUrlSessions */ = {
 			isa = PBXGroup;
 			children = (
-				3A86953E28C65237001CC044 /* RickAndMorty */,
+				3A2FA56C28C74A8F0072F90E /* Extensions */,
 				3AF2250A289A7B95008BEAF0 /* InitialBuilder.swift */,
 				3AF22509289A7B85008BEAF0 /* AvanzaZgz */,
 				3A86953328C6418A001CC044 /* PokeApi */,
+				3A2FA56B28C7451E0072F90E /* Emmanuel */,
+				3A86953E28C65237001CC044 /* RickAndMorty */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
 				3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */,
 				3AF224DA289A7B34008BEAF0 /* ViewController.swift */,
@@ -319,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */,
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
@@ -353,17 +388,22 @@
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
+				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
 				3A86953728C642A4001CC044 /* Model.swift in Sources */,
+				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
+				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,
 				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesModel.swift in Sources */,
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
+				3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */,
 				3AF2250B289A7B95008BEAF0 /* InitialBuilder.swift in Sources */,
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,
+				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
@@ -472,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -526,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

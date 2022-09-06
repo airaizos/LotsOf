@@ -8,10 +8,11 @@
 import Foundation
 
 final class RickAndMortyViewModel {
-    var characterModel: CharacterBasicInfo = .empty
-    
+    var characterBasicInfo: CharacterBasicInfo = .empty
+  
     func executeRequest() {
-        let characterURL = URL(string: "https://rickandmortyapi.com/api/character/5")!
+        let randomNumber = Int.random(in: 1..<100)
+        let characterURL = URL(string: "https://rickandmortyapi.com/api/character/\(randomNumber)")!
         
         //Primera Llamada
         URLSession.shared.dataTask(with: characterURL) { data, response, error in
@@ -34,7 +35,7 @@ final class RickAndMortyViewModel {
                         print("\(episodeModel.name)")
                         
                         //Tercera llamada
-                        let characterLocationURL = URL(string: characterModel.locationURL)!
+                        guard let characterLocationURL = URL(string: characterModel.locationURL) else { return }
                         
                         URLSession.shared.dataTask(with: characterLocationURL) { data, response, error in
                             if let _ = error {
@@ -45,7 +46,7 @@ final class RickAndMortyViewModel {
                                 print("\(locationModel.dimension)")
                                 
                                 DispatchQueue.main.async {
-                                    self.characterModel = .init(name: characterModel.name, image: URL(string:characterModel.image)!, firstEpisodeTitle: episodeModel.name, dimension: locationModel.dimension)
+                                    self.characterBasicInfo = .init(name: characterModel.name, image: characterModel.image, firstEpisodeTitle: episodeModel.name, dimension: locationModel.dimension)
                                 }
                             }
                         }.resume()
@@ -55,4 +56,3 @@ final class RickAndMortyViewModel {
         }.resume()
     }
 }
-

@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,32 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C46-UD-yDX">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.50962451490000005" green="0.85686947599999996" blue="0.128783911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mi4-bM-nB1">
-                                    <size key="itemSize" width="145" height="138"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RickAndMortyCollectionCell" id="FcO-b1-fJj">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="138"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="per-NI-SPg">
-                                            <rect key="frame" x="0.0" y="0.0" width="145" height="138"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="145" height="138"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HZd-gW-NAN">
+                                <rect key="frame" x="59" y="94" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Lqn-30-XlX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="EmC-aj-mET">
+                                <rect key="frame" x="20" y="404" width="374" height="97.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CharacterName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNu-cr-fJu">
+                                        <rect key="frame" x="142.5" y="0.0" width="89" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CharacterFirstEpisode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi0-HV-mRp">
+                                        <rect key="frame" x="124" y="41.5" width="126" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CharacterDimension" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ht-F6-qaV">
+                                        <rect key="frame" x="129.5" y="83" width="115.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJU-1x-BaW">
+                                <rect key="frame" x="144" y="525" width="126.5" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Refresh">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="setupView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zjL-3a-66j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.50962451490000005" green="0.85686947599999996" blue="0.128783911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HZd-gW-NAN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="18t-eX-wbv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EmC-aj-mET" secondAttribute="trailing" constant="20" id="IjA-f5-Vlh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HZd-gW-NAN" secondAttribute="trailing" constant="55" id="Mz4-m2-Kkm"/>
+                            <constraint firstItem="hJU-1x-BaW" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bC8-oJ-Zxd"/>
+                            <constraint firstItem="hJU-1x-BaW" firstAttribute="top" secondItem="EmC-aj-mET" secondAttribute="bottom" constant="23.5" id="bxk-yq-BnH"/>
+                            <constraint firstItem="HZd-gW-NAN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="59" id="gCC-09-eg4"/>
+                            <constraint firstItem="EmC-aj-mET" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="nFM-P8-plO"/>
+                            <constraint firstItem="EmC-aj-mET" firstAttribute="top" secondItem="HZd-gW-NAN" secondAttribute="bottom" constant="10" id="obz-4v-A25"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterDimensionLabel" destination="1Ht-F6-qaV" id="Fqd-E7-NxI"/>
+                        <outlet property="characterFirstEpisodeLabel" destination="bi0-HV-mRp" id="9Mf-yP-tTk"/>
+                        <outlet property="characterImage" destination="HZd-gW-NAN" id="Q3N-k5-bRj"/>
+                        <outlet property="characterNameLabel" destination="nNu-cr-fJu" id="6CU-EZ-MJz"/>
+                        <outlet property="loadButton" destination="hJU-1x-BaW" id="rmN-kS-C7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -68,10 +68,15 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZc-a0-G1l">
                                                 <rect key="frame" x="284" y="0.0" width="90" height="40.5"/>
+                                                <color key="backgroundColor" red="0.85686947599999996" green="0.74223671660000001" blue="0.60676669059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                <buttonConfiguration key="configuration" style="plain" title="Emmanuel">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption2"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToEmmanuel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PJ2-ND-DxG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -101,6 +106,7 @@
                     </view>
                     <connections>
                         <outlet property="busLines" destination="fVN-f9-r0I" id="81X-5c-DgG"/>
+                        <outlet property="emmanuelButton" destination="JZc-a0-G1l" id="7kQ-id-OyN"/>
                         <outlet property="pokemonsButton" destination="rbe-1E-aLn" id="cIE-Xj-xf6"/>
                         <outlet property="rickAndMortyButton" destination="m0G-ly-UI9" id="kge-XH-iGw"/>
                     </connections>

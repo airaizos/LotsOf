@@ -49,11 +49,11 @@ struct LocationModel: Decodable {
 
 struct CharacterBasicInfo {
     let name: String
-    let image: URL?
+    let image: String
     let firstEpisodeTitle: String
     let dimension: String
     
     static var empty: Self {
-        .init(name: "", image: nil, firstEpisodeTitle: "", dimension: "")
+        .init(name: "", image: "", firstEpisodeTitle: "", dimension: "")
     }
 }

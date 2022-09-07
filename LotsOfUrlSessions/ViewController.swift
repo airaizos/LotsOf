@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var busLines: UIButton!
     
     @IBOutlet weak var pokemonsButton: UIButton!
@@ -17,54 +17,45 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emmanuelButton: UIButton!
     
+    
+    @IBOutlet weak var odenzaButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     //MARK: BusLines
     @IBAction func goToLines(_ sender: UIButton) {
-        busLines.addTarget(self, action: #selector(goToLinesViewController(_:)), for: .touchUpInside)
-    }
-    @objc private func goToLinesViewController(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "LinesViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "LinesViewController")
-        self.present(viewController, animated: true)
-        print("Pulsado Lines")
+        goTo(viewControllerName: "LinesViewController")
     }
     //MARK: Pokemons
     @IBAction func goToPokemons(_ sender: UIButton) {
-        pokemonsButton.addTarget(self, action: #selector(goToPokemonsViewController(_:)), for: .touchUpInside)
-    }
-    @objc private func goToPokemonsViewController(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "PokemonsViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "PokemonsViewController")
-        self.present(viewController, animated: true)
-        print("pulsado Pokemons")
+        goTo(viewControllerName: "PokemonsViewController")
     }
     
     //MARK: RickAndMorty
     
     @IBAction func goToRickAndMorty(_ sender: UIButton) {
-        rickAndMortyButton.addTarget(self, action: #selector(goToRickAndMortyViewController(_:)), for: .touchUpInside)
+        
+        goTo(viewControllerName: "RickAndMortyViewController")
     }
-    
-    @objc private func goToRickAndMortyViewController(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "RickAndMortyViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "RickAndMortyViewController")
-        self.present(viewController, animated: true)
-        print("Pulsado RickAndMorty")
-    }
-    
     //MARK: Emmanuel
     @IBAction func goToEmmanuel(_ sender: UIButton) {
-        emmanuelButton.addTarget(self, action: #selector(goToEmmanuelViewController(_:)), for: .touchUpInside)
+        goTo(viewControllerName: "EmmanuelViewController")
+    }
+    //MARK: Odenza
+    
+    @IBAction func goToOdenza(_ sender: UIButton) {
+        goTo(viewControllerName: "OdenzaViewController")
     }
     
-    @objc private func goToEmmanuelViewController(_ sender: UIButton) {
-            let storyboard = UIStoryboard(name: "EmmanuelViewController", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "EmmanuelViewController")
-            self.present(viewController, animated: true)
-            print("goToEmmanuel")
+    
+    
+    func goTo(viewControllerName: String){
+        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
+        print("goTo\(viewControllerName)")
+        self.present(viewController, animated: true)
     }
 }
 

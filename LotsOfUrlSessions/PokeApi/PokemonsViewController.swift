@@ -40,7 +40,6 @@ final class PokemonsViewController: UIViewController {
     }
 }
 
-
 extension PokemonsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.pokemons.count

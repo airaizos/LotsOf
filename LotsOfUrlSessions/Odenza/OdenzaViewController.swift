@@ -19,15 +19,23 @@ final class OdenzaViewController: UIViewController {
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func getActionButton(_ sender: UIButton) {
+        goTo(viewControllerName: "CreateViewController")
     }
-    */
-
+    @IBAction func postActionButton(_ sender: UIButton) {
+    }
+    @IBAction func updateActionButton(_ sender: UIButton) {
+    }
+    @IBAction func deleteActionButton(_ sender: UIButton) {
+    }
+ 
+    
+    func goTo(viewControllerName: String){
+        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
+        print("goTo\(viewControllerName)")
+        self.present(viewController, animated: true)
+    }
+    
 }

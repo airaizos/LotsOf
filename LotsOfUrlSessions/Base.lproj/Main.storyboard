@@ -96,8 +96,7 @@
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="goToLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I1P-gS-qSe"/>
-                                                            <action selector="goToOdenza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuF-Pa-NaU"/>
+                                                            <action selector="goToOdenza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sn9-Qv-VlB"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xei-mk-Khb">

@@ -37,11 +37,9 @@ final class OdenzaViewModel {
         }.resume()
     }
     
-    
     //MARK: Create Data
-    
     func createPosts(parameters: [String: Any]) {
-        guard let url = URL(string: "/createPost") else {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {
             print("BAd URL")
             return
         }
@@ -55,25 +53,18 @@ final class OdenzaViewModel {
             if error != nil {
                 print("Error POST")
                 return
-            }
-            
-            do {
-                if let data = data {
-                    let result = try JSONDecoder().decode(OdenzaDataModel.self, from: data)
-                    DispatchQueue.main.async {
-                        print(result)
-                    }
-                } else {
-                    print("POST No data")
-                }
-            } catch let jsonError {
-                print("fetch JsonError \(jsonError.localizedDescription)")
+            } else if
+                let jsonResponse = try? JSONSerialization.jsonObject(with: data!, options: []) {
+                print("Response: \(String(describing: jsonResponse))")
+                
+            } else {
+                print("POST No data")
+                
             }
         }.resume()
     }
     
     //MARK: Update data
-    
     func updatePosts(parameters: [String:Any]) {
         guard let url = URL(string: "/url") else {
             print("Update URL not found")
@@ -106,7 +97,6 @@ final class OdenzaViewModel {
     }
     
     //MARK: Delete Data
-    
     func deletePosts(parameters: [String: Any]) {
         guard let url = URL(string: "/deletePosts") else {
             print("Error URL")
@@ -136,7 +126,7 @@ final class OdenzaViewModel {
             } catch {
                 print("DELETE error JSON")
             }
-        } .resume()
+        }.resume()
         
     }
     

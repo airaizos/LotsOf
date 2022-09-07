@@ -44,12 +44,9 @@ class ViewController: UIViewController {
         goTo(viewControllerName: "EmmanuelViewController")
     }
     //MARK: Odenza
-    
     @IBAction func goToOdenza(_ sender: UIButton) {
         goTo(viewControllerName: "OdenzaViewController")
     }
-    
-    
     
     func goTo(viewControllerName: String){
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)

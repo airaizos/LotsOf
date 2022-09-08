@@ -21,9 +21,10 @@ final class OdenzaViewController: UIViewController {
     
     
     @IBAction func getActionButton(_ sender: UIButton) {
-        goTo(viewControllerName: "CreateViewController")
+        self.present(goTo(navigationController: GetViewController()),animated: true)
     }
     @IBAction func postActionButton(_ sender: UIButton) {
+        goTo(viewControllerName: "CreateViewController")
     }
     @IBAction func updateActionButton(_ sender: UIButton) {
     }
@@ -36,6 +37,12 @@ final class OdenzaViewController: UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
         print("goTo\(viewControllerName)")
         self.present(viewController, animated: true)
+    }
+    
+    func goTo(navigationController: UIViewController) -> UIViewController {
+        let viewController = navigationController
+        let navigationController  = UINavigationController(rootViewController: viewController)
+        return navigationController
     }
     
 }

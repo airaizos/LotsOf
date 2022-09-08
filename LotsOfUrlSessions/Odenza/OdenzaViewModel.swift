@@ -8,34 +8,50 @@
 import Foundation
 
 final class OdenzaViewModel {
-    var items = [PostModel]()
+    var items: [PostModel] = []
     
     //MARK: retrive data
     func fetchPosts() {
-        guard let url = URL(string: "posts") else {
-            print("URL not Found")
-            return
-        }
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else { return }
+        print(url)
         
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if error != nil {
-                print("URLSession error")
-                return
-            }
-            do {
-                if let data = data {
-                    let result = try JSONDecoder().decode(OdenzaDataModel.self, from: data)
+            if let _ = error {
+                print("Error url Session")
+            } else {
+                if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                    
+                    let postDataModel = try! JSONDecoder().decode([PostModel].self, from: data)
+                    
                     DispatchQueue.main.async {
-                        self.items = result.data
+                        self.items = postDataModel
                     }
-                } else {
-                    print("No data")
                 }
-            } catch let jsonError {
-                print("fetch json error. \(jsonError.localizedDescription)")
             }
         }.resume()
     }
+        
+        /*
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            print("\(String(describing: error))")
+            print("\(String(describing: data))")
+            print("\(String(describing: response))")
+            
+            if let _ = error {
+                print("URLSession error")
+            } else {
+                if let data = data {
+                    let postDataModel = try! JSONDecoder().decode(OdenzaDataModel.self, from: data)
+                    DispatchQueue.main.async {
+                        self.items = postDataModel.data
+                        print("\(self.items[0].id)")
+                    }
+                }
+                
+            }
+        }.resume()
+    }
+         */
     
     //MARK: Create Data
     func createPosts(parameters: [String: Any]) {

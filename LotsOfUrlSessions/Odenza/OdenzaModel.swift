@@ -17,5 +17,6 @@ struct OdenzaDataModel: Decodable {
 struct PostModel: Decodable {
     let id: Int
     let title: String
-    let post: String
+    let body: String
+    let userId: Int
 }

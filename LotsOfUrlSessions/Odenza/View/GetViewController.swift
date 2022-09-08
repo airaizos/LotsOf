@@ -40,7 +40,7 @@ final class GetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        getPost()
+     //   getPost()
     }
     
     func setupView() {
@@ -55,9 +55,9 @@ final class GetViewController: UIViewController {
     }
     
     func getPost() {
-        viewModel.fetchPosts()
+     //   viewModel.fetchPosts()
         print(viewModel.items[0])
-        idLabel.text = "\(viewModel.items[0].id)"
+        idLabel.text = "\(String(describing: viewModel.items[0].id))"
         titleLabel.text = viewModel.items[0].title
         bodyLabel.text = viewModel.items[0].body
     }

@@ -59,9 +59,6 @@ final class EmmanuelViewModel {
         }.resume()
     }
     
-    
-    
-    
     func titleButton() -> String {
         print(emmanuelPosts.count)
         return "4"

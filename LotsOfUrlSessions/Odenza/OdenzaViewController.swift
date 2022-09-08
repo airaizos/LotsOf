@@ -27,6 +27,8 @@ final class OdenzaViewController: UIViewController {
         goTo(viewControllerName: "CreateViewController")
     }
     @IBAction func updateActionButton(_ sender: UIButton) {
+        goTo(viewControllerName: "UpdateViewController")
+        
     }
     @IBAction func deleteActionButton(_ sender: UIButton) {
     }

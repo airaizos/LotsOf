@@ -47,6 +47,7 @@ final class EmmanuelViewController: UIViewController {
     
     @IBAction func loadAction(_ sender: UIButton) {
         loadButton.titleLabel?.text = viewModel.titleButton()
+        
         print("\(String(describing: loadButton.titleLabel?.text))")
         view.layoutSubviews()
     }

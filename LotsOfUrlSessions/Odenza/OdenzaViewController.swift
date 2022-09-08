@@ -8,6 +8,7 @@
 import UIKit
 
 final class OdenzaViewController: UIViewController {
+    let viewModel = OdenzaViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ final class OdenzaViewController: UIViewController {
         
     }
     @IBAction func deleteActionButton(_ sender: UIButton) {
+        viewModel.deletePosts()
     }
  
     

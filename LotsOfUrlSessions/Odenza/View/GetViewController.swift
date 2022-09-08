@@ -4,7 +4,7 @@
 //
 //  Created by Adrian Iraizos Mendoza on 7/9/22.
 //
-
+//TODO: No ejecuta urlSession
 import UIKit
 
 final class GetViewController: UIViewController {
@@ -40,7 +40,8 @@ final class GetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-     //   getPost()
+        viewModel.retrievePosts()
+        getPost()
     }
     
     func setupView() {
@@ -55,7 +56,7 @@ final class GetViewController: UIViewController {
     }
     
     func getPost() {
-     //   viewModel.fetchPosts()
+  
         print(viewModel.items[0])
         idLabel.text = "\(String(describing: viewModel.items[0].id))"
         titleLabel.text = viewModel.items[0].title

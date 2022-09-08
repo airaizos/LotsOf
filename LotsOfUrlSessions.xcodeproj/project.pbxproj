@@ -18,6 +18,9 @@
 		3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */; };
 		3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */; };
 		3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */; };
+		3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D22928CA269600C5E396 /* OdenzaNetworking.swift */; };
+		3A05D23128CA493F00C5E396 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23028CA493F00C5E396 /* JokeModel.swift */; };
+		3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23228CA4A6900C5E396 /* JokesViewModel.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -82,6 +85,9 @@
 		3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateViewController.storyboard; sourceTree = "<group>"; };
 		3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotOfURLSessionsLaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A05D22928CA269600C5E396 /* OdenzaNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdenzaNetworking.swift; sourceTree = "<group>"; };
+		3A05D23028CA493F00C5E396 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		3A05D23228CA4A6900C5E396 /* JokesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				3A02BB8128C8A8E800D168AE /* OdenzaViewController.storyboard */,
 				3A02BB8328C8B97D00D168AE /* OdenzaModel.swift */,
 				3A02BB8528C8B9DE00D168AE /* OdenzaViewModel.swift */,
+				3A05D22928CA269600C5E396 /* OdenzaNetworking.swift */,
 			);
 			path = Odenza;
 			sourceTree = "<group>";
@@ -169,6 +176,15 @@
 				3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3A05D22B28CA2A7D00C5E396 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				3A05D23028CA493F00C5E396 /* JokeModel.swift */,
+				3A05D23228CA4A6900C5E396 /* JokesViewModel.swift */,
+			);
+			path = Jokes;
 			sourceTree = "<group>";
 		};
 		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
@@ -246,6 +262,7 @@
 				3A2FA56B28C7451E0072F90E /* Emmanuel */,
 				3A86953E28C65237001CC044 /* RickAndMorty */,
 				3A02BB7E28C8A8C900D168AE /* Odenza */,
+				3A05D22B28CA2A7D00C5E396 /* Jokes */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
 				3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */,
 				3AF224DA289A7B34008BEAF0 /* ViewController.swift */,
@@ -441,6 +458,7 @@
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
+				3A05D23128CA493F00C5E396 /* JokeModel.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
@@ -450,8 +468,10 @@
 				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
+				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
+				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
 				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,
 				3A02BB8928C8D91100D168AE /* CreateViewController.swift in Sources */,

@@ -9,70 +9,44 @@ import UIKit
 
 final class JokesViewController: UIViewController {
    
-    var jokeCategories = "Any" + "?"
-    var arrayJokeCategories = [""]
     var jokeSelection = JokeSelection()
-//    var personalizedJokeURL = "https://v2.jokeapi.dev/joke/"
-    
-
-    
     let viewModel = JokesViewModel()
-    @IBOutlet weak var categoryLabel: UILabel!
+    
+    var isJokeSelectionHidden = false
+    
+    @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var jokeLabel: UILabel!
     @IBOutlet weak var jokeParts: UISegmentedControl!
     @IBOutlet weak var languagePickerView: UIPickerView!
-    
-    /*
-    
-    //MARK: BlackLists
-    @IBOutlet weak var nsfwToggle: UISwitch!
-    @IBOutlet weak var religiousToggle: UISwitch!
-    @IBOutlet weak var politicalToggle: UISwitch!
-    @IBOutlet weak var racitstToggle: UISwitch!
-    @IBOutlet weak var sexistToggle: UISwitch!
-    @IBOutlet weak var explicitToggle: UISwitch!
-    
-    //MARK: Categories
-    
-    @IBOutlet weak var ProgrammingToggle: UISwitch!
-    @IBOutlet weak var MiscToggle: UISwitch!
-    @IBOutlet weak var DarkToggle: UISwitch!
-    @IBOutlet weak var PunToggle: UISwitch!
-    @IBOutlet weak var SpokyToggle: UISwitch!
-    @IBOutlet weak var ChristmasToggle: UISwitch!
-    
-    //MARK: Language
-    @IBOutlet weak var Language: UIPickerView!
-    */
-    
+    @IBOutlet weak var jokeParametersStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        viewModel.fetchJoke(with: jokeSelection.url)
+      //  viewModel.fetchJoke(with: jokeSelection.url)
     }
 
     func setupView() {
         languagePickerView.delegate = self
         languagePickerView.dataSource = self
-        
     }
     func setNewJoke() {
-        
         jokeSelection.createUrl()
-        print(jokeSelection.url)
-        
-   //     viewModel.fetchJoke()
-        categoryLabel.text = viewModel.joke.category
-        jokeLabel.text = viewModel.joke.joke
-        view.layoutSubviews()
+        viewModel.fetchJoke(with: jokeSelection.url)
+        UIView.animate(withDuration: 0.25) {
+            DispatchQueue.main.async {
+                self.categoryButton.titleLabel?.text = self.viewModel.joke.category
+                self.jokeLabel.text = self.viewModel.joke.joke
+                
+            }
+        }
     }
    
     //MARK: Parts
     @IBAction func singleTwoParts(_ sender: UISegmentedControl) {
         jokeSelection.parts = jokeParts.selectedSegmentIndex
     }
-    
+
     //MARK: BlackList
     @IBAction func nsfwToggle(_ sender: UISwitch) {
         jokeSelection.nsfwIsOn = !jokeSelection.nsfwIsOn
@@ -116,16 +90,24 @@ final class JokesViewController: UIViewController {
         jokeSelection.christmasIsOn = !jokeSelection.christmasIsOn
     }
     
-    
-    
 
     @IBAction func randomJoke(_ sender: UIButton) {
         setNewJoke()
-        print(viewModel.joke.joke)
-        
+        updateView()
+    
     }
     
+    func updateView() {
+        isJokeSelectionHidden = !isJokeSelectionHidden
+        UIView.animate(withDuration: 0.25) {
+            DispatchQueue.main.async {
+                self.jokeParametersStackView.isHidden = self.isJokeSelectionHidden            }
+        }
+    }
     
+    @IBAction func jokeSelectionButton(_ sender: UIButton) {
+        updateView()
+    }
     
 }
 

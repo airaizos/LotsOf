@@ -17,21 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="joke" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRf-kw-jLI">
-                                <rect key="frame" x="20" y="65" width="374" height="347"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-CB-Wst" userLabel="category">
+                                <rect key="frame" x="20" y="44" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Joke Selection"/>
+                                <connections>
+                                    <action selector="jokeSelectionButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="g7l-8o-G9i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="joke" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRf-kw-jLI">
+                                <rect key="frame" x="20" y="80" width="374" height="17"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAk-xZ-fsq">
-                                <rect key="frame" x="47" y="44" width="296" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-Da-Thq">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-Da-Thq" userLabel="Parameters">
                                 <rect key="frame" x="20" y="459" width="374" height="344"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yzO-31-LuN">
@@ -291,16 +291,23 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.547726512" green="0.88839620350000004" blue="0.78118979929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RRf-kw-jLI" secondAttribute="trailing" constant="20" id="5fK-Mb-tgm"/>
+                            <constraint firstItem="0tw-CB-Wst" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="85u-3c-hYN"/>
                             <constraint firstItem="ce2-kq-nzF" firstAttribute="top" secondItem="jwa-Da-Thq" secondAttribute="bottom" constant="8" symbolic="YES" id="8EP-Vl-7ED"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0tw-CB-Wst" secondAttribute="trailing" constant="20" id="NST-HA-ua5"/>
                             <constraint firstItem="ce2-kq-nzF" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="RJL-eh-XH0"/>
                             <constraint firstItem="jwa-Da-Thq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="auz-03-QcO"/>
+                            <constraint firstItem="RRf-kw-jLI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oDa-Ll-Gtc"/>
+                            <constraint firstItem="RRf-kw-jLI" firstAttribute="top" secondItem="0tw-CB-Wst" secondAttribute="bottom" constant="5" id="pm2-mW-kOm"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ce2-kq-nzF" secondAttribute="bottom" id="qKG-l9-1IQ"/>
+                            <constraint firstItem="0tw-CB-Wst" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="r3t-is-vts"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jwa-Da-Thq" secondAttribute="trailing" constant="20" id="xOL-ko-ZMx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="categoryLabel" destination="MAk-xZ-fsq" id="nnP-gJ-KGy"/>
+                        <outlet property="categoryButton" destination="0tw-CB-Wst" id="cwL-s4-J1k"/>
                         <outlet property="jokeLabel" destination="RRf-kw-jLI" id="TCE-Ti-Q8y"/>
+                        <outlet property="jokeParametersStackView" destination="jwa-Da-Thq" id="tnM-jD-aXM"/>
                         <outlet property="jokeParts" destination="yzO-31-LuN" id="zxe-nJ-JHX"/>
                         <outlet property="languagePickerView" destination="Ub0-ZP-EbI" id="Lsb-9D-mu5"/>
                     </connections>

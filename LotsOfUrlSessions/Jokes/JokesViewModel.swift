@@ -9,7 +9,6 @@ import Foundation
 
 final class JokesViewModel {
     var joke: JokeModel = .empty
-    var randomType = true
     
     func fetchJoke(with parameters: String) {
        

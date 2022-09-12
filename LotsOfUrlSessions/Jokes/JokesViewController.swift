@@ -12,7 +12,7 @@ final class JokesViewController: UIViewController {
     var jokeCategories = "Any" + "?"
     var arrayJokeCategories = [""]
     var jokeSelection = JokeSelection()
-    var personalizedJokeURL = "https://v2.jokeapi.dev/joke/"
+//    var personalizedJokeURL = "https://v2.jokeapi.dev/joke/"
     
 
     
@@ -49,7 +49,7 @@ final class JokesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-  //      viewModel.fetchJoke()
+        viewModel.fetchJoke(with: jokeSelection.url)
     }
 
     func setupView() {
@@ -122,6 +122,7 @@ final class JokesViewController: UIViewController {
     @IBAction func randomJoke(_ sender: UIButton) {
         setNewJoke()
         print(viewModel.joke.joke)
+        
     }
     
     

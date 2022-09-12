@@ -11,14 +11,12 @@ final class JokesViewModel {
     var joke: JokeModel = .empty
     var randomType = true
     
-    func fetchJoke() {
+    func fetchJoke(with parameters: String) {
        
-        let type = randomType ? "Programming" : "Dark"
-        
-        let url = URL(string: "https://v2.jokeapi.dev/joke/\(type)?type=single")
+        let url = URL(string: parameters)
         
         guard let url = url else { return }
-        randomType = !randomType
+        print(url)
         URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let _ = error {

@@ -9,7 +9,7 @@ import Foundation
 
 final class JokeSelection {
     
-    var url = "https://v2.jokeapi.dev/joke/"
+    var url = "https://v2.jokeapi.dev/joke/Any?type=single"
     let urlCategoryComponent = ""
     let language: Language? = nil
     let blacklist: Flags? = nil

@@ -1,5 +1,5 @@
 //
-//  JokeModel.swift
+//  Joke.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 8/9/22.
@@ -8,21 +8,26 @@
 import Foundation
 
 struct JokeModel: Decodable {
-    let error: String
-    let category: String
-    let type: String
-    let joke: String
-    let flags: Flags
-    let id: Int
-    let lang: String
+
+    let category, joke: String
+  /*  let id: Int
+        let lang: String
+        let flags: Flags
+        let type: String
+      let error: Bool
+    */
+    static var empty: Self {
+        .init(category: "", joke: "")
+    }
 }
 
 
-struct Flags: Decodable {
+/*
+ struct Flags: Decodable {
     let nsfw, religious, political, racist,sexist, explicit: Bool
 }
-/*
- 
+*/
+ /*
  https://v2.jokeapi.dev/joke/Programming,Dark?lang=es
  
  {
@@ -42,4 +47,5 @@ struct Flags: Decodable {
      "id": 5,
      "lang": "es"
  }
- */
+
+*/

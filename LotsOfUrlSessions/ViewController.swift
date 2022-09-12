@@ -48,6 +48,12 @@ class ViewController: UIViewController {
         goTo(viewControllerName: "OdenzaViewController")
     }
     
+    @IBAction func goToJokes(_ sender: UIButton) {
+        
+        goTo(viewControllerName: "JokesViewController")
+    }
+    
+    
     func goTo(viewControllerName: String){
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)

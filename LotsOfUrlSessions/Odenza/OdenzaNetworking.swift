@@ -25,6 +25,7 @@ struct OdenzaNetworking {
         let task = urlSession.dataTask(
             with: request, completionHandler: {
                 data, response, error in
+                // manage
             }
         )
         task.resume()

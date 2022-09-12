@@ -103,11 +103,12 @@
                                                         <rect key="frame" x="95" y="0.0" width="89.5" height="208.5"/>
                                                         <color key="backgroundColor" red="0.95128589870000002" green="0.70833247899999996" blue="0.73028391599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Jokes" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption2"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
+                                                            <action selector="goToJokes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dz-nc-gXB"/>
                                                             <action selector="goToPokemons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vnt-HC-eHj"/>
                                                         </connections>
                                                     </button>

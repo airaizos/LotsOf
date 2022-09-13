@@ -22,12 +22,6 @@ struct JokeModel: Decodable {
         return category ?? "No category"
     }
     var jokeComposition: String {
-            return joke ?? "\(setup!)\n\(delivery!)"
+            return joke ?? "\(setup ?? "")\n\(delivery ?? "")"
     }
 }
-/*  let id: Int
- let lang: String
- let flags: Flags
- let type: String
- let error: Bool
- */

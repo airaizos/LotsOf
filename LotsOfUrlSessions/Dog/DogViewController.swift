@@ -10,6 +10,9 @@ import UIKit
 final class DogViewController: UIViewController {
     
     let viewModel = DogViewModel()
+    
+    
+    
     var height:CGFloat = 200
     var width: CGFloat = 300
     
@@ -30,7 +33,7 @@ final class DogViewController: UIViewController {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
-     
+        
         return view
     }()
     
@@ -42,12 +45,12 @@ final class DogViewController: UIViewController {
                 self?.viewModel.networking.executeRequestedDog()
                 
                 DispatchQueue.main.async {
-                    self?.idLabel.text = self?.viewModel.networking.dogs[0].id
-                    self?.height = CGFloat(self?.viewModel.networking.dogs[0].height ?? 50)
+                    self?.idLabel.text = self?.viewModel.dog.id
+                    self?.height = CGFloat(self?.viewModel.dog.height ?? 50)
                     
-                    self?.width = CGFloat(self?.viewModel.networking.dogs[0].width ?? 50)
-                    self?.dogImage.loadImageUsingCache(withUrl: self?.viewModel.networking.dogs[0].url ?? "patxi")
-                    print(self?.viewModel.networking.dogs[0].url ?? "No data")
+                    self?.width = CGFloat(self?.viewModel.dog.width ?? 50)
+                    self?.dogImage.loadImageUsingCache(withUrl: self?.viewModel.dog.url ?? "patxi")
+                    print(self?.viewModel.dog.url ?? "No data")
                     self?.view.updateConstraintsIfNeeded()
                 }
                 
@@ -59,7 +62,7 @@ final class DogViewController: UIViewController {
                 configuration.title = "Refresh"
                 button.configuration = configuration
             } else {
-               let button = UIButton()
+                let button = UIButton()
                 button.translatesAutoresizingMaskIntoConstraints = false
             }
             
@@ -87,16 +90,16 @@ final class DogViewController: UIViewController {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-        
-            idLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            idLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            
+            idLabel.leadingAnchor.constraint(equalTo:
+             view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            idLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             view.trailingAnchor.constraint(equalTo: idLabel.trailingAnchor,constant: 20),
             
             dogImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             dogImage.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             dogImage.heightAnchor.constraint(equalToConstant: height),
             dogImage.widthAnchor.constraint(equalToConstant: width),
-       
             
             refreshButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             view.bottomAnchor.constraint(equalTo: refreshButton.bottomAnchor, constant: 40)

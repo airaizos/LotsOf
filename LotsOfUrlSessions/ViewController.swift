@@ -55,17 +55,22 @@ class ViewController: UIViewController {
     
     //DogViewController
     @IBAction func goToDogs(_ sender: UIButton) {
-     
         let viewController = DogViewController()
         /*
        self.present(viewController, animated: true)
         */
         /*
           let viewController = UIViewController(nibName: "DogViewController", bundle: nil)
-        
         */
         self.navigationController?.pushViewController(viewController, animated: true)
-         
+    }
+    
+    
+    @IBAction func goToLogin(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
     

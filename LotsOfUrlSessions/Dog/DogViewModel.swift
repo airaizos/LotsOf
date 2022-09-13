@@ -12,7 +12,10 @@ import Foundation
 final class DogViewModel {
     let networking = DogNetworking()
     
-   
+    var dog: Dog {
+             networking.dogs[0]
+    }
+    
     //MARK: Labels
    
 }

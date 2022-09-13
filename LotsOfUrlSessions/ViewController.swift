@@ -53,6 +53,17 @@ class ViewController: UIViewController {
         goTo(viewControllerName: "JokesViewController")
     }
     
+    //DogViewController
+    @IBAction func goToDogs(_ sender: UIButton) {
+        let viewController = DogViewController()
+   
+       self.present(viewController, animated: true)
+        /*
+          let viewController = UIViewController(nibName: "DogViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+         */
+    }
+    
     
     func goTo(viewControllerName: String){
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)

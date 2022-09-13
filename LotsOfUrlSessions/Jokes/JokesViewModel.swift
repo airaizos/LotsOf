@@ -23,7 +23,7 @@ final class JokesViewModel {
             } else {
                 if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
                     let jokeModel = try! JSONDecoder().decode(JokeModel.self, from: data)
-                    print(jokeModel)
+                    print("Decoded Joke:\(jokeModel)")
                     
                     DispatchQueue.main.async {
                         self.joke = jokeModel

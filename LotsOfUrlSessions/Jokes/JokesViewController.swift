@@ -8,7 +8,7 @@
 import UIKit
 
 final class JokesViewController: UIViewController {
-   
+    
     var jokeSelection = JokeSelection()
     let viewModel = JokesViewModel()
     
@@ -23,30 +23,23 @@ final class JokesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-      //  viewModel.fetchJoke(with: jokeSelection.url)
+        
     }
-
+    
     func setupView() {
         languagePickerView.delegate = self
         languagePickerView.dataSource = self
     }
-    func setNewJoke() {
+    func fetchNewJoke() {
         jokeSelection.createUrl()
         viewModel.fetchJoke(with: jokeSelection.url)
-        UIView.animate(withDuration: 0.25) {
-            DispatchQueue.main.async {
-                self.categoryButton.titleLabel?.text = self.viewModel.joke.category
-                self.jokeLabel.text = self.viewModel.joke.joke
-                
-            }
-        }
     }
-   
+    
     //MARK: Parts
     @IBAction func singleTwoParts(_ sender: UISegmentedControl) {
         jokeSelection.parts = jokeParts.selectedSegmentIndex
     }
-
+    
     //MARK: BlackList
     @IBAction func nsfwToggle(_ sender: UISwitch) {
         jokeSelection.nsfwIsOn = !jokeSelection.nsfwIsOn
@@ -75,7 +68,7 @@ final class JokesViewController: UIViewController {
     @IBAction func miscToggle(_ sender: UISwitch) {
         jokeSelection.miscellaneousIsOn = !jokeSelection.miscellaneousIsOn
     }
-
+    
     @IBAction func darkToggle(_ sender: UISwitch) {
         jokeSelection.darkIsOn = !jokeSelection.darkIsOn
     }
@@ -90,25 +83,27 @@ final class JokesViewController: UIViewController {
         jokeSelection.christmasIsOn = !jokeSelection.christmasIsOn
     }
     
-
     @IBAction func randomJoke(_ sender: UIButton) {
-        setNewJoke()
+        fetchNewJoke()
         updateView()
-    
     }
     
     func updateView() {
         isJokeSelectionHidden = !isJokeSelectionHidden
-        UIView.animate(withDuration: 0.25) {
+        UIView.animate(withDuration: 0.5) {
             DispatchQueue.main.async {
-                self.jokeParametersStackView.isHidden = self.isJokeSelectionHidden            }
+                self.jokeParametersStackView.isHidden = self.isJokeSelectionHidden
+                
+                self.categoryButton.titleLabel?.text = self.viewModel.joke.category
+                self.jokeLabel.text = self.viewModel.joke.jokeComposition
+            }
         }
+        view.layoutSubviews()
     }
     
     @IBAction func jokeSelectionButton(_ sender: UIButton) {
         updateView()
     }
-    
 }
 
 
@@ -129,6 +124,4 @@ extension JokesViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         
         jokeSelection.languageSelection = jokeSelection.languageList[row]
     }
-    
-    
 }

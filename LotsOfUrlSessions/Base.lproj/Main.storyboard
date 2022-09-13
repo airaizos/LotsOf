@@ -109,19 +109,18 @@
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="goToJokes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dz-nc-gXB"/>
-                                                            <action selector="goToPokemons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vnt-HC-eHj"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-qt-3DY" userLabel="Button2">
                                                         <rect key="frame" x="189.5" y="0.0" width="90" height="208.5"/>
                                                         <color key="backgroundColor" red="0.547726512" green="0.88839620350000004" blue="0.78118979929999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Dog" titleAlignment="center">
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption2"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="goToRickAndMorty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iny-wf-kEz"/>
+                                                            <action selector="goToDogs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wn-TC-zZy"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1S-73-Gnh">
@@ -132,9 +131,6 @@
                                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption2"/>
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="goToEmmanuel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ai-Ob-ywR"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <viewLayoutGuide key="safeArea" id="bst-Hz-NnT"/>

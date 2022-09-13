@@ -8,44 +8,26 @@
 import Foundation
 
 struct JokeModel: Decodable {
-
-    let category, joke: String
-  /*  let id: Int
-        let lang: String
-        let flags: Flags
-        let type: String
-      let error: Bool
-    */
     static var empty: Self {
-        .init(category: "", joke: "")
+        .init(category: "", joke: "", setup: "", delivery: "")
+    }
+    
+    let category: String?
+    let joke: String?
+    let setup: String?
+    let delivery: String?
+    
+    
+    var jokeCategory: String {
+        return category ?? "No category"
+    }
+    var jokeComposition: String {
+            return joke ?? "\(setup!)\n\(delivery!)"
     }
 }
-
-
-/*
- struct Flags: Decodable {
-    let nsfw, religious, political, racist,sexist, explicit: Bool
-}
-*/
- /*
- https://v2.jokeapi.dev/joke/Programming,Dark?lang=es
- 
- {
-     "error": false,
-     "category": "Programming",
-     "type": "single",
-     "joke": "Sólo hay 10 tipos de personas en este mundo, las que entienden binario y las que no.",
-     "flags": {
-         "nsfw": false,
-         "religious": false,
-         "political": false,
-         "racist": false,
-         "sexist": false,
-         "explicit": false
-     },
-     "safe": true,
-     "id": 5,
-     "lang": "es"
- }
-
-*/
+/*  let id: Int
+ let lang: String
+ let flags: Flags
+ let type: String
+ let error: Bool
+ */

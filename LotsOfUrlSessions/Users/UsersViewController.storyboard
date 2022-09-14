@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Users View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UsersViewController" id="Y6W-OH-hqX" customClass="UsersViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="v3h-Fh-Y5b" userLabel="titleStack">
+                                <rect key="frame" x="20" y="67" width="350" height="20.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="idLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpE-fL-guD">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yearLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJv-0U-00p">
+                                        <rect key="frame" x="185" y="0.0" width="165" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VpE-fL-guD" firstAttribute="width" secondItem="vJv-0U-00p" secondAttribute="width" id="MI5-44-mGp"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="us2-R7-DqL" userLabel="bottomStack">
+                                <rect key="frame" x="20" y="277.33333333333331" width="350" height="20.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2I-8w-Ghy">
+                                        <rect key="frame" x="0.0" y="0.0" width="134" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pantoneLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BC-Eg-afo">
+                                        <rect key="frame" x="216" y="0.0" width="134" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m2I-8w-Ghy" firstAttribute="width" secondItem="8BC-Eg-afo" secondAttribute="width" id="DYt-gx-OxT"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58x-ed-53c" userLabel="colorView">
+                                <rect key="frame" x="95" y="107.33333333333331" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="fVw-7n-L0h"/>
+                                    <constraint firstAttribute="width" constant="200" id="oX2-KF-Viw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="0.93633194378381945" blue="0.39717827740750189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v3h-Fh-Y5b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3Cf-83-SK6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="v3h-Fh-Y5b" secondAttribute="trailing" constant="20" id="72f-Dg-px8"/>
+                            <constraint firstItem="58x-ed-53c" firstAttribute="top" secondItem="v3h-Fh-Y5b" secondAttribute="bottom" constant="20" id="9JB-qY-QmP"/>
+                            <constraint firstItem="us2-R7-DqL" firstAttribute="top" secondItem="58x-ed-53c" secondAttribute="bottom" constant="20" id="9m3-gW-Bi9"/>
+                            <constraint firstItem="us2-R7-DqL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="G7X-HI-1rK"/>
+                            <constraint firstItem="58x-ed-53c" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ODo-hK-gIr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="us2-R7-DqL" secondAttribute="trailing" constant="20" id="fx8-gK-Fxd"/>
+                            <constraint firstItem="v3h-Fh-Y5b" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="lT5-Zg-R2U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+</document>

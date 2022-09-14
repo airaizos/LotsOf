@@ -8,3 +8,11 @@
 //https://reqres.in/api/login
 
 import Foundation
+
+
+public struct LoginModel {
+  //  let email: String
+  // let password: String
+    let token: String?
+    let error? String?
+}

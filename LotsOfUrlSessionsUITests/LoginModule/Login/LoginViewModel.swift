@@ -7,19 +7,22 @@
 
 import Foundation
 
-enum LoginStatus {
+
+public enum LoginStatus {
     case success, error
 }
 
-final class LoginViewModel {
-    var loginStatus: LoginStatus = .error
-    var didUpdateLoginStatus = false
+final public class LoginViewModel {
+    var networking = LoginNetworking()
     
-    func loginWith(email: String, password: String) {
-        if email.lowercased() == "email@google.com" {
+    public var loginStatus: LoginStatus = .error
+    public var didUpdateLoginStatus = false
+    
+    public func loginWith(email: String, password: String) {
+        networking.signInRequest(email: email, password: password)
+        if networking.authenticated {
             loginStatus = .success
         } else {
-            
             loginStatus = .error
         }
         

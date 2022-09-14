@@ -24,7 +24,10 @@
 		3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23428CA4B0100C5E396 /* JokesViewController.swift */; };
 		3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D23628CA4B0A00C5E396 /* JokesViewController.storyboard */; };
 		3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23A28CA866000C5E396 /* JokeSelection.swift */; };
-		3A279FAD28D0A3C4000748F2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A279FAC28D0A3C3000748F2 /* Login.swift */; };
+		3A1AB9F728D1DF7400235D59 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AB9F628D1DF7400235D59 /* UsersViewController.swift */; };
+		3A1AB9F928D1DF7B00235D59 /* UsersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1AB9F828D1DF7B00235D59 /* UsersViewController.storyboard */; };
+		3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AB9FA28D1E19800235D59 /* ColorsListViewController.swift */; };
+		3A1AB9FD28D1E1A000235D59 /* ColorsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1AB9FC28D1E1A000235D59 /* ColorsListViewController.storyboard */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -46,10 +49,7 @@
 		3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */; };
 		3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */; };
 		3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A428CFC81100C31731 /* DogViewController.swift */; };
-		3AE2A67928D0D85000E4EFCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2A67828D0D85000E4EFCA /* LoginViewController.swift */; };
-		3AE2A67B28D0D85600E4EFCA /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE2A67A28D0D85600E4EFCA /* LoginViewController.storyboard */; };
-		3AE2A67D28D0DC8400E4EFCA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2A67C28D0DC8400E4EFCA /* LoginViewModel.swift */; };
-		3AE2A67F28D0DCA700E4EFCA /* LoginNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2A67E28D0DCA700E4EFCA /* LoginNetworking.swift */; };
+		3AE2A68728D0F50100E4EFCA /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE2A68628D0F50100E4EFCA /* LoginModule */; };
 		3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */; };
 		3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */; };
 		3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224DA289A7B34008BEAF0 /* ViewController.swift */; };
@@ -103,7 +103,10 @@
 		3A05D23428CA4B0100C5E396 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		3A05D23628CA4B0A00C5E396 /* JokesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JokesViewController.storyboard; sourceTree = "<group>"; };
 		3A05D23A28CA866000C5E396 /* JokeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeSelection.swift; sourceTree = "<group>"; };
-		3A279FAC28D0A3C3000748F2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3A1AB9F628D1DF7400235D59 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		3A1AB9F828D1DF7B00235D59 /* UsersViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersViewController.storyboard; sourceTree = "<group>"; };
+		3A1AB9FA28D1E19800235D59 /* ColorsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListViewController.swift; sourceTree = "<group>"; };
+		3A1AB9FC28D1E1A000235D59 /* ColorsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorsListViewController.storyboard; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -126,10 +129,7 @@
 		3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworking.swift; sourceTree = "<group>"; };
 		3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 		3ADAF5A428CFC81100C31731 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
-		3AE2A67828D0D85000E4EFCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3AE2A67A28D0D85600E4EFCA /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
-		3AE2A67C28D0DC8400E4EFCA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		3AE2A67E28D0DCA700E4EFCA /* LoginNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworking.swift; sourceTree = "<group>"; };
+		3AE2A68428D0F3A900E4EFCA /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = text; name = LoginModule; path = LotsOfUrlSessionsUITests/LoginModule; sourceTree = SOURCE_ROOT; };
 		3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsOfUrlSessions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE2A68728D0F50100E4EFCA /* LoginModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,16 +215,15 @@
 			path = Jokes;
 			sourceTree = "<group>";
 		};
-		3A279FAB28D0A3AF000748F2 /* Login */ = {
+		3A1AB9F528D1DF3800235D59 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				3A279FAC28D0A3C3000748F2 /* Login.swift */,
-				3AE2A67C28D0DC8400E4EFCA /* LoginViewModel.swift */,
-				3AE2A67828D0D85000E4EFCA /* LoginViewController.swift */,
-				3AE2A67A28D0D85600E4EFCA /* LoginViewController.storyboard */,
-				3AE2A67E28D0DCA700E4EFCA /* LoginNetworking.swift */,
+				3A1AB9F628D1DF7400235D59 /* UsersViewController.swift */,
+				3A1AB9F828D1DF7B00235D59 /* UsersViewController.storyboard */,
+				3A1AB9FA28D1E19800235D59 /* ColorsListViewController.swift */,
+				3A1AB9FC28D1E1A000235D59 /* ColorsListViewController.storyboard */,
 			);
-			path = Login;
+			path = Users;
 			sourceTree = "<group>";
 		};
 		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
@@ -282,6 +282,13 @@
 			path = Dog;
 			sourceTree = "<group>";
 		};
+		3AE2A68528D0F50100E4EFCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3AF224CA289A7B34008BEAF0 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +296,7 @@
 				3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */,
 				3AF224F9289A7B36008BEAF0 /* LotsOfUrlSessionsUITests */,
 				3AF224D4289A7B34008BEAF0 /* Products */,
+				3AE2A68528D0F50100E4EFCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -305,6 +313,7 @@
 		3AF224D5289A7B34008BEAF0 /* LotsOfUrlSessions */ = {
 			isa = PBXGroup;
 			children = (
+				3AE2A68428D0F3A900E4EFCA /* LoginModule */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
 				3AF2250A289A7B95008BEAF0 /* InitialBuilder.swift */,
 				3AF22509289A7B85008BEAF0 /* AvanzaZgz */,
@@ -314,7 +323,7 @@
 				3A02BB7E28C8A8C900D168AE /* Odenza */,
 				3A05D22B28CA2A7D00C5E396 /* Jokes */,
 				3ADAF59D28CF9E6600C31731 /* Dog */,
-				3A279FAB28D0A3AF000748F2 /* Login */,
+				3A1AB9F528D1DF3800235D59 /* Users */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
 				3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */,
 				3AF224DA289A7B34008BEAF0 /* ViewController.swift */,
@@ -383,6 +392,9 @@
 			dependencies = (
 			);
 			name = LotsOfUrlSessions;
+			packageProductDependencies = (
+				3AE2A68628D0F50100E4EFCA /* LoginModule */,
+			);
 			productName = LotsOfUrlSessions;
 			productReference = 3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */;
 			productType = "com.apple.product-type.application";
@@ -471,6 +483,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1AB9F928D1DF7B00235D59 /* UsersViewController.storyboard in Resources */,
+				3A1AB9FD28D1E1A000235D59 /* ColorsListViewController.storyboard in Resources */,
 				3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
 				3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */,
@@ -480,7 +494,6 @@
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
-				3AE2A67B28D0D85600E4EFCA /* LoginViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
 				3A02BB8228C8A8E800D168AE /* OdenzaViewController.storyboard in Resources */,
 				3AF224DE289A7B34008BEAF0 /* Main.storyboard in Resources */,
@@ -510,13 +523,11 @@
 			files = (
 				3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */,
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
-				3AE2A67928D0D85000E4EFCA /* LoginViewController.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
 				3A05D23128CA493F00C5E396 /* Joke.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
-				3AE2A67F28D0DCA700E4EFCA /* LoginNetworking.swift in Sources */,
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
 				3A02BB8628C8B9DE00D168AE /* OdenzaViewModel.swift in Sources */,
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
@@ -529,26 +540,26 @@
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
 				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
-				3AE2A67D28D0DC8400E4EFCA /* LoginViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
 				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,
 				3A02BB8928C8D91100D168AE /* CreateViewController.swift in Sources */,
+				3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */,
 				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesModel.swift in Sources */,
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */,
 				3AF2250B289A7B95008BEAF0 /* InitialBuilder.swift in Sources */,
-				3A279FAD28D0A3C4000748F2 /* Login.swift in Sources */,
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,
 				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
+				3A1AB9F728D1DF7400235D59 /* UsersViewController.swift in Sources */,
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
 				3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */,
 			);
@@ -894,6 +905,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AE2A68628D0F50100E4EFCA /* LoginModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LoginModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3AF224DF289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld */ = {

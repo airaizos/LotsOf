@@ -7,9 +7,10 @@
 
 import UIKit
 
-final class LoginViewController: UIViewController {
+final public class LoginViewController: UIViewController {
 
-    var authenticationViewModel = LoginViewModel()
+    public init() {} 
+    public var authenticationViewModel = LoginViewModel()
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

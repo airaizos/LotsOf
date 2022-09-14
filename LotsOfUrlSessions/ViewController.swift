@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LoginModule
 
 class ViewController: UIViewController {
     
@@ -69,11 +70,17 @@ class ViewController: UIViewController {
     @IBAction func goToLogin(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+
         self.navigationController?.pushViewController(viewController, animated: true)
+        
+        // self.present(viewController, animated: true)
         
     }
     
+    @IBAction func goToUsers(_ sender: UIButton) {
+    }
     
+    //MARK: Final
     func goTo(viewControllerName: String){
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)

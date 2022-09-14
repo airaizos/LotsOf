@@ -16,7 +16,8 @@ final class ColorsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupColorsTableView()
-        viewModel.fetchColors()
+       // viewModel.fetchColors()
+        viewModel.getColorsList()
         reloadData()
     }
     

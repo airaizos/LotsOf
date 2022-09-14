@@ -9,8 +9,8 @@ import Foundation
 
 final class ColorsNetworking {
     
- //   var result: ColorsResult = .empty
-  //  var output: [ColorModel] = [.empty]
+    var result: ColorsResult = .empty
+   var output: [ColorModel] = [.empty]
     
     let url = "https://reqres.in/api/unknown"
     
@@ -26,6 +26,7 @@ final class ColorsNetworking {
                 DispatchQueue.main.async {
                     completion(.success(requestData.data))
                     print(requestData.data[0])
+                    print("otput\(self.output)")
                 }
                 
             } catch let error {

@@ -13,18 +13,18 @@ final class ColorsViewModel {
     var networking = ColorsNetworking()
     
     var colorsLists: [ColorModel] = []
-    /*
+    
     func getColorsList() {
         networking.fetchColors { result in
             switch result {
-            case .success:
-                self.colorsLists =   self.networking.result.colors
-                print(self.colorsLists)
+            case .success(let colors):
+                self.colorsLists = colors
+                print("self.ColorsLists\(self.colorsLists)")
             case .failure: self.colorsLists = [ColorModel(id: 0, name: "Error", year: 0, color: "Error", pantoneValue: "Error")]
             }
         }
     }
-    */
+    
     
     func fetchColors () {
         
@@ -34,7 +34,7 @@ final class ColorsViewModel {
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             if error != nil {
-                print("error 1")
+              //  print("error 1")
             }
             guard let data = data else { return }
             
@@ -47,8 +47,7 @@ final class ColorsViewModel {
                     print(self.colorsLists[0])
                 }
             } catch let error {
-                print("2: \(error.localizedDescription)")
-                print(error)
+                print(error.localizedDescription)
             }
         }
         task.resume()

@@ -26,14 +26,5 @@ final class ColorTableViewCell: UITableViewCell {
        
     }
     
-    func configureCellWith() {
-        
-    }
-    
 
-}
-
-
-struct ColorViewCell {
-    
 }

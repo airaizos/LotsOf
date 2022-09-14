@@ -78,6 +78,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goToUsers(_ sender: UIButton) {
+        goTo(viewControllerName: "UsersViewController")
     }
     
     //MARK: Final

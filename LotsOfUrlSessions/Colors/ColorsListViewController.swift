@@ -1,5 +1,5 @@
 //
-//  UsersViewController.swift
+//  ColorsListViewController.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 14/9/22.
@@ -7,12 +7,17 @@
 
 import UIKit
 
-class UsersViewController: UIViewController {
+final class ColorsListViewController: UIViewController {
+    
+    
+    @IBOutlet weak var colorsTableView: UITableView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+ 
     }
     
 
@@ -26,4 +31,17 @@ class UsersViewController: UIViewController {
     }
     */
 
+}
+
+
+extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }

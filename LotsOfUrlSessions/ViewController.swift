@@ -70,6 +70,8 @@ class ViewController: UIViewController {
     @IBAction func goToLogin(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        LoginModule().getModuleStoryboard()
 
         self.navigationController?.pushViewController(viewController, animated: true)
         

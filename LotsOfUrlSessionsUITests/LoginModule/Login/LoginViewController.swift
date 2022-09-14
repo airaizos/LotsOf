@@ -42,4 +42,9 @@ final public class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    func getModuleStoryboard() -> UIStoryboard {
+        let storyboard = UIStoryboard(name: "LoginViewController", bundle: .module)
+        return storyboard
+    }
+    
 }

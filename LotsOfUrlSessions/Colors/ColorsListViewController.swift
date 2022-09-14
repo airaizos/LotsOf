@@ -9,39 +9,49 @@ import UIKit
 
 final class ColorsListViewController: UIViewController {
     
+    var viewModel = ColorsViewModel()
     
     @IBOutlet weak var colorsTableView: UITableView!
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
- 
+        setupColorsTableView()
+        viewModel.fetchColors()
+        reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupColorsTableView() {
+        colorsTableView.delegate = self
+        colorsTableView.dataSource = self
+        
     }
-    */
-
+    
+   
+    
 }
 
 
 extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        viewModel.colorsLists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let item = viewModel.getColor(at: indexPath.row)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath) as? ColorTableViewCell else {
+            fatalError("No se puede cargar colorCell")
+        }
+        
+        cell.nameLabel.text = item.name
+        cell.pantoneLabel.text = item.pantoneValue
+        cell.colorView.backgroundColor = UIColor(hex: item.color)
+        
+        return cell
+        }
+    
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.colorsTableView.reloadData()
+        }
     }
-    
-    
 }

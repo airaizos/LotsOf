@@ -8,10 +8,10 @@
 import Foundation
 
 
-struct ResultColors: Decodable{
-    static var  empty: Self = .init(data: [ColorModel(id: 0, name: "name", year: 0, color: "color", pantoneValue: "pantone")])
+struct ColorsResult: Decodable{
+ //   static var  empty: Self = .init(colors: [ColorModel(id: 0, name: "name", year: 0, color: "color", pantoneValue: "pantone")])
 
-    let data : [ColorModel]
+    var data : [ColorModel]
     
 }
 
@@ -20,7 +20,7 @@ struct ColorModel: Decodable {
     let name: String
     let year: Int
     let color: String
-    let pantoneValue: String
+    let pantoneValue: String?
     
     enum CondingKeys: String, CodingKey {
    

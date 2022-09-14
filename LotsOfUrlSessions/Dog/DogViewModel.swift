@@ -16,6 +16,11 @@ final class DogViewModel {
              networking.dogs[0]
     }
     
+    func getColorsList() {
+        
+        
+    }
+    
     //MARK: Labels
    
 }

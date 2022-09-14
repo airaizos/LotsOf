@@ -59,13 +59,10 @@ extension UIColor {
         
         switch hex.count {
         case 3: (a,r,g,b) = (255, (int >> 8) * 17, (int >> 4 & 0xF) * 17, (int & 0xF) * 17 )
-            print("RGB12bits")
             print(a,r,g,b)
         case 6:  (a,r,g,b) = (255, int >> 16, int >> 8 & 0xFF, int & 0xFF)
-            print("RGB 24-bits")
             print(a,r,g,b)
         case 8: (a,r,g,b) = (int >> 24, int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
-            print("RGB 32-bits")
             print(a,r,g,b)
         default:
             (a,r,g,b) = (1,1,1,0)

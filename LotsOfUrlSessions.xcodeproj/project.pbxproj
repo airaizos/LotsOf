@@ -40,6 +40,9 @@
 		3A1ABA1528D2830F00235D59 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA1028D2830F00235D59 /* Login.swift */; };
 		3A262E9128D340320050D8A3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9028D340320050D8A3 /* UserModel.swift */; };
 		3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9228D340D90050D8A3 /* UserProvider.swift */; };
+		3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9428D365F00050D8A3 /* UserViewModel.swift */; };
+		3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */; };
+		3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -130,6 +133,9 @@
 		3A1ABA1028D2830F00235D59 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3A262E9028D340320050D8A3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3A262E9228D340D90050D8A3 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		3A262E9428D365F00050D8A3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersCollectionViewController.storyboard; sourceTree = "<group>"; };
+		3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewController.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -268,6 +274,9 @@
 			children = (
 				3A262E9028D340320050D8A3 /* UserModel.swift */,
 				3A262E9228D340D90050D8A3 /* UserProvider.swift */,
+				3A262E9428D365F00050D8A3 /* UserViewModel.swift */,
+				3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */,
+				3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -542,6 +551,7 @@
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
+				3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */,
 				3A1ABA1328D2830F00235D59 /* LoginViewController.storyboard in Resources */,
 				3A02BB8228C8A8E800D168AE /* OdenzaViewController.storyboard in Resources */,
 				3AF224DE289A7B34008BEAF0 /* Main.storyboard in Resources */,
@@ -573,6 +583,7 @@
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
+				3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */,
 				3A05D23128CA493F00C5E396 /* Joke.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsViewModel.swift in Sources */,
@@ -597,6 +608,7 @@
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
+				3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
 				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,

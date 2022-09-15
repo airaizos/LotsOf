@@ -9,13 +9,13 @@ import UIKit
 
 final public class LoginViewController: UIViewController {
 
-    public init() {} 
+   // public init() {}
     public var authenticationViewModel = LoginViewModel()
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
        setupView()
@@ -28,6 +28,7 @@ final public class LoginViewController: UIViewController {
     @IBAction func loginTapped(_ sender: UIButton) {
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
         authenticationViewModel.loginWith(email: email, password: password)
+       //No espera la respuesta
         showAlert()
         
     }
@@ -41,10 +42,10 @@ final public class LoginViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-    
+    /*
     func getModuleStoryboard() -> UIStoryboard {
         let storyboard = UIStoryboard(name: "LoginViewController", bundle: .module)
         return storyboard
     }
-    
+    */
 }

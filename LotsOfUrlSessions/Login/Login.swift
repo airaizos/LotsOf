@@ -10,9 +10,9 @@
 import Foundation
 
 
-public struct LoginModel {
+public struct LoginModel: Decodable {
   //  let email: String
   // let password: String
     let token: String?
-    let error? String?
+    let error: String?
 }

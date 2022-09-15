@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
         
-        LoginModule().getModuleStoryboard()
+      //  LoginModule().getModuleStoryboard()
 
         self.navigationController?.pushViewController(viewController, animated: true)
         

@@ -33,6 +33,13 @@
 		3A1ABA0528D2117500235D59 /* ColorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0428D2117500235D59 /* ColorsViewModel.swift */; };
 		3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0628D2118500235D59 /* ColorsNetworking.swift */; };
 		3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0828D2119D00235D59 /* ColorModel.swift */; };
+		3A1ABA1128D2830F00235D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0C28D2830F00235D59 /* LoginViewController.swift */; };
+		3A1ABA1228D2830F00235D59 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0D28D2830F00235D59 /* LoginViewModel.swift */; };
+		3A1ABA1328D2830F00235D59 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0E28D2830F00235D59 /* LoginViewController.storyboard */; };
+		3A1ABA1428D2830F00235D59 /* LoginNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0F28D2830F00235D59 /* LoginNetworking.swift */; };
+		3A1ABA1528D2830F00235D59 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA1028D2830F00235D59 /* Login.swift */; };
+		3A262E9128D340320050D8A3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9028D340320050D8A3 /* UserModel.swift */; };
+		3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9228D340D90050D8A3 /* UserProvider.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -54,7 +61,6 @@
 		3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */; };
 		3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */; };
 		3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A428CFC81100C31731 /* DogViewController.swift */; };
-		3AE2A68728D0F50100E4EFCA /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE2A68628D0F50100E4EFCA /* LoginModule */; };
 		3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */; };
 		3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */; };
 		3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF224DA289A7B34008BEAF0 /* ViewController.swift */; };
@@ -117,6 +123,13 @@
 		3A1ABA0428D2117500235D59 /* ColorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewModel.swift; sourceTree = "<group>"; };
 		3A1ABA0628D2118500235D59 /* ColorsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsNetworking.swift; sourceTree = "<group>"; };
 		3A1ABA0828D2119D00235D59 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
+		3A1ABA0C28D2830F00235D59 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3A1ABA0D28D2830F00235D59 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3A1ABA0E28D2830F00235D59 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		3A1ABA0F28D2830F00235D59 /* LoginNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworking.swift; sourceTree = "<group>"; };
+		3A1ABA1028D2830F00235D59 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3A262E9028D340320050D8A3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3A262E9228D340D90050D8A3 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -139,7 +152,6 @@
 		3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworking.swift; sourceTree = "<group>"; };
 		3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 		3ADAF5A428CFC81100C31731 /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
-		3AE2A68428D0F3A900E4EFCA /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = text; name = LoginModule; path = LotsOfUrlSessionsUITests/LoginModule; sourceTree = SOURCE_ROOT; };
 		3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotsOfUrlSessions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +179,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE2A68728D0F50100E4EFCA /* LoginModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +249,27 @@
 				3A1ABA0828D2119D00235D59 /* ColorModel.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		3A1ABA0B28D282FC00235D59 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3A1ABA1028D2830F00235D59 /* Login.swift */,
+				3A1ABA0F28D2830F00235D59 /* LoginNetworking.swift */,
+				3A1ABA0E28D2830F00235D59 /* LoginViewController.storyboard */,
+				3A1ABA0C28D2830F00235D59 /* LoginViewController.swift */,
+				3A1ABA0D28D2830F00235D59 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3A262E8F28D340220050D8A3 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				3A262E9028D340320050D8A3 /* UserModel.swift */,
+				3A262E9228D340D90050D8A3 /* UserProvider.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
@@ -328,7 +360,6 @@
 		3AF224D5289A7B34008BEAF0 /* LotsOfUrlSessions */ = {
 			isa = PBXGroup;
 			children = (
-				3AE2A68428D0F3A900E4EFCA /* LoginModule */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
 				3AF2250A289A7B95008BEAF0 /* InitialBuilder.swift */,
 				3AF22509289A7B85008BEAF0 /* AvanzaZgz */,
@@ -338,7 +369,9 @@
 				3A02BB7E28C8A8C900D168AE /* Odenza */,
 				3A05D22B28CA2A7D00C5E396 /* Jokes */,
 				3ADAF59D28CF9E6600C31731 /* Dog */,
+				3A1ABA0B28D282FC00235D59 /* Login */,
 				3A1AB9F528D1DF3800235D59 /* Colors */,
+				3A262E8F28D340220050D8A3 /* Users */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
 				3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */,
 				3AF224DA289A7B34008BEAF0 /* ViewController.swift */,
@@ -408,7 +441,6 @@
 			);
 			name = LotsOfUrlSessions;
 			packageProductDependencies = (
-				3AE2A68628D0F50100E4EFCA /* LoginModule */,
 			);
 			productName = LotsOfUrlSessions;
 			productReference = 3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */;
@@ -510,6 +542,7 @@
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
+				3A1ABA1328D2830F00235D59 /* LoginViewController.storyboard in Resources */,
 				3A02BB8228C8A8E800D168AE /* OdenzaViewController.storyboard in Resources */,
 				3AF224DE289A7B34008BEAF0 /* Main.storyboard in Resources */,
 			);
@@ -555,10 +588,14 @@
 				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,
 				3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
+				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
+				3A1ABA1228D2830F00235D59 /* LoginViewModel.swift in Sources */,
+				3A1ABA1528D2830F00235D59 /* Login.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
 				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
+				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
@@ -576,9 +613,11 @@
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,
 				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */,
+				3A1ABA1128D2830F00235D59 /* LoginViewController.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
+				3A1ABA1428D2830F00235D59 /* LoginNetworking.swift in Sources */,
 				3A1AB9F728D1DF7400235D59 /* ColorsViewController.swift in Sources */,
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
 				3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */,
@@ -925,13 +964,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3AE2A68628D0F50100E4EFCA /* LoginModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = LoginModule;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3AF224DF289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld */ = {

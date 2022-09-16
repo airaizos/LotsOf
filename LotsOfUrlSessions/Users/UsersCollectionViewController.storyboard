@@ -25,6 +25,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B2R-pA-5Bn">
                                 <rect key="frame" x="20" y="116" width="350" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.46616503009999999" blue="0.37840552080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="dab-KK-WLg"/>
                                 </constraints>
@@ -54,13 +55,19 @@
                                     <action selector="refreshCollectionView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tt6-lY-B8q"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dkq-Aq-mgh">
+                                <rect key="frame" x="176.66666666666666" y="410" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.42892027150000001" blue="0.28955934799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="G8a-M0-MbG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0k2-5K-lxm"/>
+                            <constraint firstItem="dkq-Aq-mgh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="3Mz-xg-zjw"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="B2R-pA-5Bn" secondAttribute="trailing" constant="20" id="KY6-Es-RuF"/>
                             <constraint firstItem="G8a-M0-MbG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Rmn-DL-nes"/>
+                            <constraint firstItem="dkq-Aq-mgh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="XDl-dQ-osd"/>
                             <constraint firstItem="B2R-pA-5Bn" firstAttribute="top" secondItem="G8a-M0-MbG" secondAttribute="bottom" constant="8.3333333333333428" id="ZNe-Au-Ka2"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G8a-M0-MbG" secondAttribute="trailing" constant="20" id="evY-Dg-sEe"/>
                             <constraint firstItem="GcH-sT-WHj" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="gTX-dh-ut0"/>
@@ -69,6 +76,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="dkq-Aq-mgh" id="dnf-di-Abn"/>
                         <outlet property="usersCollectionView" destination="B2R-pA-5Bn" id="5NN-bK-m5p"/>
                         <outlet property="usersLabel" destination="G8a-M0-MbG" id="arB-Hc-emS"/>
                     </connections>

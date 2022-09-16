@@ -12,15 +12,17 @@ final class UsersCollectionViewController: UIViewController {
     let radius: CGFloat = 8.0
     private let cellIdentifier = "userCell"
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var usersLabel: UILabel!
     
     @IBOutlet weak var usersCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
-        setupView()
         viewModel.fetchUsers()
+        setupView()
+        setupCollectionView()
     }
     
     func setupView() {
@@ -28,6 +30,7 @@ final class UsersCollectionViewController: UIViewController {
         usersCollectionView.layer.cornerRadius = radius
         usersCollectionView.reloadData()
         usersLabel.text = "Users List"
+        activityIndicator.startAnimating()
     }
     func setupCollectionView() {
         usersCollectionView.delegate = self
@@ -42,8 +45,11 @@ usersCollectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWit
     
     @IBAction func refreshCollectionView(_ sender: UIButton) {
             self.usersCollectionView.reloadData()
+        if viewModel.didUsersFetched {
+            activityIndicator.stopAnimating()
+            activityIndicator.isHidden = true
+        }
     }
-   
 }
 
 extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -55,12 +61,7 @@ extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionV
         let item = viewModel.users[indexPath.row]
 
         guard let cell = usersCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? UserCell else { fatalError("No se puede cargar userCollectionCell")}
-        
         cell.configure(with: item)
-        
         return cell
     }
-    
-    
-
 }

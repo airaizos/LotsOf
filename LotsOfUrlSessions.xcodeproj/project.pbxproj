@@ -24,6 +24,9 @@
 		3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23428CA4B0100C5E396 /* JokesViewController.swift */; };
 		3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D23628CA4B0A00C5E396 /* JokesViewController.storyboard */; };
 		3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23A28CA866000C5E396 /* JokeSelection.swift */; };
+		3A1526A028D48C19009CA133 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A15269F28D48C19009CA133 /* UserCollectionViewCell.swift */; };
+		3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1526A128D49AC9009CA133 /* UserCell.swift */; };
+		3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1526A228D49AC9009CA133 /* UserCell.xib */; };
 		3A1AB9F728D1DF7400235D59 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AB9F628D1DF7400235D59 /* ColorsViewController.swift */; };
 		3A1AB9F928D1DF7B00235D59 /* ColorsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1AB9F828D1DF7B00235D59 /* ColorsViewController.storyboard */; };
 		3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1AB9FA28D1E19800235D59 /* ColorsListViewController.swift */; };
@@ -117,6 +120,9 @@
 		3A05D23428CA4B0100C5E396 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		3A05D23628CA4B0A00C5E396 /* JokesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JokesViewController.storyboard; sourceTree = "<group>"; };
 		3A05D23A28CA866000C5E396 /* JokeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeSelection.swift; sourceTree = "<group>"; };
+		3A15269F28D48C19009CA133 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A1526A128D49AC9009CA133 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		3A1526A228D49AC9009CA133 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		3A1AB9F628D1DF7400235D59 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		3A1AB9F828D1DF7B00235D59 /* ColorsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorsViewController.storyboard; sourceTree = "<group>"; };
 		3A1AB9FA28D1E19800235D59 /* ColorsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +283,9 @@
 				3A262E9428D365F00050D8A3 /* UserViewModel.swift */,
 				3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */,
 				3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */,
+				3A15269F28D48C19009CA133 /* UserCollectionViewCell.swift */,
+				3A1526A128D49AC9009CA133 /* UserCell.swift */,
+				3A1526A228D49AC9009CA133 /* UserCell.xib */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -542,6 +551,7 @@
 				3A1AB9F928D1DF7B00235D59 /* ColorsViewController.storyboard in Resources */,
 				3A1AB9FD28D1E1A000235D59 /* ColorsListViewController.storyboard in Resources */,
 				3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */,
+				3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
 				3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */,
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
@@ -588,6 +598,7 @@
 				3AF224DB289A7B34008BEAF0 /* ViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsViewModel.swift in Sources */,
 				3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */,
+				3A1526A028D48C19009CA133 /* UserCollectionViewCell.swift in Sources */,
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
 				3A02BB8628C8B9DE00D168AE /* OdenzaViewModel.swift in Sources */,
@@ -626,6 +637,7 @@
 				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */,
 				3A1ABA1128D2830F00235D59 /* LoginViewController.swift in Sources */,
+				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,

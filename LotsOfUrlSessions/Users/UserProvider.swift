@@ -26,6 +26,7 @@ final class UserProvider {
                     DispatchQueue.main.async {
                  //       if let weakSelf = self {
                             completion(.success( usersResultModel.data))
+                        print(usersResultModel.data[0])
                             //   weakSelf.users = usersModel
                             //    print("weakSelf.users: \(weakSelf.users)\n")
                             //   print("weakSelf.users: \(usersModel)")

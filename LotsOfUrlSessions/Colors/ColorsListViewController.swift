@@ -24,13 +24,8 @@ final class ColorsListViewController: UIViewController {
     func setupColorsTableView() {
         colorsTableView.delegate = self
         colorsTableView.dataSource = self
-        
     }
-    
-   
-    
 }
-
 
 extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

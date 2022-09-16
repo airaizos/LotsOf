@@ -34,8 +34,8 @@ final class UsersCollectionViewController: UIViewController {
         usersCollectionView.dataSource = self
         
      
-        usersCollectionView.register(UserCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
-//usersCollectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+    //    usersCollectionView.register(UserCell.self, forCellWithReuseIdentifier: cellIdentifier)
+usersCollectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
 
     }
     
@@ -54,7 +54,7 @@ extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = viewModel.users[indexPath.row]
 
-        guard let cell = usersCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? UserCollectionViewCell else { fatalError("No se puede cargar userCollectionCell")}
+        guard let cell = usersCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? UserCell else { fatalError("No se puede cargar userCollectionCell")}
         
         cell.configure(with: item)
         

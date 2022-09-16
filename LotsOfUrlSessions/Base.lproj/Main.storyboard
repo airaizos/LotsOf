@@ -145,20 +145,23 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="135.5"/>
                                                         <color key="backgroundColor" red="1" green="0.98685073790648326" blue="0.14506173314733384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Users">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Colors">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="goToUsers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B97-8C-TQW"/>
+                                                            <action selector="goToColors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="avk-J2-gv1"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eam-28-Bgl">
                                                         <rect key="frame" x="95" y="0.0" width="89.5" height="135.5"/>
                                                         <color key="backgroundColor" red="1" green="0.78092316129925543" blue="0.32466726667136425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                        <buttonConfiguration key="configuration" style="plain" title="Users">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="goToUsers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WvC-eK-TBh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxR-gB-TT4">
                                                         <rect key="frame" x="189.5" y="0.0" width="90" height="135.5"/>

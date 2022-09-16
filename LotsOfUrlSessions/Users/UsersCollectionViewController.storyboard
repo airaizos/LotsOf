@@ -18,27 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8a-M0-MbG" userLabel="UsersLabel">
-                                <rect key="frame" x="20" y="47" width="350" height="40.666666666666657"/>
+                                <rect key="frame" x="20" y="67" width="350" height="40.666666666666657"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" red="1" green="0.97653359740000001" blue="0.1681133424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-f7-g1C">
-                                <rect key="frame" x="40" y="97.666666666666671" width="330" height="179.33333333333331"/>
+                                <rect key="frame" x="40" y="117.66666666666669" width="330" height="180"/>
                                 <color key="backgroundColor" red="1" green="0.93633194379999996" blue="0.3971782774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="179.33333333333334" id="jfL-4a-22U"/>
+                                    <constraint firstAttribute="height" constant="180" id="jfL-4a-22U"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QTt-CE-mIM">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QTt-CE-mIM">
                                     <size key="itemSize" width="134" height="163"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1Qe-Ka-EkJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userCollectionCell" id="1Qe-Ka-EkJ">
+                                        <rect key="frame" x="0.0" y="5" width="150" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Qh-CR-d8x">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
@@ -109,7 +109,7 @@
                         <color key="backgroundColor" red="1" green="0.93633194379999996" blue="0.3971782774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="G8a-M0-MbG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0k2-5K-lxm"/>
-                            <constraint firstItem="G8a-M0-MbG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Rmn-DL-nes"/>
+                            <constraint firstItem="G8a-M0-MbG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Rmn-DL-nes"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lbD-f7-g1C" secondAttribute="trailing" constant="20" id="bfZ-d7-sg9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G8a-M0-MbG" secondAttribute="trailing" constant="20" id="evY-Dg-sEe"/>
                             <constraint firstItem="lbD-f7-g1C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="fJQ-Vf-SRi"/>

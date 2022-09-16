@@ -68,7 +68,7 @@ extension UIColor {
             red: CGFloat(r) / 0xff,
             green: CGFloat(g) / 0xff,
             blue: CGFloat(b) / 0xff,
-            alpha: 1
+            alpha: CGFloat(a)
         )
     }
 }

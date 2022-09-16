@@ -50,13 +50,16 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7k-wD-vNw">
-                                <rect key="frame" x="159" y="522" width="72.333333333333314" height="38"/>
+                                <rect key="frame" x="160" y="491.66666666666669" width="70" height="36.000000000000057"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login" subtitle="" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
-                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
-                                </buttonConfiguration>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="bq1-on-gSW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
                                 <connections>
                                     <action selector="loginTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="R5x-Sx-XAs"/>
                                 </connections>
@@ -68,7 +71,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YF6-nj-1vB" secondAttribute="trailing" constant="20" id="9iI-3c-fq1"/>
                             <constraint firstItem="YF6-nj-1vB" firstAttribute="top" secondItem="YWM-wH-6Yo" secondAttribute="bottom" constant="50" id="AzL-Xv-wtS"/>
                             <constraint firstItem="YF6-nj-1vB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="J9H-eW-WcE"/>
-                            <constraint firstItem="s7k-wD-vNw" firstAttribute="top" secondItem="YF6-nj-1vB" secondAttribute="bottom" constant="50.333333333333314" id="RSR-5t-w3u"/>
+                            <constraint firstItem="s7k-wD-vNw" firstAttribute="top" secondItem="YF6-nj-1vB" secondAttribute="bottom" constant="20" id="RSR-5t-w3u"/>
                             <constraint firstItem="YWM-wH-6Yo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="V3R-U2-JFe"/>
                             <constraint firstItem="s7k-wD-vNw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="f8K-eJ-cnf"/>
                             <constraint firstItem="YF6-nj-1vB" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="obf-2E-vvP"/>

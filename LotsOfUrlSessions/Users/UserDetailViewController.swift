@@ -15,19 +15,21 @@ final class UserDetailViewController: UIViewController {
     private lazy var avatarImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
+        image.layer.cornerRadius = 10
+        
         return image
     }()
     
     private lazy var firstNameLabel = UILabel.generateWith(font: .title2, textColor: .white)
     private lazy var lastNameLabel = UILabel.generateWith(font: .title1, textColor: .white)
     private lazy var emailLabel = UILabel.generateWith(font: .body, textColor: .systemBlue)
-    
-    private lazy var idLabel = UILabel.generateWith(font: .headline, textColor: .systemRed)
+    private lazy var idLabel = UILabel.generateWith(font: .title3, textColor: .black)
     
     
     private lazy var userInfoStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [firstNameLabel, lastNameLabel, emailLabel])
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
         return stackView
     }()
     
@@ -43,9 +45,12 @@ final class UserDetailViewController: UIViewController {
         view.addSubview(userInfoStackView)
         view.addSubview(idLabel)
         
+        
+    
+  
         NSLayoutConstraint.activate([
             idLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            idLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: padding),
+            idLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 40),
             view.trailingAnchor.constraint(equalTo: idLabel.trailingAnchor, constant: padding),
             
             avatarImage.topAnchor.constraint(greaterThanOrEqualTo: idLabel.bottomAnchor, constant: padding),

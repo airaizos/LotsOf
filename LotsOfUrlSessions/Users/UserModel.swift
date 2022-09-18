@@ -29,10 +29,3 @@ struct UserModel: Decodable {
 }
 
 
-struct UserDetailViewModel: Decodable {
-    let id: Int
-    let email: String
-    let firstName: String
-    let lastName: String
-    let avatar: String
-}

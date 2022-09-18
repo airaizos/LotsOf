@@ -72,8 +72,10 @@ extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionV
     
     func navigate(to item: UserModel) {
         DispatchQueue.main.async {
-            let viewController = UsersDetailViewController()
-            viewController.            self.present(viewController, animated: true)
+            let viewController = UserDetailViewController()
+            viewController.userDetailViewModel?.user = item
+            
+            viewController.self.present(viewController, animated: true)
         }
     }
 }

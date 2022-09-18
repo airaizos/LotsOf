@@ -1,5 +1,5 @@
 //
-//  UsersDetailViewController.swift
+//  UserDetailViewController.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 18/9/22.
@@ -7,8 +7,9 @@
 
 import UIKit
 
-final class UsersDetailViewController: UIViewController {
+final class UserDetailViewController: UIViewController {
     var userDetailViewModel: UserDetailViewModel?
+    
     var padding: CGFloat = 20
     
     private lazy var avatarImage: UIImageView = {
@@ -58,18 +59,25 @@ final class UsersDetailViewController: UIViewController {
         ])
     }
     
-    static func create() -> UsersDetailViewController {
-        return UIStoryboard(name: "UsersDetailViewController", bundle: .main).instantiateViewController(withIdentifier: "UsersDetailViewController") as! UsersDetailViewController
-    }
+    
 }
 
-extension UsersDetailViewController {
+extension UserDetailViewController {
     func setupUser() {
-        avatarImage.loadImageUsingCache(withUrl: userDetailViewModel?.avatar ?? "https://reqres.in/img/faces/12-image.jpg")
-        firstNameLabel.text = userDetailViewModel?.firstName
-        lastNameLabel.text = userDetailViewModel?.lastName
-        emailLabel.text = userDetailViewModel?.email
-        idLabel.text = String(describing:userDetailViewModel?.id)
+        avatarImage.loadImageUsingCache(withUrl: userDetailViewModel?.user?.avatar ?? "https://reqres.in/img/faces/12-image.jpg")
+        firstNameLabel.text = userDetailViewModel?.user?.firstName
+        lastNameLabel.text = userDetailViewModel?.user?.lastName
+        emailLabel.text = userDetailViewModel?.user?.email
+        idLabel.text = String(describing:userDetailViewModel?.user?.id)
+    }
+    
+    static func create(with user: UserModel ) -> UIViewController {
+    /*    return UIStoryboard(name: "UserDetailViewController", bundle: .main).instantiateViewController(withIdentifier: "UserDetailViewController") as! UserDetailViewController*/
+        let viewController = UserDetailViewController()
+        viewController.userDetailViewModel?.user = user
+        
+        
+        return viewController
     }
 }
 

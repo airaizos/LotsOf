@@ -8,7 +8,7 @@
 import UIKit
 
 final class UserDetailViewController: UIViewController {
-    var userDetailViewModel: UserDetailViewModel?
+    var viewModel =  UserDetailViewModel()
     
     var padding: CGFloat = 20
     
@@ -64,17 +64,20 @@ final class UserDetailViewController: UIViewController {
 
 extension UserDetailViewController {
     func setupUser() {
-        avatarImage.loadImageUsingCache(withUrl: userDetailViewModel?.user?.avatar ?? "https://reqres.in/img/faces/12-image.jpg")
-        firstNameLabel.text = userDetailViewModel?.user?.firstName
-        lastNameLabel.text = userDetailViewModel?.user?.lastName
-        emailLabel.text = userDetailViewModel?.user?.email
-        idLabel.text = String(describing:userDetailViewModel?.user?.id)
+        
+        guard let user = viewModel.user else { return  }
+        
+        avatarImage.loadImageUsingCache(withUrl: viewModel.user?.avatar ?? "")
+        firstNameLabel.text = user.firstName
+        lastNameLabel.text = user.lastName
+        emailLabel.text = user.email
+        idLabel.text = String(describing: user.id)
     }
     
     static func create(with user: UserModel ) -> UIViewController {
     /*    return UIStoryboard(name: "UserDetailViewController", bundle: .main).instantiateViewController(withIdentifier: "UserDetailViewController") as! UserDetailViewController*/
         let viewController = UserDetailViewController()
-        viewController.userDetailViewModel?.user = user
+        viewController.viewModel.user = user
         
         
         return viewController

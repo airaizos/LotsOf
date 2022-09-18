@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
 final class UserDetailViewModel {
     var user: UserModel?
     
-    
-    func build(with user: UserModel) -> UserModel {
-        let user = user
-        return user
+    func build(with user: UserModel) -> UIViewController {
+        let viewController = UserDetailViewController()
+        viewController.viewModel.user = user
+        return viewController
     }
 }

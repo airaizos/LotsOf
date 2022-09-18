@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 final class UserViewModel {
-
+    
     var userProvider = UserProvider()
     var didUsersFetched = false
     var users = [UserModel]() {
         didSet {
-         didUsersFetched = true
-   
+            didUsersFetched = true
+            
         }
     }
     
@@ -31,6 +31,11 @@ final class UserViewModel {
     
     func getUser(at index: Int) -> UserModel {
         let item = users[index]
+        return item
+    }
+    
+    func didSelectItem(at indexPath: IndexPath) -> UserModel {
+        let item = users[indexPath.row]
         return item
     }
 }

@@ -64,4 +64,16 @@ extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionV
         cell.configure(with: item)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = viewModel.didSelectItem(at: indexPath)
+        navigate(to: item)
+    }
+    
+    func navigate(to item: UserModel) {
+        DispatchQueue.main.async {
+            let viewController = UsersDetailViewController()
+            viewController.            self.present(viewController, animated: true)
+        }
+    }
 }

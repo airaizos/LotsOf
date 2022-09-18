@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//TODO: ¿Porqué tengo que dar a refresh para que se muestran los datos?
 final class UsersCollectionViewController: UIViewController {
     var viewModel = UserViewModel()
     let radius: CGFloat = 8.0
@@ -20,6 +20,7 @@ final class UsersCollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: ¿Porqué tengo que dar a refresh para que se muestran los datos?
         viewModel.fetchUsers()
         setupView()
         setupCollectionView()
@@ -35,8 +36,7 @@ final class UsersCollectionViewController: UIViewController {
     func setupCollectionView() {
         usersCollectionView.delegate = self
         usersCollectionView.dataSource = self
-        
-     
+        //MARK: ¿Cómo inicializar desde una Collection cell creada en el mismo storyboard?
     //    usersCollectionView.register(UserCell.self, forCellWithReuseIdentifier: cellIdentifier)
 usersCollectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
 

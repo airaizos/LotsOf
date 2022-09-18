@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import UIKit
 
 final class UserViewModel {
+
     var userProvider = UserProvider()
     var didUsersFetched = false
     var users = [UserModel]() {
         didSet {
          didUsersFetched = true
+   
         }
     }
     

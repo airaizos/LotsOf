@@ -24,13 +24,9 @@ final class UserProvider {
                 do {
                     let usersResultModel = try JSONDecoder().decode(UserResult.self, from: data)
                     DispatchQueue.main.async {
-                 //       if let weakSelf = self {
+                //MARK: ¿el weakSelf se usa aquí o no?
                             completion(.success( usersResultModel.data))
-                        print(usersResultModel.data[0])
-                            //   weakSelf.users = usersModel
-                            //    print("weakSelf.users: \(weakSelf.users)\n")
-                            //   print("weakSelf.users: \(usersModel)")
-                 //       }
+                   
                     }
                 } catch let error {
                     print("UserError: \(error.localizedDescription)")

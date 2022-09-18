@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//TODO: ¿Cómo creo un modulo con el viewModel, viewController?
 
 struct UserResult: Decodable {
     let page: Int
@@ -26,6 +26,13 @@ struct UserModel: Decodable {
         case firstName = "first_name"
         case lastName = "last_name"
     }
-    
-    
+}
+
+
+struct UserDetailViewModel: Decodable {
+    let id: Int
+    let email: String
+    let firstName: String
+    let lastName: String
+    let avatar: String
 }

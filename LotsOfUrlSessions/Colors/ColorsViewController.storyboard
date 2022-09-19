@@ -77,6 +77,13 @@
                             <constraint firstItem="v3h-Fh-Y5b" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="lT5-Zg-R2U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorImage" destination="58x-ed-53c" id="tTp-2C-knd"/>
+                        <outlet property="idLabel" destination="VpE-fL-guD" id="ER2-lq-V8a"/>
+                        <outlet property="nameLabel" destination="m2I-8w-Ghy" id="2om-zz-daK"/>
+                        <outlet property="pantoneLabel" destination="8BC-Eg-afo" id="BDK-ij-VhX"/>
+                        <outlet property="yearLabel" destination="vJv-0U-00p" id="OSv-hP-Fkx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

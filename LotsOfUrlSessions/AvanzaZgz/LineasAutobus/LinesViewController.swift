@@ -16,24 +16,27 @@ final class LinesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupTableView()
     }
     
     private func setupView() {
-       setupTableView()
-        
+        view.backgroundColor = .systemRed
+      
     }
     
     private func setupTableView() {
    
         linesTableView.dataSource = self
         linesTableView.delegate = self
+        linesTableView.reloadData()
+        viewModel.getLines()
     }
 }
 
 extension LinesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.getLines().count
+        viewModel.busLines.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

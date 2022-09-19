@@ -19,7 +19,7 @@ final class LineViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
-    func configure(with cellViewModel: BusLineCellViewModel) {
-        lineBusLabel.text = cellViewModel.lineName
+    func configure(with line: String) {
+        lineBusLabel.text = line
     }
 }

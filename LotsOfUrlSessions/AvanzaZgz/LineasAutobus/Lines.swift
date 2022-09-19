@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Lines: Codable {
+struct LinesResult: Codable {
     let totalCount, start, rows: Int
-    let result: [BusLine]
+    let result: [String]
 }
 
 struct BusLine: Codable, Equatable {

@@ -15,8 +15,6 @@ final class UserDetailViewController: UIViewController {
     private lazy var avatarImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.layer.cornerRadius = 10
-        
         return image
     }()
     
@@ -45,13 +43,13 @@ final class UserDetailViewController: UIViewController {
         view.addSubview(userInfoStackView)
         view.addSubview(idLabel)
         
+        //TODO: Arreglar Constraints tamaño y rotación
         
-    
-  
         NSLayoutConstraint.activate([
             idLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             idLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 40),
             view.trailingAnchor.constraint(equalTo: idLabel.trailingAnchor, constant: padding),
+        
             
             avatarImage.topAnchor.constraint(greaterThanOrEqualTo: idLabel.bottomAnchor, constant: padding),
             avatarImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -80,7 +78,6 @@ extension UserDetailViewController {
     }
     
     static func create(with user: UserModel ) -> UIViewController {
-    /*    return UIStoryboard(name: "UserDetailViewController", bundle: .main).instantiateViewController(withIdentifier: "UserDetailViewController") as! UserDetailViewController*/
         let viewController = UserDetailViewController()
         viewController.viewModel.user = user
         

@@ -9,7 +9,7 @@ import UIKit
 
 final class ColorsListViewController: UIViewController {
     
-    var viewModel = ColorsViewModel()
+    var viewModel = ColorsListViewModel()
     
     @IBOutlet weak var colorsTableView: UITableView!
 
@@ -50,4 +50,19 @@ extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {
             self.colorsTableView.reloadData()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = viewModel.colorsLists[indexPath.row]
+        navigate(to: item)
+        
+    }
+    
+    func navigate(to item: ColorModel) {
+        DispatchQueue.main.async {
+            let viewController = ColorsViewModel().build(with: item)
+            
+            self.present(viewController, animated: true)
+        }
+    }
+    
 }

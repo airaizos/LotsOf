@@ -25,8 +25,6 @@ final class ColorsNetworking {
                 let requestData = try decoder.decode(ColorsResult.self, from: data)
                 DispatchQueue.main.async {
                     completion(.success(requestData.data))
-                    print(requestData.data[0])
-                    print("otput\(self.output)")
                 }
                 
             } catch let error {

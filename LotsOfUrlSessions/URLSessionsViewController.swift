@@ -8,7 +8,7 @@
 import UIKit
 import LoginModule
 
-class ViewController: UIViewController {
+final class URLSessionsViewController: UIViewController {
     
     @IBOutlet weak var busLines: UIButton!
     

@@ -22,7 +22,7 @@ final class LineViewCell: UITableViewCell {
     func configure(with line: String) {
         var lineName: String  {
             guard let separator = line.lastIndex(of: "/") else { return "/"}
-            var short = String(line[separator...].dropFirst())
+            let short = String(line[separator...].dropFirst())
             return short
         }
         lineBusLabel.text = lineName

@@ -15,7 +15,17 @@ public enum LoginStatus {
 final public class LoginViewModel {
     var networking = LoginNetworking()
     
-    public var loginStatus: LoginStatus = .error
+    public lazy var loginStatus: LoginStatus = .error {
+        didSet {
+            DispatchQueue.main.async {
+                if self.networking.authenticated {
+                    self.loginStatus = .success
+                } else {
+                    self.loginStatus = .error
+                }
+            }
+        }
+    }
     public var didUpdateLoginStatus = false
     
     public func loginWith(email: String, password: String) {

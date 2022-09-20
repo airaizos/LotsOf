@@ -9,7 +9,6 @@ import UIKit
 
 final public class LoginViewController: UIViewController {
 
-   // public init() {}
     public var authenticationViewModel = LoginViewModel()
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -27,10 +26,13 @@ final public class LoginViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: UIButton) {
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        print("Status: \(authenticationViewModel.loginStatus)")
         authenticationViewModel.loginWith(email: email, password: password)
-       //No espera la respuesta
-        showAlert()
-        
+       
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            print("Status: \(self.authenticationViewModel.loginStatus)")
+            self.showAlert()
+        }
     }
     
     func showAlert() {

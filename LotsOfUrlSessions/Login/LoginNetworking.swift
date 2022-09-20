@@ -26,22 +26,25 @@ final public class LoginNetworking {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-                guard let data = data else { return }
-                
-                do {
-                    let loginData = try JSONDecoder().decode(LoginModel.self, from: data)
-                    if loginData.token != nil {
-                        DispatchQueue.main.async {
-                            self.authenticated = true
-                            print("Autenticado con token: \(String(describing: loginData.token))")
-                        }
+            guard let data = data else { return }
+            
+            do {
+                let loginData = try JSONDecoder().decode(LoginModel.self, from: data)
+                if loginData.token != nil {
+                    DispatchQueue.main.async {
+                        self.authenticated = true
+                        print("SignRequest: \(self.authenticated)")
+                        print("Autenticado con token: \(String(describing: loginData.token))")
                     }
-                } catch let error as NSError {
-                    print("error\(error.localizedDescription)")
+                } else {
                     DispatchQueue.main.async {
                         self.authenticated = false
                         print("Error en la autenticación")
+                    }
                 }
+            } catch let error as NSError {
+                print("error\(error.localizedDescription)")
+                
             }
         }.resume()
     }

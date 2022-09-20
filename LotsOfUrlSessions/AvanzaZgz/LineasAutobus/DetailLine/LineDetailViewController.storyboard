@@ -19,27 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-MB-gSq" userLabel="titleLabel">
-                                <rect key="frame" x="20" y="67" width="354" height="41"/>
+                                <rect key="frame" x="20" y="47" width="354" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-1f-iGb">
-                                <rect key="frame" x="16" y="116" width="358" height="300"/>
+                                <rect key="frame" x="20" y="96" width="354" height="300"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3K-cM-cqw">
-                                        <rect key="frame" x="8" y="8" width="342" height="284"/>
+                                        <rect key="frame" x="8" y="8" width="168" height="282"/>
                                         <standardMapConfiguration key="preferredConfiguration"/>
                                     </mapView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="v3K-cM-cqw" firstAttribute="trailing" secondItem="Fxn-1f-iGb" secondAttribute="trailingMargin" id="P5y-oB-qKs"/>
                                     <constraint firstItem="v3K-cM-cqw" firstAttribute="top" secondItem="Fxn-1f-iGb" secondAttribute="topMargin" id="QXM-kn-Gfu"/>
-                                    <constraint firstAttribute="width" constant="358" id="Slv-Kh-KsL"/>
                                     <constraint firstItem="v3K-cM-cqw" firstAttribute="leading" secondItem="Fxn-1f-iGb" secondAttribute="leadingMargin" id="fyD-Xc-KJc"/>
                                     <constraint firstItem="v3K-cM-cqw" firstAttribute="centerY" secondItem="Fxn-1f-iGb" secondAttribute="centerY" id="jwF-Rr-QYM"/>
-                                    <constraint firstItem="v3K-cM-cqw" firstAttribute="bottom" secondItem="Fxn-1f-iGb" secondAttribute="bottomMargin" constant="1" id="tly-li-Nzd"/>
-                                    <constraint firstItem="v3K-cM-cqw" firstAttribute="centerX" secondItem="Fxn-1f-iGb" secondAttribute="centerX" id="xsW-Dy-Hii"/>
+                                    <constraint firstItem="v3K-cM-cqw" firstAttribute="bottom" secondItem="Fxn-1f-iGb" secondAttribute="bottomMargin" id="tly-li-Nzd"/>
                                     <constraint firstAttribute="height" constant="300" id="zx1-jt-heX"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Qy9-El-caJ"/>
@@ -50,11 +48,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fxn-1f-iGb" secondAttribute="trailing" constant="16" id="1fv-I4-v4d"/>
-                            <constraint firstItem="2Zz-MB-gSq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="ARI-Z0-Rnj"/>
+                            <constraint firstItem="2Zz-MB-gSq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ARI-Z0-Rnj"/>
                             <constraint firstItem="2Zz-MB-gSq" firstAttribute="trailing" secondItem="Fxn-1f-iGb" secondAttribute="trailing" id="E6Q-TL-FkI"/>
-                            <constraint firstItem="Fxn-1f-iGb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="HOL-zO-Vv8"/>
+                            <constraint firstItem="Fxn-1f-iGb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="HOL-zO-Vv8"/>
                             <constraint firstItem="Fxn-1f-iGb" firstAttribute="top" secondItem="2Zz-MB-gSq" secondAttribute="bottom" constant="8" id="T2Q-cy-9jF"/>
                             <constraint firstItem="2Zz-MB-gSq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cvT-SY-lZE"/>
+                            <constraint firstItem="v3K-cM-cqw" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" id="mi1-fV-O4P"/>
                         </constraints>
                     </view>
                 </viewController>

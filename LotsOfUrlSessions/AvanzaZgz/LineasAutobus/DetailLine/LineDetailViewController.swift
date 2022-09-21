@@ -8,7 +8,7 @@
 import UIKit
 
 final class LineDetailViewController: UIViewController {
-
+    var viewModel = LineDetailViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

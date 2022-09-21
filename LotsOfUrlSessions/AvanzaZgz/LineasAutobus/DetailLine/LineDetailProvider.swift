@@ -10,7 +10,7 @@ import Foundation
 final class LineDetailProvider {
     var lineModel: LineModel?
     
-    let baseUrl = "http://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus/"
+    private let baseUrl = "http://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus/"
     
     func fetchBusLine(number: String, _ completion: @escaping(Result<LineModel,Error>) -> Void)  {
         guard let url = URL(string: "\(baseUrl)\(number)") else { return }

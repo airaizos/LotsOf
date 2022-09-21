@@ -56,7 +56,7 @@ final class GetViewController: UIViewController {
     }
     
     func getPost() {
-  
+        #warning("Index out of range")
         print(viewModel.items[0])
         idLabel.text = "\(String(describing: viewModel.items[0].id))"
         titleLabel.text = viewModel.items[0].title

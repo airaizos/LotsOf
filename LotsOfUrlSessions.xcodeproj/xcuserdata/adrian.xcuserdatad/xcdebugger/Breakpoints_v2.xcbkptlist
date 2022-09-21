@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FF4771EA-4CFD-4D81-937C-161B7AD760EE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ColorTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4 - 4368beb6ba2c04e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessions.ColorTableViewCell.pantoneLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4 - bcc18e1290c3a0f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessions.ColorTableViewCell.pantoneLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4 - 780e301a07afbfe4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessions.ColorTableViewCell.pantoneLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4 - d802f95b5d65524c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessions.ColorTableViewCell.pantoneLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4 - 27e5e3c166e80a6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessions.ColorTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; LotsOfUrlSessions.ColorTableViewCell"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "FA60EB1C-F349-467A-8528-FEC13500A1E4 - ced4c4196d23e36c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessions.ColorTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LotsOfUrlSessions.ColorTableViewCell&gt;"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOfUrlSessions/Users/ColorTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

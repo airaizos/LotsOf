@@ -53,29 +53,17 @@ final class URLSessionsViewController: UIViewController {
         
         goTo(viewControllerName: "JokesViewController")
     }
-    
-    //DogViewController
+
     @IBAction func goToDogs(_ sender: UIButton) {
         let viewController = DogViewController()
-        /*
-       self.present(viewController, animated: true)
-        */
-        /*
-          let viewController = UIViewController(nibName: "DogViewController", bundle: nil)
-        */
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    
     @IBAction func goToLogin(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "LoginViewController", bundle: nil)
+        let module = LoginModule()
+        let storyboard = module.getModuleStoryboard()
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-        
-      //  LoginModule().getModuleStoryboard()
-
         self.navigationController?.pushViewController(viewController, animated: true)
-        
-        // self.present(viewController, animated: true)
         
     }
     

@@ -42,16 +42,12 @@
 		3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0428D2117500235D59 /* ColorsListViewModel.swift */; };
 		3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0628D2118500235D59 /* ColorsNetworking.swift */; };
 		3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0828D2119D00235D59 /* ColorModel.swift */; };
-		3A1ABA1128D2830F00235D59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0C28D2830F00235D59 /* LoginViewController.swift */; };
-		3A1ABA1228D2830F00235D59 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0D28D2830F00235D59 /* LoginViewModel.swift */; };
-		3A1ABA1328D2830F00235D59 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0E28D2830F00235D59 /* LoginViewController.storyboard */; };
-		3A1ABA1428D2830F00235D59 /* LoginNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA0F28D2830F00235D59 /* LoginNetworking.swift */; };
-		3A1ABA1528D2830F00235D59 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ABA1028D2830F00235D59 /* Login.swift */; };
 		3A262E9128D340320050D8A3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9028D340320050D8A3 /* UserModel.swift */; };
 		3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9228D340D90050D8A3 /* UserProvider.swift */; };
 		3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9428D365F00050D8A3 /* UserViewModel.swift */; };
 		3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */; };
 		3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */; };
+		3A280CF828DB62E200091A46 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3A280CF728DB62E200091A46 /* LoginModule */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -146,16 +142,12 @@
 		3A1ABA0428D2117500235D59 /* ColorsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListViewModel.swift; sourceTree = "<group>"; };
 		3A1ABA0628D2118500235D59 /* ColorsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsNetworking.swift; sourceTree = "<group>"; };
 		3A1ABA0828D2119D00235D59 /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
-		3A1ABA0C28D2830F00235D59 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3A1ABA0D28D2830F00235D59 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		3A1ABA0E28D2830F00235D59 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
-		3A1ABA0F28D2830F00235D59 /* LoginNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworking.swift; sourceTree = "<group>"; };
-		3A1ABA1028D2830F00235D59 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3A262E9028D340320050D8A3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3A262E9228D340D90050D8A3 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
 		3A262E9428D365F00050D8A3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersCollectionViewController.storyboard; sourceTree = "<group>"; };
 		3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewController.swift; sourceTree = "<group>"; };
+		3A280CF628DB625A00091A46 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = LotsOf/LoginModule; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -207,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A280CF828DB62E200091A46 /* LoginModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +311,6 @@
 		3A1ABA0B28D282FC00235D59 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				3A1ABA1028D2830F00235D59 /* Login.swift */,
-				3A1ABA0F28D2830F00235D59 /* LoginNetworking.swift */,
-				3A1ABA0E28D2830F00235D59 /* LoginViewController.storyboard */,
-				3A1ABA0C28D2830F00235D59 /* LoginViewController.swift */,
-				3A1ABA0D28D2830F00235D59 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -410,6 +398,7 @@
 		3AF224CA289A7B34008BEAF0 = {
 			isa = PBXGroup;
 			children = (
+				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
 				3A146DB028DA341500CB1C90 /* LotsOfUsersInterfaces */,
@@ -507,6 +496,7 @@
 			);
 			name = LotsOfUrlSessions;
 			packageProductDependencies = (
+				3A280CF728DB62E200091A46 /* LoginModule */,
 			);
 			productName = LotsOfUrlSessions;
 			productReference = 3AF224D3289A7B34008BEAF0 /* LotsOfUrlSessions.app */;
@@ -612,7 +602,6 @@
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
 				3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */,
-				3A1ABA1328D2830F00235D59 /* LoginViewController.storyboard in Resources */,
 				3A02BB8228C8A8E800D168AE /* OdenzaViewController.storyboard in Resources */,
 				3AF224DE289A7B34008BEAF0 /* URLSessionsViewController.storyboard in Resources */,
 			);
@@ -661,8 +650,6 @@
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
-				3A1ABA1228D2830F00235D59 /* LoginViewModel.swift in Sources */,
-				3A1ABA1528D2830F00235D59 /* Login.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
 				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
@@ -690,12 +677,10 @@
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,
 				3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */,
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
-				3A1ABA1128D2830F00235D59 /* LoginViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
-				3A1ABA1428D2830F00235D59 /* LoginNetworking.swift in Sources */,
 				3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */,
 				3A1AB9F728D1DF7400235D59 /* ColorsViewController.swift in Sources */,
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
@@ -1044,6 +1029,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A280CF728DB62E200091A46 /* LoginModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LoginModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3AF224DF289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld */ = {

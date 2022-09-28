@@ -10,7 +10,8 @@ import Foundation
 struct LineModel: Decodable {
     let title: String
     let result: [GeometryModel]
-
+    var customTitle: String?
+    var isFavorite: Bool? = false
 }
 
 struct GeometryModel: Decodable {
@@ -19,7 +20,7 @@ struct GeometryModel: Decodable {
 
 struct Geometry: Decodable {
     let type: String
-    let coordinates: [[Double]]
+    let coordinates: [[[Double]]]
     
 }
 /*

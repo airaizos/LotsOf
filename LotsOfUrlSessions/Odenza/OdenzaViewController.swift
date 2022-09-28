@@ -35,14 +35,6 @@ final class OdenzaViewController: UIViewController {
         viewModel.deletePosts()
     }
  
-    
-    func goTo(viewControllerName: String){
-        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
-        print("goTo\(viewControllerName)")
-        self.present(viewController, animated: true)
-    }
-    
     func goTo(navigationController: UIViewController) -> UIViewController {
         let viewController = navigationController
         let navigationController  = UINavigationController(rootViewController: viewController)

@@ -6,14 +6,30 @@
 //
 
 import Foundation
+import UIKit
 
 final class LinesViewModel {
+
     let model = LinesProvider()
-    
+    weak var delegate: APIClientDelegate?
     var busLines = [String]()
     
+    func cellViewModel(at IndexPath: IndexPath) -> String {
+        let busLine = busLines[IndexPath.row]
+        return busLine
+    }
+    
+    func didSelectItem(at indexPath: IndexPath) -> String {
+        let item = busLines[indexPath.row]
+        return item
+    }
+    
+
+}
+
+extension LinesViewModel: APIClientDelegate {
+
     func getLines() {
-        
         model.fetchLines({ result in
             switch result {
             case .success(let lineas):
@@ -22,10 +38,5 @@ final class LinesViewModel {
                 self.busLines = ["No se ha podido descargar"]
             }
         })
-    }
-    
-    func cellViewModel(at IndexPath: IndexPath) -> String {
-        let busLine = busLines[IndexPath.row]
-        return busLine
     }
 }

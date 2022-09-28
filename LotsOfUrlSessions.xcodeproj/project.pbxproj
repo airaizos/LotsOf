@@ -24,6 +24,7 @@
 		3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23428CA4B0100C5E396 /* JokesViewController.swift */; };
 		3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D23628CA4B0A00C5E396 /* JokesViewController.storyboard */; };
 		3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D23A28CA866000C5E396 /* JokeSelection.swift */; };
+		3A07A52328DCBB7900F98D50 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07A52228DCBB7900F98D50 /* StringExtension.swift */; };
 		3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A146DAE28DA336300CB1C90 /* Main.storyboard */; };
 		3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A146DB228DA347D00CB1C90 /* ViewController.swift */; };
 		3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */; };
@@ -55,6 +56,11 @@
 		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift */; };
+		3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */; };
+		3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */; };
+		3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */; };
+		3A54726B28E44CC7003CFE4F /* ChaseButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */; };
+		3A54726D28E44CDB003CFE4F /* ChaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726C28E44CDB003CFE4F /* ChaseButton.swift */; };
 		3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953428C641A9001CC044 /* PokemonsViewModel.swift */; };
 		3A86953728C642A4001CC044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953628C642A4001CC044 /* Model.swift */; };
 		3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953828C645DA001CC044 /* PokemonsViewController.swift */; };
@@ -124,6 +130,7 @@
 		3A05D23428CA4B0100C5E396 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		3A05D23628CA4B0A00C5E396 /* JokesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JokesViewController.storyboard; sourceTree = "<group>"; };
 		3A05D23A28CA866000C5E396 /* JokeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeSelection.swift; sourceTree = "<group>"; };
+		3A07A52228DCBB7900F98D50 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3A146DAE28DA336300CB1C90 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A146DB228DA347D00CB1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
@@ -155,6 +162,11 @@
 		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A2FA57928C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelPostsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotsOfAnimationsViewController.storyboard; sourceTree = "<group>"; };
+		3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsOfAnimationsViewController.swift; sourceTree = "<group>"; };
+		3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewController.swift; sourceTree = "<group>"; };
+		3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewModel.swift; sourceTree = "<group>"; };
+		3A54726C28E44CDB003CFE4F /* ChaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButton.swift; sourceTree = "<group>"; };
 		3A86953228C6416B001CC044 /* URLSessionSwiftBeta.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionSwiftBeta.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
 		3A86953628C642A4001CC044 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -280,16 +292,16 @@
 			path = LotsOf;
 			sourceTree = "<group>";
 		};
-		3A14BD9628D8CAEE0040117C /* DetailLine */ = {
+		3A14BD9628D8CAEE0040117C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				3A14BD9928D8CB110040117C /* LineModel.swift */,
+				3A14BD9F28D8CB710040117C /* LineDetailProvider.swift */,
 				3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */,
 				3A14BD9B28D8CB200040117C /* LineDetailViewController.swift */,
 				3A14BD9D28D8CB260040117C /* LineDetailViewController.storyboard */,
-				3A14BD9F28D8CB710040117C /* LineDetailProvider.swift */,
 			);
-			path = DetailLine;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		3A1AB9F528D1DF3800235D59 /* Colors */ = {
@@ -348,8 +360,42 @@
 			children = (
 				3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */,
 				3A1ABA0228D1E5E300235D59 /* ColorExtension.swift */,
+				3A07A52228DCBB7900F98D50 /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A54726228E44B92003CFE4F /* LotsOfAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				3A54726728E44CAB003CFE4F /* ChaseButton */,
+				3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */,
+				3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */,
+			);
+			path = LotsOfAnimations;
+			sourceTree = "<group>";
+		};
+		3A54726728E44CAB003CFE4F /* ChaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */,
+				3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */,
+				3A54726C28E44CDB003CFE4F /* ChaseButton.swift */,
+			);
+			path = ChaseButton;
+			sourceTree = "<group>";
+		};
+		3A5E4BFA28E2FCE3003D7A4F /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				3AF2250C289A86C7008BEAF0 /* Lines.swift */,
+				3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */,
+				3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */,
+				3AF22510289A873D008BEAF0 /* LinesViewController.swift */,
+				3AF2250E289A8733008BEAF0 /* LinesViewController.storyboard */,
+				3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */,
+			);
+			path = Lines;
 			sourceTree = "<group>";
 		};
 		3A86953328C6418A001CC044 /* PokeApi */ = {
@@ -401,6 +447,7 @@
 				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
+				3A54726228E44B92003CFE4F /* LotsOfAnimations */,
 				3A146DB028DA341500CB1C90 /* LotsOfUsersInterfaces */,
 				3AF224D5289A7B34008BEAF0 /* LotsOfUrlSessions */,
 				3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */,
@@ -468,13 +515,8 @@
 		3AF22512289A8741008BEAF0 /* LineasAutobus */ = {
 			isa = PBXGroup;
 			children = (
-				3A14BD9628D8CAEE0040117C /* DetailLine */,
-				3AF2250C289A86C7008BEAF0 /* Lines.swift */,
-				3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */,
-				3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */,
-				3AF22510289A873D008BEAF0 /* LinesViewController.swift */,
-				3AF2250E289A8733008BEAF0 /* LinesViewController.storyboard */,
-				3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */,
+				3A5E4BFA28E2FCE3003D7A4F /* Lines */,
+				3A14BD9628D8CAEE0040117C /* Detail */,
 			);
 			path = LineasAutobus;
 			sourceTree = "<group>";
@@ -596,6 +638,7 @@
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
+				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
@@ -644,6 +687,7 @@
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
 				3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
+				3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */,
 				3A86953728C642A4001CC044 /* Model.swift in Sources */,
 				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,
 				3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */,
@@ -651,6 +695,7 @@
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
+				3A54726D28E44CDB003CFE4F /* ChaseButton.swift in Sources */,
 				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
@@ -668,9 +713,11 @@
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */,
 				3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */,
+				3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */,
 				3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */,
 				3AE6A09028D7982A0041602B /* ColorsViewModel.swift in Sources */,
 				3A14BDA028D8CB710040117C /* LineDetailProvider.swift in Sources */,
+				3A54726B28E44CC7003CFE4F /* ChaseButtonViewModel.swift in Sources */,
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,
 				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
@@ -686,6 +733,7 @@
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
 				3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */,
 				3A14BD9A28D8CB110040117C /* LineModel.swift in Sources */,
+				3A07A52328DCBB7900F98D50 /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

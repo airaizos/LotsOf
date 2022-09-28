@@ -14,6 +14,7 @@ enum ProviderError: Error {
 final class LinesProvider {
     var linesResult: LinesResult?
     var busLines: [String]?
+    weak var delegate: APIClientDelegate?
     
     func fetchLines(_ completion: @escaping(Result<LinesResult,ProviderError>)-> Void) {
         guard let url = URL(string: "https://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus.json") else {  return }
@@ -23,6 +24,7 @@ final class LinesProvider {
                 let decoder = JSONDecoder()
                 let requestData = try decoder.decode(LinesResult.self, from: data)
                 DispatchQueue.main.async {
+                  
                     completion(.success(requestData))
                 }
             }
@@ -31,4 +33,8 @@ final class LinesProvider {
             }
         }.resume()
     }
+}
+
+protocol APIClientDelegate:AnyObject {
+    func getLines()
 }

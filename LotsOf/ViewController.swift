@@ -32,12 +32,9 @@ final class ViewController: UIViewController {
     
     @IBAction func goToUI(_ sender: UIButton) {
     }
-    func goTo(viewControllerName: String){
-        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
-        print("goTo\(viewControllerName)")
-        self.navigationController?.pushViewController(viewController, animated: true)
+   
+    
+    @IBAction func goToAnimations(_ sender: UIButton) {
+        goTo(viewControllerName: "LotsOfAnimationsViewController")
     }
-    
-    
 }

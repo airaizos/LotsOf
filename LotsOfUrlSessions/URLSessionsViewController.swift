@@ -56,14 +56,14 @@ final class URLSessionsViewController: UIViewController {
 
     @IBAction func goToDogs(_ sender: UIButton) {
         let viewController = DogViewController()
-        self.navigationController?.pushViewController(viewController, animated: true)
+        self.present(viewController, animated: true)
     }
     
     @IBAction func goToLogin(_ sender: UIButton) {
         let module = LoginModule()
         let storyboard = module.getModuleStoryboard()
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-        self.navigationController?.pushViewController(viewController, animated: true)
+        self.present(viewController, animated: true)
         
     }
     
@@ -77,12 +77,15 @@ final class URLSessionsViewController: UIViewController {
         goTo(viewControllerName: "UsersCollectionViewController")
     }
     
-    //MARK: Final
+}
+
+extension UIViewController {
     func goTo(viewControllerName: String){
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
         print("goTo\(viewControllerName)")
         self.present(viewController, animated: true)
     }
+    
 }
 

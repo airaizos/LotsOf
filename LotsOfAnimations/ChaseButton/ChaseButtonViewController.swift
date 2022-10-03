@@ -49,7 +49,7 @@ final class ChaseButtonViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(chaseButton)
         view.addSubview(timesTappedLabel)
-        timesTappedLabel.isHidden = true
+        timesTappedLabel.isHidden = false
         timesTappedLabel.text = "\(timesTapped)"
         //timesTappedLabel.isHidden = true
         
@@ -73,20 +73,14 @@ final class ChaseButtonViewController: UIViewController {
     
     @objc private func buttonTapped(sender: UIButton) {
         timesTapped += 1
-        
         randomConstraints()
-        
-        
-        
         UIView.animate(withDuration: 0.1) {
             self.buttonLeadingConstraint?.constant = self.buttonLeadingPosition
             self.buttonTopConstraint?.constant = self.buttonTopPosition
             self.view.layoutIfNeeded()
-            
-            
         }
         if timesTapped % 3 == 0 {
-            showTimesTapped()
+    //        showTimesTapped()
         }
         
         // mover el botón a una posicionar aleatoria
@@ -102,20 +96,21 @@ final class ChaseButtonViewController: UIViewController {
     
     func showTimesTapped() {
         self.timesTappedLabel.isHidden = false
-        
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                UIView.animate(withDuration: 1
-                               /*,
-                               delay: 0,
-                               usingSpringWithDamping: 0.25,
-                               initialSpringVelocity: 0.25,
-                               options: .curveEaseInOut
-                                */) {
+        UIView.animate(withDuration: 1
+                       /*,
+                       delay: 0,
+                       usingSpringWithDamping: 0.25,
+                       initialSpringVelocity: 0.25,
+                       options: .curveEaseInOut
+                        */) {
+          //  DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+               //TODO: NO SE MUESTRA EL LABEL
                 self.timesTappedLabel.text = "\(self.timesTapped)"
                 self.view.layoutIfNeeded()
              
-            }
+            }//
+        timesTappedLabel.isHidden = true
         }
-        self.timesTappedLabel.isHidden = true
-    }
+      
+    
 }

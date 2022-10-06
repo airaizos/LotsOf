@@ -27,7 +27,9 @@
 		3A07A52328DCBB7900F98D50 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A07A52228DCBB7900F98D50 /* StringExtension.swift */; };
 		3A083D8A28EB217100F628E7 /* PostPPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A083D8928EB217100F628E7 /* PostPPS.swift */; };
 		3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A083D8B28EB243E00F628E7 /* PostPPSProvider.swift */; };
-		3A08B50F28EED0B4004173F5 /* postPPSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B50E28EED0B4004173F5 /* postPPSViewModel.swift */; };
+		3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */; };
+		3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */; };
+		3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */; };
 		3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A146DAE28DA336300CB1C90 /* Main.storyboard */; };
 		3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A146DB228DA347D00CB1C90 /* ViewController.swift */; };
 		3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */; };
@@ -136,7 +138,9 @@
 		3A07A52228DCBB7900F98D50 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3A083D8928EB217100F628E7 /* PostPPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPS.swift; sourceTree = "<group>"; };
 		3A083D8B28EB243E00F628E7 /* PostPPSProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSProvider.swift; sourceTree = "<group>"; };
-		3A08B50E28EED0B4004173F5 /* postPPSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postPPSViewModel.swift; sourceTree = "<group>"; };
+		3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewModel.swift; sourceTree = "<group>"; };
+		3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewController.swift; sourceTree = "<group>"; };
+		3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostPPSViewController.storyboard; sourceTree = "<group>"; };
 		3A146DAE28DA336300CB1C90 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A146DB228DA347D00CB1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
@@ -280,7 +284,9 @@
 			children = (
 				3A083D8928EB217100F628E7 /* PostPPS.swift */,
 				3A083D8B28EB243E00F628E7 /* PostPPSProvider.swift */,
-				3A08B50E28EED0B4004173F5 /* postPPSViewModel.swift */,
+				3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */,
+				3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */,
+				3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */,
 			);
 			path = PPS;
 			sourceTree = "<group>";
@@ -651,6 +657,7 @@
 				3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */,
 				3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
+				3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */,
 				3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */,
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */,
@@ -702,7 +709,7 @@
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
 				3A02BB8628C8B9DE00D168AE /* OdenzaViewModel.swift in Sources */,
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
-				3A08B50F28EED0B4004173F5 /* postPPSViewModel.swift in Sources */,
+				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
 				3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */,
@@ -723,6 +730,7 @@
 				3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
+				3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */,
 				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,
 				3A02BB8928C8D91100D168AE /* CreateViewController.swift in Sources */,
 				3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */,

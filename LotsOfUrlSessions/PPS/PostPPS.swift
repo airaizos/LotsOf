@@ -5,7 +5,7 @@
 //  Created by Adrian Iraizos Mendoza on 3/10/22.
 //
 
-import Foundation
+import UIKit
 
 struct PostPPS: Identifiable, Codable{
     let id: Int
@@ -15,7 +15,7 @@ struct PostPPS: Identifiable, Codable{
     }
     let title: Rendered
     let excerpt: Rendered
-    let jetpack_feature_media_url: URL
+    let jetpack_featured_media_url: URL
     let author:Int
 }
 
@@ -32,4 +32,13 @@ struct Author: Identifiable, Codable {
         }
     }
     let avatar_urls: AvatarURLs
+}
+
+
+struct PostFetched {
+    let title: String
+    let excerpt: String
+    let postImage: UIImage
+    let author: String
+    let authorImage: UIImage
 }

@@ -22,7 +22,7 @@ final class OdenzaViewController: UIViewController {
     
     
     @IBAction func getActionButton(_ sender: UIButton) {
-        self.present(goTo(navigationController: GetViewController()),animated: true)
+        self.navigationController?.pushViewController(goTo(navigationController: GetViewController()),animated: true)
     }
     @IBAction func postActionButton(_ sender: UIButton) {
         goTo(viewControllerName: "CreateViewController")

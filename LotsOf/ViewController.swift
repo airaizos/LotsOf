@@ -20,10 +20,7 @@ final class ViewController: UIViewController {
     }
     
     private func setupView() {
-        urlSessionsButton.setTitle("🌐", for: .normal
-        )
-        uibutton.setTitle("📱", for: .normal)
-        
+        title = "Lots Of Practice"
     }
     
     @IBAction func goToURLSessions(_ sender: UIButton) {

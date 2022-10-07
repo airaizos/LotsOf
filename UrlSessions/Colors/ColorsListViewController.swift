@@ -61,7 +61,7 @@ extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {
         DispatchQueue.main.async {
             let viewController = ColorsViewModel().build(with: item)
             
-            self.present(viewController, animated: true)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     

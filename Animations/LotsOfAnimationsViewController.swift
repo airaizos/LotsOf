@@ -17,7 +17,7 @@ final class LotsOfAnimationsViewController: UIViewController {
 
     @IBAction func goToChaseButton(_ sender: UIButton) {
         let viewController = ChaseButtonViewController()
-        self.present(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

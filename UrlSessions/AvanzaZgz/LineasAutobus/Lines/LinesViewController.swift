@@ -62,8 +62,9 @@ extension LinesViewController: UITableViewDataSource, UITableViewDelegate {
         
         DispatchQueue.main.async {
             let viewController = LineDetailViewModel().build(with: lineName)
-            self.present(viewController, animated: true)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
+        
     }
 }
 

@@ -56,16 +56,17 @@ final class URLSessionsViewController: UIViewController {
 
     @IBAction func goToDogs(_ sender: UIButton) {
         let viewController = DogViewController()
-        self.present(viewController, animated: true)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func goToLogin(_ sender: UIButton) {
         let module = LoginModule()
         let storyboard = module.getModuleStoryboard()
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-        self.present(viewController, animated: true)
-        
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
+        
+    
     
     @IBAction func goToColors(_ sender: UIButton) {
         goTo(viewControllerName: "ColorsListViewController")
@@ -90,7 +91,8 @@ extension UIViewController {
         let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
         print("goTo\(viewControllerName)")
-        self.present(viewController, animated: true)
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

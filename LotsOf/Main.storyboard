@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5cc-ja-GZB">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -16,24 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lots of Practice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-P4-cKS">
-                                <rect key="frame" x="20" y="111.00000000000001" width="390" height="40.666666666666671"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" red="0.91743430400000003" green="1" blue="0.39118462469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="165-Xe-5YU">
-                                <rect key="frame" x="20" y="376" width="350" height="149.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="165-Xe-5YU">
+                                <rect key="frame" x="20" y="347.66666666666669" width="350" height="206.00000000000006"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-Zf-NZB">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="75"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-Zf-NZB">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="206"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8c5-gT-oMQ" userLabel="goToURLSessions">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="K3A-ts-9xd"/>
-                                                    <constraint firstAttribute="height" constant="75" id="Lcc-2T-w8W"/>
-                                                </constraints>
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="34.333333333333336"/>
                                                 <color key="tintColor" red="1" green="0.78092316129999995" blue="0.32466726670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="URLSessions"/>
@@ -41,16 +31,33 @@
                                                     <action selector="goToURLSessions:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="t63-Ne-bsx"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc0-1O-W6z" userLabel="goToAnimations">
-                                                <rect key="frame" x="137.66666666666666" y="0.0" width="75" height="75"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-9D-Pc2">
+                                                <rect key="frame" x="0.0" y="34.333333333333314" width="350" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Animations"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Data Persistence"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHq-AP-Rtm">
+                                                <rect key="frame" x="0.0" y="68.666666666666629" width="350" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="OneViewApps"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-Vf-9uW">
+                                                <rect key="frame" x="0.0" y="103" width="350" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc0-1O-W6z" userLabel="goToAnimations">
+                                                <rect key="frame" x="0.0" y="137.33333333333331" width="350" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Animations">
+                                                    <color key="baseForegroundColor" red="1" green="0.38177549049999998" blue="0.6211631218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="goToAnimations:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oSW-Hd-2gN"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="421-cW-fY3" userLabel="goToUI">
-                                                <rect key="frame" x="275" y="0.0" width="75" height="75"/>
+                                                <rect key="frame" x="0.0" y="171.66666666666669" width="350" height="34.333333333333343"/>
                                                 <color key="tintColor" red="0.50962451490000005" green="0.85686947599999996" blue="0.128783911" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="UI" cornerStyle="large"/>
@@ -59,50 +66,23 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="cc0-1O-W6z" firstAttribute="width" secondItem="8c5-gT-oMQ" secondAttribute="width" id="0gc-Ow-8UI"/>
-                                            <constraint firstItem="cc0-1O-W6z" firstAttribute="height" secondItem="8c5-gT-oMQ" secondAttribute="height" id="GOy-AF-Ujb"/>
-                                            <constraint firstItem="421-cW-fY3" firstAttribute="height" secondItem="8c5-gT-oMQ" secondAttribute="height" id="X9H-jE-VmD"/>
-                                            <constraint firstItem="421-cW-fY3" firstAttribute="width" secondItem="8c5-gT-oMQ" secondAttribute="width" id="sNC-Rl-gIx"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="VjY-n6-fSC" userLabel="Second Stack View">
-                                        <rect key="frame" x="0.0" y="95" width="350" height="54.333333333333343"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-9D-Pc2">
-                                                <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="54.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Data Persistence"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHq-AP-Rtm">
-                                                <rect key="frame" x="138.33333333333334" y="0.0" width="111.33333333333334" height="54.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="OneViewApps"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-Vf-9uW">
-                                                <rect key="frame" x="275" y="0.0" width="75" height="54.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                            </button>
-                                        </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="gJj-Zf-NZB" firstAttribute="width" secondItem="165-Xe-5YU" secondAttribute="width" id="5Ny-pi-a5D"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TD8-P4-cKS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="020-Yo-2OA"/>
-                            <constraint firstItem="165-Xe-5YU" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="28J-F9-qaC"/>
-                            <constraint firstItem="TD8-P4-cKS" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="20" id="9VQ-5p-gEl"/>
-                            <constraint firstItem="165-Xe-5YU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-20" id="Kpa-95-HSD"/>
-                            <constraint firstItem="165-Xe-5YU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dBS-tn-1id"/>
-                            <constraint firstItem="TD8-P4-cKS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="eRh-E0-pJ5"/>
+                            <constraint firstItem="165-Xe-5YU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6qp-LB-nFz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="165-Xe-5YU" secondAttribute="trailing" constant="20" id="Etw-0f-rpz"/>
+                            <constraint firstItem="165-Xe-5YU" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="LuA-vf-DOK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dxn-Yp-77d"/>
                     <connections>
-                        <outlet property="lotsOfPracticeLabel" destination="TD8-P4-cKS" id="WjU-Bh-VvI"/>
                         <outlet property="uibutton" destination="421-cW-fY3" id="Saq-IZ-sOp"/>
                         <outlet property="urlSessionsButton" destination="8c5-gT-oMQ" id="DAx-rf-f19"/>
                     </connections>

@@ -177,7 +177,6 @@
 		3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewController.swift; sourceTree = "<group>"; };
 		3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewModel.swift; sourceTree = "<group>"; };
 		3A54726C28E44CDB003CFE4F /* ChaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButton.swift; sourceTree = "<group>"; };
-		3A86953228C6416B001CC044 /* URLSessionSwiftBeta.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionSwiftBeta.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
 		3A86953628C642A4001CC044 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3A86953828C645DA001CC044 /* PokemonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewController.swift; sourceTree = "<group>"; };
@@ -291,24 +290,22 @@
 			path = PPS;
 			sourceTree = "<group>";
 		};
-		3A146DB028DA341500CB1C90 /* LotsOfUsersInterfaces */ = {
+		3A146DB028DA341500CB1C90 /* UsersInterfaces */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = LotsOfUsersInterfaces;
+			path = UsersInterfaces;
 			sourceTree = "<group>";
 		};
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
+				3AC1BAA028F031DA009E1F36 /* Resources */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
 				3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */,
-				3A86953228C6416B001CC044 /* URLSessionSwiftBeta.playground */,
-				3AF224E2289A7B36008BEAF0 /* Assets.xcassets */,
 				3AF224E4289A7B36008BEAF0 /* LaunchScreen.storyboard */,
-				3AF224DF289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld */,
 				3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */,
 			);
 			path = LotsOf;
@@ -387,14 +384,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3A54726228E44B92003CFE4F /* LotsOfAnimations */ = {
+		3A54726228E44B92003CFE4F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
 				3A54726728E44CAB003CFE4F /* ChaseButton */,
 				3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */,
 				3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */,
 			);
-			path = LotsOfAnimations;
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		3A54726728E44CAB003CFE4F /* ChaseButton */ = {
@@ -445,6 +442,46 @@
 			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
+		3AC1BA9C28F0313E009E1F36 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		3AC1BA9D28F0314C009E1F36 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3AF224F9289A7B36008BEAF0 /* LotsOfUrlSessionsUITests */,
+				3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataPersistance;
+			sourceTree = "<group>";
+		};
+		3AC1BAA028F031DA009E1F36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AF224DF289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld */,
+				3AF224E2289A7B36008BEAF0 /* Assets.xcassets */,
+				3AF224E7289A7B36008BEAF0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3ADAF59D28CF9E6600C31731 /* Dog */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,11 +506,13 @@
 				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
-				3A54726228E44B92003CFE4F /* LotsOfAnimations */,
-				3A146DB028DA341500CB1C90 /* LotsOfUsersInterfaces */,
-				3AF224D5289A7B34008BEAF0 /* LotsOfUrlSessions */,
-				3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */,
-				3AF224F9289A7B36008BEAF0 /* LotsOfUrlSessionsUITests */,
+				3AC1BA9F28F031BD009E1F36 /* DataPersistance */,
+				3AC1BA9D28F0314C009E1F36 /* TableViews */,
+				3AC1BA9C28F0313E009E1F36 /* CollectionViews */,
+				3A54726228E44B92003CFE4F /* Animations */,
+				3A146DB028DA341500CB1C90 /* UsersInterfaces */,
+				3AF224D5289A7B34008BEAF0 /* UrlSessions */,
+				3AC1BA9E28F0316C009E1F36 /* Tests */,
 				3AF224D4289A7B34008BEAF0 /* Products */,
 				3AE2A68528D0F50100E4EFCA /* Frameworks */,
 			);
@@ -489,11 +528,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3AF224D5289A7B34008BEAF0 /* LotsOfUrlSessions */ = {
+		3AF224D5289A7B34008BEAF0 /* UrlSessions */ = {
 			isa = PBXGroup;
 			children = (
 				3A083D8828EB216200F628E7 /* PPS */,
-				3AF224E7289A7B36008BEAF0 /* Info.plist */,
 				3AF224DA289A7B34008BEAF0 /* URLSessionsViewController.swift */,
 				3AF224DC289A7B34008BEAF0 /* URLSessionsViewController.storyboard */,
 				3AF22509289A7B85008BEAF0 /* AvanzaZgz */,
@@ -507,7 +545,7 @@
 				3A1AB9F528D1DF3800235D59 /* Colors */,
 				3A262E8F28D340220050D8A3 /* Users */,
 			);
-			path = LotsOfUrlSessions;
+			path = UrlSessions;
 			sourceTree = "<group>";
 		};
 		3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */ = {
@@ -940,7 +978,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6SPUJN2479;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LotsOfUrlSessions/Info.plist;
+				INFOPLIST_FILE = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -969,7 +1007,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6SPUJN2479;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LotsOfUrlSessions/Info.plist;
+				INFOPLIST_FILE = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

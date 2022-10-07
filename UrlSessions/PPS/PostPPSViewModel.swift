@@ -7,13 +7,14 @@
 
 import Foundation
 
-final class postPPSViewModel {
+final class PostPPSViewModel {
     let provider = PostPPSProvider()
     
-    var post = [PostPPS]()
+    var post = [PostFetched]()
     
-    func getFetch() -> PostPPS {
-        provider.getPosts()
+    func getFetch() {
+        DispatchQueue.main.async {
+            self.provider.getPosts()
+        }
     }
-    
 }

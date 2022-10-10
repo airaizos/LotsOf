@@ -22,7 +22,7 @@ final class PostPPSViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       setupView()
+        setupView()
     }
     
     func loadData() {
@@ -30,24 +30,21 @@ final class PostPPSViewController: UIViewController {
     }
     
     func setupView() {
-
-        if viewModel.post.isEmpty {
-            postImage.image = UIImage(named: "loadingImage.jpeg")
-            titleLabel.text = "Title"
-            authorLabel.text = "Author"
-            avatarImage.image = UIImage(named: "loadingImage.jpeg")
-            bodyTextView.text = "body"
-        } else {
-            postImage.image = UIImage(named: "\(viewModel.post[0].postImage)")
-            titleLabel.text = viewModel.post[0].title
-            authorLabel.text = viewModel.post[0].author
-            bodyTextView.text = viewModel.post[0].excerpt
-            
-        }
         
+        guard let post = viewModel.provider.post else { return  }
+       
+        postImage.image = post.postImage
+        print("\(post.postImage)")
         
-        
+        avatarImage.image = post.authorImage
+        print("\(post.authorImage)")
+        titleLabel.text = post.title
+        authorLabel.text = post.author
+        bodyTextView.text = post.excerpt.html2String
     }
-
-
+   
+    @IBAction func refreshViewButton(_ sender: UIButton) {
+        setupView()
+    }
+    
 }

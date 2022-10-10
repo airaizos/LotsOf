@@ -14,7 +14,7 @@ struct PostPPS: Identifiable, Codable{
         let rendered: String
     }
     let title: Rendered
-    let excerpt: Rendered
+    let content: Rendered
     let jetpack_featured_media_url: URL
     let author:Int
 }

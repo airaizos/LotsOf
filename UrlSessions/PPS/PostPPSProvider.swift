@@ -11,11 +11,6 @@ import Combine
 final class PostPPSProvider {
     var postPPS: PostPPS?
     var post: PostFetched?
-    var title: String?
-    var excerpt: String?
-    var postImage: UIImage?
-    var author: String?
-    var authorImage: UIImage?
     
     var subscribers = Set<AnyCancellable>()
     let urlAppleCoding = "applecoding.com"
@@ -47,7 +42,7 @@ final class PostPPSProvider {
             .dataTaskPublisher(for: url)
             .map(\.data)
             .decode(type: [PostPPS].self, decoder: JSONDecoder())
-            .compactMap { $0.first }
+            .compactMap { $0.last }
              
             .share()
             .eraseToAnyPublisher()
@@ -78,7 +73,7 @@ final class PostPPSProvider {
                 
             } receiveValue: { post, image, author, avatar in
                 
-                self.post = PostFetched(title: post.title.rendered, excerpt: post.excerpt.rendered, postImage: image, author: author.name, authorImage: avatar)
+                self.post = PostFetched(title: post.title.rendered, excerpt:  post.content.rendered, postImage: image, author: author.name, authorImage: avatar)
                 
                 print("Title: \(post.title.rendered)")
                 print("Author: \(author.name)")

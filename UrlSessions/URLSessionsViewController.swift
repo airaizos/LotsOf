@@ -84,7 +84,13 @@ final class URLSessionsViewController: UIViewController {
     }
     
     @IBAction func goToPPSImages(_ sender: UIButton) {
-        goTo(viewControllerName: "PPSImageViewController")
+        if #available(iOS 14.0, *) {
+            let viewController = PPSImageCodeViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            // Fallback on earlier versions
+        }
+        
     }
     
 }

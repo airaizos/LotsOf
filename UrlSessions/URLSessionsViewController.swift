@@ -83,6 +83,9 @@ final class URLSessionsViewController: UIViewController {
         
     }
     
+    @IBAction func goToPPSImages(_ sender: UIButton) {
+        goTo(viewControllerName: "PPSImageViewController")
+    }
     
 }
 

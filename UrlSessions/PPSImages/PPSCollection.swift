@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct FotoUUID {
+struct FotoUUID: Hashable {
     let id = UUID()
     let image: UIImage
 }

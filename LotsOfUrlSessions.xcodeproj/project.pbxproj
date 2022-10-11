@@ -31,6 +31,11 @@
 		3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */; };
 		3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
+		3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4928F5F45B00673B79 /* ImageLoader.swift */; };
+		3A134F4D28F6002400673B79 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4C28F6002400673B79 /* FactModel.swift */; };
+		3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A134F4E28F6019F00673B79 /* FactViewController.storyboard */; };
+		3A134F5128F6032100673B79 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F5028F6032100673B79 /* FactViewController.swift */; };
+		3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F5228F603C400673B79 /* FactViewModel.swift */; };
 		3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A146DAE28DA336300CB1C90 /* Main.storyboard */; };
 		3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A146DB228DA347D00CB1C90 /* ViewController.swift */; };
 		3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */; };
@@ -149,6 +154,11 @@
 		3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewController.swift; sourceTree = "<group>"; };
 		3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostPPSViewController.storyboard; sourceTree = "<group>"; };
 		3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImageCodeViewController.swift; sourceTree = "<group>"; };
+		3A134F4928F5F45B00673B79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		3A134F4C28F6002400673B79 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		3A134F4E28F6019F00673B79 /* FactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FactViewController.storyboard; sourceTree = "<group>"; };
+		3A134F5028F6032100673B79 /* FactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
+		3A134F5228F603C400673B79 /* FactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModel.swift; sourceTree = "<group>"; };
 		3A146DAE28DA336300CB1C90 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A146DB228DA347D00CB1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
@@ -302,6 +312,25 @@
 				3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */,
 			);
 			path = PPS;
+			sourceTree = "<group>";
+		};
+		3A134F4828F5F42F00673B79 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				3A134F4928F5F45B00673B79 /* ImageLoader.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		3A134F4B28F5FE4D00673B79 /* Facts */ = {
+			isa = PBXGroup;
+			children = (
+				3A134F4C28F6002400673B79 /* FactModel.swift */,
+				3A134F4E28F6019F00673B79 /* FactViewController.storyboard */,
+				3A134F5028F6032100673B79 /* FactViewController.swift */,
+				3A134F5228F603C400673B79 /* FactViewModel.swift */,
+			);
+			path = Facts;
 			sourceTree = "<group>";
 		};
 		3A146DB028DA341500CB1C90 /* UsersInterfaces */ = {
@@ -573,6 +602,8 @@
 				3A262E8F28D340220050D8A3 /* Users */,
 				3A083D8828EB216200F628E7 /* PPS */,
 				3A195D3F28F476A2004E0477 /* PPSImages */,
+				3A134F4B28F5FE4D00673B79 /* Facts */,
+				3A134F4828F5F42F00673B79 /* ImageLoader */,
 			);
 			path = UrlSessions;
 			sourceTree = "<group>";
@@ -733,6 +764,7 @@
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
+				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
@@ -782,13 +814,16 @@
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
 				3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
+				3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */,
 				3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */,
 				3A86953728C642A4001CC044 /* Model.swift in Sources */,
 				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,
 				3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */,
 				3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */,
+				3A134F4D28F6002400673B79 /* FactModel.swift in Sources */,
 				3A195D3E28F47697004E0477 /* PPSCollection.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
+				3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */,
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
@@ -805,6 +840,7 @@
 				3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */,
 				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,
 				3A02BB8928C8D91100D168AE /* CreateViewController.swift in Sources */,
+				3A134F5128F6032100673B79 /* FactViewController.swift in Sources */,
 				3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */,
 				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */,

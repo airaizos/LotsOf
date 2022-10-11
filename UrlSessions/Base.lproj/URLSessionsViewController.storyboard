@@ -189,6 +189,35 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4Tu-V4-Jyw" userLabel="Fourth Stack View">
+                                        <rect key="frame" x="0.0" y="590" width="365" height="34.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbX-sE-Goq">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="34.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Facts"/>
+                                                <connections>
+                                                    <action selector="goToFacts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wQ-qe-HCu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLE-bd-yIU">
+                                                <rect key="frame" x="90" y="0.0" width="75" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ur8-2e-b96">
+                                                <rect key="frame" x="190" y="0.0" width="75" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teO-RQ-k6c">
+                                                <rect key="frame" x="290" y="0.0" width="75" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AP4-Vj-edQ" firstAttribute="trailing" secondItem="LFO-tm-q5A" secondAttribute="trailing" id="48F-q1-pCJ"/>

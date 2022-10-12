@@ -42,7 +42,6 @@ final class FactViewController: UIViewController {
     
     @IBAction func addFactAction(_ sender: UIBarButtonItem) {
         viewModel.fetchFact()
-     //   viewModel.addFactToFacts()
     }
     
 }

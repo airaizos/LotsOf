@@ -10,7 +10,13 @@ import Combine
 
 final class PostPPSProvider {
     var postPPS: PostPPS?
-    var post: PostFetched?
+    var post: PostFetched? {
+        didSet {
+            refreshData()
+        }
+    }
+    
+    var refreshData = { () -> () in }
     
     var subscribers = Set<AnyCancellable>()
     let urlAppleCoding = "applecoding.com"
@@ -19,7 +25,7 @@ final class PostPPSProvider {
     let url = URL(string: "https://applecoding.com/wp-json/wp/v2/posts")!
     let urlAuthor = URL(string: "https://applecoding.com/wp-json/wp/v2/users")!
     
-    func getImagePublisher(url: URL) -> AnyPublisher<UIImage,Error> {
+   private func getImagePublisher(url: URL) -> AnyPublisher<UIImage,Error> {
         URLSession.shared
             .dataTaskPublisher(for: url)
             .map(\.data)
@@ -28,7 +34,7 @@ final class PostPPSProvider {
             .eraseToAnyPublisher()
     }
     
-    func getAuthorPublisher(author: Int) -> AnyPublisher<Author,Error> {
+   private func getAuthorPublisher(author: Int) -> AnyPublisher<Author,Error> {
         URLSession.shared
             .dataTaskPublisher(for: urlAuthor.appendingPathComponent("\(author)"))
             .map(\.data)

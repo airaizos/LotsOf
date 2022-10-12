@@ -10,11 +10,8 @@ import Foundation
 final class PostPPSViewModel {
     let provider = PostPPSProvider()
     
-   
-    
     func getFetch() {
-        DispatchQueue.main.async {
-            self.provider.getPosts()
-        }
+            provider.getPosts()
+        
     }
 }

@@ -27,7 +27,7 @@ final class PPSImageViewController: UIViewController {
             cell.contentConfiguration = listContentConfiguration
         }
         let dataSource = UICollectionViewDiffableDataSource<Int,FotoUUID>(collectionView: imageCollectionView) { collectionView, indexPath, model in
-
+            
             return collectionView.dequeueConfiguredReusableCell(using: fotoCell, for: indexPath, item: model)
         }
         return dataSource
@@ -37,24 +37,30 @@ final class PPSImageViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         viewModel.getImages()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       setupImageCollectionView()
+        
+        bind()
     }
-    
+    private func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.setupImageCollectionView()
+            }
+            
+        }
+    }
     
     //recupera las imágenes, pero no las muestra
     func setupImageCollectionView() {
-        DispatchQueue.main.async {
-            
-            var snapshot = self.imagesDataSource.snapshot()
-            snapshot.appendSections([0])
-            snapshot.appendItems(self.viewModel.imagesPPS)
-            self.imagesDataSource.apply(snapshot)
-        }
+        
+        var snapshot = self.imagesDataSource.snapshot()
+        snapshot.appendSections([0])
+        snapshot.appendItems(self.viewModel.imagesPPS)
+        self.imagesDataSource.apply(snapshot)
+        
     }
-
+    
 }
 

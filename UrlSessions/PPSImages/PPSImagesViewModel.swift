@@ -11,8 +11,13 @@ import Combine
 final class PPSImagesViewModel {
     
     var subscribers = Set<AnyCancellable>()
-    var imagesPPS: [FotoUUID] = []
+    var imagesPPS: [FotoUUID] = [] {
+        didSet {
+            refreshData()
+        }
+    }
     
+    var refreshData = {() -> () in }
     
     var imagePublishers: [AnyPublisher<FotoUUID,URLError>] {
         PPSCollection().images.map {

@@ -11,7 +11,7 @@ import Foundation
 final class FactViewModel {
     // mediante una closure se mantiene actualizado
     //Mecanismo para enlazar la vista con este modelo de vista
-    var refreshData = { ()-> () in }
+    var refreshData = { () -> () in  }
     
     //Fuente de datos Array
     var fact: FactModel? {

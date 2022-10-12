@@ -22,7 +22,7 @@ final class PostPPSViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        bind()
     }
     
     func loadData() {
@@ -47,4 +47,11 @@ final class PostPPSViewController: UIViewController {
         setupView()
     }
     
+    private func bind() {
+        viewModel.provider.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.setupView()
+            }
+        }
+    }
 }

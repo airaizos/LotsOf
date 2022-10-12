@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 final class DogViewModel {
     let networking = DogNetworking()
     

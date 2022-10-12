@@ -8,7 +8,12 @@
 import Foundation
 
 final class DogNetworking {
-    var dogs = [Dog(id: "", url: "", width: 0, height: 0)]
+    var dogs = [Dog(id: "", url: "", width: 0, height: 0)] {
+        didSet {
+            refreshData()
+        }
+    }
+    var refreshData = { () -> () in }
     
     func executeRequestedDog() {
      let url = "https://api.thedogapi.com/v1/images/search"

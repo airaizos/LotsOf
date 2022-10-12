@@ -12,7 +12,7 @@ final class PokemonsViewController: UIViewController {
     var viewModel = PokemonsViewModel()
     
     @IBOutlet weak var tableView: UITableView!
- 
+    
     func reloadData() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -26,18 +26,27 @@ final class PokemonsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     func setupView() {
         title = "Pokemons"
         viewModel.getPokemons()
-  
-      
+        bind()
+        
     }
     func setupTableView() {
         tableView.dataSource = self
     }
+    
+    private func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+    }
+
 }
 
 extension PokemonsViewController: UITableViewDataSource {

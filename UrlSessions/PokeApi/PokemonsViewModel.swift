@@ -9,7 +9,12 @@ import Foundation
 
 final class PokemonsViewModel {
     
-    var pokemons: [PokemonDataModel] = []
+    var refreshData = { () -> () in }
+    var pokemons: [PokemonDataModel] = [] {
+        didSet {
+            refreshData()
+        }
+    }
     
     func getPokemons() {
         let url = URL(string: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=5")

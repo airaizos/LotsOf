@@ -9,10 +9,13 @@ import Foundation
 
 
 final class ColorsListViewModel {
-    
     var networking = ColorsNetworking()
-    
-    var colorsLists: [ColorModel] = []
+    var refreshData = { () -> () in }
+    var colorsLists: [ColorModel] = [] {
+        didSet {
+            refreshData()
+        }
+    }
     
     func getColorsList() {
         networking.fetchColors { result in

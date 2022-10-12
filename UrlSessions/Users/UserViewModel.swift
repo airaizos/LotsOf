@@ -10,12 +10,12 @@ import UIKit
 
 final class UserViewModel {
     
-    var userProvider = UserProvider()
-    var didUsersFetched = false
+    private var userProvider = UserProvider()
+    var refreshData = { () -> () in }
+    
     var users = [UserModel]() {
         didSet {
-            didUsersFetched = true
-            
+           refreshData()
         }
     }
     

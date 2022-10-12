@@ -15,6 +15,4 @@ final class ColorsViewModel {
         let viewController = ColorsViewController.create(with: color)
         return viewController
     }
-    
-    
 }

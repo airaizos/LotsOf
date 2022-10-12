@@ -26,6 +26,7 @@ final class ColorsViewController: UIViewController {
     func setupView() {
         
     }
+  
     
     func setupColor() {
         guard let color  = viewModel.color else { return }

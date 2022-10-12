@@ -9,8 +9,8 @@ import Foundation
 
 final class ColorsNetworking {
     
-    var result: ColorsResult = .empty
-   var output: [ColorModel] = [.empty]
+//   var result: ColorsResult = .empty
+  // var output: [ColorModel] = [.empty]
     
     let url = "https://reqres.in/api/unknown"
     

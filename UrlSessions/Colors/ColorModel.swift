@@ -10,7 +10,6 @@ import Foundation
 
 struct ColorsResult: Decodable{
     static var  empty: Self = .init(data: [ColorModel(id: 0, name: "name", year: 0, color: "color", pantoneValue: "pantone")])
-
     var data : [ColorModel]
     
 }

@@ -16,7 +16,6 @@ final class ColorsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupColorsTableView()
-       // viewModel.fetchColors()
         viewModel.getColorsList()
         reloadData()
     }
@@ -46,8 +45,10 @@ extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {
         }
     
     func reloadData() {
-        DispatchQueue.main.async {
-            self.colorsTableView.reloadData()
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.colorsTableView.reloadData()
+            }
         }
     }
     

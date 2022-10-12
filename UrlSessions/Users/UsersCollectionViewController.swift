@@ -9,7 +9,7 @@ import UIKit
 //TODO: ¿Porqué tengo que dar a refresh para que se muestran los datos?
 final class UsersCollectionViewController: UIViewController {
     var viewModel = UserViewModel()
-    let radius: CGFloat = 8.0
+    private let radius: CGFloat = 8.0
     private let cellIdentifier = "userCell"
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -26,29 +26,40 @@ final class UsersCollectionViewController: UIViewController {
         setupCollectionView()
     }
     
-    func setupView() {
+    private func setupView() {
         usersLabel.layer.cornerRadius = radius
         usersCollectionView.layer.cornerRadius = radius
         usersCollectionView.reloadData()
         usersLabel.text = "Users List"
         activityIndicator.startAnimating()
+        bind()
     }
-    func setupCollectionView() {
+    
+    private func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.usersCollectionView.reloadData()
+                self?.activityIndicator.stopAnimating()
+                self?.activityIndicator.isHidden = true
+            }
+        }
+    }
+    
+    private func setupCollectionView() {
         usersCollectionView.delegate = self
         usersCollectionView.dataSource = self
         //MARK: ¿Cómo inicializar desde una Collection cell creada en el mismo storyboard?
-    //    usersCollectionView.register(UserCell.self, forCellWithReuseIdentifier: cellIdentifier)
-usersCollectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-
+        //    usersCollectionView.register(UserCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        usersCollectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
+        
     }
     
     
     @IBAction func refreshCollectionView(_ sender: UIButton) {
-            self.usersCollectionView.reloadData()
-        if viewModel.didUsersFetched {
-            activityIndicator.stopAnimating()
-            activityIndicator.isHidden = true
-        }
+        self.usersCollectionView.reloadData()
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        
     }
 }
 
@@ -59,7 +70,7 @@ extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = viewModel.users[indexPath.row]
-
+        
         guard let cell = usersCollectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? UserCell else { fatalError("No se puede cargar userCollectionCell")}
         cell.configure(with: item)
         return cell
@@ -74,7 +85,7 @@ extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionV
         DispatchQueue.main.async {
             let viewController = UserDetailViewModel().build(with: item)
             
-           self.present(viewController, animated: true)
+            self.present(viewController, animated: true)
         }
     }
 }

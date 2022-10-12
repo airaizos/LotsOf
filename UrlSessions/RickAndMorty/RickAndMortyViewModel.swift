@@ -8,7 +8,13 @@
 import Foundation
 
 final class RickAndMortyViewModel {
-    var characterBasicInfo: CharacterBasicInfo = .empty
+    var refreshData = { () -> () in }
+    
+    var characterBasicInfo: CharacterBasicInfo = .empty {
+        didSet {
+            refreshData()
+        }
+    }
   
     func executeRequest() {
         let randomNumber = Int.random(in: 1..<100)

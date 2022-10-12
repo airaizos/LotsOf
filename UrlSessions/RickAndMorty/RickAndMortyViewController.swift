@@ -29,10 +29,15 @@ final class RickAndMortyViewController: UIViewController {
         super.viewDidLoad()
         //TODO: No carga la primera descarga
         viewModel.executeRequest()
-        setupViewOne()
-        view.layoutSubviews()
+        bind()
     }
-    
+    private func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.setupViewOne()
+            }
+        }
+    }
 
     
     func setupViewOne() {

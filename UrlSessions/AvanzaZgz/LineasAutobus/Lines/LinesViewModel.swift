@@ -9,10 +9,14 @@ import Foundation
 import UIKit
 
 final class LinesViewModel {
-
+    var refreshData = { () -> () in }
     let model = LinesProvider()
     weak var delegate: APIClientDelegate?
-    var busLines = [String]()
+    var busLines = [String]() {
+        didSet {
+            refreshData()
+        }
+    }
     
     func cellViewModel(at IndexPath: IndexPath) -> String {
         let busLine = busLines[IndexPath.row]

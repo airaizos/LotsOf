@@ -33,6 +33,15 @@ final class LinesViewController: UIViewController {
         linesTableView.delegate = self
         linesTableView.reloadData()
         viewModel.getLines()
+        bind()
+    }
+    
+    private func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.linesTableView.reloadData()
+            }
+        }
     }
 }
 

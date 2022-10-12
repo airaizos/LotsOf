@@ -13,20 +13,26 @@ final class GetViewController: UIViewController {
     var idLabel: UILabel = {
         let label = UILabel()
         label.text = "id"
+        label.font = .preferredFont(forTextStyle: .subheadline)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
     
     var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "title"
+        label.font = .preferredFont(forTextStyle: .title1)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
     var bodyLabel: UILabel = {
         let label = UILabel()
         label.text = "body"
+        label.font = .preferredFont(forTextStyle: .body)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
     
@@ -41,7 +47,8 @@ final class GetViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         viewModel.retrievePosts()
-        getPost()
+        bind()
+        
     }
     
     func setupView() {
@@ -55,11 +62,18 @@ final class GetViewController: UIViewController {
         ])
     }
     
+    func bind() {
+        viewModel.refreshData = {
+            DispatchQueue.main.async {
+                self.getPost()
+            }
+        }
+    }
+    
     func getPost() {
-        #warning("Index out of range")
-        print(viewModel.items[0])
-        idLabel.text = "\(String(describing: viewModel.items[0].id))"
-        titleLabel.text = viewModel.items[0].title
-        bodyLabel.text = viewModel.items[0].body
+        guard let item = viewModel.items.first else { return }
+        idLabel.text = "\(item.id!)"
+        titleLabel.text = item.title
+        bodyLabel.text = item.body
     }
 }

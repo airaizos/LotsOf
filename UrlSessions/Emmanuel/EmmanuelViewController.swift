@@ -7,52 +7,41 @@
 
 import UIKit
 
-final class EmmanuelViewController: UIViewController {
-
-    let viewModel = EmmanuelViewModel()
-    @IBOutlet weak var loadButton: UIButton!
+final class EmmanuelViewController: UIViewController, UICollectionViewDelegate {
     
+    let viewModel = EmmanuelViewModel()
     @IBOutlet weak var collectionView: UICollectionView!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         viewModel.fetchPosts()
     }
     
-    
-    func reloadData() {
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         setupView()
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        reloadData()
         viewModel.postPosts()
     }
     
     
     func setupView() {
         title = "Emmanuel Posts"
+        collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(EmmanuelPostsCollectionViewCell.self, forCellWithReuseIdentifier: "emmanuelCollectionCell")
+        binding()
     }
-
     
-    @IBAction func loadAction(_ sender: UIButton) {
-        loadButton.titleLabel?.text = viewModel.titleButton()
-        
-        print("\(String(describing: loadButton.titleLabel?.text))")
-        view.layoutSubviews()
-    }
-    @objc private func loadData() {
-        
+    func binding() {
+        viewModel.refreshPost = { [weak self] in
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+           //     self?.loadButton.titleLabel?.text = self?.viewModel.titleButton()
+            }
+        }
     }
     
 }
@@ -64,10 +53,10 @@ extension EmmanuelViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "emmanuelCollectionCell", for: indexPath) as! EmmanuelPostsCollectionViewCell
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EmmanuelViewCell", for: indexPath) as? EmmanuelViewCell else { fatalError() }
         
         let model = viewModel.emmanuelPosts[indexPath.row]
-        
         cell.configure(with: model)
         return cell
     }

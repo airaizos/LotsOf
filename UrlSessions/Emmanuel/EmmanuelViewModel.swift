@@ -9,6 +9,7 @@ import Foundation
 
 final class EmmanuelViewModel {
     //MARK: POST
+    var refreshPost = { () -> () in }
     
     func postPosts() {
         let firstPost = [
@@ -38,7 +39,11 @@ final class EmmanuelViewModel {
     }
     
     //MARK: GET
-    var emmanuelPosts: [EmmanuelModel] = []
+    var emmanuelPosts: [EmmanuelModel] = [] {
+        didSet {
+            refreshPost()
+        }
+    }
     func fetchPosts(){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else { return }
         
@@ -47,12 +52,10 @@ final class EmmanuelViewModel {
                 print("Error urlSession")
             } else {
                 if let data = data, let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
-                    
                     let postDataModel = try! JSONDecoder().decode([EmmanuelModel].self, from: data)
-                    
                     DispatchQueue.main.async {
                         self.emmanuelPosts = postDataModel
-                        print("\(self.emmanuelPosts[0])")
+                        
                     }
                 }
             }

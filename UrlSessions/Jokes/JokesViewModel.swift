@@ -8,7 +8,12 @@
 import Foundation
 
 final class JokesViewModel {
-    var joke: JokeModel = .empty
+    var refreshData = { () -> () in }
+    var joke: JokeModel = .empty {
+        didSet {
+            refreshData()
+        }
+    }
     
     func fetchJoke(with parameters: String) {
        

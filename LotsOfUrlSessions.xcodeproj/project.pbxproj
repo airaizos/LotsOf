@@ -72,7 +72,7 @@
 		3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */; };
 		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
-		3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift */; };
+		3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */; };
 		3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */; };
 		3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */; };
 		3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */; };
@@ -195,7 +195,7 @@
 		3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewModel.swift; sourceTree = "<group>"; };
 		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
-		3A2FA57928C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelPostsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewCell.swift; sourceTree = "<group>"; };
 		3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotsOfAnimationsViewController.storyboard; sourceTree = "<group>"; };
 		3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsOfAnimationsViewController.swift; sourceTree = "<group>"; };
 		3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewController.swift; sourceTree = "<group>"; };
@@ -425,7 +425,7 @@
 				3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */,
 				3A2FA57528C760930072F90E /* EmmanuelViewController.swift */,
 				3A2FA57728C798890072F90E /* EmmanuelModel.swift */,
-				3A2FA57928C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift */,
+				3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */,
 			);
 			path = Emmanuel;
 			sourceTree = "<group>";
@@ -860,7 +860,7 @@
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
 				3A195D4328F47821004E0477 /* PPSImagesViewModel.swift in Sources */,
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,
-				3A2FA57A28C79FAF0072F90E /* EmmanuelPostsCollectionViewCell.swift in Sources */,
+				3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */,
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,

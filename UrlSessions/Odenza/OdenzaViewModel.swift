@@ -8,7 +8,12 @@
 import Foundation
 
 final class OdenzaViewModel {
-    var items: [PostModel] = []
+    var refreshData = { () -> () in }
+    var items: [PostModel] = [] {
+        didSet {
+            refreshData()
+        }
+    }
     var odenzaNetworking = OdenzaNetworking()
     //MARK: retrive data
     func retrievePosts() {

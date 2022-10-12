@@ -9,10 +9,10 @@ import UIKit
 
 final class JokesViewController: UIViewController {
     
-    var jokeSelection = JokeSelection()
-    let viewModel = JokesViewModel()
+    private var jokeSelection = JokeSelection()
+    private let viewModel = JokesViewModel()
     
-    var isJokeSelectionHidden = false
+   private var isJokeSelectionHidden = false
     
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var jokeLabel: UILabel!
@@ -33,6 +33,13 @@ final class JokesViewController: UIViewController {
     func fetchNewJoke() {
         jokeSelection.createUrl()
         viewModel.fetchJoke(with: jokeSelection.url)
+    }
+    func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.updateView()
+            }
+        }
     }
     
     //MARK: Parts
@@ -88,7 +95,8 @@ final class JokesViewController: UIViewController {
         updateView()
     }
     
-    func updateView() {
+    private func updateView() {
+        bind()
         isJokeSelectionHidden = !isJokeSelectionHidden
         UIView.animate(withDuration: 0.5) {
             DispatchQueue.main.async {

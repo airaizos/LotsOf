@@ -9,7 +9,7 @@ import UIKit
 
 final class LinesViewController: UIViewController {
     deinit {
-        print("Deinit LinesViewController")
+        print("    [DEINIT] ->      LinesViewController")
     }
     
     var viewModel = LinesViewModel()

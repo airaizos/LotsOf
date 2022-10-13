@@ -96,7 +96,9 @@ final class URLSessionsViewController: UIViewController {
     @IBAction func goToFacts(_ sender: UIButton) {
         goTo(viewControllerName: "FactViewController")
     }
- 
+    deinit {
+        print("    [DEINIT] ->      URLSESSIONS ViewController")
+    }
 }
 
 extension UIViewController {

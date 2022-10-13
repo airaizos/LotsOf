@@ -43,4 +43,7 @@ final class ColorsViewController: UIViewController {
         viewController.viewModel.color = color
         return viewController
     }
+    deinit {
+        print("    [DEINIT] ->      COLORSViewController")
+    }
 }

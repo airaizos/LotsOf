@@ -77,4 +77,7 @@ final class DogViewController: UIViewController {
             }
         }
     }
+    deinit {
+        print("    [DEINIT] ->      DOGSViewController")
+    }
 }

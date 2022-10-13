@@ -31,4 +31,7 @@ final class CreateViewController: UIViewController {
         let parameters: [String: Any] = ["userId": 9, "title": postTitle, "body": postBody]
         viewModel.createPosts(parameters: parameters)
     }
+    deinit {
+        print("    [DEINIT] ->      CreateViewController")
+    }
 }

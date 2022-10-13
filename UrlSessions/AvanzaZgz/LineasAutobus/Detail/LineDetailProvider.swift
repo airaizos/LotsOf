@@ -8,7 +8,7 @@
 import Foundation
 
 final class LineDetailProvider {
-    var lineModel: LineModel?
+//    var lineModel: LineModel?
  
     private let baseUrl = "http://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/transporte-urbano/linea-autobus/"
     
@@ -22,10 +22,9 @@ final class LineDetailProvider {
                     let lineModelResult = try JSONDecoder().decode(LineModel.self, from: data)
                     DispatchQueue.main.async {
                         completion(.success(lineModelResult))
-                        print("URLSession lineModelResult\(lineModelResult.title)")
+                        print("URLSession lineModelResult: \(lineModelResult.title)")
                     }
                 } catch let error {
-                    print(error)
                     print("\(error.localizedDescription)")
                 }
             }

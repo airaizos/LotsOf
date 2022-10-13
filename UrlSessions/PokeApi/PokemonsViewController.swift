@@ -46,7 +46,9 @@ final class PokemonsViewController: UIViewController {
             }
         }
     }
-
+    deinit {
+        print("    [DEINIT] ->      POKEMONS ViewController")
+    }
 }
 
 extension PokemonsViewController: UITableViewDataSource {
@@ -61,4 +63,7 @@ extension PokemonsViewController: UITableViewDataSource {
         cell.nameLabel.text = item.name.uppercased()
         return cell
     }
+    
+  
+    
 }

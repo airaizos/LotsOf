@@ -59,4 +59,7 @@ final class RickAndMortyViewController: UIViewController {
         viewModel.executeRequest()
         setupViewOne()
     }
+    deinit {
+        print("    [DEINIT] ->      RICKANDMORTY ViewController")
+    }
 }

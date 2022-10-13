@@ -9,7 +9,7 @@ import Foundation
 
 struct LineModel: Decodable {
     let title: String
-    let result: [GeometryModel]
+  //  let result: [GeometryModel]
     var customTitle: String?
     var isFavorite: Bool? = false
 }

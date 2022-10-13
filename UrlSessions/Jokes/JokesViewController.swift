@@ -112,6 +112,9 @@ final class JokesViewController: UIViewController {
     @IBAction func jokeSelectionButton(_ sender: UIButton) {
         updateView()
     }
+    deinit {
+        print("    [DEINIT] ->      JOKESViewController")
+    }
 }
 
 

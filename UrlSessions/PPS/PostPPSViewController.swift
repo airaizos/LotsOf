@@ -54,4 +54,7 @@ final class PostPPSViewController: UIViewController {
             }
         }
     }
+    deinit {
+        print("    [DEINIT] ->      POSTPPSViewController")
+    }
 }

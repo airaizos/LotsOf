@@ -110,6 +110,7 @@
 		3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22510289A873D008BEAF0 /* LinesViewController.swift */; };
 		3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */; };
 		3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */; };
+		3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +238,7 @@
 		3AF22510289A873D008BEAF0 /* LinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewController.swift; sourceTree = "<group>"; };
 		3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewModel.swift; sourceTree = "<group>"; };
 		3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesProvider.swift; sourceTree = "<group>"; };
+		3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +527,7 @@
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
 			isa = PBXGroup;
 			children = (
+				3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */,
 			);
 			path = DataPersistance;
 			sourceTree = "<group>";
@@ -640,6 +643,14 @@
 				3A14BD9628D8CAEE0040117C /* Detail */,
 			);
 			path = LineasAutobus;
+			sourceTree = "<group>";
+		};
+		3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */,
+			);
+			path = EnumUserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -860,6 +871,7 @@
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
 				3A195D4328F47821004E0477 /* PPSImagesViewModel.swift in Sources */,
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,
+				3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */,
 				3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */,
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,

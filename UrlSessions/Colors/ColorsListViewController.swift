@@ -24,6 +24,9 @@ final class ColorsListViewController: UIViewController {
         colorsTableView.delegate = self
         colorsTableView.dataSource = self
     }
+    deinit {
+        print("    [DEINIT] ->      COLORSLISTViewController")
+    }
 }
 
 extension ColorsListViewController: UITableViewDelegate, UITableViewDataSource {

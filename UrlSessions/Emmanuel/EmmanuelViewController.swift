@@ -43,7 +43,9 @@ final class EmmanuelViewController: UIViewController, UICollectionViewDelegate {
             }
         }
     }
-    
+    deinit {
+        print("    [DEINIT] ->      EmmanuelViewController")
+    }
 }
 
 

@@ -76,4 +76,7 @@ final class GetViewController: UIViewController {
         titleLabel.text = item.title
         bodyLabel.text = item.body
     }
+    deinit {
+        print("    [DEINIT] ->      GetViewController")
+    }
 }

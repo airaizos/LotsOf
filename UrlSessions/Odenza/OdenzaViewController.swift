@@ -41,5 +41,7 @@ final class OdenzaViewController: UIViewController {
         let navigationController  = UINavigationController(rootViewController: viewController)
         return navigationController
     }
-    
+    deinit {
+        print("    [DEINIT] ->      OdenzaViewController")
+    }
 }

@@ -38,12 +38,15 @@ final class FactViewController: UIViewController {
             }
             
         }
+   
     }
     
     @IBAction func addFactAction(_ sender: UIBarButtonItem) {
         viewModel.fetchFact()
     }
-    
+    deinit {
+        print("    [DEINIT] ->      FACTViewController")
+    }
 }
 
 

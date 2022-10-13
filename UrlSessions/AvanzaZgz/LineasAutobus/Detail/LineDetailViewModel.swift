@@ -9,15 +9,19 @@ import Foundation
 import UIKit
 
 final class LineDetailViewModel {
-    weak var delegate: LineDetailProviderDelegate?
+    var refreshData = { () -> () in }
+    
     
     let lineDetailProvider = LineDetailProvider()
     var lineNumber: String?
-    var lineDetail: LineModel?
+    var lineDetail: LineModel? {
+        didSet {
+            refreshData()
+        }
+    }
     
     func build(with lineNumber: String) -> UIViewController {
         let storyboard = UIStoryboard(name: "LineDetailViewController", bundle: nil)
-        
         let viewController = storyboard.instantiateViewController(withIdentifier: "LineDetailViewController")
       
        fetchDetail(busLineNumber: lineNumber)
@@ -26,13 +30,11 @@ final class LineDetailViewModel {
     }
     
     func setCustomTitle() -> String {
-        
-        return ""
+        "Título personalizado"
     }
     
     func didPressFavorite() -> Bool {
-        
-        return false
+        false
     }
     
     func fetchDetail(busLineNumber: String) {
@@ -42,13 +44,11 @@ final class LineDetailViewModel {
             case .success(let lineDetail):
                 self.lineDetail = lineDetail
             case .failure:
-                self.lineDetail = LineModel(title: "ERROR", result: [GeometryModel(geometry: Geometry(type: "error", coordinates: [[[99.99,99.99]]]))])
+                self.lineDetail = LineModel(title: "ERROR")
+                
+                // LineModel(title: "ERROR", result: [GeometryModel(geometry: Geometry(type: "error", coordinates: [[99.99,99.99]]))])
             }
         }
     }
     
-}
-
-protocol LineDetailProviderDelegate: AnyObject {
-    func getDetail()
 }

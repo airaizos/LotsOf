@@ -15,46 +15,41 @@ final class LineDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getDetail()
+        bind()
         setupView()
     }
     
     func setupView() {
-        getDetail()
-        guard let lineDetail = viewModel.lineDetail else { return }
-        
-        DispatchQueue.main.async {
-            self.titleLabel.text = lineDetail.title
-        }
-       
+      guard let lineDetail = viewModel.lineDetail else { return }
+        self.titleLabel.text = lineDetail.title
         print("lineDetail.title: \(lineDetail.title)")
-        viewModel.delegate = self
     }
 
+    func bind() {
+        viewModel.refreshData = { [weak self] in
+            DispatchQueue.main.async {
+                self?.setupView()
+            }
+        }
+    }
     
-    
+    func getDetail() {
+        guard let lineNumber = viewModel.lineNumber else { return }
+        viewModel.fetchDetail(busLineNumber: lineNumber)
+    }
     
     @IBAction func favoriteAction(_ sender: UIButton) {
-        getDetail()
+        bind()
     }
     
     @IBAction func renameAction(_ sender: UIButton) {
-        
         titleLabel.text = viewModel.setCustomTitle()
     }
     
     
-    
+
     deinit {
         print("Deinit LineDetailViewController")
-    }
-}
-
-
-extension LineDetailViewController: LineDetailProviderDelegate {
-    
-    func getDetail() {
-      
-        guard let lineNumber = viewModel.lineNumber else { return }
-        viewModel.fetchDetail(busLineNumber: lineNumber)
     }
 }

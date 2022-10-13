@@ -61,6 +61,9 @@ final class UsersCollectionViewController: UIViewController {
         activityIndicator.isHidden = true
         
     }
+    deinit {
+        print("    [DEINIT] ->      USERCOLLECTIONViewController")
+    }
 }
 
 extension UsersCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {

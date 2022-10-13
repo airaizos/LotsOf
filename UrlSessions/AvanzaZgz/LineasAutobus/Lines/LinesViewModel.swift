@@ -27,8 +27,6 @@ final class LinesViewModel {
         let item = busLines[indexPath.row]
         return item
     }
-    
-
 }
 
 extension LinesViewModel: APIClientDelegate {

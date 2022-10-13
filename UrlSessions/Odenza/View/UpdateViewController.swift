@@ -29,5 +29,7 @@ final class UpdateViewController: UIViewController {
         let paratemers : [String: Any] = ["title": title, "body": body]
         viewModel.updatePosts(parameters: paratemers)
     }
-    
+    deinit {
+        print("    [DEINIT] ->      UpdateViewController")
+    }
 }

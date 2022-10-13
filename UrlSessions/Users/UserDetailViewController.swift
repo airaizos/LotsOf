@@ -61,8 +61,9 @@ final class UserDetailViewController: UIViewController {
             view.trailingAnchor.constraint(equalTo: userInfoStackView.trailingAnchor, constant: padding)
         ])
     }
-    
-    
+    deinit {
+        print("    [DEINIT] ->      USERDETAILViewController")
+    }
 }
 
 extension UserDetailViewController {

@@ -69,4 +69,7 @@ final class EnumUserDefaultViewController: UIViewController {
         print("pressed")
     }
     
+    deinit {
+        print("    [DEINIT] ->      ENUMS ViewController")
+    }
 }

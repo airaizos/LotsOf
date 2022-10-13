@@ -115,6 +115,8 @@
 		3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */; };
 		3AFB00A828F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A728F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift */; };
 		3AFB00AA28F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A928F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift */; };
+		3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */; };
+		3AFB00AE28F88450003BE6CA /* DataPersistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +249,8 @@
 		3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
 		3AFB00A728F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MourdevUserDefaultsViewController.swift; sourceTree = "<group>"; };
 		3AFB00A928F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MourdevUserDefaultsViewModel.swift; sourceTree = "<group>"; };
+		3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataPersistanceViewController.storyboard; sourceTree = "<group>"; };
+		3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,6 +540,8 @@
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
 			isa = PBXGroup;
 			children = (
+				3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */,
+				3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */,
 				3AFB00A628F87C07003BE6CA /* MoureDev */,
 				3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */,
 			);
@@ -795,6 +801,7 @@
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
+				3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
@@ -864,6 +871,7 @@
 				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
+				3AFB00AE28F88450003BE6CA /* DataPersistanceViewController.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
 				3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */,
 				3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */,

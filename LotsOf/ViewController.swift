@@ -32,8 +32,7 @@ final class ViewController: UIViewController {
    
     
     @IBAction func goToDataPersistance(_ sender: UIButton) {
-        let viewController = EnumUserDefaultViewController()
-        self.navigationController?.pushViewController(viewController, animated: true)
+        goTo(viewControllerName: "DataPersistanceViewController")
         
     }
     @IBAction func goToAnimations(_ sender: UIButton) {

@@ -20,4 +20,7 @@ final class LotsOfAnimationsViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    deinit {
+        print("    [DEINIT] ->      LOTSofANIMATIONS ViewController")
+    }
 }

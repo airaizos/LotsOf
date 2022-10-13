@@ -9,6 +9,8 @@ import UIKit
 
 final class MourdevUserDefaultsViewController: UIViewController {
     
+    let viewModel = MourdevUserDefaultsViewModel()
+    
     var textField: UITextField = {
        let textField = UITextField()
         textField.placeholder = "Escribe aquí"
@@ -73,4 +75,8 @@ final class MourdevUserDefaultsViewController: UIViewController {
     @objc private func deleteButtonAction(_ sender: UIButton) {
     }
     
+    
+    deinit {
+        print("    [DEINIT] ->      MOUREDEV ViewController")
+    }
 }

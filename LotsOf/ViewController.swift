@@ -31,6 +31,11 @@ final class ViewController: UIViewController {
     }
    
     
+    @IBAction func goToDataPersistance(_ sender: UIButton) {
+        let viewController = EnumUserDefaultViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+    }
     @IBAction func goToAnimations(_ sender: UIButton) {
         goTo(viewControllerName: "LotsOfAnimationsViewController")
     }

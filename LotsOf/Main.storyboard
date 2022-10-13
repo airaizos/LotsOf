@@ -35,6 +35,9 @@
                                                 <rect key="frame" x="0.0" y="34.333333333333314" width="350" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Data Persistence"/>
+                                                <connections>
+                                                    <action selector="goToDataPersistance:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XIG-fA-5tE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHq-AP-Rtm">
                                                 <rect key="frame" x="0.0" y="68.666666666666629" width="350" height="34.333333333333343"/>

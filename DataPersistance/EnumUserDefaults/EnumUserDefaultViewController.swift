@@ -54,7 +54,7 @@ final class EnumUserDefaultViewController: UIViewController {
             saveDataButton.centerYAnchor.constraint(equalTo: view.centerYAnchor,constant: 15),
             readDataButton.centerYAnchor.constraint(equalTo: view.centerYAnchor,constant: 75),
             nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            nameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 30)
+            nameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100)
              
         ])
     }

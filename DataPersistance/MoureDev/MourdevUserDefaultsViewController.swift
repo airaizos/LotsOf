@@ -11,8 +11,17 @@ final class MourdevUserDefaultsViewController: UIViewController {
     
     let viewModel = MourdevUserDefaultsViewModel()
     
+    var persistanceLabel : UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .magenta
+        label.font = .systemFont(ofSize: 30)
+        return label
+    }()
+    
     var textField: UITextField = {
-       let textField = UITextField()
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "Escribe aquí"
         textField.font = .systemFont(ofSize: 30)
         return textField
@@ -35,9 +44,9 @@ final class MourdevUserDefaultsViewController: UIViewController {
         button.addTarget(self, action: #selector(deleteButtonAction(_:)), for: .touchUpInside)
         return button
     }()
-
+    
     private lazy var buttonsStackView: UIStackView = {
-       let stackView = UIStackView(arrangedSubviews: [getData,putData,deleteData])
+        let stackView = UIStackView(arrangedSubviews: [getData,putData,deleteData])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         
@@ -52,29 +61,50 @@ final class MourdevUserDefaultsViewController: UIViewController {
     }
     
     func setupView() {
+        view.backgroundColor = .systemGray2
         view.addSubview(buttonsStackView)
         view.addSubview(textField)
+        view.addSubview(persistanceLabel)
         
         NSLayoutConstraint.activate([
             buttonsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             buttonsStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
-            textField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 30),
-            textField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        
+            textField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            textField.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            view.trailingAnchor.constraint(equalTo: textField.trailingAnchor, constant: 20),
+            
+            persistanceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            view.trailingAnchor.constraint(equalTo: persistanceLabel.trailingAnchor, constant: 20),
+            persistanceLabel.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20)
+            
         ])
     }
     
     //Actions
     @objc private func getButtonAction(_ sender: UIButton) {
+        DispatchQueue.main.async {
+            self.persistanceLabel.text = self.viewModel.getText()
+        }
+        showAlert(message: viewModel.message)
     }
     
     @objc private func putButtonAction(_ sender: UIButton) {
+        guard let text = textField.text else { return }
+        viewModel.save(text: text)
+        showAlert(message: viewModel.message)
     }
     
     @objc private func deleteButtonAction(_ sender: UIButton) {
+        viewModel.deleteText()
+        showAlert(message: viewModel.message)
     }
     
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "My UserDefaults", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
     
     deinit {
         print("    [DEINIT] ->      MOUREDEV ViewController")

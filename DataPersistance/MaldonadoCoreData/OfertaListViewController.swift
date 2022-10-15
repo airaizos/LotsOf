@@ -8,7 +8,7 @@
 import UIKit
 
 final class OfertaListViewController: UIViewController {
-
+    
     
     
     override func viewDidLoad() {
@@ -18,5 +18,8 @@ final class OfertaListViewController: UIViewController {
     func setupView() {
         
     }
-
+    
+    deinit {
+        print("    [DEINIT] ->      OFERTA ViewController")
+    }
 }

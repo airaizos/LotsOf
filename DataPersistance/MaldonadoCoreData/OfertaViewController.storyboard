@@ -97,7 +97,7 @@
                                         </constraints>
                                     </pickerView>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="og5-gt-e3D">
-                                        <rect key="frame" x="20" y="452.33333333333337" width="358" height="34"/>
+                                        <rect key="frame" x="20" y="452" width="358" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="so7-yv-RhT"/>
                                         </constraints>
@@ -140,6 +140,9 @@
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                     <color key="baseForegroundColor" red="0.98891679750000006" green="0.91391953579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jE6-l9-shh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

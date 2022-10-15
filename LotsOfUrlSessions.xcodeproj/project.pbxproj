@@ -38,8 +38,9 @@
 		3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F5228F603C400673B79 /* FactViewModel.swift */; };
 		3A14252228F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */; };
 		3A14252428F9B130004B5252 /* MaldonadoNoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */; };
-		3A14252628F9B189004B5252 /* MaldonadoNoteListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252528F9B189004B5252 /* MaldonadoNoteListCollectionViewCell.swift */; };
+		3A14252628F9B189004B5252 /* MaldonadoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252528F9B189004B5252 /* MaldonadoCell.swift */; };
 		3A14252828F9B1D2004B5252 /* MaldonadoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A14252728F9B1D2004B5252 /* MaldonadoCell.xib */; };
+		3A14252A28F9FB55004B5252 /* OfertaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252928F9FB55004B5252 /* OfertaModel.swift */; };
 		3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A146DAE28DA336300CB1C90 /* Main.storyboard */; };
 		3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A146DB228DA347D00CB1C90 /* ViewController.swift */; };
 		3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */; };
@@ -172,8 +173,9 @@
 		3A134F5228F603C400673B79 /* FactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModel.swift; sourceTree = "<group>"; };
 		3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaldonadoNoteListViewController.storyboard; sourceTree = "<group>"; };
 		3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaldonadoNoteListViewController.swift; sourceTree = "<group>"; };
-		3A14252528F9B189004B5252 /* MaldonadoNoteListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaldonadoNoteListCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A14252528F9B189004B5252 /* MaldonadoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaldonadoCell.swift; sourceTree = "<group>"; };
 		3A14252728F9B1D2004B5252 /* MaldonadoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaldonadoCell.xib; sourceTree = "<group>"; };
+		3A14252928F9FB55004B5252 /* OfertaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaModel.swift; sourceTree = "<group>"; };
 		3A146DAE28DA336300CB1C90 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A146DB228DA347D00CB1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
@@ -693,8 +695,9 @@
 			children = (
 				3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */,
 				3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */,
-				3A14252528F9B189004B5252 /* MaldonadoNoteListCollectionViewCell.swift */,
+				3A14252528F9B189004B5252 /* MaldonadoCell.swift */,
 				3A14252728F9B1D2004B5252 /* MaldonadoCell.xib */,
+				3A14252928F9FB55004B5252 /* OfertaModel.swift */,
 			);
 			path = MaldonadoCoreData;
 			sourceTree = "<group>";
@@ -861,7 +864,7 @@
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
 				3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */,
-				3A14252628F9B189004B5252 /* MaldonadoNoteListCollectionViewCell.swift in Sources */,
+				3A14252628F9B189004B5252 /* MaldonadoCell.swift in Sources */,
 				3A05D23128CA493F00C5E396 /* Joke.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* URLSessionsViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */,
@@ -929,6 +932,7 @@
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,
 				3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */,
 				3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */,
+				3A14252A28F9FB55004B5252 /* OfertaModel.swift in Sources */,
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,

@@ -38,8 +38,8 @@
 		3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A134F4E28F6019F00673B79 /* FactViewController.storyboard */; };
 		3A134F5128F6032100673B79 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F5028F6032100673B79 /* FactViewController.swift */; };
 		3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F5228F603C400673B79 /* FactViewModel.swift */; };
-		3A14252228F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */; };
-		3A14252428F9B130004B5252 /* MaldonadoNoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */; };
+		3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A14252128F9B11D004B5252 /* OfertaListViewController.storyboard */; };
+		3A14252428F9B130004B5252 /* OfertaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252328F9B130004B5252 /* OfertaListViewController.swift */; };
 		3A14252628F9B189004B5252 /* MaldonadoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252528F9B189004B5252 /* MaldonadoCell.swift */; };
 		3A14252828F9B1D2004B5252 /* MaldonadoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A14252728F9B1D2004B5252 /* MaldonadoCell.xib */; };
 		3A14252A28F9FB55004B5252 /* OfertaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252928F9FB55004B5252 /* OfertaModel.swift */; };
@@ -175,8 +175,8 @@
 		3A134F4E28F6019F00673B79 /* FactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FactViewController.storyboard; sourceTree = "<group>"; };
 		3A134F5028F6032100673B79 /* FactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
 		3A134F5228F603C400673B79 /* FactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewModel.swift; sourceTree = "<group>"; };
-		3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaldonadoNoteListViewController.storyboard; sourceTree = "<group>"; };
-		3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaldonadoNoteListViewController.swift; sourceTree = "<group>"; };
+		3A14252128F9B11D004B5252 /* OfertaListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfertaListViewController.storyboard; sourceTree = "<group>"; };
+		3A14252328F9B130004B5252 /* OfertaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaListViewController.swift; sourceTree = "<group>"; };
 		3A14252528F9B189004B5252 /* MaldonadoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaldonadoCell.swift; sourceTree = "<group>"; };
 		3A14252728F9B1D2004B5252 /* MaldonadoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaldonadoCell.xib; sourceTree = "<group>"; };
 		3A14252928F9FB55004B5252 /* OfertaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaModel.swift; sourceTree = "<group>"; };
@@ -699,8 +699,8 @@
 			children = (
 				3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */,
 				3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */,
-				3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */,
-				3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */,
+				3A14252128F9B11D004B5252 /* OfertaListViewController.storyboard */,
+				3A14252328F9B130004B5252 /* OfertaListViewController.swift */,
 				3A14252528F9B189004B5252 /* MaldonadoCell.swift */,
 				3A14252728F9B1D2004B5252 /* MaldonadoCell.xib */,
 				3A14252928F9FB55004B5252 /* OfertaModel.swift */,
@@ -829,7 +829,7 @@
 				3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
-				3A14252228F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard in Resources */,
+				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
@@ -923,7 +923,7 @@
 				3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */,
 				3A1ABA0128D1E46400235D59 /* ColorTableViewCell.swift in Sources */,
-				3A14252428F9B130004B5252 /* MaldonadoNoteListViewController.swift in Sources */,
+				3A14252428F9B130004B5252 /* OfertaListViewController.swift in Sources */,
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */,
 				3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */,

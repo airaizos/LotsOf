@@ -80,7 +80,7 @@
                                                 <color key="textColor" systemColor="systemGray6Color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Población o provincia" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-bR-HkG" userLabel="Nombre de la empresa">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Población o provincia" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-bR-HkG" userLabel="Nombre de la empresa">
                                                 <rect key="frame" x="0.0" y="20.333333333333343" width="362" height="198"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <color key="textColor" systemColor="systemGray6Color"/>
@@ -97,7 +97,7 @@
                                         </constraints>
                                     </pickerView>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="og5-gt-e3D">
-                                        <rect key="frame" x="20" y="452" width="358" height="34"/>
+                                        <rect key="frame" x="20" y="452.33333333333337" width="358" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="so7-yv-RhT"/>
                                         </constraints>
@@ -157,6 +157,13 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DTh-1L-EM7" secondAttribute="trailing" constant="16" id="uAO-bC-VdR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="KCS-bR-HkG" id="ZTD-xy-5A1"/>
+                        <outlet property="companyTextField" destination="YNm-3O-7At" id="TCQ-w0-J5u"/>
+                        <outlet property="datePicker" destination="og5-gt-e3D" id="dp7-AJ-dte"/>
+                        <outlet property="descriptionTextField" destination="CIy-oF-uQy" id="R5o-6M-xub"/>
+                        <outlet property="modalityPicker" destination="DIz-nI-6EW" id="KOV-CS-4wS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

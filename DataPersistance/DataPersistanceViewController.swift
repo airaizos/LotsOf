@@ -26,6 +26,12 @@ final class DataPersistanceViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    @IBAction func ofertaButtonAction(_ sender: UIButton) {
+        goTo(viewControllerName: "OfertaListViewController")
+    
+    }
+    
+    
     deinit {
         print("    [DEINIT] ->      DATAPERSISTANCE ViewController")
     }

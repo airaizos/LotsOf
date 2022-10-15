@@ -32,7 +32,7 @@ final class EnumUserDefaultsModel {
     //Read
     func readRoleMember() -> String {
         guard let savedData = userDefaults.data(forKey: "role") else { return "No Data" }
-        let role = try? JSONDecoder().decode(Role.self, from: savedData)
+        let _ = try? JSONDecoder().decode(Role.self, from: savedData)
         return "Saved"
         
     }

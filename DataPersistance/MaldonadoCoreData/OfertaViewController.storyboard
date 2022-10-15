@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oferta View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OfertaViewController" id="Y6W-OH-hqX" customClass="OfertaViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQC-Gh-hDH">
+                                <rect key="frame" x="0.0" y="47" width="394" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="barTintColor" systemColor="systemGray2Color"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Oferta" id="LMq-qG-ifg"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UR2-Oy-t0z" userLabel="Descripcion stack">
+                                <rect key="frame" x="16" y="91" width="358" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción de la oferta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr3-Lv-B3Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Puesto, horas semanales, duración" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIy-oF-uQy">
+                                        <rect key="frame" x="0.0" y="28.333333333333325" width="358" height="34.666666666666657"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="cG4-g9-WN2"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QT9-bo-k6i" userLabel="Empresa stack">
+                                <rect key="frame" x="16" y="154" width="358" height="54.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empresa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRL-02-PqA" userLabel="Empresa">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre fiscal o comercial" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-3O-7At" userLabel="Nombre de la empresa">
+                                        <rect key="frame" x="0.0" y="20.333333333333343" width="358" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="2F8-Z0-foi"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NGk-Y0-sgw" userLabel="Lugar stack">
+                                <rect key="frame" x="16" y="216.33333333333334" width="358" height="54.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provincia o lugar de trabajo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXz-ib-qRt" userLabel="Empresa">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Población o provincia" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCS-bR-HkG" userLabel="Nombre de la empresa">
+                                        <rect key="frame" x="0.0" y="20.333333333333314" width="358" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="2O8-N2-W9y"/>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIz-nI-6EW">
+                                <rect key="frame" x="16" y="278.66666666666669" width="358" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="5JX-Oz-jYy"/>
+                                </constraints>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="og5-gt-e3D">
+                                <rect key="frame" x="16" y="360.66666666666669" width="358" height="34.333333333333314"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-1L-EM7">
+                                <rect key="frame" x="16" y="774" width="358" height="36"/>
+                                <color key="backgroundColor" red="0.56423611111111116" green="0.13871671428429516" blue="0.087601065300883449" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="th4-8e-yer"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Guardar">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <color key="baseForegroundColor" red="0.98891679750000006" green="0.91391953579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="QT9-bo-k6i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2DG-Rh-S2S"/>
+                            <constraint firstItem="wQC-Gh-hDH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2DT-Jl-cTu"/>
+                            <constraint firstItem="og5-gt-e3D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7YG-CP-dq0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QT9-bo-k6i" secondAttribute="trailing" constant="16" id="9Nc-3a-aXV"/>
+                            <constraint firstItem="DIz-nI-6EW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Cg5-KC-jty"/>
+                            <constraint firstItem="NGk-Y0-sgw" firstAttribute="top" secondItem="QT9-bo-k6i" secondAttribute="bottom" constant="8" id="HKg-b1-gPU"/>
+                            <constraint firstItem="og5-gt-e3D" firstAttribute="top" secondItem="DIz-nI-6EW" secondAttribute="bottom" constant="8" id="JkS-qP-ba6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DIz-nI-6EW" secondAttribute="trailing" constant="16" id="Nec-4q-dX9"/>
+                            <constraint firstItem="DTh-1L-EM7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="OZH-8y-Z4W"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="og5-gt-e3D" secondAttribute="trailing" constant="16" id="W6x-Pn-JWZ"/>
+                            <constraint firstItem="wQC-Gh-hDH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Xe8-Yl-rZq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NGk-Y0-sgw" secondAttribute="trailing" constant="16" id="cUZ-BB-t3d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DTh-1L-EM7" secondAttribute="bottom" id="dbw-e3-fdh"/>
+                            <constraint firstItem="wQC-Gh-hDH" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="4" id="fPa-bf-ZY6"/>
+                            <constraint firstItem="UR2-Oy-t0z" firstAttribute="top" secondItem="wQC-Gh-hDH" secondAttribute="bottom" id="gXY-kN-Nlm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UR2-Oy-t0z" secondAttribute="trailing" constant="16" id="ghc-9d-9cN"/>
+                            <constraint firstItem="QT9-bo-k6i" firstAttribute="top" secondItem="UR2-Oy-t0z" secondAttribute="bottom" id="mth-0G-1hz"/>
+                            <constraint firstItem="DIz-nI-6EW" firstAttribute="top" secondItem="NGk-Y0-sgw" secondAttribute="bottom" constant="8" id="pc3-UE-D0a"/>
+                            <constraint firstItem="UR2-Oy-t0z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="tyf-Y1-FLl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DTh-1L-EM7" secondAttribute="trailing" constant="16" id="uAO-bC-VdR"/>
+                            <constraint firstItem="NGk-Y0-sgw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="vde-eJ-3Zf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.538461538461533" y="-34.123222748815166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

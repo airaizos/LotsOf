@@ -18,8 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPG-qK-AH7">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <color key="barTintColor" systemColor="systemGray2Color"/>
+                                <items>
+                                    <navigationItem title="TrincoJobs" id="wqc-LT-3Fa">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="VLN-Xo-m1H">
+                                            <color key="tintColor" red="0.98891679750000006" green="0.91391953579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Puesto empresa o palabra clave" scopeBarBackgroundImage="magnifyingglass.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5hB-5z-jjV">
-                                <rect key="frame" x="16" y="47" width="358" height="30"/>
+                                <rect key="frame" x="16" y="98" width="358" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="zDs-VH-2O3"/>
                                 </constraints>
@@ -30,7 +41,7 @@
                                 </connections>
                             </searchBar>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m0c-HT-qib">
-                                <rect key="frame" x="16" y="84" width="358" height="93"/>
+                                <rect key="frame" x="16" y="135" width="358" height="93"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oferta1" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-aV-4Rr">
                                         <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
@@ -48,13 +59,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas para ti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tt-EM-OY7">
-                                <rect key="frame" x="16" y="180" width="358" height="19.333333333333343"/>
+                                <rect key="frame" x="16" y="231" width="358" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wl2-Lh-wWy">
-                                <rect key="frame" x="16" y="216" width="358" height="594"/>
+                                <rect key="frame" x="16" y="267" width="358" height="494"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uJu-qM-AhX">
                                     <size key="itemSize" width="357" height="128"/>
@@ -78,35 +89,28 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BPG-qK-AH7" secondAttribute="trailing" id="0Cs-D6-A2F"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5hB-5z-jjV" secondAttribute="trailing" constant="16" id="1Zw-AQ-Hdh"/>
                             <constraint firstItem="2tt-EM-OY7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2Ha-VT-0Pt"/>
                             <constraint firstItem="Wl2-Lh-wWy" firstAttribute="top" secondItem="2tt-EM-OY7" secondAttribute="bottom" constant="16.666666666666657" id="5AX-F3-28w"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2tt-EM-OY7" secondAttribute="trailing" constant="16" id="FIw-CS-f9l"/>
+                            <constraint firstItem="BPG-qK-AH7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HP5-GB-cen"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Wl2-Lh-wWy" secondAttribute="bottom" id="HrX-a9-Srx"/>
                             <constraint firstItem="m0c-HT-qib" firstAttribute="top" secondItem="5hB-5z-jjV" secondAttribute="bottom" constant="7" id="L5n-H0-pwQ"/>
                             <constraint firstItem="5hB-5z-jjV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Mp6-eA-P46"/>
                             <constraint firstItem="2tt-EM-OY7" firstAttribute="top" secondItem="m0c-HT-qib" secondAttribute="bottom" constant="3" id="cJL-L3-c20"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="5hB-5z-jjV" secondAttribute="top" id="d14-Q1-Nep"/>
+                            <constraint firstItem="BPG-qK-AH7" firstAttribute="bottom" secondItem="5hB-5z-jjV" secondAttribute="top" constant="-7" id="d14-Q1-Nep"/>
                             <constraint firstItem="m0c-HT-qib" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-16" id="d3J-pD-vfL"/>
                             <constraint firstItem="m0c-HT-qib" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="mfI-cF-pZm"/>
                             <constraint firstItem="Wl2-Lh-wWy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="vVe-CJ-LyI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Wl2-Lh-wWy" secondAttribute="trailing" constant="16" id="wzw-hz-whP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="BPG-qK-AH7" secondAttribute="top" id="yIY-QH-nJs"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="UzK-Bo-uWN" id="gxY-aQ-Hf9"/>
-                    </connections>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="UzK-Bo-uWN">
-                    <connections>
-                        <outlet property="delegate" destination="Y6W-OH-hqX" id="L4q-S7-ePa"/>
-                        <outlet property="searchBar" destination="5hB-5z-jjV" id="VPd-IJ-Rev"/>
-                        <outlet property="searchContentsController" destination="Y6W-OH-hqX" id="F00-0s-gsZ"/>
-                        <outlet property="searchResultsDataSource" destination="Y6W-OH-hqX" id="ALe-Un-O6E"/>
-                        <outlet property="searchResultsDelegate" destination="Y6W-OH-hqX" id="h1s-O2-DsK"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="130.76923076923077" y="-34.123222748815166"/>
         </scene>
@@ -114,6 +118,7 @@
     <resources>
         <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
         <image name="oferta1" width="157" height="163"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

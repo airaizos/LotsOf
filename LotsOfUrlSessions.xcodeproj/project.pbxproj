@@ -30,6 +30,8 @@
 		3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */; };
 		3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */; };
 		3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */; };
+		3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */; };
+		3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
 		3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4928F5F45B00673B79 /* ImageLoader.swift */; };
 		3A134F4D28F6002400673B79 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4C28F6002400673B79 /* FactModel.swift */; };
@@ -165,6 +167,8 @@
 		3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewModel.swift; sourceTree = "<group>"; };
 		3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewController.swift; sourceTree = "<group>"; };
 		3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostPPSViewController.storyboard; sourceTree = "<group>"; };
+		3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfertaViewController.storyboard; sourceTree = "<group>"; };
+		3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewController.swift; sourceTree = "<group>"; };
 		3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImageCodeViewController.swift; sourceTree = "<group>"; };
 		3A134F4928F5F45B00673B79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		3A134F4C28F6002400673B79 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
@@ -693,6 +697,8 @@
 		3AFB00AF28F88FC2003BE6CA /* MaldonadoCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */,
+				3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */,
 				3A14252128F9B11D004B5252 /* MaldonadoNoteListViewController.storyboard */,
 				3A14252328F9B130004B5252 /* MaldonadoNoteListViewController.swift */,
 				3A14252528F9B189004B5252 /* MaldonadoCell.swift */,
@@ -811,6 +817,7 @@
 			files = (
 				3A1AB9F928D1DF7B00235D59 /* ColorsViewController.storyboard in Resources */,
 				3A1AB9FD28D1E1A000235D59 /* ColorsListViewController.storyboard in Resources */,
+				3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */,
 				3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */,
 				3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */,
 				3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */,
@@ -873,6 +880,7 @@
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
 				3A02BB8628C8B9DE00D168AE /* OdenzaViewModel.swift in Sources */,
+				3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */,
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
@@ -1128,7 +1136,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1157,7 +1165,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

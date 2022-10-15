@@ -1,13 +1,13 @@
 //
-//  MaldonadoNoteListViewController.swift
+//  OfertaViewController.swift
 //  LotsOfUrlSessions
 //
-//  Created by Adrian Iraizos Mendoza on 14/10/22.
+//  Created by Adrian Iraizos Mendoza on 15/10/22.
 //
 
 import UIKit
 
-final class MaldonadoNoteListViewController: UIViewController {
+class OfertaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

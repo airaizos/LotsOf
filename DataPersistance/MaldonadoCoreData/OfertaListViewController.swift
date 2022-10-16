@@ -20,6 +20,6 @@ final class OfertaListViewController: UIViewController {
     }
     
     deinit {
-        print("    [DEINIT] ->      OFERTA ViewController")
+        print("    [DEINIT] ->      OFERTALIST ViewController")
     }
 }

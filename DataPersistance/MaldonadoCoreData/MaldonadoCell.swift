@@ -19,6 +19,10 @@ final class MaldonadoCell: UICollectionViewCell {
     @IBOutlet weak var favoritaImage: UIImageView!
     
     
-    
+    func configure() {
+        
+        
+      
+    }
     
 }

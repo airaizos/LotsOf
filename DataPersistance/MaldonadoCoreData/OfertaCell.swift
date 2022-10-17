@@ -43,7 +43,7 @@ final class OfertaCell: UICollectionViewCell {
         empresaLabel.text = item.empresa
         lugarLabel.text = item.lugar
         salarioLabel.text = "No disponible"
-        modalidadLabel.text = "\(String(describing: item.modalidad))"
+        modalidadLabel.text = "\(String(describing: item.modalidad!))"
         fechaLabel.text = fechaPublicacion
         favoritaImage.image = favorite
     }

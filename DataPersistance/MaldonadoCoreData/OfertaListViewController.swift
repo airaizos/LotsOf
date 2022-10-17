@@ -8,6 +8,8 @@
 import UIKit
 import CoreData
 
+
+//TODO: Ajustar la celda al tamaño de la pantalla, landscape o portraite
 final class OfertaListViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
     var ofertas = [Oferta]()

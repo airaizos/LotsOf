@@ -71,20 +71,20 @@
                                 <rect key="frame" x="16" y="267" width="358" height="494"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uJu-qM-AhX">
-                                    <size key="itemSize" width="357" height="128"/>
+                                    <size key="itemSize" width="357" height="182"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OfertaCell" id="jeq-Uf-Ywg" customClass="OfertaCell" customModule="LotsOfUrlSessions" customModuleProvider="target">
-                                        <rect key="frame" x="0.66666666666666663" y="0.0" width="357" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="OfertaCell" id="jeq-Uf-Ywg" customClass="OfertaCell" customModule="LotsOfUrlSessions" customModuleProvider="target">
+                                        <rect key="frame" x="0.66666666666666663" y="0.0" width="357" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="d6q-n4-rQb">
-                                            <rect key="frame" x="0.0" y="0.0" width="357" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="357" height="182"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="357" height="128"/>
+                                        <size key="customSize" width="357" height="182"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

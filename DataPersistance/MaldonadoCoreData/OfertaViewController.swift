@@ -27,7 +27,7 @@ final class OfertaViewController: UIViewController {
     @IBAction func saveAction(_ sender: UIButton) {
         if let titulo = descriptionTextField.text, let empresa = companyTextField.text, let lugar = cityTextField.text {
             
-            let oferta = OfertaModel(image: UIImage(named: "pencil")!, titulo: titulo, empresa: empresa, favorita: false, fecha: datePicker.date, lugar: lugar, modalidad: .Presencial)
+            let oferta = OfertaModel(image: UIImage(named: "oferta1")!, titulo: titulo, empresa: empresa, favorita: false, fecha: datePicker.date, lugar: lugar, modalidad: .Presencial)
             
             viewModel.saveData(item: oferta)
         } else {

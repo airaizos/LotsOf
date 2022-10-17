@@ -25,6 +25,9 @@
                                     <navigationItem title="TrincoJobs" id="wqc-LT-3Fa">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="VLN-Xo-m1H">
                                             <color key="tintColor" red="0.98891679750000006" green="0.91391953579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="addOferta:" destination="Y6W-OH-hqX" id="0bs-U6-cRz"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

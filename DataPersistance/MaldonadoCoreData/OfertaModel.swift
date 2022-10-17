@@ -54,7 +54,7 @@ struct OfertaModel {
     let fecha: Date
     let lugar: String
     let modalidad: ModalidadTrabajo
-    let imagen: UIImage = UIImage(named: "star")
+    let imagen: UIImage = UIImage(named: "oferta1")!
     
     
 }

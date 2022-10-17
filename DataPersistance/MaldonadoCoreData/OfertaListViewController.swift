@@ -13,7 +13,7 @@ final class OfertaListViewController: UIViewController, NSFetchedResultsControll
     var ofertas = [Oferta]()
     var fetchResultController: NSFetchedResultsController<Oferta>!
     
-
+    
     @IBOutlet weak var ofertasCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -65,6 +65,10 @@ final class OfertaListViewController: UIViewController, NSFetchedResultsControll
     }
     
     
+    @IBAction func addOferta(_ sender: UIBarButtonItem) {
+        goTo(viewControllerName: "OfertaViewController")
+    }
+    
     deinit {
         print("    [DEINIT] ->      OFERTALIST ViewController")
     }
@@ -76,7 +80,12 @@ extension OfertaListViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        
+        let cell = ofertasCollectionView.dequeueReusableCell(withReuseIdentifier: "OfertaCell", for: indexPath) as! OfertaCell
+        let item = ofertas[indexPath.row]
+        cell.configure(with: item)
+        
+        return cell
     }
     
     

@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <point key="canvasLocation" x="122" y="-250"/>
         </imageView>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OfertaCell" id="hGs-ew-nI2" userLabel="MaldonadoCell" customClass="MaldonadoCell" customModule="LotsOfUrlSessions" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OfertaCell" id="hGs-ew-nI2" customClass="OfertaCell" customModule="LotsOfUrlSessions" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="378" height="182"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GVh-Su-JUY">

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MaldonadoCell: UICollectionViewCell {
+final class OfertaCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var tituloLabel: UILabel!

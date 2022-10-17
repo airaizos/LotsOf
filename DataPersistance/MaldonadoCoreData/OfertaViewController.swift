@@ -30,6 +30,7 @@ final class OfertaViewController: UIViewController {
             let oferta = OfertaModel(image: UIImage(named: "oferta1")!, titulo: titulo, empresa: empresa, favorita: false, fecha: datePicker.date, lugar: lugar, modalidad: .Presencial)
             
             viewModel.saveData(item: oferta)
+            navigationController?.popViewController(animated: true)
         } else {
             return //TODO: alerta!
         }

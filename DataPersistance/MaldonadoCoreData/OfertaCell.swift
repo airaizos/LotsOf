@@ -18,6 +18,9 @@ final class OfertaCell: UICollectionViewCell {
     @IBOutlet weak var fechaLabel: UILabel!
     @IBOutlet weak var favoritaImage: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
     func configure(with item: Oferta) {
         var fechaPublicacion: String {

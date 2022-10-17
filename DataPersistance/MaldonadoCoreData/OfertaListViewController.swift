@@ -21,7 +21,11 @@ final class OfertaListViewController: UIViewController, NSFetchedResultsControll
         setupView()
     }
     func setupView() {
+        ofertasCollectionView.delegate = self
+        ofertasCollectionView.dataSource = self
         
+        ofertasCollectionView.register(UINib(nibName: "OfertaCell", bundle: nil),forCellWithReuseIdentifier: "OfertaCell")
+        mostrarOfertas()
     }
     
     func mostrarOfertas() {

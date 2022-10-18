@@ -11,7 +11,8 @@ import UIKit
 final class OneViewAppsViewModel {
     
     var appList: [appInfo] = [
-            appInfo(name: "WeeklyCalendar", detail: "CalendarView. which display a list of events of selectedDate",viewController: "WeeklyCalendarViewController")]
+            appInfo(name: "Calendar", detail: "CalendarView. which display a list of events of selectedDate",viewController: "MonthlyCalendarViewController"),
+            appInfo(name: "Task Countdown", detail: "Reloj temporizador de tareas", viewController: "TaskCountDownViewController")]
 
 }
 

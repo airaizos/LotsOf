@@ -1,5 +1,5 @@
 //
-//  WeeklyCalendarViewController.swift
+//  MonthlyCalendarViewController.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 18/10/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class WeeklyCalendarViewController: UIViewController {
+final class MonthlyCalendarViewController: UIViewController {
     
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -85,7 +85,7 @@ final class WeeklyCalendarViewController: UIViewController {
 }
 
 
-extension WeeklyCalendarViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MonthlyCalendarViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         totalSquares.count
     }

@@ -134,6 +134,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="2gU-A5-Bsb"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="ugj-i2-kRk"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

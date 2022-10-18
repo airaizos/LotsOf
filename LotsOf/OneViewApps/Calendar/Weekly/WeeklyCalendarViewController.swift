@@ -1,5 +1,5 @@
 //
-//  TaskCountDownViewController.swift
+//  WeeklyCalendarViewController.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 18/10/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TaskCountDownViewController: UIViewController {
+final class WeeklyCalendarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -70,6 +70,7 @@ final class MonthlyCalendarViewController: UIViewController {
     }
     
     @IBAction func goToWeekly(_ sender: UIBarButtonItem) {
+        goTo(viewControllerName: "WeeklyCalendarViewController")
     }
     
     

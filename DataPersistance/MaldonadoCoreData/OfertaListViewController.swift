@@ -15,7 +15,6 @@ final class OfertaListViewController: UIViewController, NSFetchedResultsControll
     var ofertas = [Oferta]()
     var fetchResultController: NSFetchedResultsController<Oferta>!
     
-    
     @IBOutlet weak var ofertasCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -70,7 +69,6 @@ final class OfertaListViewController: UIViewController, NSFetchedResultsControll
         self.ofertas = controller.fetchedObjects as! [Oferta]
     }
     
-    
     @IBAction func addOferta(_ sender: UIBarButtonItem) {
         goTo(viewControllerName: "OfertaViewController")
     }
@@ -93,6 +91,9 @@ extension OfertaListViewController: UICollectionViewDelegate, UICollectionViewDa
         
         return cell
     }
+    
+    //Swipe Actions
+
     
     
 }

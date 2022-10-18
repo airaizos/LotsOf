@@ -43,6 +43,9 @@
                                                 <rect key="frame" x="0.0" y="68.666666666666629" width="350" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="OneViewApps"/>
+                                                <connections>
+                                                    <action selector="goToOneViewApps:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="POF-YE-dXZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWf-Vf-9uW">
                                                 <rect key="frame" x="0.0" y="103" width="350" height="34.333333333333343"/>

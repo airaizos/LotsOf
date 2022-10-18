@@ -33,8 +33,13 @@ final class ViewController: UIViewController {
     
     @IBAction func goToDataPersistance(_ sender: UIButton) {
         goTo(viewControllerName: "DataPersistanceViewController")
-        
     }
+    
+    @IBAction func goToOneViewApps(_ sender: UIButton) {
+        goTo(viewControllerName: "OneViewAppsViewController")
+    }
+    
+    
     @IBAction func goToAnimations(_ sender: UIButton) {
         goTo(viewControllerName: "LotsOfAnimationsViewController")
     }

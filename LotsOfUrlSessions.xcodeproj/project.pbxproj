@@ -32,6 +32,11 @@
 		3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */; };
 		3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */; };
 		3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */; };
+		3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */; };
+		3A0D5D6828FE9D2D00D71B4E /* OneViewAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6728FE9D2D00D71B4E /* OneViewAppsViewController.swift */; };
+		3A0D5D6A28FE9E6C00D71B4E /* OneViewAppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */; };
+		3A0D5D6D28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6C28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard */; };
+		3A0D5D6F28FEA13800D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6E28FEA13800D71B4E /* WeeklyCalendarViewController.swift */; };
 		3A127A0E28FBEAB0002B63F2 /* OfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
 		3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4928F5F45B00673B79 /* ImageLoader.swift */; };
@@ -171,6 +176,11 @@
 		3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostPPSViewController.storyboard; sourceTree = "<group>"; };
 		3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfertaViewController.storyboard; sourceTree = "<group>"; };
 		3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewController.swift; sourceTree = "<group>"; };
+		3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneViewAppsViewController.storyboard; sourceTree = "<group>"; };
+		3A0D5D6728FE9D2D00D71B4E /* OneViewAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewAppsViewController.swift; sourceTree = "<group>"; };
+		3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewAppsViewModel.swift; sourceTree = "<group>"; };
+		3A0D5D6C28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
+		3A0D5D6E28FEA13800D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
 		3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewModel.swift; sourceTree = "<group>"; };
 		3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImageCodeViewController.swift; sourceTree = "<group>"; };
 		3A134F4928F5F45B00673B79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -348,6 +358,33 @@
 			path = PPS;
 			sourceTree = "<group>";
 		};
+		3A0D5D6328FE9CD900D71B4E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3A0D5D6428FE9CE800D71B4E /* OneViewApps */ = {
+			isa = PBXGroup;
+			children = (
+				3A0D5D6B28FEA10100D71B4E /* WeeklyCalendar */,
+				3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */,
+				3A0D5D6728FE9D2D00D71B4E /* OneViewAppsViewController.swift */,
+				3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */,
+			);
+			path = OneViewApps;
+			sourceTree = "<group>";
+		};
+		3A0D5D6B28FEA10100D71B4E /* WeeklyCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				3A0D5D6C28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard */,
+				3A0D5D6E28FEA13800D71B4E /* WeeklyCalendarViewController.swift */,
+			);
+			path = WeeklyCalendar;
+			sourceTree = "<group>";
+		};
 		3A134F4828F5F42F00673B79 /* ImageLoader */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +414,8 @@
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
+				3A0D5D6428FE9CE800D71B4E /* OneViewApps */,
+				3A0D5D6328FE9CD900D71B4E /* Tests */,
 				3AC1BAA028F031DA009E1F36 /* Resources */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
@@ -839,11 +878,13 @@
 				3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
+				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
 				3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */,
+				3A0D5D6D28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
@@ -890,6 +931,7 @@
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
 				3A02BB8628C8B9DE00D168AE /* OdenzaViewModel.swift in Sources */,
+				3A0D5D6F28FEA13800D71B4E /* WeeklyCalendarViewController.swift in Sources */,
 				3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */,
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
@@ -910,6 +952,7 @@
 				3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */,
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
+				3A0D5D6A28FE9E6C00D71B4E /* OneViewAppsViewModel.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
 				3A195D4728F47E37004E0477 /* PPSImageViewController.swift in Sources */,
 				3A54726D28E44CDB003CFE4F /* ChaseButton.swift in Sources */,
@@ -955,6 +998,7 @@
 				3A14252A28F9FB55004B5252 /* OfertaModel.swift in Sources */,
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
+				3A0D5D6828FE9D2D00D71B4E /* OneViewAppsViewController.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,

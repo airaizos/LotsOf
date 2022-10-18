@@ -139,6 +139,19 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="ugj-i2-kRk"/>
                                 </connections>
                             </collectionView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1w-Ff-FuW">
+                                <rect key="frame" x="0.0" y="3" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="KhR-ea-amB">
+                                        <barButtonItem key="rightBarButtonItem" title="Semanas" id="qzI-k1-LOR">
+                                            <connections>
+                                                <action selector="goToWeekly:" destination="Y6W-OH-hqX" id="o31-fw-Zez"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -69,6 +69,10 @@ final class WeeklyCalendarViewController: UIViewController {
         setMonthView()
     }
     
+    @IBAction func goToWeekly(_ sender: UIBarButtonItem) {
+    }
+    
+    
     override public var  shouldAutorotate: Bool{
         return false
     }

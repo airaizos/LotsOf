@@ -37,6 +37,7 @@
 		3A0D5D6A28FE9E6C00D71B4E /* OneViewAppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */; };
 		3A0D5D6D28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6C28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard */; };
 		3A0D5D6F28FEA13800D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6E28FEA13800D71B4E /* WeeklyCalendarViewController.swift */; };
+		3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */; };
 		3A127A0E28FBEAB0002B63F2 /* OfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
 		3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4928F5F45B00673B79 /* ImageLoader.swift */; };
@@ -181,6 +182,7 @@
 		3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewAppsViewModel.swift; sourceTree = "<group>"; };
 		3A0D5D6C28FEA12D00D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D6E28FEA13800D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
+		3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
 		3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewModel.swift; sourceTree = "<group>"; };
 		3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImageCodeViewController.swift; sourceTree = "<group>"; };
 		3A134F4928F5F45B00673B79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -511,6 +513,7 @@
 				3A07A52228DCBB7900F98D50 /* StringExtension.swift */,
 				3A195D3B28F473A3004E0477 /* extensionData.swift */,
 				3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */,
+				3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -937,6 +940,7 @@
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
+				3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */,
 				3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
 				3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */,

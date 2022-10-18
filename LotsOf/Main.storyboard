@@ -42,7 +42,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHq-AP-Rtm">
                                                 <rect key="frame" x="0.0" y="68.666666666666629" width="350" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="OneViewApps"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="OneViewApps">
+                                                    <color key="baseForegroundColor" red="0.53832072060000002" green="1" blue="0.70755794130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="goToOneViewApps:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="POF-YE-dXZ"/>
                                                 </connections>

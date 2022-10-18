@@ -9,25 +9,27 @@ import UIKit
 
 final class WeeklyCalendarViewController: UIViewController {
 
+    @IBOutlet weak var monthLabel: UILabel!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func previousMonth(_ sender: Any) {
     }
-    */
+    
+    @IBAction func nextMonth(_ sender: UIButton) {
+    }
+    
     
     deinit {
         
+        print("    [DEINIT] ->      WeeklyCalendarViewController ViewController")
     }
 
 }

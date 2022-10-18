@@ -45,6 +45,11 @@ final class CalendarHelper {
         let components = calendar.dateComponents([.year,.month], from: date)
         return calendar.date(from: components)!
     }
+    
+    
+    /// Devuelve el número de día de la semana a partir de una fecha dada
+    /// - Parameter date: Fecha
+    /// - Returns: número de día // 1.Ene.2022 -> 6 (Sábado)
     func weekDay(date: Date) -> Int {
         let components = calendar.dateComponents([.weekday], from: date)
         return components.weekday! - 1

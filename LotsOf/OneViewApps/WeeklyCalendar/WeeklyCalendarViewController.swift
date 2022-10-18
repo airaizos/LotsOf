@@ -8,7 +8,7 @@
 import UIKit
 
 final class WeeklyCalendarViewController: UIViewController {
-
+    
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -17,11 +17,11 @@ final class WeeklyCalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        setCellsView()
+        setMonthView()
     }
     
-    //FUNC
+    //MARK: Functions
     
     func setCellsView() {
         let width = (collectionView.frame.size.width - 2) / 8
@@ -31,19 +31,53 @@ final class WeeklyCalendarViewController: UIViewController {
         
     }
     
-
+    
+    /// Crea la vista del mes, añadiendo espacios vacíos al inicio hasta el día de la semana del primer día del mes, y al final del ultimo día del mes hasta el final de los días de la semana.
+    func setMonthView() {
+        totalSquares.removeAll()
+        let daysInMonth = CalendarHelper().daysInMont(date: selectedDate)
+        let firstDayOfMonth = CalendarHelper().firstOfMonth(date: selectedDate)
+        let startingSpaces = CalendarHelper().weekDay(date: firstDayOfMonth)
+        var count = 1
+        
+        //42 es el número máximo de squares que se pueden llegar a mostrar en una vista mensual de calendario.
+        
+        while count <= 42 {
+            //añade celdas en blanco al inicio y al final del esa fila de la semana
+            if (count <= startingSpaces || count - startingSpaces > daysInMonth) {
+                totalSquares.append("")
+            } else {
+                //añade el número de dia de mes después de restar los espacios en blanco
+                totalSquares.append(String(count - startingSpaces))
+            }
+            count += 1
+        }
+        
+        monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
+        collectionView.reloadData()
+    }
+    
+    
+    //MARK: ButtonActions
     @IBAction func previousMonth(_ sender: Any) {
+        selectedDate = CalendarHelper().minusMonth(date: selectedDate)
+        setMonthView()
     }
     
     @IBAction func nextMonth(_ sender: UIButton) {
+        selectedDate = CalendarHelper().plusMonth(date: selectedDate)
+        setMonthView()
     }
     
+    override public var  shouldAutorotate: Bool{
+        return false
+    }
     
     deinit {
         
         print("    [DEINIT] ->      WeeklyCalendarViewController ViewController")
     }
-
+    
 }
 
 
@@ -59,6 +93,6 @@ extension WeeklyCalendarViewController: UICollectionViewDelegate, UICollectionVi
         
     }
     
-
+    
     
 }

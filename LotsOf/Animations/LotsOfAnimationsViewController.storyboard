@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eOr-aJ-JDG">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lots Of Animations View Controller-->
+        <!--ANIMATIONS-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="LotsOfAnimationsViewController" id="Y6W-OH-hqX" customClass="LotsOfAnimationsViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jsI-Vk-NFh">
-                                <rect key="frame" x="15.666666666666657" y="401.33333333333331" width="358.66666666666674" height="54.333333333333314"/>
+                                <rect key="frame" x="15.666666666666657" y="423.33333333333331" width="358.66666666666674" height="54.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLK-aj-NcW">
                                         <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="54.333333333333336"/>
@@ -55,10 +55,29 @@
                             <constraint firstItem="jsI-Vk-NFh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="uuM-Xk-7Ch"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="ANIMATIONS" id="ZFr-UF-68L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="-34"/>
+            <point key="canvasLocation" x="1029.2307692307693" y="-34.123222748815166"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8a2-fO-VK0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eOr-aJ-JDG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="APT-OY-59e">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="SFL-No-flL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aM4-Z4-CfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-34.123222748815166"/>
         </scene>
     </scenes>
     <resources>

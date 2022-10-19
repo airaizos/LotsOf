@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sx0-3S-grq">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fact View Controller-->
+        <!--Facts-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="FactViewController" id="Y6W-OH-hqX" customClass="FactViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-3n-Qwz">
-                                <rect key="frame" x="16" y="97" width="358" height="664"/>
+                                <rect key="frame" x="16" y="91" width="358" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="factCell" textLabel="R92-zX-ZEn" style="IBUITableViewCellStyleDefault" id="Bxh-W4-cnk">
@@ -45,30 +45,15 @@
                                 </connections>
                             </tableView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="GUK-py-4a9">
-                                <rect key="frame" x="176.66666666666666" y="385.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="176.66666666666666" y="407.66666666666669" width="37" height="37"/>
                                 <color key="color" red="1" green="0.37091154700000001" blue="0.5061927437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5u-Wd-7S5">
-                                <rect key="frame" x="6" y="47" width="384" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="YTt-9x-hrp">
-                                        <barButtonItem key="rightBarButtonItem" title="+" id="tMp-Pu-QON">
-                                            <connections>
-                                                <action selector="addFactAction:" destination="Y6W-OH-hqX" id="Eat-6w-PLp"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="X5u-Wd-7S5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0c1-qw-rdA"/>
-                            <constraint firstItem="Ems-3n-Qwz" firstAttribute="top" secondItem="X5u-Wd-7S5" secondAttribute="bottom" constant="6" id="AiU-PT-0bZ"/>
-                            <constraint firstItem="X5u-Wd-7S5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="6" id="Ape-SF-qH2"/>
                             <constraint firstItem="GUK-py-4a9" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Ghi-n1-WOO"/>
-                            <constraint firstItem="Ems-3n-Qwz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="R9b-4r-zXJ"/>
+                            <constraint firstItem="Ems-3n-Qwz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="R9b-4r-zXJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ems-3n-Qwz" secondAttribute="bottom" id="bMv-Xb-rCL"/>
                             <constraint firstItem="GUK-py-4a9" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="fpR-zg-h7L"/>
                             <constraint firstItem="Ems-3n-Qwz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rPM-n5-ntX"/>
@@ -76,6 +61,13 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Facts" id="YTt-9x-hrp">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="tMp-Pu-QON">
+                            <connections>
+                                <action selector="addFactAction:" destination="Y6W-OH-hqX" id="Eat-6w-PLp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="activityView" destination="GUK-py-4a9" id="cd4-Ud-XJy"/>
@@ -83,6 +75,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.76923076923072" y="-28.436018957345969"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xUr-W9-BcH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sx0-3S-grq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DPJ-xD-cd6">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="vFc-J4-YqE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vz4-BC-jNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-18.46153846153846" y="-28.436018957345969"/>
         </scene>

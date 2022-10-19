@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z4n-Hz-Gua">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Jokes View Controller-->
+        <!--Jokes-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="JokesViewController" id="Y6W-OH-hqX" customClass="JokesViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tw-CB-Wst" userLabel="category">
-                                <rect key="frame" x="20" y="44" width="374" height="31"/>
+                                <rect key="frame" x="20" y="92" width="374" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Joke Selection"/>
                                 <connections>
@@ -26,13 +26,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="joke" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRf-kw-jLI">
-                                <rect key="frame" x="20" y="80" width="374" height="17"/>
+                                <rect key="frame" x="20" y="131.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-Da-Thq" userLabel="Parameters">
-                                <rect key="frame" x="20" y="459" width="374" height="344"/>
+                                <rect key="frame" x="20" y="455.5" width="374" height="344"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yzO-31-LuN">
                                         <rect key="frame" x="72" y="0.0" width="230" height="32"/>
@@ -273,7 +273,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce2-kq-nzF">
-                                <rect key="frame" x="179" y="811" width="56" height="51"/>
+                                <rect key="frame" x="177.5" y="807.5" width="59.5" height="54.5"/>
                                 <color key="backgroundColor" red="0.1609458097" green="0.41230666040000002" blue="0.087782193539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -304,6 +304,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jwa-Da-Thq" secondAttribute="trailing" constant="20" id="xOL-ko-ZMx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Jokes" id="BOl-aV-mZ1"/>
                     <connections>
                         <outlet property="categoryButton" destination="0tw-CB-Wst" id="cwL-s4-J1k"/>
                         <outlet property="jokeLabel" destination="RRf-kw-jLI" id="TCE-Ti-Q8y"/>
@@ -330,10 +331,28 @@
                     <viewLayoutGuide key="safeArea" id="hza-eU-K1x"/>
                 </stackView>
             </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9KA-13-2Qt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z4n-Hz-Gua" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cat-hB-V1A">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ZzM-5d-ERd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZi-rC-9Ev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="13.043478260869566" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
     </resources>
 </document>

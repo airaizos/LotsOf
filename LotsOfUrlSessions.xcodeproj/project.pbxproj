@@ -382,6 +382,7 @@
 		3A0D5D6428FE9CE800D71B4E /* OneViewApps */ = {
 			isa = PBXGroup;
 			children = (
+				3A0D5D8128FEDDEA00D71B4E /* Antojitos */,
 				3A0D5D7628FEC28E00D71B4E /* TaskCountdown */,
 				3A0D5D6B28FEA10100D71B4E /* Calendar */,
 				3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */,
@@ -429,6 +430,13 @@
 			path = Weekly;
 			sourceTree = "<group>";
 		};
+		3A0D5D8128FEDDEA00D71B4E /* Antojitos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Antojitos;
+			sourceTree = "<group>";
+		};
 		3A134F4828F5F42F00673B79 /* ImageLoader */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,15 +466,22 @@
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
-				3A0D5D6428FE9CE800D71B4E /* OneViewApps */,
-				3A0D5D6328FE9CD900D71B4E /* Tests */,
-				3AC1BAA028F031DA009E1F36 /* Resources */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
 				3AF224D8289A7B34008BEAF0 /* SceneDelegate.swift */,
 				3AF224E4289A7B36008BEAF0 /* LaunchScreen.storyboard */,
 				3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */,
+				3AF224D5289A7B34008BEAF0 /* UrlSessions */,
+				3AC1BA9F28F031BD009E1F36 /* DataPersistance */,
+				3A0D5D6428FE9CE800D71B4E /* OneViewApps */,
+				3A54726228E44B92003CFE4F /* Animations */,
+				3A146DB028DA341500CB1C90 /* UsersInterfaces */,
+				3A0D5D6328FE9CD900D71B4E /* Tests */,
+				3AC1BA9C28F0313E009E1F36 /* CollectionViews */,
+				3AC1BA9E28F0316C009E1F36 /* Tests */,
+				3AC1BA9D28F0314C009E1F36 /* TableViews */,
+				3AC1BAA028F031DA009E1F36 /* Resources */,
 			);
 			path = LotsOf;
 			sourceTree = "<group>";
@@ -638,7 +653,8 @@
 				3AF224F9289A7B36008BEAF0 /* LotsOfUrlSessionsUITests */,
 				3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */,
 			);
-			path = Tests;
+			name = Tests;
+			path = ../Tests;
 			sourceTree = "<group>";
 		};
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
@@ -687,13 +703,6 @@
 				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
-				3AC1BA9F28F031BD009E1F36 /* DataPersistance */,
-				3AC1BA9D28F0314C009E1F36 /* TableViews */,
-				3AC1BA9C28F0313E009E1F36 /* CollectionViews */,
-				3A54726228E44B92003CFE4F /* Animations */,
-				3A146DB028DA341500CB1C90 /* UsersInterfaces */,
-				3AF224D5289A7B34008BEAF0 /* UrlSessions */,
-				3AC1BA9E28F0316C009E1F36 /* Tests */,
 				3AF224D4289A7B34008BEAF0 /* Products */,
 				3AE2A68528D0F50100E4EFCA /* Frameworks */,
 			);

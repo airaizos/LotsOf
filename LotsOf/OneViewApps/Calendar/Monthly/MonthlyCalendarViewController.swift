@@ -31,7 +31,6 @@ final class MonthlyCalendarViewController: UIViewController {
         
     }
     
-    
     /// Crea la vista del mes, añadiendo espacios vacíos al inicio hasta el día de la semana del primer día del mes, y al final del ultimo día del mes hasta el final de los días de la semana.
     func setMonthView() {
         totalSquares.removeAll()
@@ -80,7 +79,7 @@ final class MonthlyCalendarViewController: UIViewController {
     
     deinit {
         
-        print("    [DEINIT] ->      WeeklyCalendarViewController ViewController")
+        print("    [DEINIT] ->      MONTHLYCALENDAR ViewController")
     }
     
 }

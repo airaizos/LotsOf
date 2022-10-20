@@ -17,7 +17,7 @@ final class Event {
     func eventsForDate(date: Date) -> [Event] {
         var daysEvents = [Event]()
         eventsList.forEach { event in
-            if (event.date == date) {
+            if(Calendar.current.isDate(event.date, inSameDayAs: date)) {
                 daysEvents.append(event)
             }
         }

@@ -48,8 +48,7 @@ final class WeeklyCalendarViewController: UIViewController {
         
         monthlabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
-        
-        
+        tableView.reloadData()
     }
     
     
@@ -115,7 +114,6 @@ extension WeeklyCalendarViewController: UITableViewDelegate, UITableViewDataSour
         let events = Event().eventsForDate(date: selectedDate)
         let event = events[indexPath.row]
         cell.textLabel?.text = event.name + " " + CalendarHelper().timeString(date: event.date)
-        print("\(String(describing: cell.textLabel?.text) )")
         return cell
     }
 

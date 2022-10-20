@@ -30,6 +30,10 @@
 		3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */; };
 		3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */; };
 		3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */; };
+		3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */; };
+		3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */; };
+		3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2F290148DC00D4DBCC /* EventCell.swift */; };
+		3A0B1B3229014A6100D4DBCC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B3129014A6100D4DBCC /* Event.swift */; };
 		3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */; };
 		3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */; };
 		3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */; };
@@ -182,6 +186,10 @@
 		3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewModel.swift; sourceTree = "<group>"; };
 		3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewController.swift; sourceTree = "<group>"; };
 		3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostPPSViewController.storyboard; sourceTree = "<group>"; };
+		3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventEditViewController.storyboard; sourceTree = "<group>"; };
+		3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
+		3A0B1B2F290148DC00D4DBCC /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		3A0B1B3129014A6100D4DBCC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfertaViewController.storyboard; sourceTree = "<group>"; };
 		3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewController.swift; sourceTree = "<group>"; };
 		3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneViewAppsViewController.storyboard; sourceTree = "<group>"; };
@@ -377,6 +385,10 @@
 		3A0B1B2A290147A900D4DBCC /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */,
+				3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */,
+				3A0B1B2F290148DC00D4DBCC /* EventCell.swift */,
+				3A0B1B3129014A6100D4DBCC /* Event.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -947,6 +959,7 @@
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
+				3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
 				3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */,
@@ -1035,6 +1048,8 @@
 				3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */,
 				3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
+				3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */,
+				3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */,
 				3AFB00AA28F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
 				3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */,
@@ -1053,6 +1068,7 @@
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */,
 				3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */,
+				3A0B1B3229014A6100D4DBCC /* Event.swift in Sources */,
 				3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */,
 				3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */,
 				3AE6A09028D7982A0041602B /* ColorsViewModel.swift in Sources */,

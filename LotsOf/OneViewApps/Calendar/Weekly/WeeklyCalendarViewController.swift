@@ -7,9 +7,10 @@
 
 import UIKit
 
+var selectedDate = Date()
+
 final class WeeklyCalendarViewController: UIViewController {
     
-    var selectedDate = Date()
     var totalSquares = [Date]()
     
     @IBOutlet weak var monthlabel: UILabel!
@@ -19,6 +20,11 @@ final class WeeklyCalendarViewController: UIViewController {
         super.viewDidLoad()
         setCellsView()
         setWeekView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+      
     }
     //MARK: FUNC
     //No cambia el ancho
@@ -41,11 +47,17 @@ final class WeeklyCalendarViewController: UIViewController {
         
         monthlabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
+      
     }
     
     
     
     //MARK: IBActions
+    
+    @IBAction func addEventAction(_ sender: UIBarButtonItem) {
+        goTo(viewControllerName: "EventEditViewController")
+    }
+    
     @IBAction func previousWeek(_ sender: UIButton) {
         selectedDate = CalendarHelper().addDays(date: selectedDate, days: -7)
         setWeekView()
@@ -57,7 +69,6 @@ final class WeeklyCalendarViewController: UIViewController {
     }
     
     deinit {
-        
         print("    [DEINIT] ->      WEEKLYCALENDAR ViewController")
     }
 }
@@ -87,6 +98,9 @@ extension WeeklyCalendarViewController: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedDate = totalSquares[indexPath.item]
         collectionView.reloadData()
+
+        
     }
     
 }
+

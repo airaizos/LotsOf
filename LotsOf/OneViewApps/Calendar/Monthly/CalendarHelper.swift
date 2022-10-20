@@ -28,6 +28,13 @@ final class CalendarHelper {
         dateFormatter.dateFormat = "yyyy"
         return dateFormatter.string(from: date)
     }
+    
+    func timeString(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: date)
+    }
+    
     /// Devuelve el número de días de un mes a partir de una fecha
     /// - Parameter date: fecha
     /// - Returns: Número de días de ese mes

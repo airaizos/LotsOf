@@ -12,7 +12,7 @@ final class MonthlyCalendarViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var selectedDate = Date()
+
     var totalSquares = [String]()
     
     override func viewDidLoad() {
@@ -54,6 +54,7 @@ final class MonthlyCalendarViewController: UIViewController {
         
         monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
+        
     }
     
     

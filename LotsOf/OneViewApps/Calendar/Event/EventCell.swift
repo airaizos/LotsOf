@@ -9,7 +9,6 @@ import UIKit
 
 final class EventCell: UITableViewCell {
     
-
     @IBOutlet weak var eventLabel: UILabel!
     
 }

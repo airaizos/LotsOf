@@ -15,6 +15,7 @@ final class WeeklyCalendarViewController: UIViewController {
     
     @IBOutlet weak var monthlabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ final class WeeklyCalendarViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-      
+        tableView.reloadData()
     }
     //MARK: FUNC
     //No cambia el ancho
@@ -47,9 +48,9 @@ final class WeeklyCalendarViewController: UIViewController {
         
         monthlabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
-      
+        
+        
     }
-    
     
     
     //MARK: IBActions
@@ -98,9 +99,24 @@ extension WeeklyCalendarViewController: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedDate = totalSquares[indexPath.item]
         collectionView.reloadData()
-
+        tableView.reloadData()
         
     }
     
 }
+//TODO: No carga las cells de la tableView
+extension WeeklyCalendarViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Event().eventsForDate(date: selectedDate).count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell")!
+        let events = Event().eventsForDate(date: selectedDate)
+        let event = events[indexPath.row]
+        cell.textLabel?.text = event.name + " " + CalendarHelper().timeString(date: event.date)
+        print("\(String(describing: cell.textLabel?.text) )")
+        return cell
+    }
 
+}

@@ -147,18 +147,40 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="Re0-CW-jkh"/>
                                 </connections>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9tZ-A3-9kd">
+                                <rect key="frame" x="16" y="304" width="354" height="506"/>
+                                <color key="backgroundColor" red="0.56423611110000005" green="0.19330771690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="44" id="UUm-pA-RXp">
+                                        <rect key="frame" x="0.0" y="50" width="354" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UUm-pA-RXp" id="hoJ-aa-P9Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="YAd-bm-Bf6"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="zm1-lu-7cS"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="U0x-gK-oA7" firstAttribute="top" secondItem="enX-jB-jgY" secondAttribute="bottom" id="3NY-TY-4fu"/>
                             <constraint firstAttribute="height" secondItem="W12-yc-RpD" secondAttribute="height" multiplier="6" id="5Jj-wH-bJh"/>
+                            <constraint firstItem="9tZ-A3-9kd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Esm-A8-cHc"/>
                             <constraint firstItem="enX-jB-jgY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="J0P-XA-ddV"/>
                             <constraint firstItem="W12-yc-RpD" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="8" id="KEY-eG-pqi"/>
                             <constraint firstItem="W12-yc-RpD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="Qin-gK-ghs"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="U0x-gK-oA7" secondAttribute="trailing" constant="16" id="Tmh-zQ-JYC"/>
                             <constraint firstItem="W12-yc-RpD" firstAttribute="top" secondItem="U0x-gK-oA7" secondAttribute="bottom" id="eYL-rm-KFT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9tZ-A3-9kd" secondAttribute="trailing" constant="20" id="ebV-kL-m2V"/>
                             <constraint firstItem="U0x-gK-oA7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="gz0-Qb-I6C"/>
+                            <constraint firstItem="9tZ-A3-9kd" firstAttribute="top" secondItem="W12-yc-RpD" secondAttribute="bottom" constant="8" symbolic="YES" id="jcW-2D-7DX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9tZ-A3-9kd" secondAttribute="bottom" id="nc3-Ip-eF3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="enX-jB-jgY" secondAttribute="trailing" constant="20" id="w8g-eo-B5E"/>
                             <constraint firstItem="enX-jB-jgY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zDl-jx-gvU"/>
                         </constraints>
@@ -173,6 +195,7 @@
                     <connections>
                         <outlet property="collectionView" destination="W12-yc-RpD" id="S7X-DY-Aaj"/>
                         <outlet property="monthlabel" destination="NkR-nX-exx" id="vCN-Vx-OC0"/>
+                        <outlet property="tableView" destination="9tZ-A3-9kd" id="oPm-ul-5K1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

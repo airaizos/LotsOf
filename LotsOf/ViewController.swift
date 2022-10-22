@@ -28,6 +28,7 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func goToUI(_ sender: UIButton) {
+        goTo(viewControllerName: "UserInterfacesViewController")
     }
    
     

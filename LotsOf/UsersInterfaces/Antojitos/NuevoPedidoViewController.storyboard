@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nuevo Pedido View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NuevoPedidoViewController" id="Y6W-OH-hqX" customClass="NuevoPedidoViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riF-Jp-4Bq">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UbC-ra-8Vj"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Nuevo Pedido" style="editor" id="hr5-jI-OJf"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cómo quieres tu pedido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBn-5v-zIp">
+                                <rect key="frame" x="39" y="102" width="312" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-MX-bCo">
+                                <rect key="frame" x="39" y="148.33333333333334" width="312" height="32"/>
+                                <segments>
+                                    <segment title="A domicilio"/>
+                                    <segment title="Recoger"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A qué dirección lo enviamos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwC-pp-CUU">
+                                <rect key="frame" x="39" y="205" width="312" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domicilio: Calle Mayor 1 , Madrid, Madrid, 00001" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74j-gH-zeN">
+                                <rect key="frame" x="42.666666666666657" y="251.33333333333334" width="305" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URW-41-VA3">
+                                <rect key="frame" x="39" y="322" width="312" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="NUEVA DIRECCIÓN" titleAlignment="leading">
+                                    <color key="baseForegroundColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="También puedes continuar e indicarlo más adelante" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-KV-CSp">
+                                <rect key="frame" x="19.666666666666657" y="705.33333333333337" width="351" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xT-Fq-xJc">
+                                <rect key="frame" x="29.333333333333343" y="769.66666666666663" width="331.33333333333326" height="40.333333333333371"/>
+                                <color key="backgroundColor" red="0.58918315170000002" green="0.7070301175" blue="0.1829762459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Confirmar" subtitle="" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="74j-gH-zeN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="14w-c2-Ux8"/>
+                            <constraint firstItem="URW-41-VA3" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="4bT-Ya-6dg"/>
+                            <constraint firstItem="KwC-pp-CUU" firstAttribute="top" secondItem="AYH-MX-bCo" secondAttribute="bottom" constant="25.666666666666657" id="69Q-R0-30n"/>
+                            <constraint firstItem="MBn-5v-zIp" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="9hP-wD-PqS"/>
+                            <constraint firstItem="AYH-MX-bCo" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="H8L-gs-4hk"/>
+                            <constraint firstItem="AYH-MX-bCo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="KJR-37-qS3"/>
+                            <constraint firstItem="URW-41-VA3" firstAttribute="top" secondItem="74j-gH-zeN" secondAttribute="bottom" constant="30" id="MGQ-3a-rSX"/>
+                            <constraint firstItem="74j-gH-zeN" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.782051" id="O7T-sk-zt1"/>
+                            <constraint firstItem="AYH-MX-bCo" firstAttribute="top" secondItem="MBn-5v-zIp" secondAttribute="bottom" constant="20" id="OnP-PU-lgd"/>
+                            <constraint firstItem="riF-Jp-4Bq" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="PHa-ob-SlC"/>
+                            <constraint firstItem="MBn-5v-zIp" firstAttribute="top" secondItem="riF-Jp-4Bq" secondAttribute="bottom" constant="11" id="V1o-hO-TPg"/>
+                            <constraint firstItem="MBn-5v-zIp" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="apU-uJ-Bu8"/>
+                            <constraint firstItem="6Fa-KV-CSp" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bhc-s1-A7d"/>
+                            <constraint firstItem="URW-41-VA3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="c5b-Ys-2XZ"/>
+                            <constraint firstItem="riF-Jp-4Bq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cS5-u7-ojS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7xT-Fq-xJc" secondAttribute="bottom" id="gTF-9w-k0m"/>
+                            <constraint firstItem="7xT-Fq-xJc" firstAttribute="top" secondItem="6Fa-KV-CSp" secondAttribute="bottom" constant="23.666666666666629" id="ggA-Z5-Hgd"/>
+                            <constraint firstItem="KwC-pp-CUU" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="jDZ-hs-l0N"/>
+                            <constraint firstItem="74j-gH-zeN" firstAttribute="top" secondItem="KwC-pp-CUU" secondAttribute="bottom" constant="20" id="jeC-Oz-pYV"/>
+                            <constraint firstItem="7xT-Fq-xJc" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.85" id="kwK-mk-BLm"/>
+                            <constraint firstItem="KwC-pp-CUU" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="sWp-rr-gIe"/>
+                            <constraint firstItem="7xT-Fq-xJc" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="t8K-01-rWT"/>
+                            <constraint firstItem="riF-Jp-4Bq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vm9-mZ-1ZD"/>
+                            <constraint firstItem="6Fa-KV-CSp" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="yNg-eE-uUU"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

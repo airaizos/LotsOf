@@ -19,11 +19,12 @@ final class OneViewAppsViewController: UIViewController {
         setupView()
     }
     
-    func setupView() {
+    private func setupView() {
         tableView.delegate = self
         tableView.dataSource = self
         
     }
+    
     
     deinit {
         print("    [DEINIT] ->      ONEVIEWAPP ViewController")

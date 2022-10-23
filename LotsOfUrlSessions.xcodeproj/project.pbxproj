@@ -49,6 +49,10 @@
 		3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */; };
 		3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */; };
 		3A0E6BBC290015E6006FF6B2 /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */; };
+		3A104B1929052CEF00ACC903 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1829052CEF00ACC903 /* QuotesViewController.swift */; };
+		3A104B1C29052D1500ACC903 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1B29052D1500ACC903 /* Quotes.swift */; };
+		3A104B1E29052D2600ACC903 /* EditeQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */; };
+		3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1F29052E4A00ACC903 /* ModelController.swift */; };
 		3A127A0E28FBEAB0002B63F2 /* OfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
 		3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4928F5F45B00673B79 /* ImageLoader.swift */; };
@@ -115,6 +119,7 @@
 		3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */; };
 		3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */; };
 		3AB2B80528FB57060021BB3C /* OfertaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2B80428FB57060021BB3C /* OfertaListViewModel.swift */; };
+		3AC3972129049A8200BE168A /* InicioScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3972029049A8200BE168A /* InicioScrollView.swift */; };
 		3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF59E28CFC48E00C31731 /* Dog.swift */; };
 		3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */; };
 		3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */; };
@@ -213,6 +218,10 @@
 		3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
 		3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
+		3A104B1829052CEF00ACC903 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		3A104B1B29052D1500ACC903 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeQuotesViewController.swift; sourceTree = "<group>"; };
+		3A104B1F29052E4A00ACC903 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewModel.swift; sourceTree = "<group>"; };
 		3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImageCodeViewController.swift; sourceTree = "<group>"; };
 		3A134F4928F5F45B00673B79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -281,6 +290,7 @@
 		3AB2B80228FB344B0021BB3C /* Oferta+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Oferta+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		3AB2B80328FB344B0021BB3C /* Oferta+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Oferta+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3AB2B80428FB57060021BB3C /* OfertaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaListViewModel.swift; sourceTree = "<group>"; };
+		3AC3972029049A8200BE168A /* InicioScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioScrollView.swift; sourceTree = "<group>"; };
 		3ADAF59E28CFC48E00C31731 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworking.swift; sourceTree = "<group>"; };
 		3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
@@ -476,8 +486,28 @@
 				3AFB0F5A29017FE100B12B9B /* AntojitosInicioViewController.swift */,
 				3AFB0F5829017FD800B12B9B /* AntojitosInicioViewController.storyboard */,
 				3A586507290403CB004A6794 /* InicioScrollView.xib */,
+				3AC3972029049A8200BE168A /* InicioScrollView.swift */,
 			);
 			path = Antojitos;
+			sourceTree = "<group>";
+		};
+		3A104B1729052CC000ACC903 /* Varios */ = {
+			isa = PBXGroup;
+			children = (
+				3A104B1A29052CFF00ACC903 /* Quotes */,
+			);
+			path = Varios;
+			sourceTree = "<group>";
+		};
+		3A104B1A29052CFF00ACC903 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				3A104B1829052CEF00ACC903 /* QuotesViewController.swift */,
+				3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */,
+				3A104B1B29052D1500ACC903 /* Quotes.swift */,
+				3A104B1F29052E4A00ACC903 /* ModelController.swift */,
+			);
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 		3A134F4828F5F42F00673B79 /* ImageLoader */ = {
@@ -513,6 +543,7 @@
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
+				3A104B1729052CC000ACC903 /* Varios */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
@@ -1032,8 +1063,10 @@
 				3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */,
 				3A14252628F9B189004B5252 /* OfertaCell.swift in Sources */,
 				3A05D23128CA493F00C5E396 /* Joke.swift in Sources */,
+				3A104B1C29052D1500ACC903 /* Quotes.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* URLSessionsViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */,
+				3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */,
 				3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */,
 				3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */,
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
@@ -1048,6 +1081,7 @@
 				3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */,
 				3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */,
 				3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */,
+				3A104B1929052CEF00ACC903 /* QuotesViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
 				3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */,
 				3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */,
@@ -1081,6 +1115,7 @@
 				3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */,
 				3AFB00AA28F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift in Sources */,
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
+				3A104B1E29052D2600ACC903 /* EditeQuotesViewController.swift in Sources */,
 				3AFB0F5529016A5D00B12B9B /* UserInterfacesViewController.swift in Sources */,
 				3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */,
 				3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */,
@@ -1092,6 +1127,7 @@
 				3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */,
 				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */,
+				3AC3972129049A8200BE168A /* InicioScrollView.swift in Sources */,
 				3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */,
 				3A1ABA0128D1E46400235D59 /* ColorTableViewCell.swift in Sources */,

@@ -40,8 +40,16 @@ final class ViewController: UIViewController {
         goTo(viewControllerName: "OneViewAppsViewController")
     }
     
+    @IBAction func button(_ sender: UIButton) {
+        let viewController = QuotesViewController()
+        
+        viewController.modelController = ModelController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
     
     @IBAction func goToAnimations(_ sender: UIButton) {
         goTo(viewControllerName: "LotsOfAnimationsViewController")
     }
+    
+    
 }

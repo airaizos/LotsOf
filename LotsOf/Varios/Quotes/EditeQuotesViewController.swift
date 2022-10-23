@@ -11,33 +11,36 @@ import UIKit
 final class EditeQuotesViewController: UIViewController {
     var modelController: ModelController!
     
-    
-    let editQuoteTextView: UITextView = {
+    private let editQuoteTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
-        
+        textView.makeShadow()
         return textView
     }()
     
-    let editAuthorTextView: UITextView = {
+    private let editAuthorTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
-        
+        textView.makeShadow()
         return textView
+    }()
+    
+    private lazy var saveButton: UIButton = {
+        let button = UIButton.customButton(title: "save", titleColor: .systemPink, tintColor: .white)
+ //       button.addTarget(self, action: #selector(saveButtonAction), for: .touchUpInside)
+        button.addTarget(self, action: #selector(saveButtonActionNC), for: .touchUpInside)
+        return button
     }()
     
     lazy var editStackView : UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [editQuoteTextView, editAuthorTextView])
+        let stackView = UIStackView(arrangedSubviews: [editQuoteTextView, editAuthorTextView,saveButton])
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
         return stackView
     }()
     
-    let saveButton: UIButton = {
-        let button = UIButton.customButton(title: "save", titleColor: .systemPink, tintColor: .white)
-        
-        return button
-    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +51,9 @@ final class EditeQuotesViewController: UIViewController {
     
     
     func setupView() {
+        view.backgroundColor = .systemGray2
         view.addSubview(editStackView)
         view.addSubview(saveButton)
-        
         
         NSLayoutConstraint.activate([
             editStackView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
@@ -63,11 +66,40 @@ final class EditeQuotesViewController: UIViewController {
         ])
     }
     
-    func setupQuote() {
+    private func setupQuote() {
         let quote = modelController.quote
         editQuoteTextView.text = quote.text
         editAuthorTextView.text = quote.author
+    }
+    
+    private func saveQuote() {
+        let newQuote = Quote(text: editQuoteTextView.text, author: editAuthorTextView.text)
+        modelController.quote = newQuote
+    }
+    
+    //TODO: Con el dismiss no guarda los cambios y con el navigationguarda ,pero  no va hacia atrás. algon con el viewWillAppear
+    @objc private func saveButtonAction(sender: UIButton) {
+        DispatchQueue.main.async {
+            self.saveQuote()
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    @objc private func saveButtonActionNC(sender: UIButton) {
         
+        DispatchQueue.main.async {
+            self.saveQuote()
+            let viewController = QuotesViewController()
+            viewController.modelController = self.modelController
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+    
+    
+    
+    deinit {
+        
+        print("    [DEINIT] ->      EDITQUOTES ViewController")
     }
 }
 

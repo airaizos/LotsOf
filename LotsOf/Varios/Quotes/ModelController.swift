@@ -9,7 +9,11 @@ import Foundation
 
 final class ModelController {
     var quote = Quote(
-        text: "Text Here",
-        author: "author"
-        )
+        text: "Aquí la quote",
+        author: "AUTOR"
+    )
+    
+    var quotes = [Quote]()
+    
 }
+

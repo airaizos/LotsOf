@@ -9,69 +9,81 @@ import UIKit
 
 final class QuotesViewController: UIViewController {
     var modelController: ModelController!
-    
-    
-    var quoteTextLabel: UILabel = {
+
+    private var quoteTextLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
+        label.makeShadow()
         return label
     }()
     
-    var authorLabel: UILabel = {
+    private var authorLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
+        label.makeShadow()
         return label
     }()
+   
     
-    lazy var quoteStackView: UIStackView = {
-       let stackView = UIStackView(arrangedSubviews: [quoteTextLabel, authorLabel])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
-    
-    lazy var editButton: UIButton = {
-        let button = UIButton.customButton(title: "Edit", titleColor: .green, tintColor: .white)
-        button.addTarget(self, action: #selector(editButtonAction(_:)), for: .touchUpInside)
+    private lazy var editButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Edit", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .systemRed
+        button.setTitleColor(.white, for: .normal)
+        button.makeShadow()
+        button.addTarget(self, action: #selector(editButtonAction), for: .touchUpInside)
+        
         return button
     }()
-    
+                     
+    private lazy var quoteStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [quoteTextLabel, authorLabel, editButton])
+        stackView.axis = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupQuote()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+       setupQuote()
+    }
+    
+    
+    func setupQuote() {
         let quote = modelController.quote
         quoteTextLabel.text = quote.text
         authorLabel.text = quote.author
-        
-            
     }
-    
     func setupView() {
+        view.backgroundColor = .white
         view.addSubview(quoteStackView)
-        view.addSubview(editButton)
-        
+    
         NSLayoutConstraint.activate([
             quoteStackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
-            quoteStackView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
+            quoteStackView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
             quoteStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            quoteStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            editButton.topAnchor.constraint(equalTo: quoteStackView.bottomAnchor, constant: 20),
-            editButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        
+            quoteStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
     
     //MARK: Actions
     
-    @objc private func editButtonAction(_ sender: UIButton) {
+    @objc private func editButtonAction(sender: UIButton) {
         DispatchQueue.main.async {
             let viewController = EditeQuotesViewController()
             viewController.modelController = self.modelController
+       //     self.present(viewController, animated: true)
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

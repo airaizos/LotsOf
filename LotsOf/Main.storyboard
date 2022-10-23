@@ -53,6 +53,9 @@
                                                 <rect key="frame" x="0.0" y="103" width="350" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rg5-Ao-afE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc0-1O-W6z" userLabel="goToAnimations">
                                                 <rect key="frame" x="0.0" y="137.33333333333331" width="350" height="34.333333333333343"/>

@@ -17,4 +17,27 @@ extension String {
         }
         return lineName
     }
+    
+    var textAfterDashSeparator:String {
+        var text: String  {
+            guard let separator = self.lastIndex(of: "/") else { return "/"}
+            let short = String(self[separator...].dropFirst())
+            return short
+            
+        }
+        return text
+    }
+    
+    var textBeforeDashSeparator:String {
+        var text: String  {
+            guard let separator = self.lastIndex(of: "/") else { return "/"}
+            let short = String(self[...separator].dropLast())
+            return short
+            
+        }
+        return text
+    }
+    
+
+    
 }

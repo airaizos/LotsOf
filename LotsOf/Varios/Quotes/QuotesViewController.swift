@@ -9,8 +9,7 @@ import UIKit
 
 final class QuotesViewController: UIViewController {
     var modelController: ModelController!
-    var provider = QuotesProvider()
-
+  
     private var quoteTextLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,6 +49,7 @@ final class QuotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        modelController.provider.getQuotes()
         setupView()
         setupQuote()
     }
@@ -57,11 +57,12 @@ final class QuotesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupQuote()
-        provider.getQuotes()
+        modelController.provider.getQuotes()
     }
     
     
     func setupQuote() {
+        modelController.getQuote()
         let quote = modelController.quote
         quoteTextLabel.text = quote.text
         authorLabel.text = quote.author
@@ -80,13 +81,13 @@ final class QuotesViewController: UIViewController {
     
     
     //MARK: Actions
-    
+    //TODO: Con el presenter no se actualiza la vista. Con el navigation crea varios VC
     @objc private func editButtonAction(sender: UIButton) {
         DispatchQueue.main.async {
             let viewController = EditeQuotesViewController()
             viewController.modelController = self.modelController
-       //     self.present(viewController, animated: true)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.present(viewController, animated: true)
+        //    self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     

@@ -6,6 +6,10 @@
 	<array>
 		<string>Suceden cosas negativas. Las mentalidades negativas las hacen más difíciles./James Clear</string>
 		<string>La inteligencia es la habilidad de adaptarse a los cambios./Stepthen King</string>
+		<string>“Los robots podrían llegar a tomar el control y se podrían rediseñar a sí mismos”./Stephen King</string>
+		<string>“Los virus informáticos deberían ser considerados como vida. Pienso que esto dice algo acerca de la naturaleza humana, que la única forma de vida que hemos creado es puramente destructiva. Hemos creado una forma de vida a nuestra imagen y semejanza”./Stephen King</string>
+		<string>“Una de las reglas básicas del universo es que nada es perfecto. La perfección no existe simplemente… sin imperfección, ni usted ni yo existiríamos”./Stephen King</string>
+		<string>“La ciencia no solo es una disciplina de razón, sino también de romance y pasión”./Stephen King</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//TODO: ¿Porqué tengo que dar a refresh para que se muestran los datos?
+
 final class UsersCollectionViewController: UIViewController {
     var viewModel = UserViewModel()
     private let radius: CGFloat = 8.0

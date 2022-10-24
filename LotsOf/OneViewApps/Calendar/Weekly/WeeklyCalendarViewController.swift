@@ -103,7 +103,7 @@ extension WeeklyCalendarViewController: UICollectionViewDelegate, UICollectionVi
     }
     
 }
-//TODO: No carga las cells de la tableView
+
 extension WeeklyCalendarViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Event().eventsForDate(date: selectedDate).count

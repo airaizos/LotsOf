@@ -77,7 +77,7 @@ final class EditeQuotesViewController: UIViewController {
         modelController.quote = newQuote
     }
     
-    //TODO: Con el dismiss no guarda los cambios y con el navigationguarda ,pero  no va hacia atrás. algon con el viewWillAppear
+    //TODO: Con el dismiss no guarda los cambios y con el navigationguarda ,pero  no va hacia atrás. algon con el viewWillAppear ¿Enviar un refreshdata desde el init?
     @objc private func saveButtonAction(sender: UIButton) {
         DispatchQueue.main.async {
             self.saveQuote()

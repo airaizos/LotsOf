@@ -8,12 +8,15 @@
 import Foundation
 
 final class ModelController {
-    var quote = Quote(
-        text: "Aquí la quote",
-        author: "AUTOR"
-    )
+    let provider = QuotesProvider()
     
-    var quotes = [Quote]()
+    var quote = Quote(text: "", author: "")
     
+    func getQuote() {
+        if quote.text == "" {
+            quote = provider.getRandomQuote()
+        }
+    }
 }
+
 

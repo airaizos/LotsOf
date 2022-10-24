@@ -13,8 +13,6 @@ import UIKit
 
 final class QuoteListViewController: UIViewController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

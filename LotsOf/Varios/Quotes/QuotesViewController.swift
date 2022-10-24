@@ -9,6 +9,7 @@ import UIKit
 
 final class QuotesViewController: UIViewController {
     var modelController: ModelController!
+    var provider = QuotesProvider()
 
     private var quoteTextLabel: UILabel = {
         let label = UILabel()
@@ -55,7 +56,8 @@ final class QuotesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       setupQuote()
+        setupQuote()
+        provider.getQuotes()
     }
     
     

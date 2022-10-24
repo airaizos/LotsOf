@@ -54,6 +54,7 @@
 		3A104B1E29052D2600ACC903 /* EditeQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */; };
 		3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1F29052E4A00ACC903 /* ModelController.swift */; };
 		3A127A0E28FBEAB0002B63F2 /* OfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */; };
+		3A12AFB42906D81D00C602CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A12AFB62906D81D00C602CD /* Localizable.strings */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
 		3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4928F5F45B00673B79 /* ImageLoader.swift */; };
 		3A134F4D28F6002400673B79 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4C28F6002400673B79 /* FactModel.swift */; };
@@ -226,6 +227,8 @@
 		3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeQuotesViewController.swift; sourceTree = "<group>"; };
 		3A104B1F29052E4A00ACC903 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewModel.swift; sourceTree = "<group>"; };
+		3A12AFB52906D81D00C602CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A12AFB72906D83A00C602CD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImageCodeViewController.swift; sourceTree = "<group>"; };
 		3A134F4928F5F45B00673B79 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		3A134F4C28F6002400673B79 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
@@ -761,6 +764,7 @@
 				3AF224DF289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld */,
 				3AF224E2289A7B36008BEAF0 /* Assets.xcassets */,
 				3AF224E7289A7B36008BEAF0 /* Info.plist */,
+				3A12AFB62906D81D00C602CD /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -987,6 +991,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 3AF224CA289A7B34008BEAF0;
 			productRefGroup = 3AF224D4289A7B34008BEAF0 /* Products */;
@@ -1029,6 +1034,7 @@
 				3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
+				3A12AFB42906D81D00C602CD /* Localizable.strings in Resources */,
 				3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */,
 				3AFB0F5329016A5200B12B9B /* UserInterfacesViewController.storyboard in Resources */,
 				3A0D5D6D28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard in Resources */,
@@ -1213,6 +1219,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3A12AFB62906D81D00C602CD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A12AFB52906D81D00C602CD /* en */,
+				3A12AFB72906D83A00C602CD /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		3AF224DC289A7B34008BEAF0 /* URLSessionsViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1236,6 +1251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -1296,6 +1312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

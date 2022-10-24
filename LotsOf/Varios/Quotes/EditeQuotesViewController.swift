@@ -26,7 +26,7 @@ final class EditeQuotesViewController: UIViewController {
     }()
     
     private lazy var saveButton: UIButton = {
-        let button = UIButton.customButton(title: "save", titleColor: .systemPink, tintColor: .white)
+        let button = UIButton.customButton(title: "Save".localized(), titleColor: .systemPink, tintColor: .white)
  //       button.addTarget(self, action: #selector(saveButtonAction), for: .touchUpInside)
         button.addTarget(self, action: #selector(saveButtonActionNC), for: .touchUpInside)
         return button

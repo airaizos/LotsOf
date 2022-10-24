@@ -38,6 +38,13 @@ extension String {
         return text
     }
     
-
+    func localized() -> String {
+        return NSLocalizedString(
+            self,
+            tableName: "Localizable",
+            bundle: .main,
+            value: self,
+            comment: self)
+    }
     
 }

@@ -29,7 +29,7 @@ final class QuotesViewController: UIViewController {
     
     private lazy var editButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Edit", for: .normal)
+        button.setTitle("Edit".localized(), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .systemRed
         button.setTitleColor(.white, for: .normal)

@@ -34,6 +34,8 @@
 		3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */; };
 		3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2F290148DC00D4DBCC /* EventCell.swift */; };
 		3A0B1B3229014A6100D4DBCC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B3129014A6100D4DBCC /* Event.swift */; };
+		3A0BE001290844B800C4B069 /* customView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0BE000290844B800C4B069 /* customView.xib */; };
+		3A0BE003290844C500C4B069 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BE002290844C500C4B069 /* customView.swift */; };
 		3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */; };
 		3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */; };
 		3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */; };
@@ -207,6 +209,8 @@
 		3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		3A0B1B2F290148DC00D4DBCC /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		3A0B1B3129014A6100D4DBCC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		3A0BE000290844B800C4B069 /* customView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customView.xib; sourceTree = "<group>"; };
+		3A0BE002290844C500C4B069 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
 		3A0D50A428FB1EDB0043857A /* OfertaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfertaViewController.storyboard; sourceTree = "<group>"; };
 		3A0D50A628FB1EEB0043857A /* OfertaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewController.swift; sourceTree = "<group>"; };
 		3A0D5D6528FE9D1200D71B4E /* OneViewAppsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneViewAppsViewController.storyboard; sourceTree = "<group>"; };
@@ -496,6 +500,8 @@
 				3AFB0F5829017FD800B12B9B /* AntojitosInicioViewController.storyboard */,
 				3A586507290403CB004A6794 /* InicioScrollView.xib */,
 				3AC3972029049A8200BE168A /* InicioScrollView.swift */,
+				3A0BE000290844B800C4B069 /* customView.xib */,
+				3A0BE002290844C500C4B069 /* customView.swift */,
 			);
 			path = Antojitos;
 			sourceTree = "<group>";
@@ -1047,6 +1053,7 @@
 				3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */,
 				3A02BB8228C8A8E800D168AE /* OdenzaViewController.storyboard in Resources */,
 				3AF224DE289A7B34008BEAF0 /* URLSessionsViewController.storyboard in Resources */,
+				3A0BE001290844B800C4B069 /* customView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1101,6 +1108,7 @@
 				3A104B1929052CEF00ACC903 /* QuotesViewController.swift in Sources */,
 				3AF224D7289A7B34008BEAF0 /* AppDelegate.swift in Sources */,
 				3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */,
+				3A0BE003290844C500C4B069 /* customView.swift in Sources */,
 				3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */,
 				3A86953728C642A4001CC044 /* Model.swift in Sources */,
 				3AB6CEDB2905B8D1002654CD /* QuotesProvider.swift in Sources */,

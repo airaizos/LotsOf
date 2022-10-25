@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n11-HR-nHD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n11-HR-nHD">
                                 <rect key="frame" x="16" y="105" width="358" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="bicycle" catalog="system" title="Domicilio: Calle Mayor 1, Madrid. Madrid. 0001">
@@ -27,26 +26,34 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-la-ZXM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-la-ZXM">
                                 <rect key="frame" x="16" y="47" width="358" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lec-pE-9tj" userLabel="ScrollV" customClass="InicioScrollView" customModule="LotsOfUrlSessions" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wer-Se-0l3" customClass="InicioScrollView" customModule="LotsOfUrlSessions" customModuleProvider="target">
                                 <rect key="frame" x="16" y="148" width="358" height="613"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="centerX" secondItem="n11-HR-nHD" secondAttribute="centerX" id="6eN-Es-ske"/>
+                            <constraint firstItem="rxL-la-ZXM" firstAttribute="leading" secondItem="n11-HR-nHD" secondAttribute="leading" id="97Z-2A-R3L"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wer-Se-0l3" secondAttribute="bottom" id="Asn-QT-j2N"/>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="JJC-2c-Jne"/>
+                            <constraint firstItem="rxL-la-ZXM" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="JhB-wf-LNP"/>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" constant="50.5" id="MeR-VM-wxs"/>
+                            <constraint firstItem="rxL-la-ZXM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Prt-oq-Mnp"/>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Wvm-06-8WK"/>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="centerX" secondItem="rxL-la-ZXM" secondAttribute="centerX" id="bY5-Ge-vi4"/>
+                            <constraint firstItem="n11-HR-nHD" firstAttribute="top" secondItem="rxL-la-ZXM" secondAttribute="bottom" constant="8" id="mbm-bp-Euy"/>
+                            <constraint firstAttribute="bottom" secondItem="rxL-la-ZXM" secondAttribute="bottom" constant="747" id="v9J-Op-c2d"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="9J3-gv-Gk0">
                         <color key="badgeColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
-                    <connections>
-                        <outlet property="inicioScrollView" destination="lec-pE-9tj" id="Mku-f0-S6Q"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="LotsOfUrlSessions" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="608"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bS-Ao-nlP">
+                    <rect key="frame" x="0.0" y="45" width="390" height="563"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DQr-wX-60I">
+                            <rect key="frame" x="20" y="55.000000000000007" width="351" height="76.666666666666686"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS3-Cq-ieh">
+                                    <rect key="frame" x="0.0" y="0.0" width="351" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Ya sabes que pedir"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-Lp-JHq">
+                                    <rect key="frame" x="0.0" y="42.333333333333343" width="351" height="34.333333333333343"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Ya sabes que pedir"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DQr-wX-60I" secondAttribute="bottom" constant="431.33333333333331" id="PkG-Hf-k7b"/>
+                        <constraint firstItem="DQr-wX-60I" firstAttribute="leading" secondItem="3bS-Ao-nlP" secondAttribute="leading" constant="20" id="Qe3-G2-7OL"/>
+                        <constraint firstAttribute="height" constant="563" id="SgH-MD-VhX"/>
+                        <constraint firstAttribute="trailing" secondItem="DQr-wX-60I" secondAttribute="trailing" id="YER-TT-QBm"/>
+                        <constraint firstItem="DQr-wX-60I" firstAttribute="top" secondItem="QMr-Ea-l2R" secondAttribute="top" constant="55.000000000000007" id="zUh-WH-Kfk"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="lBM-jb-xsf"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="QMr-Ea-l2R"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3bS-Ao-nlP" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4QE-nu-Zcs"/>
+                <constraint firstItem="DQr-wX-60I" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="JSd-Ov-sZS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3bS-Ao-nlP" secondAttribute="trailing" id="Mpc-Gj-Eo5"/>
+                <constraint firstItem="3bS-Ao-nlP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T8o-jH-Yad"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="224.61538461538461" y="-115.16587677725119"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

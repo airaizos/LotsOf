@@ -7,36 +7,40 @@
 
 import UIKit
 
-final class InicioScrollView: UIView {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupView()
-    }
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupView()
-    }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-      
-    }
-   
+class InicioScrollView: UIView {
 
-    
-    private func setupView() {
- 
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+
+    private func setup() {
+        let nib = UINib(nibName: "InicioScrollView", bundle: nil)
+        guard let customView = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
+            fatalError("Erorr ")
+        }
+        print("customView")
+        addSubview(customView)
+        
     }
     
     
     //MARK: Labels
+    
+    //MARK: Actions
+    
+    @IBAction func sabesLoQueQuieres(_ sender: UIButton) {
+    }
+    
+    @IBAction func repetirPedido(_ sender: UIButton) {
+    }
     
     //MARK: Outlets
     @IBOutlet weak var bigPromoImage: UIImageView!
     
     //MARK: TerritorioStack
     
-    @IBOutlet weak var territorioPromosLable: UILabel!
+    @IBOutlet weak var territorioPromosLabel: UILabel!
     @IBAction func escanearQR(_ sender: UIButton) {
     }
     @IBOutlet weak var codigoPromocionalTextField: UITextField!
@@ -49,6 +53,8 @@ final class InicioScrollView: UIView {
     @IBAction func verPromociones(_ sender: UIButton) {
     }
     
+    @IBOutlet weak var exclusivasAppCollectionView: UICollectionView!
+    
     //MARK: Mejores Promos
     
     @IBOutlet weak var mejoresPromos: UILabel!
@@ -56,7 +62,6 @@ final class InicioScrollView: UIView {
     
     @IBAction func mejoresPromosverTodasAction(_ sender: UIButton) {
     }
-    @IBOutlet weak var exclusivasAppCollectionView: UICollectionView!
     
     //MARK: La Carta
     
@@ -76,13 +81,7 @@ final class InicioScrollView: UIView {
     
     @IBOutlet weak var pruebaNuestrasMasasLabel: UILabel!
     
-    @IBOutlet weak var MasasCollectionView: UICollectionView!
-    //MARK: Actions
-    
-    @IBAction func sabesLoQueQuieres(_ sender: UIButton) {
-    }
-    
-    @IBAction func repetirPedido(_ sender: UIButton) {
-    }
+
+
     
 }

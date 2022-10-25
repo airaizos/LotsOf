@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="Yzt-SR-ewj">
-                    <rect key="frame" x="0.0" y="0.0" width="390" height="1326"/>
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="1346"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XCb-1Z-94b" userLabel="QuickOrder Stack View">
@@ -34,6 +34,7 @@
                                     <buttonConfiguration key="configuration" style="plain" title="Repite rápidamente tus últimos pedidos haciendo cliek aquí"/>
                                 </button>
                             </subviews>
+                            <viewLayoutGuide key="safeArea" id="btT-uX-53v"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="88.666666666666686" id="Tf6-Yo-pav"/>
                             </constraints>

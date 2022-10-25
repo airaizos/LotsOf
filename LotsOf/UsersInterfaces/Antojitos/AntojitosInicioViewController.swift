@@ -9,12 +9,19 @@ import UIKit
 
 final class AntojitosInicioViewController: UIViewController {
 
+    @IBOutlet weak var inicioScrollView: InicioScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
        
     }
     
+    func setupView() {
+      
+    }
 
-
+    deinit {
+        print("    [DEINIT] ->      ANTOJITOSINICIO ViewController")
+    }
 }

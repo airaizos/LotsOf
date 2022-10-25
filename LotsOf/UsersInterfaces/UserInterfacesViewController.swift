@@ -37,6 +37,11 @@ extension UserInterfacesViewController: UITableViewDelegate, UITableViewDataSour
         
         cell.textLabel?.text = item.name
         cell.detailTextLabel?.text = item.detail
+        
+        let bgColorView = UIView()
+        bgColorView.layer.cornerRadius = 12
+        bgColorView.backgroundColor = UIColor(hex: "e40a92")
+        cell.selectedBackgroundView? = bgColorView
         return cell
     }
     

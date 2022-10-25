@@ -495,9 +495,9 @@
 			isa = PBXGroup;
 			children = (
 				3AFB0F4E290164C400B12B9B /* NuevoPedidoViewController.swift */,
-				3AFB0F50290164CB00B12B9B /* NuevoPedidoViewController.storyboard */,
 				3AFB0F5A29017FE100B12B9B /* AntojitosInicioViewController.swift */,
 				3AFB0F5829017FD800B12B9B /* AntojitosInicioViewController.storyboard */,
+				3AFB0F50290164CB00B12B9B /* NuevoPedidoViewController.storyboard */,
 				3A586507290403CB004A6794 /* InicioScrollView.xib */,
 				3AC3972029049A8200BE168A /* InicioScrollView.swift */,
 				3A0BE000290844B800C4B069 /* customView.xib */,

@@ -41,10 +41,7 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func button(_ sender: UIButton) {
-        let viewController = QuotesViewController()
-        
-        viewController.modelController = ModelController()
-        self.navigationController?.pushViewController(viewController, animated: true)
+      
     }
     
     @IBAction func goToAnimations(_ sender: UIButton) {

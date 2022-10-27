@@ -38,7 +38,7 @@ final class CalendarHelper {
     /// Devuelve el número de días de un mes a partir de una fecha
     /// - Parameter date: fecha
     /// - Returns: Número de días de ese mes
-    func daysInMont(date: Date) -> Int {
+    func daysInMonth(date: Date) -> Int {
         let range = calendar.range(of: .day, in: .month, for: date)!
         return range.count
     }

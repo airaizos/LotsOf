@@ -31,6 +31,12 @@ final class DataPersistanceViewController: UIViewController {
     
     }
     
+    @IBAction func QuotesButtonAction(_ sender: UIButton) {
+        let viewController = QuotesViewController()
+        
+        viewController.modelController = ModelController()
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
     
     deinit {
         print("    [DEINIT] ->      DATAPERSISTANCE ViewController")

@@ -105,11 +105,17 @@
 		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */; };
+		3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */; };
+		3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D529099DB900581F10 /* HackerRankAlgoritmosTest.swift */; };
 		3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */; };
 		3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */; };
 		3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */; };
 		3A54726B28E44CC7003CFE4F /* ChaseButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */; };
 		3A54726D28E44CDB003CFE4F /* ChaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726C28E44CDB003CFE4F /* ChaseButton.swift */; };
+		3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */; };
+		3A574B33290AE51B00BA551F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B32290AE51B00BA551F /* Weather.swift */; };
+		3A574B35290AFD4100BA551F /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A574B34290AEC8D00BA551F /* Weather.json */; };
+		3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */; };
 		3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A586507290403CB004A6794 /* InicioScrollView.xib */; };
 		3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953428C641A9001CC044 /* PokemonsViewModel.swift */; };
 		3A86953728C642A4001CC044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953628C642A4001CC044 /* Model.swift */; };
@@ -281,11 +287,17 @@
 		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewCell.swift; sourceTree = "<group>"; };
+		3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmos.swift; sourceTree = "<group>"; };
+		3A3A46D529099DB900581F10 /* HackerRankAlgoritmosTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmosTest.swift; sourceTree = "<group>"; };
 		3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotsOfAnimationsViewController.storyboard; sourceTree = "<group>"; };
 		3A54726528E44BCD003CFE4F /* LotsOfAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotsOfAnimationsViewController.swift; sourceTree = "<group>"; };
 		3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewController.swift; sourceTree = "<group>"; };
 		3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewModel.swift; sourceTree = "<group>"; };
 		3A54726C28E44CDB003CFE4F /* ChaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButton.swift; sourceTree = "<group>"; };
+		3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheryDataTest.swift; sourceTree = "<group>"; };
+		3A574B32290AE51B00BA551F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		3A574B34290AEC8D00BA551F /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Weather.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/Weather.json; sourceTree = "<absolute>"; };
+		3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelperTests.swift; sourceTree = "<group>"; };
 		3A586507290403CB004A6794 /* InicioScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioScrollView.xib; sourceTree = "<group>"; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
 		3A86953628C642A4001CC044 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -506,14 +518,6 @@
 			path = Antojitos;
 			sourceTree = "<group>";
 		};
-		3A104B1729052CC000ACC903 /* Varios */ = {
-			isa = PBXGroup;
-			children = (
-				3A104B1A29052CFF00ACC903 /* Quotes */,
-			);
-			path = Varios;
-			sourceTree = "<group>";
-		};
 		3A104B1A29052CFF00ACC903 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,7 +564,6 @@
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
-				3A104B1729052CC000ACC903 /* Varios */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
@@ -670,6 +673,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3A3A46D229099B1600581F10 /* Algoritmos */ = {
+			isa = PBXGroup;
+			children = (
+				3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */,
+				3A3A46D529099DB900581F10 /* HackerRankAlgoritmosTest.swift */,
+			);
+			path = Algoritmos;
+			sourceTree = "<group>";
+		};
 		3A54726228E44B92003CFE4F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -688,6 +700,23 @@
 				3A54726C28E44CDB003CFE4F /* ChaseButton.swift */,
 			);
 			path = ChaseButton;
+			sourceTree = "<group>";
+		};
+		3A574B2F290AE43300BA551F /* Weathery2 */ = {
+			isa = PBXGroup;
+			children = (
+				3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */,
+				3A574B32290AE51B00BA551F /* Weather.swift */,
+			);
+			path = Weathery2;
+			sourceTree = "<group>";
+		};
+		3A574B36290B00B000BA551F /* CalendarHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */,
+			);
+			path = CalendarHelper;
 			sourceTree = "<group>";
 		};
 		3A5E4BFA28E2FCE3003D7A4F /* Lines */ = {
@@ -745,6 +774,9 @@
 		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3A574B36290B00B000BA551F /* CalendarHelper */,
+				3A574B2F290AE43300BA551F /* Weathery2 */,
+				3A3A46D229099B1600581F10 /* Algoritmos */,
 				3AF224F9289A7B36008BEAF0 /* LotsOfUrlSessionsUITests */,
 				3AF224EF289A7B36008BEAF0 /* LotsOfUrlSessionsTests */,
 			);
@@ -760,6 +792,7 @@
 				3AFB00A628F87C07003BE6CA /* MoureDev */,
 				3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */,
 				3AFB00AF28F88FC2003BE6CA /* MaldonadoCoreData */,
+				3A104B1A29052CFF00ACC903 /* Quotes */,
 			);
 			path = DataPersistance;
 			sourceTree = "<group>";
@@ -797,6 +830,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB6CED82905B7B7002654CD /* InfoplistQuotes.plist */,
+				3A574B34290AEC8D00BA551F /* Weather.json */,
 				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,
@@ -1017,6 +1051,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A1AB9F928D1DF7B00235D59 /* ColorsViewController.storyboard in Resources */,
+				3A574B35290AFD4100BA551F /* Weather.json in Resources */,
 				3A1AB9FD28D1E1A000235D59 /* ColorsListViewController.storyboard in Resources */,
 				3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */,
 				3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */,
@@ -1120,6 +1155,7 @@
 				3A195D3E28F47697004E0477 /* PPSCollection.swift in Sources */,
 				3A0D5D7328FEADD600D71B4E /* CalendarCell.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
+				3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */,
 				3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */,
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
@@ -1198,6 +1234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A574B33290AE51B00BA551F /* Weather.swift in Sources */,
+				3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */,
+				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
+				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

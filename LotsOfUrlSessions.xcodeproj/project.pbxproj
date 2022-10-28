@@ -712,6 +712,7 @@
 			children = (
 				3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */,
 				3A574B32290AE51B00BA551F /* Weather.swift */,
+				3A574B34290AEC8D00BA551F /* Weather.json */,
 			);
 			path = Weathery2;
 			sourceTree = "<group>";
@@ -740,6 +741,7 @@
 		3A6260F9290C3127008791D9 /* ResusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */,
 				3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */,
 				3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */,
 				3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */,
@@ -847,8 +849,6 @@
 			isa = PBXGroup;
 			children = (
 				3AB6CED82905B7B7002654CD /* InfoplistQuotes.plist */,
-				3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */,
-				3A574B34290AEC8D00BA551F /* Weather.json */,
 				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
 				3A2FA56C28C74A8F0072F90E /* Extensions */,

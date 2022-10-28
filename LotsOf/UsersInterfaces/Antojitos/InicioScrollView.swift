@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InicioScrollView: UIView {
+final class InicioScrollView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

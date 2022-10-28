@@ -124,4 +124,35 @@ final class CalendarHelperTests: XCTestCase {
         XCTAssertEqual(jueves, testWeekDay)
     }
     
+    func testAddDays() throws {
+        let stringDate = "2022-10-27 18:25:59"
+        let newStringDate = "2022-11-04 18:25:59"
+        let days = 8
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-LL-dd HH:mm:ss"
+        let date = dateFormatter.date(from: stringDate)!
+        let newDate = dateFormatter.date(from: newStringDate)!
+        
+        let calendar = CalendarHelper()
+        let testAddDays = calendar.addDays(date: date, days: days)
+        
+        XCTAssertEqual(newDate, testAddDays)
+    }
+    
+    func testSundayForDate () throws {
+        let stringDate = "2022-10-27 18:25:59"
+        let stringLastSunday = "2022-10-23 18:25:59"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-LL-dd HH:mm:ss"
+        let date = dateFormatter.date(from: stringDate)!
+        let lastSunday = dateFormatter.date(from: stringLastSunday)!
+        
+        let calendar = CalendarHelper()
+        
+        let testSundayForDate = calendar.sundayForDate(date: date)
+        XCTAssertEqual(lastSunday, testSundayForDate)
+
+    }
+    
+    
 }

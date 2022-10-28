@@ -36,8 +36,16 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                             </button>
+                            <view contentMode="scaleToFill" id="oe7-Rb-ApB" customClass="PromotionalCodeView" customModule="LotsOfUrlSessions" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="137" width="390" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qUE-On-fX4"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wer-Se-0l3" customClass="InicioScrollView" customModule="LotsOfUrlSessions" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="129" width="390" height="632"/>
+                                <rect key="frame" x="0.0" y="262" width="390" height="365"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -45,14 +53,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wer-Se-0l3" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="2If-7a-Cx4"/>
-                            <constraint firstItem="wer-Se-0l3" firstAttribute="top" secondItem="rxL-la-ZXM" secondAttribute="bottom" constant="32" id="6Ww-7j-vyK"/>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="top" secondItem="rxL-la-ZXM" secondAttribute="bottom" constant="165" id="6Ww-7j-vyK"/>
                             <constraint firstItem="rxL-la-ZXM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6da-aw-lBy"/>
-                            <constraint firstItem="wer-Se-0l3" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" id="Lf1-CI-PkI"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wer-Se-0l3" secondAttribute="bottom" id="TH0-nm-CMW"/>
+                            <constraint firstItem="wer-Se-0l3" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" constant="133" id="Lf1-CI-PkI"/>
+                            <constraint firstItem="oe7-Rb-ApB" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="POk-E1-5mw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wer-Se-0l3" secondAttribute="bottom" constant="134" id="TH0-nm-CMW"/>
                             <constraint firstItem="n11-HR-nHD" firstAttribute="trailing" secondItem="rxL-la-ZXM" secondAttribute="trailing" id="TVg-hL-tBT"/>
                             <constraint firstItem="rxL-la-ZXM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YGI-Jn-aFP"/>
                             <constraint firstItem="n11-HR-nHD" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="g4w-Oh-4j8"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rxL-la-ZXM" secondAttribute="trailing" id="ifh-e6-rI9"/>
+                            <constraint firstItem="oe7-Rb-ApB" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" constant="8" symbolic="YES" id="nn5-ix-G47"/>
                             <constraint firstItem="rxL-la-ZXM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="ogH-6g-aBq"/>
                             <constraint firstItem="wer-Se-0l3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="wrP-LR-Iua"/>
                         </constraints>

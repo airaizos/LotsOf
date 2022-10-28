@@ -156,6 +156,10 @@
 		3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */; };
 		3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */; };
 		3AF7BEFE290C31A2005EAB58 /* PromotionalCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */; };
+		3AF7BF03290C36FC005EAB58 /* PromotionalCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */; };
+		3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF06290C386D005EAB58 /* PromotionalCodeViewModel.swift */; };
+		3AF7BF08290C3B78005EAB58 /* promotionalCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */; };
+		3AF7BF0A290C3C25005EAB58 /* PromotionalCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF09290C3C25005EAB58 /* PromotionalCodes.swift */; };
 		3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */; };
 		3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */; };
 		3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */; };
@@ -346,6 +350,10 @@
 		3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewModel.swift; sourceTree = "<group>"; };
 		3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesProvider.swift; sourceTree = "<group>"; };
 		3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionalCodeView.xib; sourceTree = "<group>"; };
+		3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = promotionalCodes.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/promotionalCodes.json; sourceTree = "<absolute>"; };
+		3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeViewModel.swift; sourceTree = "<group>"; };
+		3AF7BF06290C386D005EAB58 /* PromotionalCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeViewModel.swift; sourceTree = "<group>"; };
+		3AF7BF09290C3C25005EAB58 /* PromotionalCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodes.swift; sourceTree = "<group>"; };
 		3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultsModel.swift; sourceTree = "<group>"; };
 		3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultViewController.swift; sourceTree = "<group>"; };
 		3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
@@ -446,13 +454,6 @@
 				3A0B1B3129014A6100D4DBCC /* Event.swift */,
 			);
 			path = Event;
-			sourceTree = "<group>";
-		};
-		3A0D5D6328FE9CD900D71B4E /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		3A0D5D6428FE9CE800D71B4E /* OneViewApps */ = {
@@ -580,7 +581,6 @@
 				3A0D5D6428FE9CE800D71B4E /* OneViewApps */,
 				3A54726228E44B92003CFE4F /* Animations */,
 				3A146DB028DA341500CB1C90 /* UsersInterfaces */,
-				3A0D5D6328FE9CD900D71B4E /* Tests */,
 				3AC1BA9C28F0313E009E1F36 /* CollectionViews */,
 				3AC1BA9E28F0316C009E1F36 /* Tests */,
 				3AC1BA9D28F0314C009E1F36 /* TableViews */,
@@ -742,6 +742,8 @@
 			children = (
 				3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */,
 				3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */,
+				3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */,
+				3AF7BF09290C3C25005EAB58 /* PromotionalCodes.swift */,
 			);
 			path = ResusableViews;
 			sourceTree = "<group>";
@@ -788,6 +790,7 @@
 		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3AF7BF04290C3846005EAB58 /* Antojitos */,
 				3A574B36290B00B000BA551F /* CalendarHelper */,
 				3A574B2F290AE43300BA551F /* Weathery2 */,
 				3A3A46D229099B1600581F10 /* Algoritmos */,
@@ -844,6 +847,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB6CED82905B7B7002654CD /* InfoplistQuotes.plist */,
+				3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */,
 				3A574B34290AEC8D00BA551F /* Weather.json */,
 				3A280CF628DB625A00091A46 /* LoginModule */,
 				3A146DB128DA345600CB1C90 /* LotsOf */,
@@ -918,6 +922,22 @@
 				3A14BD9628D8CAEE0040117C /* Detail */,
 			);
 			path = LineasAutobus;
+			sourceTree = "<group>";
+		};
+		3AF7BF04290C3846005EAB58 /* Antojitos */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7BF05290C384E005EAB58 /* ReusableViews */,
+			);
+			path = Antojitos;
+			sourceTree = "<group>";
+		};
+		3AF7BF05290C384E005EAB58 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7BF06290C386D005EAB58 /* PromotionalCodeViewModel.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 		3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */ = {
@@ -1091,6 +1111,7 @@
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
 				3A12AFB42906D81D00C602CD /* Localizable.strings in Resources */,
+				3AF7BF08290C3B78005EAB58 /* promotionalCodes.json in Resources */,
 				3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */,
 				3AFB0F5329016A5200B12B9B /* UserInterfacesViewController.storyboard in Resources */,
 				3A0D5D6D28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard in Resources */,
@@ -1220,6 +1241,7 @@
 				3AE6A09028D7982A0041602B /* ColorsViewModel.swift in Sources */,
 				3A14BDA028D8CB710040117C /* LineDetailProvider.swift in Sources */,
 				3A54726B28E44CC7003CFE4F /* ChaseButtonViewModel.swift in Sources */,
+				3AF7BF03290C36FC005EAB58 /* PromotionalCodeViewModel.swift in Sources */,
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,
 				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
@@ -1239,6 +1261,7 @@
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
 				3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */,
 				3A1AB9F728D1DF7400235D59 /* ColorsViewController.swift in Sources */,
+				3AF7BF0A290C3C25005EAB58 /* PromotionalCodes.swift in Sources */,
 				3AF2250D289A86C7008BEAF0 /* Lines.swift in Sources */,
 				3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */,
 				3A14BD9A28D8CB110040117C /* LineModel.swift in Sources */,
@@ -1250,6 +1273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */,
 				3A574B33290AE51B00BA551F /* Weather.swift in Sources */,
 				3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */,
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,

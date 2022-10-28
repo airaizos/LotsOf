@@ -9,6 +9,8 @@ import UIKit
 
 final class PromotionalCodeView: UIView {
 
+    let viewModel = PromotionalCodeViewModel()
+    
     @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var verifyCodebutton: UIButton!
     @IBOutlet weak var promotionalCodeTextField: UITextField!
@@ -32,6 +34,16 @@ final class PromotionalCodeView: UIView {
     }
     
     @IBAction func verifyCodeAction(_ sender: UIButton) {
+        guard let text = promotionalCodeTextField.text else { return }
+        
+        if viewModel.validateUserCode(from: text) {
+            verifyCodebutton.backgroundColor = .systemGreen
+        } else {
+            verifyCodebutton.backgroundColor = .systemRed
+        }
+        //cómo devuelvo un mensaje de Codigo no valido
+        
     }
+    
     
 }

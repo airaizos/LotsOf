@@ -117,7 +117,6 @@
 		3A574B35290AFD4100BA551F /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A574B34290AEC8D00BA551F /* Weather.json */; };
 		3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */; };
 		3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A586507290403CB004A6794 /* InicioScrollView.xib */; };
-		3A6260F6290C2CEF008791D9 /* PromotionalCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A6260F5290C2CEF008791D9 /* PromotionalCodeView.xib */; };
 		3A6260F8290C2CFA008791D9 /* PromotionalCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */; };
 		3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953428C641A9001CC044 /* PokemonsViewModel.swift */; };
 		3A86953728C642A4001CC044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953628C642A4001CC044 /* Model.swift */; };
@@ -156,6 +155,7 @@
 		3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22510289A873D008BEAF0 /* LinesViewController.swift */; };
 		3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */; };
 		3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */; };
+		3AF7BEFE290C31A2005EAB58 /* PromotionalCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */; };
 		3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */; };
 		3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */; };
 		3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */; };
@@ -301,7 +301,6 @@
 		3A574B34290AEC8D00BA551F /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Weather.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/Weather.json; sourceTree = "<absolute>"; };
 		3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelperTests.swift; sourceTree = "<group>"; };
 		3A586507290403CB004A6794 /* InicioScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioScrollView.xib; sourceTree = "<group>"; };
-		3A6260F5290C2CEF008791D9 /* PromotionalCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionalCodeView.xib; sourceTree = "<group>"; };
 		3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeView.swift; sourceTree = "<group>"; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
 		3A86953628C642A4001CC044 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -346,6 +345,7 @@
 		3AF22510289A873D008BEAF0 /* LinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewController.swift; sourceTree = "<group>"; };
 		3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewModel.swift; sourceTree = "<group>"; };
 		3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesProvider.swift; sourceTree = "<group>"; };
+		3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionalCodeView.xib; sourceTree = "<group>"; };
 		3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultsModel.swift; sourceTree = "<group>"; };
 		3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultViewController.swift; sourceTree = "<group>"; };
 		3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
@@ -510,6 +510,7 @@
 		3A0D5D8128FEDDEA00D71B4E /* Antojitos */ = {
 			isa = PBXGroup;
 			children = (
+				3A6260F9290C3127008791D9 /* ResusableViews */,
 				3AFB0F4E290164C400B12B9B /* NuevoPedidoViewController.swift */,
 				3AFB0F5A29017FE100B12B9B /* AntojitosInicioViewController.swift */,
 				3AFB0F5829017FD800B12B9B /* AntojitosInicioViewController.storyboard */,
@@ -518,8 +519,6 @@
 				3AC3972029049A8200BE168A /* InicioScrollView.swift */,
 				3A0BE000290844B800C4B069 /* customView.xib */,
 				3A0BE002290844C500C4B069 /* customView.swift */,
-				3A6260F5290C2CEF008791D9 /* PromotionalCodeView.xib */,
-				3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */,
 			);
 			path = Antojitos;
 			sourceTree = "<group>";
@@ -736,6 +735,15 @@
 				3A0191A7289BF03C00EFF2DA /* LineViewCell.swift */,
 			);
 			path = Lines;
+			sourceTree = "<group>";
+		};
+		3A6260F9290C3127008791D9 /* ResusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */,
+				3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */,
+			);
+			path = ResusableViews;
 			sourceTree = "<group>";
 		};
 		3A86953328C6418A001CC044 /* PokeApi */ = {
@@ -1066,7 +1074,7 @@
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
 				3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */,
 				3AB6CED92905B7B7002654CD /* InfoplistQuotes.plist in Resources */,
-				3A6260F6290C2CEF008791D9 /* PromotionalCodeView.xib in Resources */,
+				3AF7BEFE290C31A2005EAB58 /* PromotionalCodeView.xib in Resources */,
 				3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */,
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A14252828F9B1D2004B5252 /* OfertaCell.xib in Resources */,

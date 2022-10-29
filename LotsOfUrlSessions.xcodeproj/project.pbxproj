@@ -133,6 +133,8 @@
 		3AB6CEDB2905B8D1002654CD /* QuotesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6CEDA2905B8D1002654CD /* QuotesProvider.swift */; };
 		3AB6CEDD2905CA01002654CD /* QuoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6CEDC2905CA01002654CD /* QuoteListViewController.swift */; };
 		3AC3972129049A8200BE168A /* InicioScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3972029049A8200BE168A /* InicioScrollView.swift */; };
+		3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACCA16D290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard */; };
+		3ACCA170290D6943003A7ABE /* PermissionsToUseCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCA16F290D6943003A7ABE /* PermissionsToUseCameraViewController.swift */; };
 		3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF59E28CFC48E00C31731 /* Dog.swift */; };
 		3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */; };
 		3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */; };
@@ -160,6 +162,7 @@
 		3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF06290C386D005EAB58 /* PromotionalCodeViewModel.swift */; };
 		3AF7BF08290C3B78005EAB58 /* promotionalCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */; };
 		3AF7BF0A290C3C25005EAB58 /* PromotionalCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF09290C3C25005EAB58 /* PromotionalCodes.swift */; };
+		3AF7BF0C290C59D9005EAB58 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */; };
 		3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */; };
 		3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */; };
 		3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */; };
@@ -323,6 +326,8 @@
 		3AB6CEDA2905B8D1002654CD /* QuotesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesProvider.swift; sourceTree = "<group>"; };
 		3AB6CEDC2905CA01002654CD /* QuoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListViewController.swift; sourceTree = "<group>"; };
 		3AC3972029049A8200BE168A /* InicioScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioScrollView.swift; sourceTree = "<group>"; };
+		3ACCA16D290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PermissionsToUseCameraViewController.storyboard; sourceTree = "<group>"; };
+		3ACCA16F290D6943003A7ABE /* PermissionsToUseCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsToUseCameraViewController.swift; sourceTree = "<group>"; };
 		3ADAF59E28CFC48E00C31731 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworking.swift; sourceTree = "<group>"; };
 		3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
@@ -354,6 +359,7 @@
 		3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeViewModel.swift; sourceTree = "<group>"; };
 		3AF7BF06290C386D005EAB58 /* PromotionalCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeViewModel.swift; sourceTree = "<group>"; };
 		3AF7BF09290C3C25005EAB58 /* PromotionalCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodes.swift; sourceTree = "<group>"; };
+		3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultsModel.swift; sourceTree = "<group>"; };
 		3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultViewController.swift; sourceTree = "<group>"; };
 		3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
@@ -570,6 +576,7 @@
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
+				3ACCA16B290D68FA003A7ABE /* Permissions */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
 				3AF224D6289A7B34008BEAF0 /* AppDelegate.swift */,
@@ -674,6 +681,7 @@
 				3A195D3B28F473A3004E0477 /* extensionData.swift */,
 				3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */,
 				3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */,
+				3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -825,6 +833,23 @@
 				3A12AFB62906D81D00C602CD /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3ACCA16B290D68FA003A7ABE /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				3ACCA16C290D6900003A7ABE /* Camera */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		3ACCA16C290D6900003A7ABE /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3ACCA16D290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard */,
+				3ACCA16F290D6943003A7ABE /* PermissionsToUseCameraViewController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		3ADAF59D28CF9E6600C31731 /* Dog */ = {
@@ -1115,6 +1140,7 @@
 				3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */,
 				3AFB0F5329016A5200B12B9B /* UserInterfacesViewController.storyboard in Resources */,
 				3A0D5D6D28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard in Resources */,
+				3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
@@ -1152,6 +1178,7 @@
 				3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */,
 				3A083D8A28EB217100F628E7 /* PostPPS.swift in Sources */,
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
+				3AF7BF0C290C59D9005EAB58 /* ImagePicker.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
 				3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */,
@@ -1197,6 +1224,7 @@
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
 				3AFB0F5729016A9100B12B9B /* UserInterfacesViewModel.swift in Sources */,
 				3A0D5D6A28FE9E6C00D71B4E /* OneViewAppsViewModel.swift in Sources */,
+				3ACCA170290D6943003A7ABE /* PermissionsToUseCameraViewController.swift in Sources */,
 				3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */,
 				3A6260F8290C2CFA008791D9 /* PromotionalCodeView.swift in Sources */,
 				3A195D4728F47E37004E0477 /* PPSImageViewController.swift in Sources */,

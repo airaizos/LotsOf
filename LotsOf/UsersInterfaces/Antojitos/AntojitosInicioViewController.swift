@@ -20,8 +20,7 @@ final class AntojitosInicioViewController: UIViewController {
     }
     
     func setupView() {
-       /* self.promotionalCodeView = PromotionalCodeView(presentationController: self)
-        */
+        promotionalCodeView.setup(presentationController: self)
     }
 
     deinit {

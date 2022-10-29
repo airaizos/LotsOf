@@ -8,6 +8,8 @@
 import UIKit
 
 final class PromotionalCodeView: UIView {
+    
+    
 
     let viewModel = PromotionalCodeViewModel()
     
@@ -21,6 +23,7 @@ final class PromotionalCodeView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder:coder)
         setupView()
+        
     }
     
     private func setupView() {
@@ -31,6 +34,9 @@ final class PromotionalCodeView: UIView {
         addSubview(customView)
     }
     
+    func setup(presentationController: UIViewController) {
+        self.presentationController = presentationController
+    }
     
     @IBAction func scanQrAction(_ sender: UIButton) {
     }

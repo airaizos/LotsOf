@@ -41,6 +41,7 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func button(_ sender: UIButton) {
+        
       
     }
     
@@ -48,5 +49,8 @@ final class ViewController: UIViewController {
         goTo(viewControllerName: "LotsOfAnimationsViewController")
     }
     
+    @IBAction func goToPermissions(_ sender: UIButton) {
+        goTo(viewControllerName: "PermissionsViewController")
+    }
     
 }

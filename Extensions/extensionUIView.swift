@@ -17,4 +17,10 @@ extension UIView {
         layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     
+    func makeBackgroundColor(hex: String) -> UIView {
+        let bgColorView = UIView()
+        bgColorView.layer.cornerRadius = 12
+        bgColorView.backgroundColor = UIColor(hex: hex)
+        return bgColorView
+    }
 }

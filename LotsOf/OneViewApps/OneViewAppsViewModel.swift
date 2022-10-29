@@ -19,5 +19,7 @@ final class OneViewAppsViewModel {
 struct appInfo {
     var name: String
     var detail: String
+    var image: UIImage?
     var viewController: String
+
 }

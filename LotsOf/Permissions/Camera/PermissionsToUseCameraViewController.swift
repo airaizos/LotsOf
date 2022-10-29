@@ -23,8 +23,6 @@ final class PermissionsToUseCameraViewController: UIViewController {
     @IBAction func showImagePicker(_ sender: UIButton) {
         self.imagePicker.present(from: sender)
     }
- 
-
 }
 
 extension PermissionsToUseCameraViewController: ImagePickerDelegate {

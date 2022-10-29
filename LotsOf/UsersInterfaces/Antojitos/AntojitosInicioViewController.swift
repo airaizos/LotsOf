@@ -11,14 +11,17 @@ final class AntojitosInicioViewController: UIViewController {
 
     @IBOutlet weak var inicioScrollView: InicioScrollView!
     
+    @IBOutlet weak var promotionalCodeView: PromotionalCodeView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+       setupView()
     }
     
     func setupView() {
-      
+       /* self.promotionalCodeView = PromotionalCodeView(presentationController: self)
+        */
     }
 
     deinit {

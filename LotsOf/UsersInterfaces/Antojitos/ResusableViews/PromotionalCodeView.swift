@@ -11,6 +11,8 @@ final class PromotionalCodeView: UIView {
 
     let viewModel = PromotionalCodeViewModel()
     
+    private weak var presentationController: UIViewController?
+    
     @IBOutlet weak var qrButton: UIButton!
     @IBOutlet weak var verifyCodebutton: UIButton!
     @IBOutlet weak var promotionalCodeTextField: UITextField!
@@ -37,13 +39,29 @@ final class PromotionalCodeView: UIView {
         guard let text = promotionalCodeTextField.text else { return }
         
         if viewModel.validateUserCode(from: text) {
+            showAlert(message: "Código Válido")
             verifyCodebutton.backgroundColor = .systemGreen
+            
+            
         } else {
+            showAlert(message: "Código No Válido")
             verifyCodebutton.backgroundColor = .systemRed
         }
         //cómo devuelvo un mensaje de Codigo no valido
         
     }
     
+    func showAlert(message: String) {
+        
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.presentationController?.present(alert, animated: true)
+    }
     
+}
+
+extension PromotionalCodeView {
+  
 }

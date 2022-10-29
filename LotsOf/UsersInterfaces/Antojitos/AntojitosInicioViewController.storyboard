@@ -70,6 +70,9 @@
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="9J3-gv-Gk0">
                         <color key="badgeColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="promotionalCodeView" destination="oe7-Rb-ApB" id="RT6-go-CSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

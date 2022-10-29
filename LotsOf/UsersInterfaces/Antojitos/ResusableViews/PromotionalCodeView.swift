@@ -10,8 +10,8 @@ import UIKit
 final class PromotionalCodeView: UIView {
     
     
-
     let viewModel = PromotionalCodeViewModel()
+    var imagePicker: ImagePicker!
     
     private weak var presentationController: UIViewController?
     
@@ -36,9 +36,13 @@ final class PromotionalCodeView: UIView {
     
     func setup(presentationController: UIViewController) {
         self.presentationController = presentationController
+        
+        self.imagePicker = ImagePicker(presentationController: presentationController, delegate: self)
     }
     
     @IBAction func scanQrAction(_ sender: UIButton) {
+        
+        self.imagePicker.present(from: sender)
     }
     
     @IBAction func verifyCodeAction(_ sender: UIButton) {
@@ -68,6 +72,8 @@ final class PromotionalCodeView: UIView {
     
 }
 
-extension PromotionalCodeView {
-  
+extension PromotionalCodeView: ImagePickerDelegate {
+    func didSelect(image: UIImage?) {
+        // aqui es donde se debe leer el código y pasarlo al textfield
+    }
 }

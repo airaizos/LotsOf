@@ -9,7 +9,6 @@ import UIKit
 
 final class PermissionsToUseCameraViewController: UIViewController {
     
-
     @IBOutlet weak var imageView: UIImageView!
     
     var imagePicker: ImagePicker!

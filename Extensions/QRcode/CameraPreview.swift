@@ -1,0 +1,54 @@
+//
+//  CameraPreview.swift
+//  LotsOfUrlSessions
+//
+//  Created by Adrian Iraizos Mendoza on 29/10/22.
+//
+
+import UIKit
+import AVFoundation
+
+final class CameraPreview: UIView {
+    private var label: UILabel?
+    var previewLayer: AVCaptureVideoPreviewLayer?
+    var session = AVCaptureSession()
+    weak var delegate: QrCodeCameraDelegate?
+    
+    init(session: AVCaptureSession) {
+        super.init(frame: .zero)
+        self.session = session
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("[CameraPreview] coder has not been implemented")
+    }
+    
+    func createSimulatorView(delegate: QrCodeCameraDelegate) {
+        self.delegate = delegate
+        self.backgroundColor = UIColor.black
+        label = UILabel(frame: self.bounds)
+        label?.numberOfLines = 4
+        label?.text = "click here to simulate scan"
+        label?.textColor = UIColor.white
+        label?.textAlignment = .center
+        if let label = label {
+            addSubview(label)
+        }
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(onClick))
+        self.addGestureRecognizer(gesture)
+    }
+    
+    @objc func onClick() {
+        delegate?.onSimulateScanning()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        #if targetEnvironment(simulator)
+        label?.frame = self.bounds
+        #else
+        previewLayer?.frame = self.bounds
+        #endif
+    }
+   
+}

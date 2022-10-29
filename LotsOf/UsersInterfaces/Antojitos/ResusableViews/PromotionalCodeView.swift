@@ -41,8 +41,12 @@ final class PromotionalCodeView: UIView {
     }
     
     @IBAction func scanQrAction(_ sender: UIButton) {
+        let controller = QRScannerController()
+        let navigation = UINavigationController(rootViewController: controller)
+        navigation.modalPresentationStyle = .fullScreen
+        self.presentationController?.present(navigation, animated:true, completion: nil)
         
-        self.imagePicker.present(from: sender)
+       // self.imagePicker.present(from: sender)
     }
     
     @IBAction func verifyCodeAction(_ sender: UIButton) {

@@ -152,8 +152,17 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
         self.view.addSubview(scannerPlaceholderView)
         self.view.bringSubviewToFront(scannerPlaceholderView)
         
-        captureSession.commitConfiguration()
-        captureSession.startRunning()
+        
+        
+        //TODO: COLA DE DESPACHADO
+        let cola = DispatchQueue.global(qos: .background)
+        cola.async {
+            self.captureSession.commitConfiguration()
+            self.captureSession.startRunning()
+        }
+            
+    
+       
         metadataOutput.rectOfInterest = previewLayer.metadataOutputRectConverted(fromLayerRect: focusRect)
     }
     

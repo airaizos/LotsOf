@@ -178,7 +178,11 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
     }
     private func showAlert(message: String) {
         let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
-        let actionButton = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let actionButton = UIAlertAction(title: "OK", style: .default) { action in
+            
+            self.dismiss(animated: true, completion: nil)
+            
+        }
         alert.addAction(actionButton)
         present(alert, animated: true, completion: nil)
     }
@@ -188,8 +192,8 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             self.showAlert(message: "QR code scanned\n \(stringValue)")
+           
             self.promotionalCode = stringValue
-            
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
     }
@@ -200,6 +204,7 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
     }
     
     deinit {
+        //promotional code. al escanearlo guarda el text. Cómo mando un closure para que ejecute la func de validar código con ese texto?
         self.captureSession = nil
     }
     

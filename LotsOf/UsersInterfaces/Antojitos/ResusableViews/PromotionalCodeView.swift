@@ -45,9 +45,6 @@ final class PromotionalCodeView: UIView {
         let navigation = UINavigationController(rootViewController: controller)
         navigation.modalPresentationStyle = .popover
         self.presentationController?.present(navigation, animated:true, completion: nil)
-        
-        validateCode(from: controller.promotionalCode)
-       // self.imagePicker.present(from: sender)
     }
     
     @IBAction func verifyCodeAction(_ sender: UIButton) {

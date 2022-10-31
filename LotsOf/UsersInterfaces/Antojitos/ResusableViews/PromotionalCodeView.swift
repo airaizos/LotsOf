@@ -9,8 +9,8 @@ import UIKit
 
 final class PromotionalCodeView: UIView {
     
-    
     let viewModel = PromotionalCodeViewModel()
+    //Quitar imagePicker.
     var imagePicker: ImagePicker!
     
     private weak var presentationController: UIViewController?
@@ -46,12 +46,16 @@ final class PromotionalCodeView: UIView {
         navigation.modalPresentationStyle = .popover
         self.presentationController?.present(navigation, animated:true, completion: nil)
         
+        validateCode(from: controller.promotionalCode)
        // self.imagePicker.present(from: sender)
     }
     
     @IBAction func verifyCodeAction(_ sender: UIButton) {
         guard let text = promotionalCodeTextField.text else { return }
-        
+        validateCode(from: text)
+    }
+    
+    func validateCode(from text: String) {
         if viewModel.validateUserCode(from: text) {
             showAlert(message: "Código Válido")
             verifyCodebutton.backgroundColor = .systemGreen
@@ -64,6 +68,7 @@ final class PromotionalCodeView: UIView {
         //cómo devuelvo un mensaje de Codigo no valido
         
     }
+    
     
     func showAlert(message: String) {
         

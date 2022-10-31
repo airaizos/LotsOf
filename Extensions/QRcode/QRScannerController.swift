@@ -10,7 +10,10 @@ import AVFoundation
 
 final class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
+    //TODO: ¿añadir viewModel y validar código leido. o solo un string?
     //MARK: Properties
+    var promotionalCode = ""
+    
     private var captureSession: AVCaptureSession!
     private var previewLayer: AVCaptureVideoPreviewLayer!
     private var isPermissionGiven = false
@@ -126,7 +129,7 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
         previewLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(previewLayer)
         
-        let holeWidth: CGFloat = 270
+        let holeWidth: CGFloat = 150 //270
         let hollowedView = UIView(frame: view.frame)
         hollowedView.backgroundColor = .clear
         
@@ -161,8 +164,6 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
             self.captureSession.startRunning()
         }
             
-    
-       
         metadataOutput.rectOfInterest = previewLayer.metadataOutputRectConverted(fromLayerRect: focusRect)
     }
     
@@ -187,9 +188,12 @@ final class QRScannerController: UIViewController, AVCaptureMetadataOutputObject
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             self.showAlert(message: "QR code scanned\n \(stringValue)")
+            self.promotionalCode = stringValue
+            
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
     }
+    
     
     override var prefersStatusBarHidden: Bool {
         return true

@@ -46,7 +46,7 @@
 		3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */; };
 		3A0D5D7328FEADD600D71B4E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7228FEADD600D71B4E /* CalendarCell.swift */; };
 		3A0D5D7528FEB32200D71B4E /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7428FEB32200D71B4E /* CalendarHelper.swift */; };
-		3A0D5D7A28FEC2B500D71B4E /* TaskCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */; };
+		3A0D5D7A28FEC2B500D71B4E /* TaskTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */; };
 		3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */; };
 		3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */; };
 		3A0E6BBC290015E6006FF6B2 /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */; };
@@ -129,7 +129,7 @@
 		3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */; };
 		3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */; };
 		3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */; };
-		3AA8D03729104070004E192A /* TaskCountDownViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D03629104070004E192A /* TaskCountDownViewController.storyboard */; };
+		3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */; };
 		3AA8D03C29104115004E192A /* extensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03B29104115004E192A /* extensionInt.swift */; };
 		3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03D291041A5004E192A /* extensionDoubles.swift */; };
 		3AA8D0412910466E004E192A /* CountDownBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D0402910466E004E192A /* CountDownBox.swift */; };
@@ -252,7 +252,7 @@
 		3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
 		3A0D5D7228FEADD600D71B4E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		3A0D5D7428FEB32200D71B4E /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
-		3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCountDownViewController.swift; sourceTree = "<group>"; };
+		3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerViewController.swift; sourceTree = "<group>"; };
 		3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
 		3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
@@ -336,7 +336,7 @@
 		3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewController.swift; sourceTree = "<group>"; };
 		3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RickAndMortyViewController.storyboard; sourceTree = "<group>"; };
 		3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCollectionViewCell.swift; sourceTree = "<group>"; };
-		3AA8D03629104070004E192A /* TaskCountDownViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskCountDownViewController.storyboard; sourceTree = "<group>"; };
+		3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskTimerViewController.storyboard; sourceTree = "<group>"; };
 		3AA8D03B29104115004E192A /* extensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionInt.swift; sourceTree = "<group>"; };
 		3AA8D03D291041A5004E192A /* extensionDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDoubles.swift; sourceTree = "<group>"; };
 		3AA8D0402910466E004E192A /* CountDownBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownBox.swift; sourceTree = "<group>"; };
@@ -735,10 +735,11 @@
 		3A4C585B2910401D0010B3C8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3A5C8C6B291198F600A840C6 /* New Group */,
 				3AA8D0452910483E004E192A /* ViewModels */,
 				3AA8D04429104839004E192A /* Cells */,
-				3AA8D03629104070004E192A /* TaskCountDownViewController.storyboard */,
-				3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */,
+				3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */,
+				3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */,
 				3AA8D04B29104BDC004E192A /* NewTaskViewController.swift */,
 				3AA8D04D29104D14004E192A /* NewTaskViewController.storyboard */,
 			);
@@ -781,6 +782,13 @@
 				3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */,
 			);
 			path = CalendarHelper;
+			sourceTree = "<group>";
+		};
+		3A5C8C6B291198F600A840C6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		3A5E4BFA28E2FCE3003D7A4F /* Lines */ = {
@@ -1262,7 +1270,7 @@
 				3AFB0F5329016A5200B12B9B /* UserInterfacesViewController.storyboard in Resources */,
 				3A0D5D6D28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard in Resources */,
 				3ACCA174290D6B4C003A7ABE /* PermissionsViewController.storyboard in Resources */,
-				3AA8D03729104070004E192A /* TaskCountDownViewController.storyboard in Resources */,
+				3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */,
 				3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
@@ -1407,7 +1415,7 @@
 				3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */,
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
 				3AFB00A828F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift in Sources */,
-				3A0D5D7A28FEC2B500D71B4E /* TaskCountDownViewController.swift in Sources */,
+				3A0D5D7A28FEC2B500D71B4E /* TaskTimerViewController.swift in Sources */,
 				3A195D4328F47821004E0477 /* PPSImagesViewModel.swift in Sources */,
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,
 				3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */,

@@ -12,7 +12,7 @@ final class OneViewAppsViewModel {
     
     var appList: [appInfo] = [
             appInfo(name: "Calendar", detail: "CalendarView. which display a list of events of selectedDate",viewController: "MonthlyCalendarViewController"),
-            appInfo(name: "Task Countdown", detail: "Reloj temporizador de tareas", viewController: "TaskCountDownViewController")]
+            appInfo(name: "Task Countdown", detail: "Reloj temporizador de tareas", viewController: "NewTaskViewController")]
 
 }
 

@@ -46,7 +46,6 @@
 		3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */; };
 		3A0D5D7328FEADD600D71B4E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7228FEADD600D71B4E /* CalendarCell.swift */; };
 		3A0D5D7528FEB32200D71B4E /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7428FEB32200D71B4E /* CalendarHelper.swift */; };
-		3A0D5D7828FEC2A700D71B4E /* TaskCountDownViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7728FEC2A700D71B4E /* TaskCountDownViewController.storyboard */; };
 		3A0D5D7A28FEC2B500D71B4E /* TaskCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */; };
 		3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */; };
 		3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */; };
@@ -105,6 +104,8 @@
 		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */; };
+		3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */; };
+		3A36749E29105D070099F578 /* TaskTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */; };
 		3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */; };
 		3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D529099DB900581F10 /* HackerRankAlgoritmosTest.swift */; };
 		3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */; };
@@ -128,6 +129,15 @@
 		3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */; };
 		3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */; };
 		3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */; };
+		3AA8D03729104070004E192A /* TaskCountDownViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D03629104070004E192A /* TaskCountDownViewController.storyboard */; };
+		3AA8D03C29104115004E192A /* extensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03B29104115004E192A /* extensionInt.swift */; };
+		3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03D291041A5004E192A /* extensionDoubles.swift */; };
+		3AA8D0412910466E004E192A /* CountDownBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D0402910466E004E192A /* CountDownBox.swift */; };
+		3AA8D043291047C4004E192A /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D042291047C4004E192A /* TaskType.swift */; };
+		3AA8D04729104854004E192A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D04629104854004E192A /* TaskViewModel.swift */; };
+		3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D049291049FF004E192A /* TestTaskCountdown.swift */; };
+		3AA8D04C29104BDC004E192A /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D04B29104BDC004E192A /* NewTaskViewController.swift */; };
+		3AA8D04E29104D14004E192A /* NewTaskViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D04D29104D14004E192A /* NewTaskViewController.storyboard */; };
 		3AB2B80528FB57060021BB3C /* OfertaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2B80428FB57060021BB3C /* OfertaListViewModel.swift */; };
 		3AB6CED92905B7B7002654CD /* InfoplistQuotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6CED82905B7B7002654CD /* InfoplistQuotes.plist */; };
 		3AB6CEDB2905B8D1002654CD /* QuotesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6CEDA2905B8D1002654CD /* QuotesProvider.swift */; };
@@ -242,7 +252,6 @@
 		3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
 		3A0D5D7228FEADD600D71B4E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		3A0D5D7428FEB32200D71B4E /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
-		3A0D5D7728FEC2A700D71B4E /* TaskCountDownViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskCountDownViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCountDownViewController.swift; sourceTree = "<group>"; };
 		3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
@@ -302,6 +311,8 @@
 		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewCell.swift; sourceTree = "<group>"; };
+		3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmos.swift; sourceTree = "<group>"; };
 		3A3A46D529099DB900581F10 /* HackerRankAlgoritmosTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmosTest.swift; sourceTree = "<group>"; };
 		3A54726328E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotsOfAnimationsViewController.storyboard; sourceTree = "<group>"; };
@@ -325,6 +336,15 @@
 		3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewController.swift; sourceTree = "<group>"; };
 		3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RickAndMortyViewController.storyboard; sourceTree = "<group>"; };
 		3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCollectionViewCell.swift; sourceTree = "<group>"; };
+		3AA8D03629104070004E192A /* TaskCountDownViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskCountDownViewController.storyboard; sourceTree = "<group>"; };
+		3AA8D03B29104115004E192A /* extensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionInt.swift; sourceTree = "<group>"; };
+		3AA8D03D291041A5004E192A /* extensionDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDoubles.swift; sourceTree = "<group>"; };
+		3AA8D0402910466E004E192A /* CountDownBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownBox.swift; sourceTree = "<group>"; };
+		3AA8D042291047C4004E192A /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
+		3AA8D04629104854004E192A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		3AA8D049291049FF004E192A /* TestTaskCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskCountdown.swift; sourceTree = "<group>"; };
+		3AA8D04B29104BDC004E192A /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		3AA8D04D29104D14004E192A /* NewTaskViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewTaskViewController.storyboard; sourceTree = "<group>"; };
 		3AB2B80228FB344B0021BB3C /* Oferta+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Oferta+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		3AB2B80328FB344B0021BB3C /* Oferta+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Oferta+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		3AB2B80428FB57060021BB3C /* OfertaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaListViewModel.swift; sourceTree = "<group>"; };
@@ -499,8 +519,10 @@
 		3A0D5D7628FEC28E00D71B4E /* TaskCountdown */ = {
 			isa = PBXGroup;
 			children = (
-				3A0D5D7728FEC2A700D71B4E /* TaskCountDownViewController.storyboard */,
-				3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */,
+				3AA8D03F29104661004E192A /* Controllers */,
+				3AA8D03A291040B0004E192A /* Services */,
+				3AA8D039291040AA004E192A /* Models */,
+				3AA8D03829104096004E192A /* Modules */,
 			);
 			path = TaskCountdown;
 			sourceTree = "<group>";
@@ -695,6 +717,8 @@
 				3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */,
 				3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */,
 				3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */,
+				3AA8D03B29104115004E192A /* extensionInt.swift */,
+				3AA8D03D291041A5004E192A /* extensionDoubles.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -706,6 +730,19 @@
 				3A3A46D529099DB900581F10 /* HackerRankAlgoritmosTest.swift */,
 			);
 			path = Algoritmos;
+			sourceTree = "<group>";
+		};
+		3A4C585B2910401D0010B3C8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8D0452910483E004E192A /* ViewModels */,
+				3AA8D04429104839004E192A /* Cells */,
+				3AA8D03629104070004E192A /* TaskCountDownViewController.storyboard */,
+				3A0D5D7928FEC2B500D71B4E /* TaskCountDownViewController.swift */,
+				3AA8D04B29104BDC004E192A /* NewTaskViewController.swift */,
+				3AA8D04D29104D14004E192A /* NewTaskViewController.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		3A54726228E44B92003CFE4F /* Animations */ = {
@@ -796,6 +833,62 @@
 			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
+		3AA8D03829104096004E192A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3A4C585B2910401D0010B3C8 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3AA8D039291040AA004E192A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8D042291047C4004E192A /* TaskType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AA8D03A291040B0004E192A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3AA8D03F29104661004E192A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8D0402910466E004E192A /* CountDownBox.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3AA8D04429104839004E192A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */,
+				3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3AA8D0452910483E004E192A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8D04629104854004E192A /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3AA8D048291049E2004E192A /* TaskCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8D049291049FF004E192A /* TestTaskCountdown.swift */,
+			);
+			path = TaskCountdown;
+			sourceTree = "<group>";
+		};
 		3AC1BA9C28F0313E009E1F36 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -813,6 +906,7 @@
 		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3AA8D048291049E2004E192A /* TaskCountdown */,
 				3AF7BF04290C3846005EAB58 /* Antojitos */,
 				3A574B36290B00B000BA551F /* CalendarHelper */,
 				3A574B2F290AE43300BA551F /* Weathery2 */,
@@ -1141,6 +1235,7 @@
 				3A0D50A528FB1EDB0043857A /* OfertaViewController.storyboard in Resources */,
 				3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */,
 				3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */,
+				3A36749E29105D070099F578 /* TaskTypeCollectionViewCell.xib in Resources */,
 				3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
 				3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */,
@@ -1152,12 +1247,12 @@
 				3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */,
 				3AFB0F5929017FD800B12B9B /* AntojitosInicioViewController.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
-				3A0D5D7828FEC2A700D71B4E /* TaskCountDownViewController.storyboard in Resources */,
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
+				3AA8D04E29104D14004E192A /* NewTaskViewController.storyboard in Resources */,
 				3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
@@ -1167,6 +1262,7 @@
 				3AFB0F5329016A5200B12B9B /* UserInterfacesViewController.storyboard in Resources */,
 				3A0D5D6D28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard in Resources */,
 				3ACCA174290D6B4C003A7ABE /* PermissionsViewController.storyboard in Resources */,
+				3AA8D03729104070004E192A /* TaskCountDownViewController.storyboard in Resources */,
 				3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
@@ -1208,7 +1304,9 @@
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
 				3ACCA178290DA26B003A7ABE /* QrCodeCameraDelegate.swift in Sources */,
 				3AF7BF0C290C59D9005EAB58 /* ImagePicker.swift in Sources */,
+				3AA8D04C29104BDC004E192A /* NewTaskViewController.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
+				3AA8D0412910466E004E192A /* CountDownBox.swift in Sources */,
 				3ACCA172290D6B3C003A7ABE /* PermissionsViewController.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
 				3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */,
@@ -1218,6 +1316,7 @@
 				3AF224DB289A7B34008BEAF0 /* URLSessionsViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */,
 				3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */,
+				3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */,
 				3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */,
 				3ACCA17F290DA9BA003A7ABE /* QRScannerController.swift in Sources */,
 				3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */,
@@ -1230,6 +1329,7 @@
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
+				3AA8D043291047C4004E192A /* TaskType.swift in Sources */,
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
 				3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */,
 				3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */,
@@ -1288,6 +1388,7 @@
 				3AC3972129049A8200BE168A /* InicioScrollView.swift in Sources */,
 				3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */,
+				3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */,
 				3A1ABA0128D1E46400235D59 /* ColorTableViewCell.swift in Sources */,
 				3A14252428F9B130004B5252 /* OfertaListViewController.swift in Sources */,
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
@@ -1315,7 +1416,9 @@
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
 				3A0D5D6828FE9D2D00D71B4E /* OneViewAppsViewController.swift in Sources */,
+				3AA8D03C29104115004E192A /* extensionInt.swift in Sources */,
 				3A0D5D7528FEB32200D71B4E /* CalendarHelper.swift in Sources */,
+				3AA8D04729104854004E192A /* TaskViewModel.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
@@ -1339,6 +1442,7 @@
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
+				3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

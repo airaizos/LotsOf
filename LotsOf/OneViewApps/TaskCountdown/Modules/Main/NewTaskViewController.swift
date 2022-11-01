@@ -19,10 +19,12 @@ final class NewTaskViewController: UIViewController {
     @IBOutlet weak var nameDescriptionContainerView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var newTaskTopConstraint: NSLayoutConstraint!
+    
     
     // MARK: - Variables
-    var taskViewModel: TaskViewModel!
-    
+    private var taskViewModel: TaskViewModel!
+    private var keyboardOpened = false
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -31,6 +33,7 @@ final class NewTaskViewController: UIViewController {
         setupView()
         setupCollectionView()
         setupCounter()
+        
     }
     
     // MARK: - Outlets & objc functions
@@ -63,16 +66,21 @@ final class NewTaskViewController: UIViewController {
             guard let seconds = Int(text) else { return }
             taskViewModel.setSeconds(to: seconds)
         }
-        if taskViewModel.isTaskValid() {
-            enableButton()
-        } else {
-           disableButton()
-        }
+        
+        checkButtonStatus()
         
     }
     
     override class func description() -> String {
         "NewTaskViewController"
+    }
+    
+    func checkButtonStatus() {
+        if taskViewModel.isTaskValid() {
+            enableButton()
+        } else {
+           disableButton()
+        }
     }
     
     func enableButton() {
@@ -97,9 +105,23 @@ final class NewTaskViewController: UIViewController {
         
     }
     
-    //Ocultar el teclado
+    // Teclado
     @objc func viewTapped(_ sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        if !keyboardOpened {
+            keyboardOpened.toggle()
+            newTaskTopConstraint.constant -= view.frame.height * 0.2
+            view.layoutIfNeeded()
+        }
+    }
+    
+    @objc func keyboardWillHide(_ notification: Notification) {
+        newTaskTopConstraint.constant = 0
+        keyboardOpened = false
+        view.layoutIfNeeded()
     }
     
     //MARK: - Functions
@@ -114,6 +136,10 @@ final class NewTaskViewController: UIViewController {
         self.startButton.layer.cornerRadius = 12
         self.nameDescriptionContainerView.layer.cornerRadius
         = 12
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func setupCounter() {
@@ -148,8 +174,6 @@ final class NewTaskViewController: UIViewController {
         taskViewModel.getSeconds().bind { seconds in
             self.secondsTextField.text = seconds.appendZeros()
         }
-        
-        
         
     }
     
@@ -187,6 +211,7 @@ extension NewTaskViewController: UICollectionViewDelegateFlowLayout, UICollectio
         self.taskViewModel.setSelectedIndex(to: indexPath.item)
      //   self.collectionView.reloadData() no es Smooth
         collectionView.reloadSections(IndexSet(0..<1))
+        checkButtonStatus()
     }
     
 }
@@ -199,7 +224,6 @@ extension NewTaskViewController: UITextFieldDelegate {
         
         let currentText: NSString = (textField.text ?? "") as NSString
         let newString: NSString = currentText.replacingCharacters(in: range, with: string) as NSString
-        #warning("NO SE ACTUALIZAN LOS TEXFIELDS DE LOS SEC, MINUTES,HOURS, ALGO FALTA")
         //Para que permita añadir los dos digitos a pesar de la función addZeros()
         guard let text = textField.text else { return false }
         

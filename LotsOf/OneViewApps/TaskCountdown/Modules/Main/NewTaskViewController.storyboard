@@ -238,6 +238,7 @@
                         <outlet property="hourTextField" destination="1Ke-0S-10d" id="gcF-MP-E5y"/>
                         <outlet property="minutesTextField" destination="AdW-nx-jhY" id="EhP-x0-nZ5"/>
                         <outlet property="nameDescriptionContainerView" destination="ngF-bI-FEW" id="4Zp-1X-7Bz"/>
+                        <outlet property="newTaskTopConstraint" destination="yJ6-ZK-Vco" id="Meu-80-kN2"/>
                         <outlet property="secondsTextField" destination="LHG-8m-LO8" id="QVS-vu-hYO"/>
                         <outlet property="startButton" destination="moh-Ak-olB" id="a6a-Jk-F3W"/>
                         <outlet property="taskDescriptionTextField" destination="XlY-lh-cpq" id="8Rx-cL-tvm"/>

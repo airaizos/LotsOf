@@ -42,6 +42,19 @@ final class NewTaskViewController: UIViewController {
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
+        
+        /*
+        guard let timerVC = self.storyboard?.instantiateViewController(withIdentifier: "TaskTimerViewController") as? TaskTimerViewController else { return }
+        taskViewModel.computeSeconds()
+        self.present(timerVC, animated: true)
+         */
+        taskViewModel.computeSeconds()
+        let storyboard = UIStoryboard(name: "TaskTimerViewController", bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: "TaskTimerViewController") as? TaskTimerViewController else { return }
+                viewController.taskViewModel = taskViewModel
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+       // goTo(viewControllerName: "TaskTimerViewController")
     }
     
     //Cuando se modifica el textField asigna valores
@@ -133,6 +146,7 @@ final class NewTaskViewController: UIViewController {
     }
     
     func setupView() {
+       
         self.startButton.layer.cornerRadius = 12
         self.nameDescriptionContainerView.layer.cornerRadius
         = 12

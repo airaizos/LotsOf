@@ -19,7 +19,7 @@ final class TaskViewModel {
     
     private var selectedIndex = -1 {
         didSet {
-            self.task.taskType = self.getTaskTypes()[selectedIndex]
+            self.task.taskType = getTaskTypes()[selectedIndex]
         }
     }
     
@@ -36,26 +36,75 @@ final class TaskViewModel {
     //MARK: functions
     
     func setSelectedIndex(to value: Int) {
-        self.selectedIndex = value
+       selectedIndex = value
     }
     
     func setTaskName(to value: String) {
-        self.task.taskName = value
+        task.taskName = value
     }
     
     func setTaskDescription(to value: String) {
-        self.task.taskDescription = value
+        task.taskDescription = value
     }
     func getSelectedIndex() -> Int {
-        self.selectedIndex
+        selectedIndex
     }
     
     func getTask() -> Task {
-        return self.task
+        return task
     }
     
     func getTaskTypes() -> [TaskType] {
-        return self.taskTypes
+        return taskTypes
+    }
+    
+    func setHours(to value: Int) {
+        hours.value = value
+    }
+    
+    func setMinutes(to value: Int) {
+        var newMinutes = value
+        if (value >= 60) {
+            newMinutes -= 60
+            hours.value += 1
+        }
+        minutes.value = newMinutes
+    }
+    
+    func setSeconds(to value: Int) {
+        var newSeconds = value
+        if (value >= 60) {
+            newSeconds -= 60
+            minutes.value += 1
+        }
+        
+        if (minutes.value >= 60) {
+            minutes.value -= 60
+            hours.value += 1
+        }
+        seconds.value = newSeconds
+    }
+    
+    func getHours() -> Box<Int> {
+        hours
+    }
+    func getMinutes() -> Box<Int> {
+        minutes
+    }
+    func getSeconds() -> Box<Int> {
+        seconds
+    }
+    
+    func computeSeconds() {
+        task.seconds = (hours.value * 3600) + (minutes.value * 60) + seconds.value
+        task.timeStamp = Date().timeIntervalSince1970
+    }
+    
+    func isTaskValid() -> Bool {
+        if (!task.taskName.isEmpty && !task.taskDescription.isEmpty && selectedIndex != -1 && (seconds.value > 0 || minutes.value > 0 || hours.value > 0)) {
+            return true
+        }
+        return false
     }
     
 }

@@ -47,15 +47,54 @@ final class NewTaskViewController: UIViewController {
         
         if (textField == taskNameTextField) {
             taskViewModel.setTaskName(to: text)
+            
         } else if (textField == taskDescriptionTextField) {
             taskViewModel.setTaskDescription(to: text)
+            
         } else if (textField == hourTextField) {
+            guard let hours = Int(text) else { return }
+            taskViewModel.setHours(to: hours)
             
         } else if (textField == minutesTextField) {
+            guard let minutes = Int(text) else { return }
+            taskViewModel.setMinutes(to: minutes)
             
-        } else {
-            
+        } else if (textField == secondsTextField) {
+            guard let seconds = Int(text) else { return }
+            taskViewModel.setSeconds(to: seconds)
         }
+        if taskViewModel.isTaskValid() {
+            enableButton()
+        } else {
+           disableButton()
+        }
+        
+    }
+    
+    override class func description() -> String {
+        "NewTaskViewController"
+    }
+    
+    func enableButton() {
+        if (startButton.isUserInteractionEnabled == false) {
+            
+            UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseOut) {
+                self.startButton.layer.opacity = 1
+            } completion: { _ in
+                self.startButton.isUserInteractionEnabled.toggle()
+            }
+        }
+    }
+    
+    func disableButton() {
+        if (startButton.isUserInteractionEnabled) {
+            UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseOut) {
+                self.startButton.layer.opacity = 0.25
+            } completion: { _ in
+                self.startButton.isUserInteractionEnabled.toggle()
+            }
+        }
+        
     }
     
     //Ocultar el teclado
@@ -89,10 +128,29 @@ final class NewTaskViewController: UIViewController {
         taskDescriptionTextField.attributedPlaceholder = NSAttributedString(string: "Short Description")
         taskDescriptionTextField.addTarget(self, action: #selector(textFieldInputChanged(_ :)), for: .editingChanged)
         
+        disableButton()
+        
+        //Ocultar el teclado
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(Self.viewTapped(_ :)))
         //el collectionView deja de poder ser seleccionado, para ello:
         tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
+        
+        taskViewModel.getHours().bind { hours in
+            self.hourTextField.text = hours.appendZeros()
+        }
+        
+        taskViewModel.getMinutes().bind { minutes in
+            self.minutesTextField.text = minutes.appendZeros()
+        }
+        
+        taskViewModel.getSeconds().bind { seconds in
+            self.secondsTextField.text = seconds.appendZeros()
+        }
+        
+        
+        
     }
     
    
@@ -141,6 +199,16 @@ extension NewTaskViewController: UITextFieldDelegate {
         
         let currentText: NSString = (textField.text ?? "") as NSString
         let newString: NSString = currentText.replacingCharacters(in: range, with: string) as NSString
+        #warning("NO SE ACTUALIZAN LOS TEXFIELDS DE LOS SEC, MINUTES,HOURS, ALGO FALTA")
+        //Para que permita añadir los dos digitos a pesar de la función addZeros()
+        guard let text = textField.text else { return false }
+        
+        if (text.count == 2 && text.starts(with: "0")) {
+            textField.text?.removeFirst()
+            textField.text? += string
+            textFieldInputChanged(textField)
+        }
+        
         return newString.length <= maxLength
     }
 }

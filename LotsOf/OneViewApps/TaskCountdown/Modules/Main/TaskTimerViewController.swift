@@ -8,7 +8,7 @@
 import UIKit
 
 final class TaskTimerViewController: UIViewController {
-
+    
     // MARK: - Outlets
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var imageContainerView: UIView!
@@ -36,14 +36,31 @@ final class TaskTimerViewController: UIViewController {
     }
     var timerSeconds = 0
     
-    let timeAttributes = [NSAttributedString.Key.font: UIFont(name: "Verdana", size: 46)!, .foregroundColor: UIColor.black]
-    let semiboldAttributes = [NSAttributedString.Key.font: UIFont(name: "Verdana", size: 46)!, .foregroundColor: UIColor.black]
+    let timeAttributes = [NSAttributedString.Key.font: UIFont(name: "Verdana", size: 46)!, .foregroundColor: UIColor(hex: "471337")]
+    let semiboldAttributes = [NSAttributedString.Key.font: UIFont(name: "Verdana", size: 46)!, .foregroundColor: UIColor(hex: "471337")]
     
     let timerTrackLayer = CAShapeLayer()
     let timerCircleFillLayer = CAShapeLayer()
     
     var timerState: CountdownState = .suspended
     var countdownTimer = Timer()
+    
+    lazy var timerEndAnimation: CABasicAnimation = {
+        let strokeEnd = CABasicAnimation(keyPath: "strokeEnd")
+        strokeEnd.toValue = 0
+        strokeEnd.fillMode = .forwards
+        strokeEnd.isRemovedOnCompletion = true
+        return strokeEnd
+    }()
+    
+    lazy var timerResetAnimation: CABasicAnimation = {
+        let strokeEnd = CABasicAnimation(keyPath: "strokeEnd")
+        strokeEnd.toValue = 1
+        strokeEnd.duration = 1
+        strokeEnd.fillMode = .forwards
+        strokeEnd.isRemovedOnCompletion = false
+        return strokeEnd
+    }()
     
     // MARK: - LifeCycle
     override func viewWillAppear(_ animated: Bool) {
@@ -62,7 +79,26 @@ final class TaskTimerViewController: UIViewController {
     
     // MARK: - Outlets & objc functions
     
+    @IBAction func closedButtonPressed(_ sender: UIButton) {
+        timerTrackLayer.removeFromSuperlayer()
+        timerCircleFillLayer.removeFromSuperlayer()
+        countdownTimer.invalidate()
+        self.navigationController?.popViewController(animated: true)
+    }
     
+    @IBAction func pauseButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        guard timerState == .suspended else  { return }
+        timerEndAnimation.duration = Double(timerSeconds)
+        animateButton(button: playButton, symbolName: "pause.fill")
+        animatePlayPauseResetView(timerPlaying: false)
+        startTimer()
+    }
+    
+    @IBAction func restartButtonPressed(_ sender: UIButton) {
+    }
     // MARK: - Functions
     override class func description() -> String {
         "TaskTimerViewController"
@@ -117,15 +153,74 @@ final class TaskTimerViewController: UIViewController {
         timerView.transform = timerView.transform.rotated(by: 270.degreeToRadians())
         timerLabel.transform = timerLabel.transform.rotated(by: 90.degreeToRadians())
         timerContainerView.transform = timerContainerView.transform.rotated(by: 90.degreeToRadians())
-        
     }
-
-
-}
-
-
-extension CAShapeLayer {
     
+    func animateButton(button: UIButton, symbolName: String) {
+        UIView.transition(with: button, duration: 0.3, options: .transitionCrossDissolve){
+            button.setImage(UIImage(systemName: symbolName, withConfiguration: UIImage.SymbolConfiguration(pointSize: 24, weight: .semibold, scale: .default) ), for: .normal)
+        }
+    }
     
+    /// Oculta el boton play si el timer esta en marcha. o los botones pausa y restart si no lo está
+    /// - Parameter timerPlaying: ¿tiempo está en marcha?
+    func animatePlayPauseResetView(timerPlaying: Bool) {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut) {
+            self.playView.layer.opacity = timerPlaying ? 1 : 0
+            self.pauseResumeView.layer.opacity = timerPlaying ? 0 : 1
+            self.restartView.layer.opacity = timerPlaying ? 0 : 1
+        } completion: { [weak self] _ in
+            [self?.pauseResumeView, self?.restartView].forEach { guard let view = $0 else { return }
+                view.isUserInteractionEnabled = timerPlaying ? false : true
+            }
+        }
+    }
     
+    func startTimer() {
+        //update labels
+        countdownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            self.timerSeconds -= 1
+            self.updateLabels()
+            if (self.timerSeconds == 0) {
+                self.resetTimer()
+            }
+        }
+        
+        timerState = .running
+        timerCircleFillLayer.add(timerEndAnimation, forKey: "timerEnd")
+    }
+    
+    func updateLabels() {
+        let seconds = timerSeconds % 60
+        let minutes = timerSeconds / 60 % 60
+        let hours = timerSeconds / 3600
+        
+        
+        //?
+        if hours > 0 {
+            let hoursCount = String(hours).count
+            let minutesCount = String(minutes).count
+            let secondsCount = String(seconds.appendZeros()).count
+            let timeString = "\(hours)h \(minutes)m \(seconds.appendZeros())s"
+            let attributedString = NSMutableAttributedString(string: timeString, attributes: semiboldAttributes)
+            
+            attributedString.addAttributes(timeAttributes, range: NSRange(location: 0, length: hoursCount))
+            attributedString.addAttributes(timeAttributes, range: NSRange(location: hoursCount + 2 , length: minutesCount))
+            attributedString.addAttributes(timeAttributes, range: NSRange(location: hoursCount + 2 + minutesCount + 2, length: secondsCount))
+            timerLabel.attributedText = attributedString
+        } else {
+            let minutesCount = String(minutes).count
+            let secondsCount = String(seconds.appendZeros()).count
+            let timeString = "\(minutes)m \(seconds.appendZeros())s"
+            let attributedString = NSMutableAttributedString(string: timeString, attributes: semiboldAttributes)
+            
+            attributedString.addAttributes(timeAttributes, range: NSRange(location: 0, length: minutesCount))
+            attributedString.addAttributes(timeAttributes, range: NSRange(location: minutesCount + 3, length: secondsCount))
+            timerLabel.attributedText = attributedString
+        }
+    }
+    
+    func resetTimer() {
+        countdownTimer.invalidate()
+        timerCircleFillLayer.removeAllAnimations()
+    }
 }

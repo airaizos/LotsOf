@@ -191,6 +191,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="buttonsStackView" destination="f5a-rf-STm" id="hmC-ym-cfO"/>
                         <outlet property="closeButton" destination="CZZ-TL-EKk" id="pQi-0u-mGk"/>
                         <outlet property="imageContainerView" destination="KOa-AX-AMy" id="Hhy-lt-Tkc"/>
                         <outlet property="imageView" destination="PH6-Fd-REB" id="l6Y-2l-hnL"/>

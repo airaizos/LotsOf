@@ -25,6 +25,7 @@ final class TaskTimerViewController: UIViewController {
     @IBOutlet weak var restartView: UIView!
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var taskDescriptionLabel: UILabel!
+    @IBOutlet weak var buttonsStackView: UIStackView!
     
     // MARK: - Variables
     
@@ -87,17 +88,35 @@ final class TaskTimerViewController: UIViewController {
     }
     
     @IBAction func pauseButtonPressed(_ sender: UIButton) {
+        switch timerState {
+       
+        case .running:
+            timerState = .pause
+            timerCircleFillLayer.strokeEnd = CGFloat(timerSeconds) / CGFloat(totalSeconds)
+            resetTimer()
+            animatePauseButton(symbolName: "play.fill")
+        case .pause:
+            timerState = .running
+            timerEndAnimation.duration = Double(timerSeconds) + 1
+            startTimer()
+            animatePauseButton(symbolName: "pause.fill")
+            
+        default: break
+        }
+        
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
         guard timerState == .suspended else  { return }
         timerEndAnimation.duration = Double(timerSeconds)
-        animateButton(button: playButton, symbolName: "pause.fill")
+        animatePauseButton(symbolName: "pause.fill")
         animatePlayPauseResetView(timerPlaying: false)
         startTimer()
     }
     
     @IBAction func restartButtonPressed(_ sender: UIButton) {
+      restartTimer()
+        
     }
     // MARK: - Functions
     override class func description() -> String {
@@ -136,6 +155,8 @@ final class TaskTimerViewController: UIViewController {
         totalSeconds = task.seconds
         taskLabel.text = task.taskName
         taskDescriptionLabel.text = task.taskDescription
+        updateLabels()
+        addCircles()
         
         imageContainerView.layer.cornerRadius = imageContainerView.frame.width / 2
         imageView.layer.cornerRadius = imageView.frame.width / 2
@@ -153,6 +174,13 @@ final class TaskTimerViewController: UIViewController {
         timerView.transform = timerView.transform.rotated(by: 270.degreeToRadians())
         timerLabel.transform = timerLabel.transform.rotated(by: 90.degreeToRadians())
         timerContainerView.transform = timerContainerView.transform.rotated(by: 90.degreeToRadians())
+        
+        
+    }
+    func animatePauseButton(symbolName: String) {
+        UIView.transition(with: pauseResumeButton, duration: 0.3, options: .transitionCrossDissolve) {
+            self.pauseResumeButton.setImage(UIImage(systemName: symbolName,withConfiguration: UIImage.SymbolConfiguration(pointSize: 24, weight: .semibold, scale: .default)), for: .normal)
+        }
     }
     
     func animateButton(button: UIButton, symbolName: String) {
@@ -181,6 +209,11 @@ final class TaskTimerViewController: UIViewController {
             self.timerSeconds -= 1
             self.updateLabels()
             if (self.timerSeconds == 0) {
+                timer.invalidate()
+                self.timerState = .suspended
+                //aqui
+                self.restartTimer()
+                self.timerSeconds = self.totalSeconds
                 self.resetTimer()
             }
         }
@@ -194,8 +227,7 @@ final class TaskTimerViewController: UIViewController {
         let minutes = timerSeconds / 60 % 60
         let hours = timerSeconds / 3600
         
-        
-        //?
+        //Da formato a las labels del timer
         if hours > 0 {
             let hoursCount = String(hours).count
             let minutesCount = String(minutes).count
@@ -222,5 +254,37 @@ final class TaskTimerViewController: UIViewController {
     func resetTimer() {
         countdownTimer.invalidate()
         timerCircleFillLayer.removeAllAnimations()
+        updateLabels()
+    }
+    
+    func restartTimer() {
+        timerState = .suspended
+        timerSeconds = totalSeconds
+        resetTimer()
+        timerCircleFillLayer.add(timerResetAnimation, forKey: "reset")
+        
+        animatePauseButton(symbolName: "play.fill")
+        animatePlayPauseResetView(timerPlaying: true)
+    }
+    
+    func addCircles(){
+        let circleLayer = CAShapeLayer()
+        circleLayer.path = UIBezierPath(arcCenter: CGPoint(x: 0, y: view.frame.height - 90), radius: 80, startAngle: 0, endAngle: 360.degreeToRadians(), clockwise: true).cgPath
+        circleLayer.fillColor = UIColor(hex: "ff7249").cgColor
+        circleLayer.opacity = 0.15
+        
+        let circleTwoLayer = CAShapeLayer()
+        circleTwoLayer.path = UIBezierPath(arcCenter: CGPoint(x: 80, y: view.frame.height - 60), radius: 70, startAngle: 0, endAngle: 360.degreeToRadians(), clockwise: true).cgPath
+        circleTwoLayer.fillColor = UIColor(hex: "ff7249").cgColor
+        circleTwoLayer.opacity = 0.35
+        
+        view.layer.insertSublayer(circleLayer, below: view.layer)
+        view.layer.insertSublayer(circleTwoLayer, below: view.layer)
+        
+     //TODO: Traer el boton al frente
+        view.bringSubviewToFront(taskDescriptionLabel)
+        
+        view.bringSubviewToFront(buttonsStackView)
+        
     }
 }

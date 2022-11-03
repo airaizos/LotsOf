@@ -280,10 +280,8 @@ final class TaskTimerViewController: UIViewController {
         
         view.layer.insertSublayer(circleLayer, below: view.layer)
         view.layer.insertSublayer(circleTwoLayer, below: view.layer)
-        
-     //TODO: Traer el boton al frente
+
         view.bringSubviewToFront(taskDescriptionLabel)
-        
         view.bringSubviewToFront(buttonsStackView)
         
     }

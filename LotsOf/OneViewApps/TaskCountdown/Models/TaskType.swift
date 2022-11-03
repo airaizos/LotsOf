@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct TaskType {
+struct TaskType: Equatable {
     let symbolName: String
     let typeName: String
 }
 
-struct Task {
+struct Task:Equatable {
     var taskName: String
     var taskDescription: String
     var seconds: Int

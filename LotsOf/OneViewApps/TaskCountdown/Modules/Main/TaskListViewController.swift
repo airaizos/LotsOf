@@ -20,6 +20,7 @@ final class TaskListViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         setupTable()
     }
     
@@ -32,6 +33,10 @@ final class TaskListViewController: UIViewController {
         fetchTaskList()
     }
 
+    deinit {
+        
+        print("    [DEINIT] ->      TASKLIST ViewController")
+    }
 }
 
 extension TaskListViewController: UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
@@ -46,6 +51,11 @@ extension TaskListViewController: UITableViewDelegate, UITableViewDataSource, NS
         let task = tasks[indexPath.row]
         cell.textLabel?.text = task.name
         cell.detailTextLabel?.text = task.taskDescription
+        
+        let bgColorView = UIView()
+        bgColorView.layer.cornerRadius = 12
+        bgColorView.backgroundColor = UIColor(hex: "ff5349")
+        cell.selectedBackgroundView? = bgColorView
         
         return cell
         
@@ -94,4 +104,6 @@ extension TaskListViewController: UITableViewDelegate, UITableViewDataSource, NS
         }
         self.tasks = controller.fetchedObjects as! [TaskCD]
     }
+    
+   
 }

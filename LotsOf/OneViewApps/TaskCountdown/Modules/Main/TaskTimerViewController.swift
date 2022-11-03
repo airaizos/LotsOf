@@ -285,4 +285,9 @@ final class TaskTimerViewController: UIViewController {
         view.bringSubviewToFront(buttonsStackView)
         
     }
+    
+    deinit {
+        
+        print("    [DEINIT] ->      TASKTIMER ViewController")
+    }
 }

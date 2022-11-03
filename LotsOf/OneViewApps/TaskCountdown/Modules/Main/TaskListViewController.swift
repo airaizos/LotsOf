@@ -75,6 +75,8 @@ extension TaskListViewController: UITableViewDelegate, UITableViewDataSource, NS
             try fetchedResultController.performFetch()
             tasks = fetchedResultController.fetchedObjects!
             print(" [ Tareas recopiladas ] -> Task")
+            LogManager.shared.createLog(with: "[ Tareas recopiladas ] -> Task")
+            
         } catch let error {
             print("[ No recuperó datos ] X -> \(error)")
         }

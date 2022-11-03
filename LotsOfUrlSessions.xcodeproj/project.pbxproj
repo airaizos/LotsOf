@@ -131,6 +131,7 @@
 		3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */; };
 		3AA19ACC29144041007D7835 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA19ACB29144041007D7835 /* TaskListViewController.swift */; };
 		3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */; };
+		3AA19AD1291449CD007D7835 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA19AD0291449CD007D7835 /* LogManager.swift */; };
 		3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */; };
 		3AA8D03C29104115004E192A /* extensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03B29104115004E192A /* extensionInt.swift */; };
 		3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03D291041A5004E192A /* extensionDoubles.swift */; };
@@ -341,6 +342,7 @@
 		3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AA19ACB29144041007D7835 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskListViewController.storyboard; sourceTree = "<group>"; };
+		3AA19AD0291449CD007D7835 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskTimerViewController.storyboard; sourceTree = "<group>"; };
 		3AA8D03B29104115004E192A /* extensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionInt.swift; sourceTree = "<group>"; };
 		3AA8D03D291041A5004E192A /* extensionDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDoubles.swift; sourceTree = "<group>"; };
@@ -616,6 +618,7 @@
 		3A146DB128DA345600CB1C90 /* LotsOf */ = {
 			isa = PBXGroup;
 			children = (
+				3AA19ACF291449AE007D7835 /* Utils */,
 				3ACCA16B290D68FA003A7ABE /* Permissions */,
 				3A146DB228DA347D00CB1C90 /* ViewController.swift */,
 				3A146DAE28DA336300CB1C90 /* Main.storyboard */,
@@ -847,6 +850,14 @@
 				3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */,
 			);
 			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		3AA19ACF291449AE007D7835 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3AA19AD0291449CD007D7835 /* LogManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3AA8D03829104096004E192A /* Modules */ = {
@@ -1362,6 +1373,7 @@
 				3AB6CEDB2905B8D1002654CD /* QuotesProvider.swift in Sources */,
 				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,
 				3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */,
+				3AA19AD1291449CD007D7835 /* LogManager.swift in Sources */,
 				3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */,
 				3A134F4D28F6002400673B79 /* FactModel.swift in Sources */,
 				3AB2B80528FB57060021BB3C /* OfertaListViewModel.swift in Sources */,

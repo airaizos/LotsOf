@@ -42,19 +42,22 @@ final class NewTaskViewController: UIViewController {
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
+        //Coredata
+        let seconds = secondsTextField.text ?? "0"
+        TaskCDModel.shared.saveData(name: taskNameTextField.text ?? "No name" , description: taskDescriptionTextField.text ?? "No description", seconds: Int(seconds)!, timeStamp: 11.00)
         
-        /*
-        guard let timerVC = self.storyboard?.instantiateViewController(withIdentifier: "TaskTimerViewController") as? TaskTimerViewController else { return }
-        taskViewModel.computeSeconds()
-        self.present(timerVC, animated: true)
-         */
         taskViewModel.computeSeconds()
         let storyboard = UIStoryboard(name: "TaskTimerViewController", bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: "TaskTimerViewController") as? TaskTimerViewController else { return }
                 viewController.taskViewModel = taskViewModel
         self.navigationController?.pushViewController(viewController, animated: true)
         
-       // goTo(viewControllerName: "TaskTimerViewController")
+    }
+    
+    
+    @IBAction func listButtonPressed(_ sender: UIButton) {
+        goTo(viewControllerName: "TaskListViewController")
+        
     }
     
     //Cuando se modifica el textField asigna valores

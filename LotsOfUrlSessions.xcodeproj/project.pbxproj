@@ -129,6 +129,8 @@
 		3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */; };
 		3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */; };
 		3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */; };
+		3AA19ACC29144041007D7835 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA19ACB29144041007D7835 /* TaskListViewController.swift */; };
+		3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */; };
 		3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */; };
 		3AA8D03C29104115004E192A /* extensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03B29104115004E192A /* extensionInt.swift */; };
 		3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03D291041A5004E192A /* extensionDoubles.swift */; };
@@ -151,6 +153,7 @@
 		3ACCA178290DA26B003A7ABE /* QrCodeCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCA177290DA26B003A7ABE /* QrCodeCameraDelegate.swift */; };
 		3ACCA17D290DA44F003A7ABE /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCA17C290DA44F003A7ABE /* CameraPreview.swift */; };
 		3ACCA17F290DA9BA003A7ABE /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCA17E290DA9BA003A7ABE /* QRScannerController.swift */; };
+		3AD96A2529143556001522C5 /* TaskCDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD96A2429143556001522C5 /* TaskCDModel.swift */; };
 		3ADAF59F28CFC48E00C31731 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF59E28CFC48E00C31731 /* Dog.swift */; };
 		3ADAF5A128CFC4D200C31731 /* DogNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */; };
 		3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */; };
@@ -336,6 +339,8 @@
 		3A86954328C656C5001CC044 /* RickAndMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewController.swift; sourceTree = "<group>"; };
 		3A86954528C656CD001CC044 /* RickAndMortyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RickAndMortyViewController.storyboard; sourceTree = "<group>"; };
 		3A86954728C65724001CC044 /* RickAndMortyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCollectionViewCell.swift; sourceTree = "<group>"; };
+		3AA19ACB29144041007D7835 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskListViewController.storyboard; sourceTree = "<group>"; };
 		3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskTimerViewController.storyboard; sourceTree = "<group>"; };
 		3AA8D03B29104115004E192A /* extensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionInt.swift; sourceTree = "<group>"; };
 		3AA8D03D291041A5004E192A /* extensionDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDoubles.swift; sourceTree = "<group>"; };
@@ -360,6 +365,7 @@
 		3ACCA177290DA26B003A7ABE /* QrCodeCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeCameraDelegate.swift; sourceTree = "<group>"; };
 		3ACCA17C290DA44F003A7ABE /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		3ACCA17E290DA9BA003A7ABE /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		3AD96A2429143556001522C5 /* TaskCDModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCDModel.swift; sourceTree = "<group>"; };
 		3ADAF59E28CFC48E00C31731 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		3ADAF5A028CFC4D200C31731 /* DogNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNetworking.swift; sourceTree = "<group>"; };
 		3ADAF5A228CFC7CB00C31731 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
@@ -742,6 +748,8 @@
 				3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */,
 				3AA8D04B29104BDC004E192A /* NewTaskViewController.swift */,
 				3AA8D04D29104D14004E192A /* NewTaskViewController.storyboard */,
+				3AA19ACB29144041007D7835 /* TaskListViewController.swift */,
+				3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -853,6 +861,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA8D042291047C4004E192A /* TaskType.swift */,
+				3AD96A2429143556001522C5 /* TaskCDModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1275,6 +1284,7 @@
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
+				3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
 				3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */,
 				3AFB0F51290164CB00B12B9B /* NuevoPedidoViewController.storyboard in Resources */,
@@ -1327,6 +1337,7 @@
 				3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */,
 				3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */,
 				3ACCA17F290DA9BA003A7ABE /* QRScannerController.swift in Sources */,
+				3AA19ACC29144041007D7835 /* TaskListViewController.swift in Sources */,
 				3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */,
 				3A86954428C656C5001CC044 /* RickAndMortyViewController.swift in Sources */,
 				3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */,
@@ -1405,6 +1416,7 @@
 				3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */,
 				3A0B1B3229014A6100D4DBCC /* Event.swift in Sources */,
 				3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */,
+				3AD96A2529143556001522C5 /* TaskCDModel.swift in Sources */,
 				3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */,
 				3AE6A09028D7982A0041602B /* ColorsViewModel.swift in Sources */,
 				3ACCA176290D6C4F003A7ABE /* PermissionsViewModel.swift in Sources */,

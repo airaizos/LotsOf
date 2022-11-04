@@ -87,17 +87,20 @@ final class MourdevUserDefaultsViewController: UIViewController {
             self.persistanceLabel.text = self.viewModel.getText()
         }
         showAlert(message: viewModel.message)
+        LogManager.shared.log(viewModel.message)
     }
     
     @objc private func putButtonAction(_ sender: UIButton) {
         guard let text = textField.text else { return }
         viewModel.save(text: text)
         showAlert(message: viewModel.message)
+        LogManager.shared.log(viewModel.message)
     }
     
     @objc private func deleteButtonAction(_ sender: UIButton) {
         viewModel.deleteText()
         showAlert(message: viewModel.message)
+        LogManager.shared.log(viewModel.message)
     }
     
     private func showAlert(message: String) {

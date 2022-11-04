@@ -43,7 +43,7 @@ final class LogManager {
     func createLog(with logError: String) {
         // crear el texto
         
-        let stringData = "\(Date()) :: \(logError)"
+        let stringData = "\(Date()) :: \(logError)\n"
         
         //Escribir
         do {
@@ -52,6 +52,22 @@ final class LogManager {
         } catch let error {
             print(error.localizedDescription)
         }
-     
+    }
+    
+   
+    func log(_ message: String) {
+        guard let data = "\(Date()) :: \(message)\n".data(using: .utf8) else { return }
+        guard let logFile = txtFileUrl else { return }
+        
+        if manager.fileExists(atPath: "\(logFile.path)"){
+            if let fileHandle = try? FileHandle(forWritingTo: logFile) {
+                fileHandle.seekToEndOfFile()
+                fileHandle.write(data)
+                fileHandle.closeFile()
+            }
+        } else {
+            try? data.write(to: logFile, options: .atomicWrite)
+        }
+        
     }
 }

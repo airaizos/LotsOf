@@ -9,7 +9,7 @@ import Foundation
 
 final class HackerRankAlgoritmos {
     
-    //No funciona
+    //MARK: - ❌ Incorrect
     func iceCreamParlor(m: Int, arr: [Int]) -> [Int] {
         //6  1 3 4 5 6
         //ordenar menor a mayor
@@ -26,7 +26,7 @@ final class HackerRankAlgoritmos {
             let total = m - primero - segundo
             if (total == 0) {
                 let firstIndex = arraySorted.firstIndex(of: primero)! + 1
-                let secondIndex = arraySorted.firstIndex(of: segundo)! + 1 
+                let secondIndex = arraySorted.firstIndex(of: segundo)! + 1
                 result.append(firstIndex)
                 result.append(secondIndex)
                 break
@@ -40,14 +40,36 @@ final class HackerRankAlgoritmos {
         var count = 1
         
         let uppers = CharacterSet.uppercaseLetters
-
+        
         s.unicodeScalars.forEach { i in
             if uppers.contains(i) {
                 count += 1
             }
         }
-
+        
         return count
     }
     
+    func hackerrankInString(s: String) -> String {
+        // Write your code here
+        let letters = s.compactMap { "\($0)" }
+        
+        let word = "hackerrank"
+        var arrayWord = word.compactMap { "\($0)"
+        }
+        var letter = arrayWord[0]
+        
+        letters.forEach {
+            if $0 == letter && !arrayWord.isEmpty {
+                arrayWord.removeFirst()
+                if !arrayWord.isEmpty {
+                    letter = arrayWord[0]
+                }
+            }
+        }
+        if arrayWord.isEmpty {
+            return "YES"
+        }
+        return "NO"
+    }
 }

@@ -76,6 +76,8 @@
 		3A14BDA028D8CB710040117C /* LineDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14BD9F28D8CB710040117C /* LineDetailProvider.swift */; };
 		3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1526A128D49AC9009CA133 /* UserCell.swift */; };
 		3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1526A228D49AC9009CA133 /* UserCell.xib */; };
+		3A173BA12915787700622E77 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA02915787700622E77 /* Team.swift */; };
+		3A173BA329157ABF00622E77 /* ChampionsLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */; };
 		3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3B28F473A3004E0477 /* extensionData.swift */; };
 		3A195D3E28F47697004E0477 /* PPSCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3D28F47697004E0477 /* PPSCollection.swift */; };
 		3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D4028F476E6004E0477 /* PSSImagesProvider.swift */; };
@@ -287,6 +289,8 @@
 		3A14BD9F28D8CB710040117C /* LineDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailProvider.swift; sourceTree = "<group>"; };
 		3A1526A128D49AC9009CA133 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		3A1526A228D49AC9009CA133 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		3A173BA02915787700622E77 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsLeagueViewModel.swift; sourceTree = "<group>"; };
 		3A195D3B28F473A3004E0477 /* extensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionData.swift; sourceTree = "<group>"; };
 		3A195D3D28F47697004E0477 /* PPSCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSCollection.swift; sourceTree = "<group>"; };
 		3A195D4028F476E6004E0477 /* PSSImagesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSImagesProvider.swift; sourceTree = "<group>"; };
@@ -651,6 +655,15 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		3A173B9F2915784E00622E77 /* ChampionsLeague */ = {
+			isa = PBXGroup;
+			children = (
+				3A173BA02915787700622E77 /* Team.swift */,
+				3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */,
+			);
+			path = ChampionsLeague;
+			sourceTree = "<group>";
+		};
 		3A195D3F28F476A2004E0477 /* PPSImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +962,7 @@
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
 			isa = PBXGroup;
 			children = (
+				3A173B9F2915784E00622E77 /* ChampionsLeague */,
 				3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */,
 				3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */,
 				3AFB00A628F87C07003BE6CA /* MoureDev */,
@@ -1345,6 +1359,7 @@
 				3AF224DB289A7B34008BEAF0 /* URLSessionsViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */,
 				3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */,
+				3A173BA12915787700622E77 /* Team.swift in Sources */,
 				3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */,
 				3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */,
 				3ACCA17F290DA9BA003A7ABE /* QRScannerController.swift in Sources */,
@@ -1384,6 +1399,7 @@
 				3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */,
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
+				3A173BA329157ABF00622E77 /* ChampionsLeagueViewModel.swift in Sources */,
 				3AFB0F5729016A9100B12B9B /* UserInterfacesViewModel.swift in Sources */,
 				3A0D5D6A28FE9E6C00D71B4E /* OneViewAppsViewModel.swift in Sources */,
 				3ACCA170290D6943003A7ABE /* PermissionsToUseCameraViewController.swift in Sources */,

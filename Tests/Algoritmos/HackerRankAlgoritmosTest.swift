@@ -34,4 +34,17 @@ final class HackerRankAlgoritmosTest: XCTestCase {
         XCTAssertEqual(camelCase, 5)
         XCTAssertEqual(camelCase1, 3)
     }
+    
+
+    func testHackerrankInString() throws {
+        
+        let clase =  HackerRankAlgoritmos()
+        
+        XCTAssertEqual("YES", clase.hackerrankInString(s: "haacckkerrannkk"))
+        XCTAssertEqual("NO", clase.hackerrankInString(s: "haacckkerannk"))
+        XCTAssertEqual("NO", clase.hackerrankInString(s: "hccaakkerrannkk"))
+        
+        XCTAssertEqual("YES", clase.hackerrankInString(s: "hereiamstackerrank"))
+        XCTAssertEqual("NO", clase.hackerrankInString(s: "hackerworld"))
+    }
 }

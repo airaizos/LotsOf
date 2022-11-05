@@ -78,6 +78,7 @@
 		3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1526A228D49AC9009CA133 /* UserCell.xib */; };
 		3A173BA12915787700622E77 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA02915787700622E77 /* Team.swift */; };
 		3A173BA329157ABF00622E77 /* ChampionsLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */; };
+		3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA52915B7EE00622E77 /* ChampionsLeagueTests.swift */; };
 		3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3B28F473A3004E0477 /* extensionData.swift */; };
 		3A195D3E28F47697004E0477 /* PPSCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3D28F47697004E0477 /* PPSCollection.swift */; };
 		3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D4028F476E6004E0477 /* PSSImagesProvider.swift */; };
@@ -291,6 +292,7 @@
 		3A1526A228D49AC9009CA133 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		3A173BA02915787700622E77 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsLeagueViewModel.swift; sourceTree = "<group>"; };
+		3A173BA52915B7EE00622E77 /* ChampionsLeagueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsLeagueTests.swift; sourceTree = "<group>"; };
 		3A195D3B28F473A3004E0477 /* extensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionData.swift; sourceTree = "<group>"; };
 		3A195D3D28F47697004E0477 /* PPSCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSCollection.swift; sourceTree = "<group>"; };
 		3A195D4028F476E6004E0477 /* PSSImagesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSImagesProvider.swift; sourceTree = "<group>"; };
@@ -664,6 +666,14 @@
 			path = ChampionsLeague;
 			sourceTree = "<group>";
 		};
+		3A173BA42915B7C700622E77 /* ChampionsLeague */ = {
+			isa = PBXGroup;
+			children = (
+				3A173BA52915B7EE00622E77 /* ChampionsLeagueTests.swift */,
+			);
+			path = ChampionsLeague;
+			sourceTree = "<group>";
+		};
 		3A195D3F28F476A2004E0477 /* PPSImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -947,6 +957,7 @@
 		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3A173BA42915B7C700622E77 /* ChampionsLeague */,
 				3AA8D048291049E2004E192A /* TaskCountdown */,
 				3AF7BF04290C3846005EAB58 /* Antojitos */,
 				3A574B36290B00B000BA551F /* CalendarHelper */,
@@ -1489,6 +1500,7 @@
 				3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */,
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
+				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
 				3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */,
 			);

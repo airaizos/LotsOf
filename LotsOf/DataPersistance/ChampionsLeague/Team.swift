@@ -12,7 +12,7 @@ enum Groups {
     
 }
 
-struct Team {
+struct Team: Equatable {
     let name: String
     let group: Groups?
     

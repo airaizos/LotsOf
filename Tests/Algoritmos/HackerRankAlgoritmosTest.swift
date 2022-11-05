@@ -47,4 +47,22 @@ final class HackerRankAlgoritmosTest: XCTestCase {
         XCTAssertEqual("YES", clase.hackerrankInString(s: "hereiamstackerrank"))
         XCTAssertEqual("NO", clase.hackerrankInString(s: "hackerworld"))
     }
+    
+    
+    func testPangrams() throws {
+        let clase = HackerRankAlgoritmos()
+        
+        let phrasePangram = "We promptly judged antique ivory buckles for the next prize"
+        let pangram = clase.pangrams(s: phrasePangram)
+        
+        let phraseNotPangram = "We promptly judged antique ivory buckles for the prize"
+        
+        let notPangram = clase.pangrams(s: phraseNotPangram)
+        let phrasePangram2 = "qmExzBIJmdELxyOFWv LOCmefk TwPhargKSPEqSxzveiun"
+        let pangram2 = clase.pangrams(s: phrasePangram2)
+        
+        XCTAssertEqual("pangram", pangram)
+        XCTAssertEqual("not pangram", notPangram)
+        XCTAssertEqual("pangram", pangram2)
+    }
 }

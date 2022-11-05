@@ -9,6 +9,10 @@ import Foundation
 
 final class HackerRankAlgoritmos {
     
+    //MARK: - 📜 WorkingOn
+  
+    
+    
     //MARK: - ❌ Incorrect
     func iceCreamParlor(m: Int, arr: [Int]) -> [Int] {
         //6  1 3 4 5 6
@@ -71,5 +75,27 @@ final class HackerRankAlgoritmos {
             return "YES"
         }
         return "NO"
+    }
+    
+    func pangrams(s: String) -> String {
+        //"not pangram" "pangram"
+        if s.count < 26 {
+            return "not pangram"
+        }
+        
+        let sortedPhrase = s.lowercased().replacingOccurrences(of: " ", with: "").sorted()
+        var lastLetter = Character("a")
+        var alphabet = ["a"]
+        sortedPhrase.forEach { letter in
+            if letter != lastLetter {
+                alphabet.append("\(letter)")
+                lastLetter = letter
+            }
+        }
+        if alphabet.count == 26 {
+            return "pangram"
+        } else {
+            return "not pangram"
+        }
     }
 }

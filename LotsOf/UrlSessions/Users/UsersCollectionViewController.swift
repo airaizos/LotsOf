@@ -25,7 +25,7 @@ final class UsersCollectionViewController: UIViewController {
         setupView()
         setupCollectionView()
     }
-    
+    #warning("fatal error userLabel nil")
     private func setupView() {
         usersLabel.layer.cornerRadius = radius
         usersCollectionView.layer.cornerRadius = radius

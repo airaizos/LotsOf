@@ -33,9 +33,16 @@ final class ChampionsLeagueTests: XCTestCase {
         XCTAssertEqual(4, viewModel.groupH.count)
     }
 
-    func testMatch() throws {
+    func testMatchesToPlay() throws {
+        let viewModel = ChampionsLeagueViewModel()
+        viewModel.teamsGroupsRaffle()
         
         
+        viewModel.matchesToPlay(for: viewModel.groupA)
+        XCTAssertEqual(viewModel.matches.count, 12)
+        
+        viewModel.matchesToPlay(for: viewModel.groupB)
+        XCTAssertEqual(viewModel.matches.count, 24)
     }
     
 }

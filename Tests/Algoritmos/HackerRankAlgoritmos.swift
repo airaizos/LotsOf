@@ -10,8 +10,14 @@ import Foundation
 final class HackerRankAlgoritmos {
     
     //MARK: - 📜 WorkingOn
-  
     
+    func introTutorial(V: Int, arr: [Int]) -> Int {
+        guard let index = arr.firstIndex(of: V) else { return 0 }
+        
+        return index
+    }
+
+   
     
     //MARK: - ❌ Incorrect
     func iceCreamParlor(m: Int, arr: [Int]) -> [Int] {
@@ -97,5 +103,29 @@ final class HackerRankAlgoritmos {
         } else {
             return "not pangram"
         }
+    }
+    
+    func lonelyinteger(a: [Int]) -> Int {
+        if a.count == 1 {  return a[0] }
+        let sorted = a.sorted()
+        var previous = sorted[0]
+        
+        let numsFiltered = sorted.filter { num in
+            if num != previous {
+                previous = num
+                return true
+            } else {
+                return false
+            }
+        }
+        
+        let unique = numsFiltered.filter { num in
+            if sorted.firstIndex(of: num) == sorted.lastIndex(of: num) {
+                return true
+            } else {
+                return false
+            }
+        }
+        return unique[0]
     }
 }

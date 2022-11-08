@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum Groups {
+enum LetterGroups {
     case A,B,C,D,E,F,G,H
     
 }
 
 struct Team: Equatable {
     let name: String
-    let group: Groups?
+    let group: LetterGroups?
     
     var played: Int {
         won + lost + draws
@@ -33,4 +33,15 @@ struct Team: Equatable {
     }
     var qualified: Bool = false
     
+}
+
+struct Match {
+    var home: Team
+    var visitor: Team
+    var homeGoals: Int = 0
+    var visitorGoals: Int = 0
+}
+
+struct Groups {
+    var teams: [Team]
 }

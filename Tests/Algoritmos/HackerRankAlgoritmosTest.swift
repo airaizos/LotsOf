@@ -65,4 +65,27 @@ final class HackerRankAlgoritmosTest: XCTestCase {
         XCTAssertEqual("not pangram", notPangram)
         XCTAssertEqual("pangram", pangram2)
     }
+    
+    func testLonelyInteger() throws {
+        let clase = HackerRankAlgoritmos()
+        
+        let answer4 = [1,2,3,4,3,2,1]
+        let answer2 = [0,0,1,2,1]
+        let answer1 = [1]
+       
+        
+        XCTAssertEqual(4, clase.lonelyinteger(a: answer4))
+        XCTAssertEqual(2, clase.lonelyinteger(a: answer2))
+        XCTAssertEqual(1, clase.lonelyinteger(a: answer1))
+    }
+    
+    func testIntroTutorial() throws {
+        let clase = HackerRankAlgoritmos()
+        
+        let case1 = clase.introTutorial(V: 4, arr: [1,4,5,7,9,12])
+        
+        XCTAssertEqual(1, case1)
+        
+    }
+    
 }

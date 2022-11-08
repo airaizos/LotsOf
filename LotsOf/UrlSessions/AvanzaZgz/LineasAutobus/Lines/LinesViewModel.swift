@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 final class LinesViewModel {
+    
+    //MARK: - Variables
     var refreshData = { () -> () in }
     let model = LinesProvider()
     weak var delegate: APIClientDelegate?
@@ -18,6 +20,7 @@ final class LinesViewModel {
         }
     }
     
+    //MARK: - Functions
     func cellViewModel(at IndexPath: IndexPath) -> String {
         let busLine = busLines[IndexPath.row]
         return busLine
@@ -28,7 +31,7 @@ final class LinesViewModel {
         return item
     }
 }
-
+    //MARK: Extensions
 extension LinesViewModel: APIClientDelegate {
 
     func getLines() {

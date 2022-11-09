@@ -52,6 +52,7 @@ final class LinesViewController: UIViewController  {
     }
     
     private func initSearchController() {
+        //TODO: Porque no se muestra los buttonTitles al seleccionar la barra de busqueda?
         searchController.loadViewIfNeeded()
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -80,8 +81,7 @@ extension LinesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cellViewModel = viewModel.cellViewModel(at: indexPath)
       
-        
-    //    let thisLine: String!
+
         if (searchController.isActive) {
             cellViewModel = filteredLines[indexPath.row]
         } else {
@@ -132,12 +132,27 @@ extension LinesViewController:  UISearchResultsUpdating, UISearchBarDelegate {
         filterForSearchTextAndScopeButton(searchText: searchText, scopeButton: scopeButton)
     }
     
-    func filterForSearchTextAndScopeButton(searchText: String, scopeButton: String = "All") {
+    func filterForSearchTextAndScopeButton(searchText: String, scopeButton: String = "Todas") {
         filteredLines = viewModel.busLines.filter {
-            line in
+            lineLink in
+            let line = lineLink.separateBusLineName
+            var scopeMatch = (scopeButton == "Todas" || (line.contains(scopeButton.lowercased())))
             
+            if scopeButton == "Barrios" {
+                scopeMatch = line.lowercased().contains("r")
+                
+            } else if scopeButton == "C" {
+                scopeMatch = line.lowercased().starts(with:"c")
+                    
+            } else if scopeButton == "N" {
+                    scopeMatch = line.lowercased().starts(with:"n")
+                
+            } else if scopeButton == "Urbano" {
+                scopeMatch = line.count == 2
+                
+            }
+
             
-            let scopeMatch = (scopeButton == "All" || (line.lowercased().contains(scopeButton.lowercased())))
             if (searchController.searchBar.text != "") {
                 let searchTextMatch = line.lowercased().contains(searchText.lowercased())
                 return scopeMatch && searchTextMatch

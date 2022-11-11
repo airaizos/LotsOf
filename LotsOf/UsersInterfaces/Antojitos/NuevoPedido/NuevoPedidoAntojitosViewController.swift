@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NuevoPedidoViewController: UIViewController {
+final class NuevoPedidoAntojitosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ final class NuevoPedidoViewController: UIViewController {
     
     
     @IBAction func confirmButtonAction(_ sender: UIButton) {
-        goTo(viewControllerName: "AntojitosInicioViewController")
+        goTo(viewControllerName: "InicioAntojitosViewController")
     }
     
     deinit {

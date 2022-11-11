@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AntojitosInicioViewController: UIViewController {
+final class InicioAntojitosViewController: UIViewController {
 
     @IBOutlet weak var inicioScrollView: InicioScrollView!
     

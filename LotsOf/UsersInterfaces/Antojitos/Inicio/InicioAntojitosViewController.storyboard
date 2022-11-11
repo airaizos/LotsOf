@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8eT-qt-7nX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N6k-34-rKB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Inicio Antojitos View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="AntojitosInicioViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="AntojitosInicioViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InicioAntojitosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="InicioAntojitosViewController" customModule="LotsOfUrlSessions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-la-ZXM" userLabel="Dominostitle">
-                                <rect key="frame" x="0.0" y="47" width="390" height="50"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Eb0-vs-Fup"/>
@@ -44,57 +44,66 @@
                                     <constraint firstAttribute="height" constant="60" id="qUE-On-fX4"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wer-Se-0l3" customClass="InicioScrollView" customModule="LotsOfUrlSessions" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="262" width="390" height="365"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wer-Se-0l3" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="2If-7a-Cx4"/>
-                            <constraint firstItem="wer-Se-0l3" firstAttribute="top" secondItem="rxL-la-ZXM" secondAttribute="bottom" constant="165" id="6Ww-7j-vyK"/>
                             <constraint firstItem="rxL-la-ZXM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6da-aw-lBy"/>
-                            <constraint firstItem="wer-Se-0l3" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" constant="133" id="Lf1-CI-PkI"/>
                             <constraint firstItem="oe7-Rb-ApB" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="POk-E1-5mw"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wer-Se-0l3" secondAttribute="bottom" constant="134" id="TH0-nm-CMW"/>
                             <constraint firstItem="n11-HR-nHD" firstAttribute="trailing" secondItem="rxL-la-ZXM" secondAttribute="trailing" id="TVg-hL-tBT"/>
                             <constraint firstItem="rxL-la-ZXM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YGI-Jn-aFP"/>
                             <constraint firstItem="n11-HR-nHD" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="g4w-Oh-4j8"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rxL-la-ZXM" secondAttribute="trailing" id="ifh-e6-rI9"/>
                             <constraint firstItem="oe7-Rb-ApB" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" constant="8" symbolic="YES" id="nn5-ix-G47"/>
                             <constraint firstItem="rxL-la-ZXM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="ogH-6g-aBq"/>
-                            <constraint firstItem="wer-Se-0l3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="wrP-LR-Iua"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="9J3-gv-Gk0">
-                        <color key="badgeColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="xEm-Vh-hJc"/>
                     <connections>
                         <outlet property="promotionalCodeView" destination="oe7-Rb-ApB" id="RT6-go-CSX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="2858.4615384615386" y="-34.123222748815166"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="9JW-Yc-aQ0">
+        <!--Item-->
+        <scene sceneID="LEP-56-ZqO">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8eT-qt-7nX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rH8-vl-wG5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="9J3-gv-Gk0">
+                        <color key="badgeColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C9r-eu-tuA">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dg9-x8-a1I">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="nQX-32-uZo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eC-dt-IFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929.2307692307691" y="-34.123222748815166"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="HFN-KT-Lz3">
+            <objects>
+                <tabBarController title="Inicio" automaticallyAdjustsScrollViewInsets="NO" id="N6k-34-rKB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TYl-7u-AOP">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="cR3-0q-22g"/>
+                        <segue destination="rH8-vl-wG5" kind="relationship" relationship="viewControllers" id="QaD-qv-Cv2"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ejp-FA-Wqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqZ-n9-dvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70.769230769230774" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="1000" y="-34.123222748815166"/>
         </scene>
     </scenes>
     <resources>

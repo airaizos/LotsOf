@@ -9,6 +9,6 @@ import Foundation
 
 final class UserInterfacesViewModel {
     var appsList: [appInfo] = [
-        appInfo(name: "Antojitos", detail: "Interfaz DominosPizza app", viewController: "NuevoPedidoViewController")
+        appInfo(name: "Antojitos", detail: "Interfaz DominosPizza app", viewController: "NuevoPedidoAntojitosViewController")
     ]
 }

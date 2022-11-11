@@ -17,7 +17,7 @@ final class NuevoPedidoAntojitosViewController: UIViewController {
     
     
     @IBAction func confirmButtonAction(_ sender: UIButton) {
-        goTo(viewControllerName: "InicioAntojitosViewController")
+        goTo(viewControllerName: "TabBarAntojitosViewController")
     }
     
     deinit {

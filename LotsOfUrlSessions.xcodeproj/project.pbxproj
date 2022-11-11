@@ -38,6 +38,8 @@
 		3A099D42291E619300F5E498 /* CestaAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D41291E619300F5E498 /* CestaAntojitosViewController.swift */; };
 		3A099D45291E61AC00F5E498 /* MiAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */; };
 		3A099D47291E61BC00F5E498 /* MiAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */; };
+		3A099D49291E668700F5E498 /* TabBarAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D48291E668700F5E498 /* TabBarAntojitosViewController.swift */; };
+		3A099D4B291E669900F5E498 /* TabBarAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D4A291E669900F5E498 /* TabBarAntojitosViewController.storyboard */; };
 		3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */; };
 		3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */; };
 		3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2F290148DC00D4DBCC /* EventCell.swift */; };
@@ -259,6 +261,8 @@
 		3A099D41291E619300F5E498 /* CestaAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CestaAntojitosViewController.swift; sourceTree = "<group>"; };
 		3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiAntojitosViewController.storyboard; sourceTree = "<group>"; };
 		3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiAntojitosViewController.swift; sourceTree = "<group>"; };
+		3A099D48291E668700F5E498 /* TabBarAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAntojitosViewController.swift; sourceTree = "<group>"; };
+		3A099D4A291E669900F5E498 /* TabBarAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarAntojitosViewController.storyboard; sourceTree = "<group>"; };
 		3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventEditViewController.storyboard; sourceTree = "<group>"; };
 		3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		3A0B1B2F290148DC00D4DBCC /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -672,6 +676,8 @@
 				3A099D43291E619800F5E498 /* MiAntojitos */,
 				3A099D3E291E617200F5E498 /* Cesta */,
 				3A6260F9290C3127008791D9 /* ResusableViews */,
+				3A099D48291E668700F5E498 /* TabBarAntojitosViewController.swift */,
+				3A099D4A291E669900F5E498 /* TabBarAntojitosViewController.storyboard */,
 			);
 			path = Antojitos;
 			sourceTree = "<group>";
@@ -1396,6 +1402,7 @@
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A14252828F9B1D2004B5252 /* OfertaCell.xib in Resources */,
 				3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */,
+				3A099D4B291E669900F5E498 /* TabBarAntojitosViewController.storyboard in Resources */,
 				3AFB0F5929017FD800B12B9B /* InicioAntojitosViewController.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
@@ -1535,6 +1542,7 @@
 				3A86954028C6526D001CC044 /* RickAndMortyViewModel.swift in Sources */,
 				3A104B1E29052D2600ACC903 /* EditeQuotesViewController.swift in Sources */,
 				3AFB0F5529016A5D00B12B9B /* UserInterfacesViewController.swift in Sources */,
+				3A099D49291E668700F5E498 /* TabBarAntojitosViewController.swift in Sources */,
 				3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */,
 				3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */,
 				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,

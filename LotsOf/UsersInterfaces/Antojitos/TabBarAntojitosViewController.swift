@@ -50,6 +50,7 @@ final class TabBarAntojitosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBarController()
+        view.backgroundColor = .blue
     }
     
     //MARK: Functions

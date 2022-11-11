@@ -40,6 +40,7 @@
 		3A099D47291E61BC00F5E498 /* MiAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */; };
 		3A099D49291E668700F5E498 /* TabBarAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D48291E668700F5E498 /* TabBarAntojitosViewController.swift */; };
 		3A099D4B291E669900F5E498 /* TabBarAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D4A291E669900F5E498 /* TabBarAntojitosViewController.storyboard */; };
+		3A099D4D291E71DD00F5E498 /* InitialAntojitosControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D4C291E71DD00F5E498 /* InitialAntojitosControllerBuilder.swift */; };
 		3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */; };
 		3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */; };
 		3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2F290148DC00D4DBCC /* EventCell.swift */; };
@@ -263,6 +264,7 @@
 		3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiAntojitosViewController.swift; sourceTree = "<group>"; };
 		3A099D48291E668700F5E498 /* TabBarAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAntojitosViewController.swift; sourceTree = "<group>"; };
 		3A099D4A291E669900F5E498 /* TabBarAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarAntojitosViewController.storyboard; sourceTree = "<group>"; };
+		3A099D4C291E71DD00F5E498 /* InitialAntojitosControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialAntojitosControllerBuilder.swift; sourceTree = "<group>"; };
 		3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventEditViewController.storyboard; sourceTree = "<group>"; };
 		3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		3A0B1B2F290148DC00D4DBCC /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -678,6 +680,7 @@
 				3A6260F9290C3127008791D9 /* ResusableViews */,
 				3A099D48291E668700F5E498 /* TabBarAntojitosViewController.swift */,
 				3A099D4A291E669900F5E498 /* TabBarAntojitosViewController.storyboard */,
+				3A099D4C291E71DD00F5E498 /* InitialAntojitosControllerBuilder.swift */,
 			);
 			path = Antojitos;
 			sourceTree = "<group>";
@@ -1504,6 +1507,7 @@
 				3A134F5328F603C400673B79 /* FactViewModel.swift in Sources */,
 				3A0BE003290844C500C4B069 /* customView.swift in Sources */,
 				3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */,
+				3A099D4D291E71DD00F5E498 /* InitialAntojitosControllerBuilder.swift in Sources */,
 				3A86953728C642A4001CC044 /* Model.swift in Sources */,
 				3AB6CEDB2905B8D1002654CD /* QuotesProvider.swift in Sources */,
 				3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */,

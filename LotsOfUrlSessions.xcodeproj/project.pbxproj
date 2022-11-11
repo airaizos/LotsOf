@@ -564,8 +564,8 @@
 		3A099D34291E5FFE00F5E498 /* Carta */ = {
 			isa = PBXGroup;
 			children = (
-				3A099D35291E612F00F5E498 /* CartaAntojitosViewController.storyboard */,
 				3A099D37291E613900F5E498 /* CartaAntojitosViewController.swift */,
+				3A099D35291E612F00F5E498 /* CartaAntojitosViewController.storyboard */,
 			);
 			path = Carta;
 			sourceTree = "<group>";
@@ -573,8 +573,8 @@
 		3A099D39291E614800F5E498 /* Promociones */ = {
 			isa = PBXGroup;
 			children = (
-				3A099D3A291E615800F5E498 /* PromocionesAntojitosViewController.storyboard */,
 				3A099D3C291E616400F5E498 /* PromocionesAntojitosViewController.swift */,
+				3A099D3A291E615800F5E498 /* PromocionesAntojitosViewController.storyboard */,
 			);
 			path = Promociones;
 			sourceTree = "<group>";
@@ -582,8 +582,8 @@
 		3A099D3E291E617200F5E498 /* Cesta */ = {
 			isa = PBXGroup;
 			children = (
-				3A099D3F291E618800F5E498 /* CestaAntojitosViewController.storyboard */,
 				3A099D41291E619300F5E498 /* CestaAntojitosViewController.swift */,
+				3A099D3F291E618800F5E498 /* CestaAntojitosViewController.storyboard */,
 			);
 			path = Cesta;
 			sourceTree = "<group>";
@@ -591,8 +591,8 @@
 		3A099D43291E619800F5E498 /* MiAntojitos */ = {
 			isa = PBXGroup;
 			children = (
-				3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */,
 				3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */,
+				3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */,
 			);
 			path = MiAntojitos;
 			sourceTree = "<group>";
@@ -665,13 +665,13 @@
 		3A0D5D8128FEDDEA00D71B4E /* Antojitos */ = {
 			isa = PBXGroup;
 			children = (
-				3A099D43291E619800F5E498 /* MiAntojitos */,
-				3A099D3E291E617200F5E498 /* Cesta */,
-				3A099D39291E614800F5E498 /* Promociones */,
-				3A099D34291E5FFE00F5E498 /* Carta */,
-				3A6260F9290C3127008791D9 /* ResusableViews */,
 				3A099D33291E5CA200F5E498 /* NuevoPedido */,
 				3A099D32291E5C8E00F5E498 /* Inicio */,
+				3A099D39291E614800F5E498 /* Promociones */,
+				3A099D34291E5FFE00F5E498 /* Carta */,
+				3A099D43291E619800F5E498 /* MiAntojitos */,
+				3A099D3E291E617200F5E498 /* Cesta */,
+				3A6260F9290C3127008791D9 /* ResusableViews */,
 			);
 			path = Antojitos;
 			sourceTree = "<group>";

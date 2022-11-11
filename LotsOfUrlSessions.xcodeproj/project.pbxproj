@@ -54,7 +54,7 @@
 		3A0D5D6A28FE9E6C00D71B4E /* OneViewAppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */; };
 		3A0D5D6D28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6C28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard */; };
 		3A0D5D6F28FEA13800D71B4E /* MonthlyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D6E28FEA13800D71B4E /* MonthlyCalendarViewController.swift */; };
-		3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */; };
+		3A0D5D7128FEA8E100D71B4E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7028FEA8E100D71B4E /* UIViewExtension.swift */; };
 		3A0D5D7328FEADD600D71B4E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7228FEADD600D71B4E /* CalendarCell.swift */; };
 		3A0D5D7528FEB32200D71B4E /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7428FEB32200D71B4E /* CalendarHelper.swift */; };
 		3A0D5D7A28FEC2B500D71B4E /* TaskTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */; };
@@ -90,7 +90,7 @@
 		3A173BA12915787700622E77 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA02915787700622E77 /* Team.swift */; };
 		3A173BA329157ABF00622E77 /* ChampionsLeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */; };
 		3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A173BA52915B7EE00622E77 /* ChampionsLeagueTests.swift */; };
-		3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3B28F473A3004E0477 /* extensionData.swift */; };
+		3A195D3C28F473A3004E0477 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3B28F473A3004E0477 /* DataExtension.swift */; };
 		3A195D3E28F47697004E0477 /* PPSCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D3D28F47697004E0477 /* PPSCollection.swift */; };
 		3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D4028F476E6004E0477 /* PSSImagesProvider.swift */; };
 		3A195D4328F47821004E0477 /* PPSImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195D4228F47821004E0477 /* PPSImagesViewModel.swift */; };
@@ -112,7 +112,7 @@
 		3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */; };
 		3A280CF828DB62E200091A46 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3A280CF728DB62E200091A46 /* LoginModule */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
-		3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */; };
+		3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
 		3A2FA57428C75DB30072F90E /* EmmanuelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */; };
 		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
@@ -147,8 +147,8 @@
 		3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */; };
 		3AA19AD1291449CD007D7835 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA19AD0291449CD007D7835 /* LogManager.swift */; };
 		3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */; };
-		3AA8D03C29104115004E192A /* extensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03B29104115004E192A /* extensionInt.swift */; };
-		3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03D291041A5004E192A /* extensionDoubles.swift */; };
+		3AA8D03C29104115004E192A /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03B29104115004E192A /* IntExtension.swift */; };
+		3AA8D03E291041A5004E192A /* DoublesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D03D291041A5004E192A /* DoublesExtension.swift */; };
 		3AA8D0412910466E004E192A /* CountDownBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D0402910466E004E192A /* CountDownBox.swift */; };
 		3AA8D043291047C4004E192A /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D042291047C4004E192A /* TaskType.swift */; };
 		3AA8D04729104854004E192A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8D04629104854004E192A /* TaskViewModel.swift */; };
@@ -199,7 +199,7 @@
 		3AF7BF0C290C59D9005EAB58 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */; };
 		3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */; };
 		3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */; };
-		3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */; };
+		3AFB00A528F870A4003BE6CA /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A428F870A4003BE6CA /* ButtonExtension.swift */; };
 		3AFB00A828F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A728F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift */; };
 		3AFB00AA28F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB00A928F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift */; };
 		3AFB00AC28F8843D003BE6CA /* DataPersistanceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */; };
@@ -278,7 +278,7 @@
 		3A0D5D6928FE9E6C00D71B4E /* OneViewAppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewAppsViewModel.swift; sourceTree = "<group>"; };
 		3A0D5D6C28FEA12D00D71B4E /* MonthlyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MonthlyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D6E28FEA13800D71B4E /* MonthlyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarViewController.swift; sourceTree = "<group>"; };
-		3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
+		3A0D5D7028FEA8E100D71B4E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		3A0D5D7228FEADD600D71B4E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		3A0D5D7428FEB32200D71B4E /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerViewController.swift; sourceTree = "<group>"; };
@@ -315,7 +315,7 @@
 		3A173BA02915787700622E77 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		3A173BA229157ABF00622E77 /* ChampionsLeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsLeagueViewModel.swift; sourceTree = "<group>"; };
 		3A173BA52915B7EE00622E77 /* ChampionsLeagueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsLeagueTests.swift; sourceTree = "<group>"; };
-		3A195D3B28F473A3004E0477 /* extensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionData.swift; sourceTree = "<group>"; };
+		3A195D3B28F473A3004E0477 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		3A195D3D28F47697004E0477 /* PPSCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSCollection.swift; sourceTree = "<group>"; };
 		3A195D4028F476E6004E0477 /* PSSImagesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSImagesProvider.swift; sourceTree = "<group>"; };
 		3A195D4228F47821004E0477 /* PPSImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPSImagesViewModel.swift; sourceTree = "<group>"; };
@@ -337,7 +337,7 @@
 		3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewController.swift; sourceTree = "<group>"; };
 		3A280CF628DB625A00091A46 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = LotsOf/LoginModule; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
-		3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageView.swift; sourceTree = "<group>"; };
+		3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
 		3A2FA57328C75DB30072F90E /* EmmanuelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewModel.swift; sourceTree = "<group>"; };
 		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
@@ -372,8 +372,8 @@
 		3AA19ACD2914404B007D7835 /* TaskListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskListViewController.storyboard; sourceTree = "<group>"; };
 		3AA19AD0291449CD007D7835 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		3AA8D03629104070004E192A /* TaskTimerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskTimerViewController.storyboard; sourceTree = "<group>"; };
-		3AA8D03B29104115004E192A /* extensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionInt.swift; sourceTree = "<group>"; };
-		3AA8D03D291041A5004E192A /* extensionDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDoubles.swift; sourceTree = "<group>"; };
+		3AA8D03B29104115004E192A /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		3AA8D03D291041A5004E192A /* DoublesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublesExtension.swift; sourceTree = "<group>"; };
 		3AA8D0402910466E004E192A /* CountDownBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownBox.swift; sourceTree = "<group>"; };
 		3AA8D042291047C4004E192A /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
 		3AA8D04629104854004E192A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
@@ -430,7 +430,7 @@
 		3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3AFB00A028F86D18003BE6CA /* EnumUserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultsModel.swift; sourceTree = "<group>"; };
 		3AFB00A228F8704C003BE6CA /* EnumUserDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumUserDefaultViewController.swift; sourceTree = "<group>"; };
-		3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionButton.swift; sourceTree = "<group>"; };
+		3AFB00A428F870A4003BE6CA /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
 		3AFB00A728F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MourdevUserDefaultsViewController.swift; sourceTree = "<group>"; };
 		3AFB00A928F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MourdevUserDefaultsViewModel.swift; sourceTree = "<group>"; };
 		3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DataPersistanceViewController.storyboard; sourceTree = "<group>"; };
@@ -849,15 +849,15 @@
 			isa = PBXGroup;
 			children = (
 				3ACCA179290DA40F003A7ABE /* QRcode */,
-				3A2FA56D28C74A9E0072F90E /* ExtensionUIImageView.swift */,
+				3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */,
 				3A1ABA0228D1E5E300235D59 /* ColorExtension.swift */,
 				3A07A52228DCBB7900F98D50 /* StringExtension.swift */,
-				3A195D3B28F473A3004E0477 /* extensionData.swift */,
-				3AFB00A428F870A4003BE6CA /* ExtensionButton.swift */,
-				3A0D5D7028FEA8E100D71B4E /* extensionUIView.swift */,
+				3A195D3B28F473A3004E0477 /* DataExtension.swift */,
+				3AFB00A428F870A4003BE6CA /* ButtonExtension.swift */,
+				3A0D5D7028FEA8E100D71B4E /* UIViewExtension.swift */,
 				3AF7BF0B290C59D9005EAB58 /* ImagePicker.swift */,
-				3AA8D03B29104115004E192A /* extensionInt.swift */,
-				3AA8D03D291041A5004E192A /* extensionDoubles.swift */,
+				3AA8D03B29104115004E192A /* IntExtension.swift */,
+				3AA8D03D291041A5004E192A /* DoublesExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1482,8 +1482,8 @@
 				3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */,
 				3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */,
 				3A173BA12915787700622E77 /* Team.swift in Sources */,
-				3AA8D03E291041A5004E192A /* extensionDoubles.swift in Sources */,
-				3AFB00A528F870A4003BE6CA /* ExtensionButton.swift in Sources */,
+				3AA8D03E291041A5004E192A /* DoublesExtension.swift in Sources */,
+				3AFB00A528F870A4003BE6CA /* ButtonExtension.swift in Sources */,
 				3ACCA17F290DA9BA003A7ABE /* QRScannerController.swift in Sources */,
 				3AA19ACC29144041007D7835 /* TaskListViewController.swift in Sources */,
 				3A1ABA0928D2119D00235D59 /* ColorModel.swift in Sources */,
@@ -1499,7 +1499,7 @@
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
 				3AA8D043291047C4004E192A /* TaskType.swift in Sources */,
 				3A05D23B28CA866000C5E396 /* JokeSelection.swift in Sources */,
-				3A0D5D7128FEA8E100D71B4E /* extensionUIView.swift in Sources */,
+				3A0D5D7128FEA8E100D71B4E /* UIViewExtension.swift in Sources */,
 				3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */,
 				3A05D23528CA4B0100C5E396 /* JokesViewController.swift in Sources */,
 				3A104B1929052CEF00ACC903 /* QuotesViewController.swift in Sources */,
@@ -1549,7 +1549,7 @@
 				3A099D49291E668700F5E498 /* TabBarAntojitosViewController.swift in Sources */,
 				3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */,
 				3A195D4128F476E6004E0477 /* PSSImagesProvider.swift in Sources */,
-				3A2FA56E28C74A9E0072F90E /* ExtensionUIImageView.swift in Sources */,
+				3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */,
 				3AFB0F4F290164C400B12B9B /* NuevoPedidoAntojitosViewController.swift in Sources */,
 				3A02BB8928C8D91100D168AE /* CreateViewController.swift in Sources */,
 				3A127A0E28FBEAB0002B63F2 /* OfertaViewModel.swift in Sources */,
@@ -1558,7 +1558,7 @@
 				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */,
 				3AC3972129049A8200BE168A /* InicioScrollView.swift in Sources */,
-				3A195D3C28F473A3004E0477 /* extensionData.swift in Sources */,
+				3A195D3C28F473A3004E0477 /* DataExtension.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */,
 				3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */,
 				3A1ABA0128D1E46400235D59 /* ColorTableViewCell.swift in Sources */,
@@ -1590,7 +1590,7 @@
 				3AE6A08C28D76FD30041602B /* UserDetailViewController.swift in Sources */,
 				3A1526A328D49AC9009CA133 /* UserCell.swift in Sources */,
 				3A0D5D6828FE9D2D00D71B4E /* OneViewAppsViewController.swift in Sources */,
-				3AA8D03C29104115004E192A /* extensionInt.swift in Sources */,
+				3AA8D03C29104115004E192A /* IntExtension.swift in Sources */,
 				3A0D5D7528FEB32200D71B4E /* CalendarHelper.swift in Sources */,
 				3AA8D04729104854004E192A /* TaskViewModel.swift in Sources */,
 				3A099D3D291E616400F5E498 /* PromocionesAntojitosViewController.swift in Sources */,

@@ -30,6 +30,14 @@
 		3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */; };
 		3A08B51328EEDB12004173F5 /* PostPPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */; };
 		3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */; };
+		3A099D36291E612F00F5E498 /* CartaAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D35291E612F00F5E498 /* CartaAntojitosViewController.storyboard */; };
+		3A099D38291E613900F5E498 /* CartaAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D37291E613900F5E498 /* CartaAntojitosViewController.swift */; };
+		3A099D3B291E615800F5E498 /* PromocionesAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D3A291E615800F5E498 /* PromocionesAntojitosViewController.storyboard */; };
+		3A099D3D291E616400F5E498 /* PromocionesAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D3C291E616400F5E498 /* PromocionesAntojitosViewController.swift */; };
+		3A099D40291E618800F5E498 /* CestaAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D3F291E618800F5E498 /* CestaAntojitosViewController.storyboard */; };
+		3A099D42291E619300F5E498 /* CestaAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D41291E619300F5E498 /* CestaAntojitosViewController.swift */; };
+		3A099D45291E61AC00F5E498 /* MiAntojitosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */; };
+		3A099D47291E61BC00F5E498 /* MiAntojitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */; };
 		3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */; };
 		3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */; };
 		3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1B2F290148DC00D4DBCC /* EventCell.swift */; };
@@ -243,6 +251,14 @@
 		3A08B50E28EED0B4004173F5 /* PostPPSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewModel.swift; sourceTree = "<group>"; };
 		3A08B51228EEDB12004173F5 /* PostPPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPPSViewController.swift; sourceTree = "<group>"; };
 		3A08B51428EEDB41004173F5 /* PostPPSViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostPPSViewController.storyboard; sourceTree = "<group>"; };
+		3A099D35291E612F00F5E498 /* CartaAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CartaAntojitosViewController.storyboard; sourceTree = "<group>"; };
+		3A099D37291E613900F5E498 /* CartaAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaAntojitosViewController.swift; sourceTree = "<group>"; };
+		3A099D3A291E615800F5E498 /* PromocionesAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PromocionesAntojitosViewController.storyboard; sourceTree = "<group>"; };
+		3A099D3C291E616400F5E498 /* PromocionesAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromocionesAntojitosViewController.swift; sourceTree = "<group>"; };
+		3A099D3F291E618800F5E498 /* CestaAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CestaAntojitosViewController.storyboard; sourceTree = "<group>"; };
+		3A099D41291E619300F5E498 /* CestaAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CestaAntojitosViewController.swift; sourceTree = "<group>"; };
+		3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MiAntojitosViewController.storyboard; sourceTree = "<group>"; };
+		3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiAntojitosViewController.swift; sourceTree = "<group>"; };
 		3A0B1B2B290147C900D4DBCC /* EventEditViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventEditViewController.storyboard; sourceTree = "<group>"; };
 		3A0B1B2D290147D200D4DBCC /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		3A0B1B2F290148DC00D4DBCC /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -548,8 +564,37 @@
 		3A099D34291E5FFE00F5E498 /* Carta */ = {
 			isa = PBXGroup;
 			children = (
+				3A099D35291E612F00F5E498 /* CartaAntojitosViewController.storyboard */,
+				3A099D37291E613900F5E498 /* CartaAntojitosViewController.swift */,
 			);
 			path = Carta;
+			sourceTree = "<group>";
+		};
+		3A099D39291E614800F5E498 /* Promociones */ = {
+			isa = PBXGroup;
+			children = (
+				3A099D3A291E615800F5E498 /* PromocionesAntojitosViewController.storyboard */,
+				3A099D3C291E616400F5E498 /* PromocionesAntojitosViewController.swift */,
+			);
+			path = Promociones;
+			sourceTree = "<group>";
+		};
+		3A099D3E291E617200F5E498 /* Cesta */ = {
+			isa = PBXGroup;
+			children = (
+				3A099D3F291E618800F5E498 /* CestaAntojitosViewController.storyboard */,
+				3A099D41291E619300F5E498 /* CestaAntojitosViewController.swift */,
+			);
+			path = Cesta;
+			sourceTree = "<group>";
+		};
+		3A099D43291E619800F5E498 /* MiAntojitos */ = {
+			isa = PBXGroup;
+			children = (
+				3A099D44291E61AC00F5E498 /* MiAntojitosViewController.storyboard */,
+				3A099D46291E61BC00F5E498 /* MiAntojitosViewController.swift */,
+			);
+			path = MiAntojitos;
 			sourceTree = "<group>";
 		};
 		3A0B1B2A290147A900D4DBCC /* Event */ = {
@@ -620,6 +665,9 @@
 		3A0D5D8128FEDDEA00D71B4E /* Antojitos */ = {
 			isa = PBXGroup;
 			children = (
+				3A099D43291E619800F5E498 /* MiAntojitos */,
+				3A099D3E291E617200F5E498 /* Cesta */,
+				3A099D39291E614800F5E498 /* Promociones */,
 				3A099D34291E5FFE00F5E498 /* Carta */,
 				3A6260F9290C3127008791D9 /* ResusableViews */,
 				3A099D33291E5CA200F5E498 /* NuevoPedido */,
@@ -1337,11 +1385,13 @@
 				3A05D23728CA4B0A00C5E396 /* JokesViewController.storyboard in Resources */,
 				3A1526A428D49AC9009CA133 /* UserCell.xib in Resources */,
 				3A36749E29105D070099F578 /* TaskTypeCollectionViewCell.xib in Resources */,
+				3A099D40291E618800F5E498 /* CestaAntojitosViewController.storyboard in Resources */,
 				3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
 				3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */,
 				3AB6CED92905B7B7002654CD /* InfoplistQuotes.plist in Resources */,
 				3AF7BEFE290C31A2005EAB58 /* PromotionalCodeView.xib in Resources */,
+				3A099D3B291E615800F5E498 /* PromocionesAntojitosViewController.storyboard in Resources */,
 				3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */,
 				3A86954628C656CD001CC044 /* RickAndMortyViewController.storyboard in Resources */,
 				3A14252828F9B1D2004B5252 /* OfertaCell.xib in Resources */,
@@ -1366,6 +1416,8 @@
 				3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */,
 				3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
+				3A099D36291E612F00F5E498 /* CartaAntojitosViewController.storyboard in Resources */,
+				3A099D45291E61AC00F5E498 /* MiAntojitosViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
 				3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */,
@@ -1401,6 +1453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ACCA17D290DA44F003A7ABE /* CameraPreview.swift in Sources */,
+				3A099D42291E619300F5E498 /* CestaAntojitosViewController.swift in Sources */,
 				3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */,
 				3A083D8A28EB217100F628E7 /* PostPPS.swift in Sources */,
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
@@ -1429,6 +1482,7 @@
 				3A02BB8628C8B9DE00D168AE /* OdenzaViewModel.swift in Sources */,
 				3AB6CEDD2905CA01002654CD /* QuoteListViewController.swift in Sources */,
 				3A0D5D6F28FEA13800D71B4E /* MonthlyCalendarViewController.swift in Sources */,
+				3A099D38291E613900F5E498 /* CartaAntojitosViewController.swift in Sources */,
 				3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */,
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
@@ -1496,6 +1550,7 @@
 				3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */,
 				3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */,
 				3A1ABA0128D1E46400235D59 /* ColorTableViewCell.swift in Sources */,
+				3A099D47291E61BC00F5E498 /* MiAntojitosViewController.swift in Sources */,
 				3A14252428F9B130004B5252 /* OfertaListViewController.swift in Sources */,
 				3AF224D9289A7B34008BEAF0 /* SceneDelegate.swift in Sources */,
 				3AFB0F5B29017FE100B12B9B /* InicioAntojitosViewController.swift in Sources */,
@@ -1526,6 +1581,7 @@
 				3AA8D03C29104115004E192A /* extensionInt.swift in Sources */,
 				3A0D5D7528FEB32200D71B4E /* CalendarHelper.swift in Sources */,
 				3AA8D04729104854004E192A /* TaskViewModel.swift in Sources */,
+				3A099D3D291E616400F5E498 /* PromocionesAntojitosViewController.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,

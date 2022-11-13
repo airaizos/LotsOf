@@ -9,22 +9,18 @@ import UIKit
 
 final class NuevoPedidoAntojitosViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
     }
     
-    
+    //MARK: - IBActions
     @IBAction func confirmButtonAction(_ sender: UIButton) {
-       
-        self.navigationController?.pushViewController(InitialAntojitosControllerBuilder().build(), animated: true)
-    }
-    
-    deinit {
+        let viewController = InitialAntojitosControllerBuilder().build()
         
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
+    }
+    deinit {
         print("    [DEINIT] ->      NUEVOPEDIDO ViewController")
     }
-
 }

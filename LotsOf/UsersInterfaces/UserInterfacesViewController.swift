@@ -47,7 +47,8 @@ extension UserInterfacesViewController: UITableViewDelegate, UITableViewDataSour
     
     
     private func navigate(to viewController: String) {
-        goTo(viewControllerName: viewController)
+      goTo(viewControllerName: viewController)
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

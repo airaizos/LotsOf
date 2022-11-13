@@ -32,8 +32,14 @@ final class InicioAntojitosViewController: UIViewController {
     
     
     
+   //MARK: IBActions
+    
+    @IBAction func exit(_ sender: Any) {
+        self.navigationController?.dismiss(animated: true)
+        print("exit")
+    }
     //MARK: Functions
-    func setupView() {
+    private func setupView() {
         promotionalCodeView.setup(presentationController: self)
         inicioScrollView.setup(presentationController: self)
         

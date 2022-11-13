@@ -110,5 +110,15 @@ extension UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    func goToPresent(viewControllerName: String){
+        let storyboard = UIStoryboard(name: viewControllerName, bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerName)
+        
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true)
+       
+        print("goTo\(viewControllerName)")
+    }
+    
 }
 

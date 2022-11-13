@@ -22,17 +22,15 @@ final class InicioAntojitosViewController: UIViewController {
     
     
     //MARK: LifeCycle
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        navigationController?.isToolbarHidden = true
-        
-    }
+   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
+    
+    
     
     //MARK: Functions
     func setupView() {

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,27 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-la-ZXM" userLabel="Dominostitle">
-                                <rect key="frame" x="0.0" y="91" width="390" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Eb0-vs-Fup"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n11-HR-nHD">
-                                <rect key="frame" x="0.0" y="93" width="390" height="49"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="19"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="jNi-rH-0fM"/>
+                                    <constraint firstAttribute="height" constant="19" id="jNi-rH-0fM"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="bicycle" catalog="system" title="Domicilio: Calle Mayor 1, Madrid. Madrid. 0001">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Domicilio: Calle Mayor 1, Madrid. Madrid. 0001">
+                                    <imageReference key="image" image="bicycle" catalog="system" symbolScale="small"/>
+                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8A7-bW-YHU">
-                                <rect key="frame" x="-4" y="148" width="394" height="613"/>
+                                <rect key="frame" x="-4" y="66" width="394" height="695"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2x-YO-hNS" customClass="InicioScrollView" customModule="LotsOfUrlSessions" customModuleProvider="target">
                                         <rect key="frame" x="20" y="398" width="354" height="602"/>
@@ -61,6 +56,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="oe7-Rb-ApB" firstAttribute="leading" secondItem="LQI-vb-X6w" secondAttribute="leading" id="31F-GT-pZe"/>
                                     <constraint firstAttribute="bottom" secondItem="q2x-YO-hNS" secondAttribute="bottom" constant="-389" id="6j9-co-P0a"/>
@@ -79,21 +75,18 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8A7-bW-YHU" secondAttribute="bottom" id="2jv-Jl-Oj6"/>
-                            <constraint firstItem="rxL-la-ZXM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6da-aw-lBy"/>
-                            <constraint firstItem="8A7-bW-YHU" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" constant="6" id="Ann-h0-QRQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="8A7-bW-YHU" secondAttribute="leading" constant="4" id="J6m-Lu-w31"/>
+                            <constraint firstItem="n11-HR-nHD" firstAttribute="trailing" secondItem="8A7-bW-YHU" secondAttribute="trailing" id="JEV-iE-DFP"/>
                             <constraint firstItem="8A7-bW-YHU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Ju2-1X-WMQ"/>
-                            <constraint firstItem="8A7-bW-YHU" firstAttribute="trailing" secondItem="n11-HR-nHD" secondAttribute="trailing" id="QUU-pn-PEG"/>
-                            <constraint firstItem="rxL-la-ZXM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YGI-Jn-aFP"/>
-                            <constraint firstItem="n11-HR-nHD" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="2" id="ai2-76-MLN"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rxL-la-ZXM" secondAttribute="trailing" id="ifh-e6-rI9"/>
-                            <constraint firstItem="n11-HR-nHD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="x4i-7L-dSV"/>
+                            <constraint firstItem="n11-HR-nHD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="P2t-lC-wjF"/>
+                            <constraint firstItem="n11-HR-nHD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ugf-LR-VUM"/>
+                            <constraint firstItem="8A7-bW-YHU" firstAttribute="top" secondItem="n11-HR-nHD" secondAttribute="bottom" id="vc9-Oy-RmU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Inicio" id="xEm-Vh-hJc"/>
+                    <navigationItem key="navigationItem" title="Inicio" id="xEm-Vh-hJc" userLabel="inicio"/>
                     <connections>
                         <outlet property="inicioScrollView" destination="q2x-YO-hNS" id="QjI-lo-VLa"/>
                         <outlet property="promotionalCodeView" destination="oe7-Rb-ApB" id="RT6-go-CSX"/>
@@ -106,13 +99,12 @@
         <!--Item-->
         <scene sceneID="LEP-56-ZqO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rH8-vl-wG5" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rH8-vl-wG5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="9J3-gv-Gk0">
                         <color key="badgeColor" red="0.0" green="0.3919532597" blue="0.56631624700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dg9-x8-a1I">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

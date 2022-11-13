@@ -111,6 +111,8 @@
 		3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */; };
 		3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */; };
 		3A280CF828DB62E200091A46 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3A280CF728DB62E200091A46 /* LoginModule */; };
+		3A2B7DF22921545A00F13111 /* QuickOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF12921545A00F13111 /* QuickOrderView.xib */; };
+		3A2B7DF42921546E00F13111 /* QuickOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF32921546E00F13111 /* QuickOrderView.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -336,6 +338,8 @@
 		3A262E9828D366DC0050D8A3 /* UsersCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersCollectionViewController.storyboard; sourceTree = "<group>"; };
 		3A262E9A28D3C6BE0050D8A3 /* UsersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCollectionViewController.swift; sourceTree = "<group>"; };
 		3A280CF628DB625A00091A46 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = LotsOf/LoginModule; sourceTree = "<group>"; };
+		3A2B7DF12921545A00F13111 /* QuickOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickOrderView.xib; sourceTree = "<group>"; };
+		3A2B7DF32921546E00F13111 /* QuickOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickOrderView.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -833,6 +837,15 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
+		3A2B7DF02921544200F13111 /* QuickOrder */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B7DF12921545A00F13111 /* QuickOrderView.xib */,
+				3A2B7DF32921546E00F13111 /* QuickOrderView.swift */,
+			);
+			path = QuickOrder;
+			sourceTree = "<group>";
+		};
 		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
 			isa = PBXGroup;
 			children = (
@@ -948,6 +961,7 @@
 		3A6260F9290C3127008791D9 /* ResusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B7DF02921544200F13111 /* QuickOrder */,
 				3A099D30291E5C7A00F5E498 /* CustomView */,
 				3A099D31291E5C8200F5E498 /* ScrollView */,
 				3A099D2E291E5C6700F5E498 /* PromotionalCodes */,
@@ -1426,6 +1440,7 @@
 				3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */,
 				3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
+				3A2B7DF22921545A00F13111 /* QuickOrderView.xib in Resources */,
 				3A099D36291E612F00F5E498 /* CartaAntojitosViewController.storyboard in Resources */,
 				3A099D45291E61AC00F5E498 /* MiAntojitosViewController.storyboard in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
@@ -1540,6 +1555,7 @@
 				3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */,
 				3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
+				3A2B7DF42921546E00F13111 /* QuickOrderView.swift in Sources */,
 				3A0B1B30290148DC00D4DBCC /* EventCell.swift in Sources */,
 				3A0B1B2E290147D200D4DBCC /* EventEditViewController.swift in Sources */,
 				3AFB00AA28F87C3B003BE6CA /* MourdevUserDefaultsViewModel.swift in Sources */,

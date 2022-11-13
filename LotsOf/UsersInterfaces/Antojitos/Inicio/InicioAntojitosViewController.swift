@@ -18,7 +18,17 @@ final class InicioAntojitosViewController: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var promotionalCodeView: PromotionalCodeView!
     
+    @IBOutlet weak var inicioScrollView: InicioScrollView!
+    
+    
     //MARK: LifeCycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationController?.isToolbarHidden = true
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -27,6 +37,8 @@ final class InicioAntojitosViewController: UIViewController {
     //MARK: Functions
     func setupView() {
         promotionalCodeView.setup(presentationController: self)
+        inicioScrollView.setup(presentationController: self)
+        
     }
     
     deinit {

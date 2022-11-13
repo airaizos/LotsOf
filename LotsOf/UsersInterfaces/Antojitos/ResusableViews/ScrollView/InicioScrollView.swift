@@ -8,21 +8,46 @@
 import UIKit
 
 final class InicioScrollView: UIView {
+    //MARK: - Variables
     
+    private weak var presentationController: UIViewController?
+    
+    
+    //MARK: IBOulets
+    @IBOutlet weak var pollosButton: UIButton!
+    
+    
+    //MARK: LifeCycle
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
+        setupView()
     }
     
-    private func setup() {
+    
+    //MARK: Functions
+   private func setupView() {
         let nib = UINib(nibName: "InicioScrollView", bundle: nil)
         guard let customView = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
             fatalError("Erorr ")
         }
-        print("customView")
+        
         addSubview(customView)
         
     }
+    
+    func setup(presentationController: UIViewController) {
+        self.presentationController = presentationController
+      
+    }
+    
+    //MARK: IBActions
+    
+    @IBAction func combinadosPressed(_ sender: UIButton) {
+        print("buttonPressed")
+        
+    }
+    
+    
     
     
 }

@@ -113,6 +113,9 @@
 		3A280CF828DB62E200091A46 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3A280CF728DB62E200091A46 /* LoginModule */; };
 		3A2B7DF22921545A00F13111 /* QuickOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF12921545A00F13111 /* QuickOrderView.xib */; };
 		3A2B7DF42921546E00F13111 /* QuickOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF32921546E00F13111 /* QuickOrderView.swift */; };
+		3A2B7DF729217E5500F13111 /* ExclusiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF629217E5500F13111 /* ExclusiveCollectionViewCell.xib */; };
+		3A2B7DF92921828F00F13111 /* ExclusiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF82921828F00F13111 /* ExclusiveCollectionViewCell.swift */; };
+		3A2B7DFB2921842D00F13111 /* ExclusivesPromosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -340,6 +343,9 @@
 		3A280CF628DB625A00091A46 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = LotsOf/LoginModule; sourceTree = "<group>"; };
 		3A2B7DF12921545A00F13111 /* QuickOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickOrderView.xib; sourceTree = "<group>"; };
 		3A2B7DF32921546E00F13111 /* QuickOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickOrderView.swift; sourceTree = "<group>"; };
+		3A2B7DF629217E5500F13111 /* ExclusiveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExclusiveCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A2B7DF82921828F00F13111 /* ExclusiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivesPromosModel.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -846,6 +852,16 @@
 			path = QuickOrder;
 			sourceTree = "<group>";
 		};
+		3A2B7DF529217E2300F13111 /* Exclusives */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B7DF629217E5500F13111 /* ExclusiveCollectionViewCell.xib */,
+				3A2B7DF82921828F00F13111 /* ExclusiveCollectionViewCell.swift */,
+				3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */,
+			);
+			path = Exclusives;
+			sourceTree = "<group>";
+		};
 		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
 			isa = PBXGroup;
 			children = (
@@ -961,6 +977,7 @@
 		3A6260F9290C3127008791D9 /* ResusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B7DF529217E2300F13111 /* Exclusives */,
 				3A2B7DF02921544200F13111 /* QuickOrder */,
 				3A099D30291E5C7A00F5E498 /* CustomView */,
 				3A099D31291E5C8200F5E498 /* ScrollView */,
@@ -1423,6 +1440,7 @@
 				3AFB0F5929017FD800B12B9B /* InicioAntojitosViewController.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
+				3A2B7DF729217E5500F13111 /* ExclusiveCollectionViewCell.xib in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
@@ -1510,6 +1528,7 @@
 				3A099D38291E613900F5E498 /* CartaAntojitosViewController.swift in Sources */,
 				3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */,
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
+				3A2B7DF92921828F00F13111 /* ExclusiveCollectionViewCell.swift in Sources */,
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
 				3AA8D043291047C4004E192A /* TaskType.swift in Sources */,
@@ -1591,6 +1610,7 @@
 				3AE6A09028D7982A0041602B /* ColorsViewModel.swift in Sources */,
 				3ACCA176290D6C4F003A7ABE /* PermissionsViewModel.swift in Sources */,
 				3A14BDA028D8CB710040117C /* LineDetailProvider.swift in Sources */,
+				3A2B7DFB2921842D00F13111 /* ExclusivesPromosModel.swift in Sources */,
 				3A54726B28E44CC7003CFE4F /* ChaseButtonViewModel.swift in Sources */,
 				3AF7BF03290C36FC005EAB58 /* PromotionalCodeViewModel.swift in Sources */,
 				3A86954228C65350001CC044 /* CharacterModel.swift in Sources */,

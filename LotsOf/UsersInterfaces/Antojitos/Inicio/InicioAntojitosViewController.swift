@@ -29,6 +29,11 @@ final class InicioAntojitosViewController: UIViewController {
         self.navigationController?.dismiss(animated: true)
     }
     
+    @IBAction func exclusivePromosPressed(_ sender: UIButton) {
+        //Enviar a promos
+        goTo(viewControllerName: "PromocionesAntojitosViewController")
+    }
+    
     //MARK: Functions
     private func setupView() {
         promotionalCodeView.setup(presentationController: self)

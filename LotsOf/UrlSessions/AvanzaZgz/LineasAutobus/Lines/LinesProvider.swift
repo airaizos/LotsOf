@@ -8,7 +8,7 @@
 import Foundation
 
 enum ProviderError: Error {
-    case badUrl, noConection
+    case badUrl, noConection, badFilePath, noDecoding, noEncoding
 }
 
 final class LinesProvider {

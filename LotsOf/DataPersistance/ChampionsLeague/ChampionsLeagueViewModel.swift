@@ -44,19 +44,41 @@ final class ChampionsLeagueViewModel {
                                       Team(name: "Juventus", group: nil),
                                       Team(name: "M. Haifa", group: nil),
     ]
-    var groupA = [Team]()
-    var groupB = [Team]()
-    var groupC = [Team]()
-    var groupD = [Team]()
-    var groupE = [Team]()
-    var groupF = [Team]()
-    var groupG = [Team]()
-    var groupH = [Team]()
+    private var groupA = [Team]()
+    private var groupB = [Team]()
+    private var groupC = [Team]()
+    private var groupD = [Team]()
+    private var groupE = [Team]()
+    private var groupF = [Team]()
+    private var groupG = [Team]()
+    private var groupH = [Team]()
+    
+    
+    
     
     //  private var groups = [[Team]]
     var matches = [Match]()
     
     //MARK: - Methods
+    
+    func getGroupACount() -> Int {       groupA.count
+    }
+    func getGroupBCount() -> Int {       groupA.count
+    }
+    func getGroupCCount() -> Int {       groupA.count
+    }
+    func getGroupDCount() -> Int {       groupA.count
+    }
+    func getGroupECount() -> Int {       groupA.count
+    }
+    func getGroupFCount() -> Int {       groupA.count
+    }
+    func getGroupGCount() -> Int {       groupA.count
+    }
+    func getGroupHCount() -> Int {       groupA.count
+    }
+    
+    
     func teamsGroupsRaffle() {
         teams.shuffle()
         groupA.append(contentsOf: teams[0..<4])

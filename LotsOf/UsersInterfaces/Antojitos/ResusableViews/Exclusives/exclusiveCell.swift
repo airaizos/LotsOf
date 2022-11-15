@@ -44,8 +44,5 @@ final class ExclusiveCollectionViewCell: UICollectionViewCell {
         image.layer.cornerRadius = self.frame.height / 2.0
         image.layer.masksToBounds = true
         firstLabel.makeShadow()
-        
-        
     }
-    
 }

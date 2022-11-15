@@ -113,9 +113,13 @@
 		3A280CF828DB62E200091A46 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = 3A280CF728DB62E200091A46 /* LoginModule */; };
 		3A2B7DF22921545A00F13111 /* QuickOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF12921545A00F13111 /* QuickOrderView.xib */; };
 		3A2B7DF42921546E00F13111 /* QuickOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF32921546E00F13111 /* QuickOrderView.swift */; };
-		3A2B7DF729217E5500F13111 /* ExclusiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF629217E5500F13111 /* ExclusiveCollectionViewCell.xib */; };
-		3A2B7DF92921828F00F13111 /* ExclusiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF82921828F00F13111 /* ExclusiveCollectionViewCell.swift */; };
+		3A2B7DF729217E5500F13111 /* exclusiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF629217E5500F13111 /* exclusiveCell.xib */; };
+		3A2B7DF92921828F00F13111 /* exclusiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DF82921828F00F13111 /* exclusiveCell.swift */; };
 		3A2B7DFB2921842D00F13111 /* ExclusivesPromosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */; };
+		3A2B7DFE2921848500F13111 /* ExclusivesPromosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7DFD2921848500F13111 /* ExclusivesPromosViewModel.swift */; };
+		3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7E0329218B3B00F13111 /* TestInicioAntojitos.swift */; };
+		3A2B7E0629218C3E00F13111 /* ExclusivesPromosJsonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7E0529218C3E00F13111 /* ExclusivesPromosJsonProvider.swift */; };
+		3A2B7E07292193E600F13111 /* exclusivePromos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DFF292186F100F13111 /* exclusivePromos.json */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -343,9 +347,13 @@
 		3A280CF628DB625A00091A46 /* LoginModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LoginModule; path = LotsOf/LoginModule; sourceTree = "<group>"; };
 		3A2B7DF12921545A00F13111 /* QuickOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickOrderView.xib; sourceTree = "<group>"; };
 		3A2B7DF32921546E00F13111 /* QuickOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickOrderView.swift; sourceTree = "<group>"; };
-		3A2B7DF629217E5500F13111 /* ExclusiveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExclusiveCollectionViewCell.xib; sourceTree = "<group>"; };
-		3A2B7DF82921828F00F13111 /* ExclusiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusiveCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A2B7DF629217E5500F13111 /* exclusiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exclusiveCell.xib; sourceTree = "<group>"; };
+		3A2B7DF82921828F00F13111 /* exclusiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exclusiveCell.swift; sourceTree = "<group>"; };
 		3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivesPromosModel.swift; sourceTree = "<group>"; };
+		3A2B7DFD2921848500F13111 /* ExclusivesPromosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivesPromosViewModel.swift; sourceTree = "<group>"; };
+		3A2B7DFF292186F100F13111 /* exclusivePromos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = exclusivePromos.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/UsersInterfaces/Antojitos/Inicio/ExclusivesPromos/exclusivePromos.json; sourceTree = "<absolute>"; };
+		3A2B7E0329218B3B00F13111 /* TestInicioAntojitos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInicioAntojitos.swift; sourceTree = "<group>"; };
+		3A2B7E0529218C3E00F13111 /* ExclusivesPromosJsonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivesPromosJsonProvider.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -562,6 +570,7 @@
 		3A099D32291E5C8E00F5E498 /* Inicio */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B7DFC2921846C00F13111 /* ExclusivesPromos */,
 				3AFB0F5A29017FE100B12B9B /* InicioAntojitosViewController.swift */,
 				3AFB0F5829017FD800B12B9B /* InicioAntojitosViewController.storyboard */,
 			);
@@ -855,11 +864,45 @@
 		3A2B7DF529217E2300F13111 /* Exclusives */ = {
 			isa = PBXGroup;
 			children = (
-				3A2B7DF629217E5500F13111 /* ExclusiveCollectionViewCell.xib */,
-				3A2B7DF82921828F00F13111 /* ExclusiveCollectionViewCell.swift */,
-				3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */,
+				3A2B7DF629217E5500F13111 /* exclusiveCell.xib */,
+				3A2B7DF82921828F00F13111 /* exclusiveCell.swift */,
 			);
 			path = Exclusives;
+			sourceTree = "<group>";
+		};
+		3A2B7DFC2921846C00F13111 /* ExclusivesPromos */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B7DFA2921842D00F13111 /* ExclusivesPromosModel.swift */,
+				3A2B7E0529218C3E00F13111 /* ExclusivesPromosJsonProvider.swift */,
+				3A2B7DFD2921848500F13111 /* ExclusivesPromosViewModel.swift */,
+				3A2B7DFF292186F100F13111 /* exclusivePromos.json */,
+			);
+			path = ExclusivesPromos;
+			sourceTree = "<group>";
+		};
+		3A2B7E0029218AE000F13111 /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B7E0129218B1000F13111 /* Antojitos */,
+			);
+			path = UserInterfaces;
+			sourceTree = "<group>";
+		};
+		3A2B7E0129218B1000F13111 /* Antojitos */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B7E0229218B1800F13111 /* InicioAntojitos */,
+			);
+			path = Antojitos;
+			sourceTree = "<group>";
+		};
+		3A2B7E0229218B1800F13111 /* InicioAntojitos */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B7E0329218B3B00F13111 /* TestInicioAntojitos.swift */,
+			);
+			path = InicioAntojitos;
 			sourceTree = "<group>";
 		};
 		3A2FA56B28C7451E0072F90E /* Emmanuel */ = {
@@ -1093,6 +1136,7 @@
 		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B7E0029218AE000F13111 /* UserInterfaces */,
 				3A173BA42915B7C700622E77 /* ChampionsLeague */,
 				3AA8D048291049E2004E192A /* TaskCountdown */,
 				3AF7BF04290C3846005EAB58 /* Antojitos */,
@@ -1440,7 +1484,7 @@
 				3AFB0F5929017FD800B12B9B /* InicioAntojitosViewController.storyboard in Resources */,
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
-				3A2B7DF729217E5500F13111 /* ExclusiveCollectionViewCell.xib in Resources */,
+				3A2B7DF729217E5500F13111 /* exclusiveCell.xib in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
@@ -1458,6 +1502,7 @@
 				3AA8D03729104070004E192A /* TaskTimerViewController.storyboard in Resources */,
 				3ACCA16E290D6928003A7ABE /* PermissionsToUseCameraViewController.storyboard in Resources */,
 				3A134F4F28F6019F00673B79 /* FactViewController.storyboard in Resources */,
+				3A2B7E07292193E600F13111 /* exclusivePromos.json in Resources */,
 				3A2B7DF22921545A00F13111 /* QuickOrderView.xib in Resources */,
 				3A099D36291E612F00F5E498 /* CartaAntojitosViewController.storyboard in Resources */,
 				3A099D45291E61AC00F5E498 /* MiAntojitosViewController.storyboard in Resources */,
@@ -1510,6 +1555,7 @@
 				3A262E9528D365F00050D8A3 /* UserViewModel.swift in Sources */,
 				3A14252628F9B189004B5252 /* OfertaCell.swift in Sources */,
 				3A05D23128CA493F00C5E396 /* Joke.swift in Sources */,
+				3A2B7DFE2921848500F13111 /* ExclusivesPromosViewModel.swift in Sources */,
 				3A104B1C29052D1500ACC903 /* Quotes.swift in Sources */,
 				3AF224DB289A7B34008BEAF0 /* URLSessionsViewController.swift in Sources */,
 				3A1ABA0528D2117500235D59 /* ColorsListViewModel.swift in Sources */,
@@ -1528,7 +1574,7 @@
 				3A099D38291E613900F5E498 /* CartaAntojitosViewController.swift in Sources */,
 				3A0D50A728FB1EEB0043857A /* OfertaViewController.swift in Sources */,
 				3A1ABA0328D1E5E300235D59 /* ColorExtension.swift in Sources */,
-				3A2B7DF92921828F00F13111 /* ExclusiveCollectionViewCell.swift in Sources */,
+				3A2B7DF92921828F00F13111 /* exclusiveCell.swift in Sources */,
 				3A08B50F28EED0B4004173F5 /* PostPPSViewModel.swift in Sources */,
 				3A083D8C28EB243E00F628E7 /* PostPPSProvider.swift in Sources */,
 				3AA8D043291047C4004E192A /* TaskType.swift in Sources */,
@@ -1569,6 +1615,7 @@
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
 				3A0E6BBC290015E6006FF6B2 /* WeekCell.swift in Sources */,
 				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
+				3A2B7E0629218C3E00F13111 /* ExclusivesPromosJsonProvider.swift in Sources */,
 				3AFB00AE28F88450003BE6CA /* DataPersistanceViewController.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
 				3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */,
@@ -1653,6 +1700,7 @@
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
 				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
+				3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
 				3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */,
 			);

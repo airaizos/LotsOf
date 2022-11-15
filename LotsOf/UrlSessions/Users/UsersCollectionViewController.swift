@@ -27,12 +27,13 @@ final class UsersCollectionViewController: UIViewController {
     }
     #warning("fatal error userLabel nil")
     private func setupView() {
+        bind()
         usersLabel.layer.cornerRadius = radius
         usersCollectionView.layer.cornerRadius = radius
         usersCollectionView.reloadData()
         usersLabel.text = "Users List"
         activityIndicator.startAnimating()
-        bind()
+       
     }
     
     private func bind() {
@@ -62,7 +63,7 @@ final class UsersCollectionViewController: UIViewController {
         
     }
     deinit {
-        print("    [DEINIT] ->      USERCOLLECTIONViewController")
+        print("    [DEINIT] ->     USERCOLLECTIONViewController")
     }
 }
 

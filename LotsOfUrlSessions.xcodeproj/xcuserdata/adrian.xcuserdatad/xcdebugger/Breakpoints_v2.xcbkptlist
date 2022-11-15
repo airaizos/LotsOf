@@ -160,5 +160,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD0006B9-79AB-4D96-A15C-A036B50BB716"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LotsOf/UsersInterfaces/Antojitos/Inicio/ExclusivesPromos/ExclusivesPromosViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "getItems()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CD0006B9-79AB-4D96-A15C-A036B50BB716 - 993eb5f7bbed76d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;LotsOfUrlSessions.ExclusivePromo&gt;, Swift.Error&gt;) -&gt; () in LotsOfUrlSessions.ExclusivesPromosViewModel.getItems() -&gt; ()"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/UsersInterfaces/Antojitos/Inicio/ExclusivesPromos/ExclusivesPromosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "CD0006B9-79AB-4D96-A15C-A036B50BB716 - 993eb5f7bbed76d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;LotsOfUrlSessions.ExclusivePromo&gt;, Swift.Error&gt;) -&gt; () in LotsOfUrlSessions.ExclusivesPromosViewModel.getItems() -&gt; ()"
+                  moduleName = "LotsOfUrlSessions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/UsersInterfaces/Antojitos/Inicio/ExclusivesPromos/ExclusivesPromosViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1CB1631-F2BC-4A9C-BABB-9C7AE3BDDF0F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LotsOf/UsersInterfaces/Antojitos/Inicio/ExclusivesPromos/ExclusivesPromosJsonProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "fetchItems(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

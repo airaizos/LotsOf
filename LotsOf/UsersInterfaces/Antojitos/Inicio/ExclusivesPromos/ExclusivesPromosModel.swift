@@ -7,8 +7,19 @@
 
 import Foundation
 
-struct ExclusivesPromosModel {
+struct AntojitosPromos: Decodable {
+    let promos: [ExclusivePromo]
+}
+
+struct ExclusivePromoCellModel {
     var image: String
     var firstLabel: String
     var secondLabel: String
+}
+
+
+struct ExclusivePromo: Decodable {
+    let image: String
+    let title: String
+    let subtitle: String
 }

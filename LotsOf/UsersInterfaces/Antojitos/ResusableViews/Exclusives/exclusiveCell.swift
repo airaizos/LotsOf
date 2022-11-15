@@ -33,14 +33,10 @@ final class ExclusiveCollectionViewCell: UICollectionViewCell {
     
     //MARK: Functions
     
-    func configure(with model: ExclusivesPromosModel) {
+    func configure(with model: ExclusivePromo) {
         
         image.loadImageUsingCache(withUrl: model.image)
-        firstLabel.text = model.firstLabel
-        secondLabel.text = model.secondLabel
-        
+        firstLabel.text = model.title
+        secondLabel.text = model.subtitle
     }
-    
 }
-
-

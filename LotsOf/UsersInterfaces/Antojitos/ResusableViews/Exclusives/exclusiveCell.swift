@@ -34,9 +34,18 @@ final class ExclusiveCollectionViewCell: UICollectionViewCell {
     //MARK: Functions
     
     func configure(with model: ExclusivePromo) {
-        
         image.loadImageUsingCache(withUrl: model.image)
         firstLabel.text = model.title
         secondLabel.text = model.subtitle
+        setupCell()
     }
+    
+    private func setupCell() {
+        image.layer.cornerRadius = self.frame.height / 2.0
+        image.layer.masksToBounds = true
+        firstLabel.makeShadow()
+        
+        
+    }
+    
 }

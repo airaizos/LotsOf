@@ -15,6 +15,7 @@
 		3A02BB8928C8D91100D168AE /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02BB8828C8D91100D168AE /* CreateViewController.swift */; };
 		3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A02BB8A28C8D91900D168AE /* CreateViewController.storyboard */; };
 		3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02BB8C28C9356C00D168AE /* GetViewController.swift */; };
+		3A042411292BEBC30085EDC0 /* QatarMatchesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */; };
 		3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */; };
 		3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */; };
 		3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */; };
@@ -65,6 +66,8 @@
 		3A104B1C29052D1500ACC903 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1B29052D1500ACC903 /* Quotes.swift */; };
 		3A104B1E29052D2600ACC903 /* EditeQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */; };
 		3A104B2029052E4A00ACC903 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1F29052E4A00ACC903 /* ModelController.swift */; };
+		3A115C3929282AED0068BBB2 /* WorldCupMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */; };
+		3A115C3B29282B610068BBB2 /* TestWorldCupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A115C3A29282B610068BBB2 /* TestWorldCupViewModel.swift */; };
 		3A127A0E28FBEAB0002B63F2 /* OfertaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */; };
 		3A12AFB42906D81D00C602CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A12AFB62906D81D00C602CD /* Localizable.strings */; };
 		3A134F4728F5C0AD00673B79 /* PPSImageCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A134F4628F5C0AD00673B79 /* PPSImageCodeViewController.swift */; };
@@ -78,6 +81,7 @@
 		3A14252628F9B189004B5252 /* OfertaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252528F9B189004B5252 /* OfertaCell.swift */; };
 		3A14252828F9B1D2004B5252 /* OfertaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A14252728F9B1D2004B5252 /* OfertaCell.xib */; };
 		3A14252A28F9FB55004B5252 /* OfertaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14252928F9FB55004B5252 /* OfertaModel.swift */; };
+		3A144FF32926D6E50083D7B1 /* QatarMatchesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A144FF22926D6E50083D7B1 /* QatarMatchesProvider.swift */; };
 		3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A146DAE28DA336300CB1C90 /* Main.storyboard */; };
 		3A146DB328DA347D00CB1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A146DB228DA347D00CB1C90 /* ViewController.swift */; };
 		3A14BD9828D8CB050040117C /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */; };
@@ -256,6 +260,7 @@
 		3A02BB8828C8D91100D168AE /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		3A02BB8A28C8D91900D168AE /* CreateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateViewController.storyboard; sourceTree = "<group>"; };
 		3A02BB8C28C9356C00D168AE /* GetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetViewController.swift; sourceTree = "<group>"; };
+		3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarMatchesResults.swift; sourceTree = "<group>"; };
 		3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateViewController.storyboard; sourceTree = "<group>"; };
 		3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotOfURLSessionsLaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -306,6 +311,8 @@
 		3A104B1B29052D1500ACC903 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		3A104B1D29052D2600ACC903 /* EditeQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditeQuotesViewController.swift; sourceTree = "<group>"; };
 		3A104B1F29052E4A00ACC903 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupMatchModel.swift; sourceTree = "<group>"; };
+		3A115C3A29282B610068BBB2 /* TestWorldCupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWorldCupViewModel.swift; sourceTree = "<group>"; };
 		3A127A0D28FBEAB0002B63F2 /* OfertaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewModel.swift; sourceTree = "<group>"; };
 		3A12AFB52906D81D00C602CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3A12AFB72906D83A00C602CD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -320,6 +327,7 @@
 		3A14252528F9B189004B5252 /* OfertaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaCell.swift; sourceTree = "<group>"; };
 		3A14252728F9B1D2004B5252 /* OfertaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfertaCell.xib; sourceTree = "<group>"; };
 		3A14252928F9FB55004B5252 /* OfertaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaModel.swift; sourceTree = "<group>"; };
+		3A144FF22926D6E50083D7B1 /* QatarMatchesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarMatchesProvider.swift; sourceTree = "<group>"; };
 		3A146DAE28DA336300CB1C90 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A146DB228DA347D00CB1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A14BD9728D8CB050040117C /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
@@ -527,6 +535,15 @@
 				3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3A042412292BEBDD0085EDC0 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				3A144FF22926D6E50083D7B1 /* QatarMatchesProvider.swift */,
+				3AA9F2F52923EC350030E3AD /* QatarGroupsProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		3A05D22B28CA2A7D00C5E396 /* Jokes */ = {
@@ -1148,10 +1165,12 @@
 		3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */ = {
 			isa = PBXGroup;
 			children = (
+				3A042412292BEBDD0085EDC0 /* Providers */,
 				3AA9F2F42923BE890030E3AD /* QatarWorldCupGroups.json */,
-				3AA9F2F52923EC350030E3AD /* QatarGroupsProvider.swift */,
 				3AA9F2F92923EFDD0030E3AD /* WorldCup2022.swift */,
 				3AA9F2FE2924311F0030E3AD /* WorldCupViewModel.swift */,
+				3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */,
+				3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */,
 			);
 			path = QatarWorldCup2022;
 			sourceTree = "<group>";
@@ -1160,6 +1179,7 @@
 			isa = PBXGroup;
 			children = (
 				3AA9F2FC2923F3EB0030E3AD /* TestQatarWorldCup2022.swift */,
+				3A115C3A29282B610068BBB2 /* TestWorldCupViewModel.swift */,
 			);
 			path = QatarWorldCup2022Test;
 			sourceTree = "<group>";
@@ -1663,12 +1683,14 @@
 				3A54726D28E44CDB003CFE4F /* ChaseButton.swift in Sources */,
 				3A05D23328CA4A6900C5E396 /* JokesViewModel.swift in Sources */,
 				3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */,
+				3A144FF32926D6E50083D7B1 /* QatarMatchesProvider.swift in Sources */,
 				3A0E6BBC290015E6006FF6B2 /* WeekCell.swift in Sources */,
 				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
 				3A2B7E0629218C3E00F13111 /* ExclusivesPromosJsonProvider.swift in Sources */,
 				3AFB00AE28F88450003BE6CA /* DataPersistanceViewController.swift in Sources */,
 				3AA9F2FF2924311F0030E3AD /* WorldCupViewModel.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
+				3A115C3929282AED0068BBB2 /* WorldCupMatchModel.swift in Sources */,
 				3AFB00A328F8704C003BE6CA /* EnumUserDefaultViewController.swift in Sources */,
 				3A262E9B28D3C6BE0050D8A3 /* UsersCollectionViewController.swift in Sources */,
 				3A05D22A28CA269600C5E396 /* OdenzaNetworking.swift in Sources */,
@@ -1703,6 +1725,7 @@
 				3A1ABA0728D2118500235D59 /* ColorsNetworking.swift in Sources */,
 				3A0B1B3229014A6100D4DBCC /* Event.swift in Sources */,
 				3A54726628E44BCD003CFE4F /* LotsOfAnimationsViewController.swift in Sources */,
+				3A042411292BEBC30085EDC0 /* QatarMatchesResults.swift in Sources */,
 				3AD96A2529143556001522C5 /* TaskCDModel.swift in Sources */,
 				3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */,
 				3AE6A09028D7982A0041602B /* ColorsViewModel.swift in Sources */,
@@ -1754,6 +1777,7 @@
 				3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */,
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
+				3A115C3B29282B610068BBB2 /* TestWorldCupViewModel.swift in Sources */,
 				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
 				3AA9F2F12923B8B50030E3AD /* TestUserNameValidator.swift in Sources */,
 				3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */,

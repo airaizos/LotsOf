@@ -158,6 +158,38 @@
             endingLineNumber = "36"
             landmarkName = "testLaunchPerformance()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2AFC9F71-6D82-41DE-BF54-E6F5879CB0B2 - c591642ac4151df7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LotsOfUrlSessionsUITests.LotsOfUrlSessionsUITests.testLaunchPerformance() throws -&gt; ()"
+                  moduleName = "LotsOfUrlSessionsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/Tests/LotsOfUrlSessionsUITests/LotsOfUrlSessionsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "2AFC9F71-6D82-41DE-BF54-E6F5879CB0B2 - a5ab033b0baed9d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LotsOfUrlSessionsUITests.LotsOfUrlSessionsUITests.testLaunchPerformance() throws -&gt; ()"
+                  moduleName = "LotsOfUrlSessionsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/Desktop/xCode/LotsOfUrlSessions/Tests/LotsOfUrlSessionsUITests/LotsOfUrlSessionsUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

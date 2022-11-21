@@ -9,7 +9,7 @@ import XCTest
 
 @testable import LotsOfUrlSessions
 final class HackerRankAlgoritmosTest: XCTestCase {
-
+/*
     func testIcreamParlor() throws {
         let clase = HackerRankAlgoritmos()
         
@@ -22,7 +22,7 @@ final class HackerRankAlgoritmosTest: XCTestCase {
         XCTAssertEqual(iceCreamParlor1, [1,4])
         XCTAssertEqual(iceCreamParlor2, [1,2])
     }
-    
+    */
     
     func testCamelcase() throws {
         let clase = HackerRankAlgoritmos()

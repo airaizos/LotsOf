@@ -16,7 +16,7 @@ final class TestQatarWorldCup2022: XCTestCase {
         sut.fetchWorldCupGroups()
         
         XCTAssertEqual(sut.worldCupGroups?.groupA.count,4)
-        
+        XCTAssertEqual(sut.worldCupGroups?.groupA[0].name,"Qatar")
     }
 
 }

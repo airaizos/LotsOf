@@ -20,6 +20,7 @@ final class HackerRankAlgoritmos {
    
     
     //MARK: - ❌ Incorrect
+    /*
     func iceCreamParlor(m: Int, arr: [Int]) -> [Int] {
         //6  1 3 4 5 6
         //ordenar menor a mayor
@@ -44,7 +45,7 @@ final class HackerRankAlgoritmos {
         }
         return result
     }
-    
+    */
     //MARK: ✅
     func camelcase(s: String) -> Int {
         var count = 1

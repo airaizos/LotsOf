@@ -16,6 +16,11 @@
 		3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A02BB8A28C8D91900D168AE /* CreateViewController.storyboard */; };
 		3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02BB8C28C9356C00D168AE /* GetViewController.swift */; };
 		3A042411292BEBC30085EDC0 /* QatarMatchesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */; };
+		3A042418292BEDD20085EDC0 /* QatarWorldCupProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A042417292BEDD20085EDC0 /* QatarWorldCupProtocols.swift */; };
+		3A04241A292BEE710085EDC0 /* QatarGroupsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A042419292BEE710085EDC0 /* QatarGroupsViewController.storyboard */; };
+		3A04241C292BEE810085EDC0 /* QatarGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04241B292BEE810085EDC0 /* QatarGroupsViewController.swift */; };
+		3A04241F292BEFA80085EDC0 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A04241E292BEFA80085EDC0 /* GroupCell.xib */; };
+		3A042421292BEFFD0085EDC0 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A042420292BEFFD0085EDC0 /* GroupCell.swift */; };
 		3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */; };
 		3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */; };
 		3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */; };
@@ -261,6 +266,11 @@
 		3A02BB8A28C8D91900D168AE /* CreateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateViewController.storyboard; sourceTree = "<group>"; };
 		3A02BB8C28C9356C00D168AE /* GetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetViewController.swift; sourceTree = "<group>"; };
 		3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarMatchesResults.swift; sourceTree = "<group>"; };
+		3A042417292BEDD20085EDC0 /* QatarWorldCupProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarWorldCupProtocols.swift; sourceTree = "<group>"; };
+		3A042419292BEE710085EDC0 /* QatarGroupsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QatarGroupsViewController.storyboard; sourceTree = "<group>"; };
+		3A04241B292BEE810085EDC0 /* QatarGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarGroupsViewController.swift; sourceTree = "<group>"; };
+		3A04241E292BEFA80085EDC0 /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		3A042420292BEFFD0085EDC0 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateViewController.storyboard; sourceTree = "<group>"; };
 		3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotOfURLSessionsLaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -537,13 +547,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3A042412292BEBDD0085EDC0 /* Providers */ = {
+		3A042413292BEBFB0085EDC0 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
 				3A144FF22926D6E50083D7B1 /* QatarMatchesProvider.swift */,
-				3AA9F2F52923EC350030E3AD /* QatarGroupsProvider.swift */,
+				3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */,
 			);
-			path = Providers;
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		3A042414292BEC0C0085EDC0 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				3A04241D292BEF990085EDC0 /* GroupCell */,
+				3AA9F2F42923BE890030E3AD /* QatarWorldCupGroups.json */,
+				3AA9F2F52923EC350030E3AD /* QatarGroupsProvider.swift */,
+				3AA9F2F92923EFDD0030E3AD /* WorldCup2022.swift */,
+				3A042419292BEE710085EDC0 /* QatarGroupsViewController.storyboard */,
+				3A04241B292BEE810085EDC0 /* QatarGroupsViewController.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		3A04241D292BEF990085EDC0 /* GroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A04241E292BEFA80085EDC0 /* GroupCell.xib */,
+				3A042420292BEFFD0085EDC0 /* GroupCell.swift */,
+			);
+			path = GroupCell;
 			sourceTree = "<group>";
 		};
 		3A05D22B28CA2A7D00C5E396 /* Jokes */ = {
@@ -1165,12 +1197,11 @@
 		3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */ = {
 			isa = PBXGroup;
 			children = (
-				3A042412292BEBDD0085EDC0 /* Providers */,
-				3AA9F2F42923BE890030E3AD /* QatarWorldCupGroups.json */,
-				3AA9F2F92923EFDD0030E3AD /* WorldCup2022.swift */,
+				3A042417292BEDD20085EDC0 /* QatarWorldCupProtocols.swift */,
 				3AA9F2FE2924311F0030E3AD /* WorldCupViewModel.swift */,
-				3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */,
 				3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */,
+				3A042414292BEC0C0085EDC0 /* Groups */,
+				3A042413292BEBFB0085EDC0 /* Matches */,
 			);
 			path = QatarWorldCup2022;
 			sourceTree = "<group>";
@@ -1541,6 +1572,7 @@
 				3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
 				3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */,
+				3A04241A292BEE710085EDC0 /* QatarGroupsViewController.storyboard in Resources */,
 				3AB6CED92905B7B7002654CD /* InfoplistQuotes.plist in Resources */,
 				3AF7BEFE290C31A2005EAB58 /* PromotionalCodeView.xib in Resources */,
 				3A099D3B291E615800F5E498 /* PromocionesAntojitosViewController.storyboard in Resources */,
@@ -1560,6 +1592,7 @@
 				3A86953B28C645E5001CC044 /* PokemonsViewController.storyboard in Resources */,
 				3AA8D04E29104D14004E192A /* NewTaskViewController.storyboard in Resources */,
 				3A0B1B2C290147C900D4DBCC /* EventEditViewController.storyboard in Resources */,
+				3A04241F292BEFA80085EDC0 /* GroupCell.xib in Resources */,
 				3AF224E6289A7B36008BEAF0 /* LaunchScreen.storyboard in Resources */,
 				3A195D4528F47E25004E0477 /* PPSImageViewController.storyboard in Resources */,
 				3A12AFB42906D81D00C602CD /* Localizable.strings in Resources */,
@@ -1712,6 +1745,7 @@
 				3A1AB9FB28D1E19800235D59 /* ColorsListViewController.swift in Sources */,
 				3A0191A8289BF03C00EFF2DA /* LineViewCell.swift in Sources */,
 				3ADAF5A528CFC81100C31731 /* DogViewController.swift in Sources */,
+				3A042421292BEFFD0085EDC0 /* GroupCell.swift in Sources */,
 				3AC3972129049A8200BE168A /* InicioScrollView.swift in Sources */,
 				3A195D3C28F473A3004E0477 /* DataExtension.swift in Sources */,
 				3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */,
@@ -1740,6 +1774,7 @@
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
 				3AFB00A828F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift in Sources */,
 				3A0D5D7A28FEC2B500D71B4E /* TaskTimerViewController.swift in Sources */,
+				3A04241C292BEE810085EDC0 /* QatarGroupsViewController.swift in Sources */,
 				3A195D4328F47821004E0477 /* PPSImagesViewModel.swift in Sources */,
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,
 				3AFB00A128F86D18003BE6CA /* EnumUserDefaultsModel.swift in Sources */,
@@ -1754,6 +1789,7 @@
 				3A099D3D291E616400F5E498 /* PromocionesAntojitosViewController.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
+				3A042418292BEDD20085EDC0 /* QatarWorldCupProtocols.swift in Sources */,
 				3AA9F2EF2923B8780030E3AD /* UserNameValidator.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
 				3AA9F2F62923EC350030E3AD /* QatarGroupsProvider.swift in Sources */,

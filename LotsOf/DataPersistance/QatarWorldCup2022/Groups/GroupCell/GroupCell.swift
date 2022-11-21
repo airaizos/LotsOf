@@ -1,15 +1,13 @@
 //
-//  QatarMatchesResults.swift
+//  GroupCell.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 21/11/22.
 //
 
-import Foundation
+import UIKit
 
-
-final class QatarMatchesResults {
-    
+final class GroupCell: UICollectionViewCell {
     
     
     

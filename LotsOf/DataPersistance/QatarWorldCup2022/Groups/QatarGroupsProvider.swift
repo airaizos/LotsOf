@@ -7,7 +7,9 @@
 
 import Foundation
 
-final class QatarGroupsProvider {
+
+
+final class QatarGroupsProvider: QatarWorldCupGroupsProvider {
     
     var worldCupGroups: WorldCupGroups?
     

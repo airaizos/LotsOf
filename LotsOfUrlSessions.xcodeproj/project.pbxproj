@@ -1197,6 +1197,7 @@
 		3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */ = {
 			isa = PBXGroup;
 			children = (
+				3AA9F2FB2923F3C10030E3AD /* QatarWorldCup2022Test */,
 				3A042417292BEDD20085EDC0 /* QatarWorldCupProtocols.swift */,
 				3AA9F2FE2924311F0030E3AD /* WorldCupViewModel.swift */,
 				3A042410292BEBC30085EDC0 /* QatarMatchesResults.swift */,
@@ -1232,7 +1233,6 @@
 		3AC1BA9E28F0316C009E1F36 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3AA9F2FB2923F3C10030E3AD /* QatarWorldCup2022Test */,
 				3AA9F2ED2923B8580030E3AD /* RealWorldTest */,
 				3A2B7E0029218AE000F13111 /* UserInterfaces */,
 				3A173BA42915B7C700622E77 /* ChampionsLeague */,
@@ -1251,10 +1251,10 @@
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
 			isa = PBXGroup;
 			children = (
-				3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */,
-				3A173B9F2915784E00622E77 /* ChampionsLeague */,
 				3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */,
 				3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */,
+				3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */,
+				3A173B9F2915784E00622E77 /* ChampionsLeague */,
 				3AFB00A628F87C07003BE6CA /* MoureDev */,
 				3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */,
 				3AFB00AF28F88FC2003BE6CA /* MaldonadoCoreData */,

@@ -137,6 +137,7 @@
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */; };
 		3A3662BE292FE2440008ACA1 /* DataPersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */; };
+		3A3662C0292FE5060008ACA1 /* DataPersistanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3662BF292FE5060008ACA1 /* DataPersistanceCell.xib */; };
 		3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */; };
 		3A36749E29105D070099F578 /* TaskTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */; };
 		3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */; };
@@ -389,6 +390,7 @@
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewCell.swift; sourceTree = "<group>"; };
 		3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceViewModel.swift; sourceTree = "<group>"; };
+		3A3662BF292FE5060008ACA1 /* DataPersistanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPersistanceCell.xib; sourceTree = "<group>"; };
 		3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmos.swift; sourceTree = "<group>"; };
@@ -1253,6 +1255,8 @@
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
 			isa = PBXGroup;
 			children = (
+				3A3662BF292FE5060008ACA1 /* DataPersistanceCell.xib */,
+				3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */,
 				3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */,
 				3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */,
 				3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */,
@@ -1261,7 +1265,6 @@
 				3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */,
 				3AFB00AF28F88FC2003BE6CA /* MaldonadoCoreData */,
 				3A104B1A29052CFF00ACC903 /* Quotes */,
-				3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */,
 			);
 			path = DataPersistance;
 			sourceTree = "<group>";
@@ -1589,6 +1592,7 @@
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
 				3A2B7DF729217E5500F13111 /* exclusiveCell.xib in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
+				3A3662C0292FE5060008ACA1 /* DataPersistanceCell.xib in Resources */,
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3AA9F2F82923EFC50030E3AD /* QatarWorldCupGroups.json in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,

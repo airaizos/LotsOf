@@ -136,6 +136,7 @@
 		3A2FA57628C760930072F90E /* EmmanuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57528C760930072F90E /* EmmanuelViewController.swift */; };
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */; };
+		3A3662BE292FE2440008ACA1 /* DataPersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */; };
 		3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */; };
 		3A36749E29105D070099F578 /* TaskTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */; };
 		3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */; };
@@ -387,6 +388,7 @@
 		3A2FA57528C760930072F90E /* EmmanuelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewController.swift; sourceTree = "<group>"; };
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewCell.swift; sourceTree = "<group>"; };
+		3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceViewModel.swift; sourceTree = "<group>"; };
 		3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmos.swift; sourceTree = "<group>"; };
@@ -1259,6 +1261,7 @@
 				3AFB009F28F86CFE003BE6CA /* EnumUserDefaults */,
 				3AFB00AF28F88FC2003BE6CA /* MaldonadoCoreData */,
 				3A104B1A29052CFF00ACC903 /* Quotes */,
+				3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */,
 			);
 			path = DataPersistance;
 			sourceTree = "<group>";
@@ -1774,6 +1777,7 @@
 				3A14BD9C28D8CB200040117C /* LineDetailViewController.swift in Sources */,
 				3AFB00A828F87C2D003BE6CA /* MourdevUserDefaultsViewController.swift in Sources */,
 				3A0D5D7A28FEC2B500D71B4E /* TaskTimerViewController.swift in Sources */,
+				3A3662BE292FE2440008ACA1 /* DataPersistanceViewModel.swift in Sources */,
 				3A04241C292BEE810085EDC0 /* QatarGroupsViewController.swift in Sources */,
 				3A195D4328F47821004E0477 /* PPSImagesViewModel.swift in Sources */,
 				3AE6A08E28D7869F0041602B /* UserDetailViewModel.swift in Sources */,

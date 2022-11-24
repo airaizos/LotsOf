@@ -11,6 +11,7 @@ import Foundation
 
 final class QatarGroupsProvider: QatarWorldCupGroupsProvider {
     
+    var groups = [String:[WorldCupTeam]]()
     var worldCupGroups: WorldCupGroups?
     
     func fetchWorldCupGroups() {
@@ -33,4 +34,19 @@ final class QatarGroupsProvider: QatarWorldCupGroupsProvider {
             LogManager.shared.log("QatarWorldCup: \(ProviderError.noDecoding)")
         }
     }
+    
+    func createGroups(from worldCupGroups: WorldCupGroups) {
+       
+        groups["GroupA"] = worldCupGroups.groupA
+        groups["GroupB"] = worldCupGroups.groupB
+        groups["GroupC"] = worldCupGroups.groupC
+        groups["GroupD"] = worldCupGroups.groupD
+        groups["GroupE"] = worldCupGroups.groupE
+        groups["GroupF"] = worldCupGroups.groupF
+        groups["GroupG"] = worldCupGroups.groupG
+        groups["GroupH"] = worldCupGroups.groupH
+      
+        
+    }
+    
 }

@@ -9,6 +9,8 @@ import UIKit
 
 final class DataPersistanceViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +39,12 @@ final class DataPersistanceViewController: UIViewController {
         viewController.modelController = ModelController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    @IBAction func QatarWorldCup(_ sender: UIButton) {
+        goTo(viewControllerName: "QatarGroupsViewController")
+    }
+    
+    
     
     deinit {
         print("    [DEINIT] ->      DATAPERSISTANCE ViewController")

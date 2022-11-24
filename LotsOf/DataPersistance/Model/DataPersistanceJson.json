@@ -1,0 +1,36 @@
+{
+   "appInfo": {
+       "appInfo": [
+       {
+   "name": "Enum",
+    "detail": "User Defaults",
+    "image": "cylinder.split.1x2",
+    "backgroundColor": "ffbb6c",
+    "viewController": "EnumUserDefaultViewController"},
+       {
+   "name": "Moure Dev",
+    "detail": "User Defaults",
+    "image": "https://dslv9ilpbe7p1.cloudfront.net/WjfOTMqNvwBFf5eYliov2w_store_logo_image.png",
+    "backgroundColor": "14a1f0",
+    "viewController": "MourdevUserDefaultsViewController"},
+       {
+   "name": "TrincoJobs",
+    "detail": "Core Data",
+    "image": "oferta1",
+    "backgroundColor": "4f6a8f",
+    "viewController": "OfertaListViewController"},
+       {
+   "name": "Quotes",
+    "detail": "Infoplist",
+    "image": "https://static-cse.canva.com/blob/464093/1131w-K9tHZmPhxik.jpg",
+    "backgroundColor": "1e7069",
+    "viewController": "QuotesViewController"},
+       {
+   "name": "Qatar World Cup",
+    "detail": "Core Data",
+    "image": "https://media.radiocms.net/uploads/2022/03/31174321/fifa-2022-world-cup-logo-qatar.jpg",
+    "backgroundColor": "971c45",
+    "viewController": "QatarGroupsViewController"}
+    ]
+   }
+}

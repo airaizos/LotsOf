@@ -137,7 +137,6 @@
 		3A2FA57828C798890072F90E /* EmmanuelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57728C798890072F90E /* EmmanuelModel.swift */; };
 		3A2FA57A28C79FAF0072F90E /* EmmanuelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */; };
 		3A3662BE292FE2440008ACA1 /* DataPersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */; };
-		3A3662C0292FE5060008ACA1 /* DataPersistanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3662BF292FE5060008ACA1 /* DataPersistanceCell.xib */; };
 		3A36749D29105D070099F578 /* TaskTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */; };
 		3A36749E29105D070099F578 /* TaskTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */; };
 		3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */; };
@@ -153,6 +152,9 @@
 		3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */; };
 		3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A586507290403CB004A6794 /* InicioScrollView.xib */; };
 		3A6260F8290C2CFA008791D9 /* PromotionalCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */; };
+		3A78874D292FE918005FCB72 /* DataPersistanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A78874C292FE918005FCB72 /* DataPersistanceCell.xib */; };
+		3A788750292FEB71005FCB72 /* DataPersistanceLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78874F292FEB71005FCB72 /* DataPersistanceLocalProvider.swift */; };
+		3A788752292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A788751292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift */; };
 		3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953428C641A9001CC044 /* PokemonsViewModel.swift */; };
 		3A86953728C642A4001CC044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953628C642A4001CC044 /* Model.swift */; };
 		3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953828C645DA001CC044 /* PokemonsViewController.swift */; };
@@ -390,7 +392,6 @@
 		3A2FA57728C798890072F90E /* EmmanuelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelModel.swift; sourceTree = "<group>"; };
 		3A2FA57928C79FAF0072F90E /* EmmanuelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmanuelViewCell.swift; sourceTree = "<group>"; };
 		3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceViewModel.swift; sourceTree = "<group>"; };
-		3A3662BF292FE5060008ACA1 /* DataPersistanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataPersistanceCell.xib; sourceTree = "<group>"; };
 		3A36749B29105D070099F578 /* TaskTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A36749C29105D070099F578 /* TaskTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		3A3A46D329099D9C00581F10 /* HackerRankAlgoritmos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerRankAlgoritmos.swift; sourceTree = "<group>"; };
@@ -406,6 +407,10 @@
 		3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelperTests.swift; sourceTree = "<group>"; };
 		3A586507290403CB004A6794 /* InicioScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioScrollView.xib; sourceTree = "<group>"; };
 		3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeView.swift; sourceTree = "<group>"; };
+		3A78874C292FE918005FCB72 /* DataPersistanceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataPersistanceCell.xib; sourceTree = "<group>"; };
+		3A78874E292FE94B005FCB72 /* DataPersistanceJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataPersistanceJson.json; sourceTree = "<group>"; };
+		3A78874F292FEB71005FCB72 /* DataPersistanceLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceLocalProvider.swift; sourceTree = "<group>"; };
+		3A788751292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataPersistanceViewModel.swift; sourceTree = "<group>"; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
 		3A86953628C642A4001CC044 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3A86953828C645DA001CC044 /* PokemonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewController.swift; sourceTree = "<group>"; };
@@ -1004,6 +1009,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3A3662C1292FE8C20008ACA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */,
+				3A78874C292FE918005FCB72 /* DataPersistanceCell.xib */,
+				3A78874E292FE94B005FCB72 /* DataPersistanceJson.json */,
+				3A78874F292FEB71005FCB72 /* DataPersistanceLocalProvider.swift */,
+				3A788751292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3A3A46D229099B1600581F10 /* Algoritmos */ = {
 			isa = PBXGroup;
 			children = (
@@ -1255,8 +1272,7 @@
 		3AC1BA9F28F031BD009E1F36 /* DataPersistance */ = {
 			isa = PBXGroup;
 			children = (
-				3A3662BF292FE5060008ACA1 /* DataPersistanceCell.xib */,
-				3A3662BD292FE2440008ACA1 /* DataPersistanceViewModel.swift */,
+				3A3662C1292FE8C20008ACA1 /* Model */,
 				3AFB00AD28F88450003BE6CA /* DataPersistanceViewController.swift */,
 				3AFB00AB28F8843D003BE6CA /* DataPersistanceViewController.storyboard */,
 				3AA9F2F72923EF9E0030E3AD /* QatarWorldCup2022 */,
@@ -1592,7 +1608,6 @@
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
 				3A2B7DF729217E5500F13111 /* exclusiveCell.xib in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
-				3A3662C0292FE5060008ACA1 /* DataPersistanceCell.xib in Resources */,
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3AA9F2F82923EFC50030E3AD /* QatarWorldCupGroups.json in Resources */,
 				3A14252228F9B11D004B5252 /* OfertaListViewController.storyboard in Resources */,
@@ -1615,6 +1630,7 @@
 				3A2B7DF22921545A00F13111 /* QuickOrderView.xib in Resources */,
 				3A099D36291E612F00F5E498 /* CartaAntojitosViewController.storyboard in Resources */,
 				3A099D45291E61AC00F5E498 /* MiAntojitosViewController.storyboard in Resources */,
+				3A78874D292FE918005FCB72 /* DataPersistanceCell.xib in Resources */,
 				3AF2250F289A8733008BEAF0 /* LinesViewController.storyboard in Resources */,
 				3A02BB8B28C8D91900D168AE /* CreateViewController.storyboard in Resources */,
 				3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */,
@@ -1655,6 +1671,7 @@
 				3A083D8A28EB217100F628E7 /* PostPPS.swift in Sources */,
 				3A02BB8028C8A8E100D168AE /* OdenzaViewController.swift in Sources */,
 				3AA9F2F32923BE300030E3AD /* QatarWorldCupViewModel.swift in Sources */,
+				3A788750292FEB71005FCB72 /* DataPersistanceLocalProvider.swift in Sources */,
 				3ACCA178290DA26B003A7ABE /* QrCodeCameraDelegate.swift in Sources */,
 				3AF7BF0C290C59D9005EAB58 /* ImagePicker.swift in Sources */,
 				3AA8D04C29104BDC004E192A /* NewTaskViewController.swift in Sources */,
@@ -1815,6 +1832,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A788752292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift in Sources */,
 				3AA9F2FD2923F3EB0030E3AD /* TestQatarWorldCup2022.swift in Sources */,
 				3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */,
 				3A574B33290AE51B00BA551F /* Weather.swift in Sources */,

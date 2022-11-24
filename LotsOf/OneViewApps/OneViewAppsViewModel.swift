@@ -16,10 +16,11 @@ final class OneViewAppsViewModel {
 
 }
 
-struct appInfo {
+struct appInfo: Decodable {
     var name: String
     var detail: String
-    var image: UIImage?
+    var image: String?
+    var backgroundColor: String?
     var viewController: String
 
 }

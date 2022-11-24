@@ -155,6 +155,7 @@
 		3A78874D292FE918005FCB72 /* DataPersistanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A78874C292FE918005FCB72 /* DataPersistanceCell.xib */; };
 		3A788750292FEB71005FCB72 /* DataPersistanceLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78874F292FEB71005FCB72 /* DataPersistanceLocalProvider.swift */; };
 		3A788752292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A788751292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift */; };
+		3A788753292FF0F8005FCB72 /* DataPersistanceJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A78874E292FE94B005FCB72 /* DataPersistanceJson.json */; };
 		3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953428C641A9001CC044 /* PokemonsViewModel.swift */; };
 		3A86953728C642A4001CC044 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953628C642A4001CC044 /* Model.swift */; };
 		3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A86953828C645DA001CC044 /* PokemonsViewController.swift */; };
@@ -408,7 +409,7 @@
 		3A586507290403CB004A6794 /* InicioScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioScrollView.xib; sourceTree = "<group>"; };
 		3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeView.swift; sourceTree = "<group>"; };
 		3A78874C292FE918005FCB72 /* DataPersistanceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataPersistanceCell.xib; sourceTree = "<group>"; };
-		3A78874E292FE94B005FCB72 /* DataPersistanceJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataPersistanceJson.json; sourceTree = "<group>"; };
+		3A78874E292FE94B005FCB72 /* DataPersistanceJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = DataPersistanceJson.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/DataPersistance/Model/DataPersistanceJson.json; sourceTree = "<absolute>"; };
 		3A78874F292FEB71005FCB72 /* DataPersistanceLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceLocalProvider.swift; sourceTree = "<group>"; };
 		3A788751292FEDC1005FCB72 /* TestDataPersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataPersistanceViewModel.swift; sourceTree = "<group>"; };
 		3A86953428C641A9001CC044 /* PokemonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewModel.swift; sourceTree = "<group>"; };
@@ -1637,6 +1638,7 @@
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
 				3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */,
 				3AFB0F51290164CB00B12B9B /* NuevoPedidoAntojitosViewController.storyboard in Resources */,
+				3A788753292FF0F8005FCB72 /* DataPersistanceJson.json in Resources */,
 				3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */,
 				3A02BB8228C8A8E800D168AE /* OdenzaViewController.storyboard in Resources */,
 				3AF224DE289A7B34008BEAF0 /* URLSessionsViewController.storyboard in Resources */,

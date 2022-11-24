@@ -1,6 +1,4 @@
-{
-   "appInfo": {
-       "appInfo": [
+[
        {
    "name": "Enum",
     "detail": "User Defaults",
@@ -32,5 +30,3 @@
     "backgroundColor": "971c45",
     "viewController": "QatarGroupsViewController"}
     ]
-   }
-}

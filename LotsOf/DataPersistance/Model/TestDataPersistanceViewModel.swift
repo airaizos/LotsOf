@@ -14,14 +14,13 @@ final class TestDataPersistanceViewModel: XCTestCase {
     func testCanDecodeJson() throws {
         
         let json = """
-        "appInfo": {
-        "appInfo": [
-        {
-    "name": "Enum",
-     "detail": "User Defaults",
-     "image": "cylinder.split.1x2",
-     "backgroundColor": "ffbb6c",
-     "viewController": "EnumUserDefaultViewController"}]}"
+               {
+           "name": "Enum",
+            "detail": "User Defaults",
+            "image": "cylinder.split.1x2",
+            "backgroundColor": "ffbb6c",
+            "viewController": "EnumUserDefaultViewController"}
+    
     """
         let jsonData = json.data(using: .utf8)!
         let appInfo = try! JSONDecoder().decode(appInfo.self, from: jsonData)
@@ -37,8 +36,6 @@ final class TestDataPersistanceViewModel: XCTestCase {
         sut.provider.fetch()
         
         XCTAssertTrue(sut.provider.apps.count > 0)
-      //  XCTAssertEqual(sut.provider.apps[0].name,"Enum")
-        
+        XCTAssertEqual(sut.provider.apps[0].name,"Enum")
     }
-    
 }

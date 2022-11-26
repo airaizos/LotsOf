@@ -8,50 +8,42 @@
 import Foundation
 
 
+/// Digito de Control generado a partir de algoritmo de Luhn base 10
 struct ICC: Equatable {
     
     let rawText: String
     var id: String? {
         if !isValidRawText { return nil }
+        return "\(rawText)\(controlDigit ?? 0)"
+        
+    }
+    var controlDigit: Int? {
+        if !isValidRawText { return nil }
         
         var rawIcc = rawText.compactMap( { Int(String($0)) })
+        
+       
         rawIcc.append(0)
         var isByTwo = false
-        var valueDigits = rawIcc.reversed().map { digit in
+        let valueDigits = rawIcc.reversed().map { digit in
             if isByTwo {
                 isByTwo.toggle()
-                return (digit * 2)
-        }
+                if (digit * 2) > 9 {
+                    return (digit * 2) - 9
+                } else {
+                    return (digit * 2)
+                }
+            }
             isByTwo.toggle()
             return digit
         }
-        var result = valueDigits.reduce(0, { x,y in x + y})
         
+        var result = valueDigits.reduce(0, { x,y in x + y})
+        result *= 9
         result = result % 1000
         result = result % 100
         result = result % 10
-        
-        // residuo 1000, 100 10
-        }
-        
-        /*
-         
-         
-         hacer un array de ints
-         añadir un 0 al final
-         hacer un array de indices que multiplican x2
-         iterar con los indices en el array de ints multiplicando y
-         
-         
-         
-        */
-        
-        
-        return "s"
-    }
-    
-    var controlDigit: Int {
-        5
+        return result
     }
     
     var isValidRawText: Bool {

@@ -1,5 +1,5 @@
 //
-//  DataPersistanceLocalProvider.swift
+//  DataPersistenceLocalProvider.swift
 //  LotsOfUrlSessions
 //
 //  Created by Adrian Iraizos Mendoza on 24/11/22.
@@ -8,17 +8,17 @@
 import Foundation
 
 
-final class DataPersistanceLocalProvider: DataPersistanceProvider {
+final class DataPersistenceLocalProvider: DataPersistenceProvider {
     var apps = [appInfo]()
     
     func fetch() {
-        guard let filePath = Bundle.main.path(forResource: "DataPersistanceJson", ofType: "json") else { LogManager.shared.log("DataPersistance:\(ProviderError.badFilePath)")
+        guard let filePath = Bundle.main.path(forResource: "DataPersistenceJson", ofType: "json") else { LogManager.shared.log("DataPersistence:\(ProviderError.badFilePath)")
             return
             
         }
         
         guard let json = try? String(contentsOfFile: filePath, encoding: .utf8) else {
-            LogManager.shared.log("DataPersistance:\(ProviderError.noDecoding)")
+            LogManager.shared.log("DataPersistence:\(ProviderError.noDecoding)")
             return
         }
         
@@ -28,13 +28,13 @@ final class DataPersistanceLocalProvider: DataPersistanceProvider {
             
             self.apps = appsInfo
         } catch {
-            LogManager.shared.log("DataPersistance: \(ProviderError.noDecoding)")
+            LogManager.shared.log("DataPersistence: \(ProviderError.noDecoding)")
         }
     }
 }
 
 
-protocol DataPersistanceProvider {
+protocol DataPersistenceProvider {
     var apps: [appInfo] { get set }
     func fetch()
 }

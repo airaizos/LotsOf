@@ -11,7 +11,7 @@ final class MourdevUserDefaultsViewController: UIViewController {
     
     let viewModel = MourdevUserDefaultsViewModel()
     
-    var persistanceLabel : UILabel = {
+    var PersistenceLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .magenta
@@ -64,7 +64,7 @@ final class MourdevUserDefaultsViewController: UIViewController {
         view.backgroundColor = .systemGray2
         view.addSubview(buttonsStackView)
         view.addSubview(textField)
-        view.addSubview(persistanceLabel)
+        view.addSubview(PersistenceLabel)
         
         NSLayoutConstraint.activate([
             buttonsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -74,9 +74,9 @@ final class MourdevUserDefaultsViewController: UIViewController {
             textField.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             view.trailingAnchor.constraint(equalTo: textField.trailingAnchor, constant: 20),
             
-            persistanceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            view.trailingAnchor.constraint(equalTo: persistanceLabel.trailingAnchor, constant: 20),
-            persistanceLabel.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20)
+            PersistenceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            view.trailingAnchor.constraint(equalTo: PersistenceLabel.trailingAnchor, constant: 20),
+            PersistenceLabel.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20)
             
         ])
     }
@@ -84,7 +84,7 @@ final class MourdevUserDefaultsViewController: UIViewController {
     //Actions
     @objc private func getButtonAction(_ sender: UIButton) {
         DispatchQueue.main.async {
-            self.persistanceLabel.text = self.viewModel.getText()
+            self.PersistenceLabel.text = self.viewModel.getText()
         }
         showAlert(message: viewModel.message)
         LogManager.shared.log(viewModel.message)

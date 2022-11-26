@@ -1,5 +1,5 @@
 //
-//  TestDataPersistanceViewModel.swift
+//  TestDataPersistenceViewModel.swift
 //  LotsOfUrlSessionsTests
 //
 //  Created by Adrian Iraizos Mendoza on 24/11/22.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import LotsOfUrlSessions
 
-final class TestDataPersistanceViewModel: XCTestCase {
+final class TestDataPersistenceViewModel: XCTestCase {
 
     
     func testCanDecodeJson() throws {
@@ -31,7 +31,7 @@ final class TestDataPersistanceViewModel: XCTestCase {
     }
     
     func testCanFetchApps() throws {
-        let sut = DataPersistanceViewModel()
+        let sut = DataPersistenceViewModel()
         
         sut.provider.fetch()
         

@@ -148,6 +148,8 @@
 		3A54726928E44CBF003CFE4F /* ChaseButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */; };
 		3A54726B28E44CC7003CFE4F /* ChaseButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */; };
 		3A54726D28E44CDB003CFE4F /* ChaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54726C28E44CDB003CFE4F /* ChaseButton.swift */; };
+		3A560FE12933D718002A98C0 /* testDNI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FE02933D718002A98C0 /* testDNI.swift */; };
+		3A560FE32933D721002A98C0 /* DNI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FE22933D721002A98C0 /* DNI.swift */; };
 		3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */; };
 		3A574B33290AE51B00BA551F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B32290AE51B00BA551F /* Weather.swift */; };
 		3A574B35290AFD4100BA551F /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A574B34290AEC8D00BA551F /* Weather.json */; };
@@ -407,6 +409,8 @@
 		3A54726828E44CBF003CFE4F /* ChaseButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewController.swift; sourceTree = "<group>"; };
 		3A54726A28E44CC7003CFE4F /* ChaseButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButtonViewModel.swift; sourceTree = "<group>"; };
 		3A54726C28E44CDB003CFE4F /* ChaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseButton.swift; sourceTree = "<group>"; };
+		3A560FE02933D718002A98C0 /* testDNI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testDNI.swift; sourceTree = "<group>"; };
+		3A560FE22933D721002A98C0 /* DNI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNI.swift; sourceTree = "<group>"; };
 		3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheryDataTest.swift; sourceTree = "<group>"; };
 		3A574B32290AE51B00BA551F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		3A574B34290AEC8D00BA551F /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Weather.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/Weather.json; sourceTree = "<absolute>"; };
@@ -938,10 +942,68 @@
 		3A2B43E02932789B00360B30 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B43EB2932B9F100360B30 /* SeguridadSocial */,
+				3A2B43EA2932B9C500360B30 /* CuentaBancaria */,
+				3A2B43E92932B9B700360B30 /* GTIN */,
+				3A2B43E82932B96D00360B30 /* ISBN */,
+				3A2B43E72932B96800360B30 /* IMEI */,
+				3A2B43E62932B96000360B30 /* DNI */,
+				3A2B43E52932B95600360B30 /* ICC */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A2B43E52932B95600360B30 /* ICC */ = {
+			isa = PBXGroup;
+			children = (
 				3A2B43E1293278BE00360B30 /* ICC.swift */,
 				3A2B43E3293278D700360B30 /* TestICCID.swift */,
 			);
-			path = Models;
+			path = ICC;
+			sourceTree = "<group>";
+		};
+		3A2B43E62932B96000360B30 /* DNI */ = {
+			isa = PBXGroup;
+			children = (
+				3A560FE02933D718002A98C0 /* testDNI.swift */,
+				3A560FE22933D721002A98C0 /* DNI.swift */,
+			);
+			path = DNI;
+			sourceTree = "<group>";
+		};
+		3A2B43E72932B96800360B30 /* IMEI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IMEI;
+			sourceTree = "<group>";
+		};
+		3A2B43E82932B96D00360B30 /* ISBN */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ISBN;
+			sourceTree = "<group>";
+		};
+		3A2B43E92932B9B700360B30 /* GTIN */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GTIN;
+			sourceTree = "<group>";
+		};
+		3A2B43EA2932B9C500360B30 /* CuentaBancaria */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CuentaBancaria;
+			sourceTree = "<group>";
+		};
+		3A2B43EB2932B9F100360B30 /* SeguridadSocial */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SeguridadSocial;
 			sourceTree = "<group>";
 		};
 		3A2B7DF02921544200F13111 /* QuickOrder */ = {
@@ -1870,11 +1932,13 @@
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
 				3A115C3B29282B610068BBB2 /* TestWorldCupViewModel.swift in Sources */,
 				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
+				3A560FE12933D718002A98C0 /* testDNI.swift in Sources */,
 				3AA9F2F12923B8B50030E3AD /* TestUserNameValidator.swift in Sources */,
 				3A2B43E4293278D700360B30 /* TestICCID.swift in Sources */,
 				3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
 				3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */,
+				3A560FE32933D721002A98C0 /* DNI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

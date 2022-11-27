@@ -152,6 +152,8 @@
 		3A560FE32933D721002A98C0 /* DNI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FE22933D721002A98C0 /* DNI.swift */; };
 		3A560FE52933DF75002A98C0 /* testIMEI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FE42933DF75002A98C0 /* testIMEI.swift */; };
 		3A560FE72933DF7D002A98C0 /* IMEI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FE62933DF7D002A98C0 /* IMEI.swift */; };
+		3A560FE92933EEF9002A98C0 /* testISBN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FE82933EEF9002A98C0 /* testISBN.swift */; };
+		3A560FEB2933EF02002A98C0 /* ISBN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A560FEA2933EF02002A98C0 /* ISBN.swift */; };
 		3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */; };
 		3A574B33290AE51B00BA551F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B32290AE51B00BA551F /* Weather.swift */; };
 		3A574B35290AFD4100BA551F /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A574B34290AEC8D00BA551F /* Weather.json */; };
@@ -415,6 +417,8 @@
 		3A560FE22933D721002A98C0 /* DNI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNI.swift; sourceTree = "<group>"; };
 		3A560FE42933DF75002A98C0 /* testIMEI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testIMEI.swift; sourceTree = "<group>"; };
 		3A560FE62933DF7D002A98C0 /* IMEI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMEI.swift; sourceTree = "<group>"; };
+		3A560FE82933EEF9002A98C0 /* testISBN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testISBN.swift; sourceTree = "<group>"; };
+		3A560FEA2933EF02002A98C0 /* ISBN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISBN.swift; sourceTree = "<group>"; };
 		3A574B30290AE45E00BA551F /* WeatheryDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheryDataTest.swift; sourceTree = "<group>"; };
 		3A574B32290AE51B00BA551F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		3A574B34290AEC8D00BA551F /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Weather.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/Weather.json; sourceTree = "<absolute>"; };
@@ -987,6 +991,8 @@
 		3A2B43E82932B96D00360B30 /* ISBN */ = {
 			isa = PBXGroup;
 			children = (
+				3A560FE82933EEF9002A98C0 /* testISBN.swift */,
+				3A560FEA2933EF02002A98C0 /* ISBN.swift */,
 			);
 			path = ISBN;
 			sourceTree = "<group>";
@@ -1933,6 +1939,7 @@
 				3AA9F2FD2923F3EB0030E3AD /* TestQatarWorldCup2022.swift in Sources */,
 				3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */,
 				3A574B33290AE51B00BA551F /* Weather.swift in Sources */,
+				3A560FE92933EEF9002A98C0 /* testISBN.swift in Sources */,
 				3A560FE52933DF75002A98C0 /* testIMEI.swift in Sources */,
 				3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */,
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
@@ -1945,6 +1952,7 @@
 				3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
 				3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */,
+				3A560FEB2933EF02002A98C0 /* ISBN.swift in Sources */,
 				3A560FE32933D721002A98C0 /* DNI.swift in Sources */,
 				3A560FE72933DF7D002A98C0 /* IMEI.swift in Sources */,
 			);

@@ -11,8 +11,8 @@ import XCTest
 final class TestICCID: XCTestCase {
     
     func testIsValidRawText() throws {
-        //8934075700022553744
-        let sut = ICC(rawText: "893407570002255374")
+        //8934075700201007066
+        let sut = ICC(rawText: "893407570020100706")
         XCTAssertTrue(sut.isValidRawText)
     }
     
@@ -27,24 +27,24 @@ final class TestICCID: XCTestCase {
     
     func testIsCorrectControlDigit() throws {
      
-        let sut4 = ICC(rawText: "893407570002255374")
+        let sut4 = ICC(rawText: "893407570020220131")
         
-        XCTAssertEqual(sut4.controlDigit,4)
+        XCTAssertEqual(sut4.controlDigit,2)
         
-        let sut7 = ICC(rawText: "893407670003753925")
+        let sut7 = ICC(rawText: "893407570020220131")
 
-        XCTAssertEqual(sut7.controlDigit,7)
+        XCTAssertEqual(sut7.controlDigit,2)
     }
     
     func testIsCorrectIccId() throws {
         
-        let sut = ICC(rawText: "893407570002255374")
+        let sut = ICC(rawText: "893407570020220131")
         
-        XCTAssertEqual(sut.id, "8934075700022553744")
+        XCTAssertEqual(sut.id, "8934075700202201312")
         
-        //8934076700037539257
-        let sut1 = ICC(rawText: "893407670003753925")
         
-        XCTAssertEqual(sut1.id,"8934076700037539257")
+        let sut1 = ICC(rawText: "893407570020100706")
+        
+        XCTAssertEqual(sut1.id,"8934075700201007066")
     }
 }

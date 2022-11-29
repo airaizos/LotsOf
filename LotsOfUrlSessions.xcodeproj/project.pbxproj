@@ -133,6 +133,8 @@
 		3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7E0329218B3B00F13111 /* TestInicioAntojitos.swift */; };
 		3A2B7E0629218C3E00F13111 /* ExclusivesPromosJsonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B7E0529218C3E00F13111 /* ExclusivesPromosJsonProvider.swift */; };
 		3A2B7E07292193E600F13111 /* exclusivePromos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DFF292186F100F13111 /* exclusivePromos.json */; };
+		3A2C2F0329360CF6000BF1F6 /* testNSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C2F0229360CF6000BF1F6 /* testNSS.swift */; };
+		3A2C2F0529360D01000BF1F6 /* INSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C2F0429360D01000BF1F6 /* INSS.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -400,6 +402,8 @@
 		3A2B7DFF292186F100F13111 /* exclusivePromos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = exclusivePromos.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/UsersInterfaces/Antojitos/Inicio/ExclusivesPromos/exclusivePromos.json; sourceTree = "<absolute>"; };
 		3A2B7E0329218B3B00F13111 /* TestInicioAntojitos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInicioAntojitos.swift; sourceTree = "<group>"; };
 		3A2B7E0529218C3E00F13111 /* ExclusivesPromosJsonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivesPromosJsonProvider.swift; sourceTree = "<group>"; };
+		3A2C2F0229360CF6000BF1F6 /* testNSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNSS.swift; sourceTree = "<group>"; };
+		3A2C2F0429360D01000BF1F6 /* INSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSS.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -1020,6 +1024,8 @@
 		3A2B43EB2932B9F100360B30 /* SeguridadSocial */ = {
 			isa = PBXGroup;
 			children = (
+				3A2C2F0229360CF6000BF1F6 /* testNSS.swift */,
+				3A2C2F0429360D01000BF1F6 /* INSS.swift */,
 			);
 			path = SeguridadSocial;
 			sourceTree = "<group>";
@@ -1943,6 +1949,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A788752292FEDC1005FCB72 /* TestDataPersistenceViewModel.swift in Sources */,
+				3A2C2F0529360D01000BF1F6 /* INSS.swift in Sources */,
 				3AA9F2FD2923F3EB0030E3AD /* TestQatarWorldCup2022.swift in Sources */,
 				3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */,
 				3A574B33290AE51B00BA551F /* Weather.swift in Sources */,
@@ -1954,6 +1961,7 @@
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,
 				3A115C3B29282B610068BBB2 /* TestWorldCupViewModel.swift in Sources */,
 				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
+				3A2C2F0329360CF6000BF1F6 /* testNSS.swift in Sources */,
 				3A560FE12933D718002A98C0 /* testDNI.swift in Sources */,
 				3AA9F2F12923B8B50030E3AD /* TestUserNameValidator.swift in Sources */,
 				3A2B43E4293278D700360B30 /* TestICCID.swift in Sources */,

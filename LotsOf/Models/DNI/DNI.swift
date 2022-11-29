@@ -34,7 +34,7 @@ struct DNI: Equatable {
         let rawDni = rawText.compactMap { Int(String($0)) }
         
         let value = rawDni.reduce(0,{ x,y in x + y })
-        var remainder = value % 23
+        let remainder = value % 23
         
         switch remainder {
         case 0: return "T"

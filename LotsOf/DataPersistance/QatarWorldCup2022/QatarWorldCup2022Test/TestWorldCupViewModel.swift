@@ -12,9 +12,6 @@ final class TestWorldCupViewModel: XCTestCase {
 
     func testCanGetMatches() throws {
   
-        let httpCliente = MockHTTPClient()
-        let sut = QatarMatchesProvider()
-        
         
     }
     

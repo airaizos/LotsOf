@@ -21,6 +21,8 @@
 		3A04241C292BEE810085EDC0 /* QatarGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04241B292BEE810085EDC0 /* QatarGroupsViewController.swift */; };
 		3A04241F292BEFA80085EDC0 /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A04241E292BEFA80085EDC0 /* GroupCell.xib */; };
 		3A042421292BEFFD0085EDC0 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A042420292BEFFD0085EDC0 /* GroupCell.swift */; };
+		3A0546AF2934D29F002F97A6 /* GTIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0546AE2934D29F002F97A6 /* GTIN.swift */; };
+		3A0546B12934D2AB002F97A6 /* testGTIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0546B02934D2AB002F97A6 /* testGTIN.swift */; };
 		3A05D22428C9EB9200C5E396 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */; };
 		3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */; };
 		3A05D22828C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */; };
@@ -285,6 +287,8 @@
 		3A04241B292BEE810085EDC0 /* QatarGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarGroupsViewController.swift; sourceTree = "<group>"; };
 		3A04241E292BEFA80085EDC0 /* GroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 		3A042420292BEFFD0085EDC0 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		3A0546AE2934D29F002F97A6 /* GTIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTIN.swift; sourceTree = "<group>"; };
+		3A0546B02934D2AB002F97A6 /* testGTIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testGTIN.swift; sourceTree = "<group>"; };
 		3A05D22328C9EB9200C5E396 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		3A05D22528C9EB9A00C5E396 /* UpdateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateViewController.storyboard; sourceTree = "<group>"; };
 		3A05D22728C9EBB200C5E396 /* LotOfURLSessionsLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LotOfURLSessionsLaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1000,6 +1004,8 @@
 		3A2B43E92932B9B700360B30 /* GTIN */ = {
 			isa = PBXGroup;
 			children = (
+				3A0546AE2934D29F002F97A6 /* GTIN.swift */,
+				3A0546B02934D2AB002F97A6 /* testGTIN.swift */,
 			);
 			path = GTIN;
 			sourceTree = "<group>";
@@ -1831,6 +1837,7 @@
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
 				3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */,
 				3A134F4A28F5F45B00673B79 /* ImageLoader.swift in Sources */,
+				3A0546AF2934D29F002F97A6 /* GTIN.swift in Sources */,
 				3A262E9328D340D90050D8A3 /* UserProvider.swift in Sources */,
 				3A86953928C645DA001CC044 /* PokemonsViewController.swift in Sources */,
 				3A173BA329157ABF00622E77 /* ChampionsLeagueViewModel.swift in Sources */,
@@ -1941,6 +1948,7 @@
 				3A574B33290AE51B00BA551F /* Weather.swift in Sources */,
 				3A560FE92933EEF9002A98C0 /* testISBN.swift in Sources */,
 				3A560FE52933DF75002A98C0 /* testIMEI.swift in Sources */,
+				3A0546B12934D2AB002F97A6 /* testGTIN.swift in Sources */,
 				3A574B31290AE45E00BA551F /* WeatheryDataTest.swift in Sources */,
 				3A3A46D629099DB900581F10 /* HackerRankAlgoritmosTest.swift in Sources */,
 				3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */,

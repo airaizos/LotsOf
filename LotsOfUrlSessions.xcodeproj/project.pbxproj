@@ -135,6 +135,8 @@
 		3A2B7E07292193E600F13111 /* exclusivePromos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B7DFF292186F100F13111 /* exclusivePromos.json */; };
 		3A2C2F0329360CF6000BF1F6 /* testNSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C2F0229360CF6000BF1F6 /* testNSS.swift */; };
 		3A2C2F0529360D01000BF1F6 /* INSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C2F0429360D01000BF1F6 /* INSS.swift */; };
+		3A2C2F0729363714000BF1F6 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C2F0629363714000BF1F6 /* IBAN.swift */; };
+		3A2C2F0929363721000BF1F6 /* testIBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C2F0829363721000BF1F6 /* testIBAN.swift */; };
 		3A2FA56A28C73C6C0072F90E /* RickAndMortyViewModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */; };
 		3A2FA56E28C74A9E0072F90E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */; };
 		3A2FA57228C75D760072F90E /* EmmanuelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */; };
@@ -164,6 +166,7 @@
 		3A574B38290B00CD00BA551F /* CalendarHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */; };
 		3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A586507290403CB004A6794 /* InicioScrollView.xib */; };
 		3A6260F8290C2CFA008791D9 /* PromotionalCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */; };
+		3A6DACE629376A6F00B86788 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6DACE529376A6F00B86788 /* Bank.swift */; };
 		3A788750292FEB71005FCB72 /* DataPersistenceLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78874F292FEB71005FCB72 /* DataPersistenceLocalProvider.swift */; };
 		3A788752292FEDC1005FCB72 /* TestDataPersistenceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A788751292FEDC1005FCB72 /* TestDataPersistenceViewModel.swift */; };
 		3A788753292FF0F8005FCB72 /* DataPersistenceJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A78874E292FE94B005FCB72 /* DataPersistenceJson.json */; };
@@ -235,6 +238,9 @@
 		3AF22511289A873D008BEAF0 /* LinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22510289A873D008BEAF0 /* LinesViewController.swift */; };
 		3AF22514289A8A94008BEAF0 /* LinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */; };
 		3AF22516289A8AEB008BEAF0 /* LinesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */; };
+		3AF72034293776B900F8D1FD /* BankProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF72033293776B900F8D1FD /* BankProvider.swift */; };
+		3AF72035293776DF00F8D1FD /* bankCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A6DACE429376A5000B86788 /* bankCodes.json */; };
+		3AF720372937812100F8D1FD /* testBankCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF720362937812100F8D1FD /* testBankCode.swift */; };
 		3AF7BEFE290C31A2005EAB58 /* PromotionalCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */; };
 		3AF7BF03290C36FC005EAB58 /* PromotionalCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */; };
 		3AF7BF07290C386D005EAB58 /* PromotionalCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7BF06290C386D005EAB58 /* PromotionalCodeViewModel.swift */; };
@@ -404,6 +410,8 @@
 		3A2B7E0529218C3E00F13111 /* ExclusivesPromosJsonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusivesPromosJsonProvider.swift; sourceTree = "<group>"; };
 		3A2C2F0229360CF6000BF1F6 /* testNSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNSS.swift; sourceTree = "<group>"; };
 		3A2C2F0429360D01000BF1F6 /* INSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSS.swift; sourceTree = "<group>"; };
+		3A2C2F0629363714000BF1F6 /* IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
+		3A2C2F0829363721000BF1F6 /* testIBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testIBAN.swift; sourceTree = "<group>"; };
 		3A2FA56928C73C6C0072F90E /* RickAndMortyViewModelAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModelAsync.swift; sourceTree = "<group>"; };
 		3A2FA56D28C74A9E0072F90E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3A2FA57128C75D760072F90E /* EmmanuelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmmanuelViewController.storyboard; sourceTree = "<group>"; };
@@ -433,6 +441,8 @@
 		3A574B37290B00CD00BA551F /* CalendarHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelperTests.swift; sourceTree = "<group>"; };
 		3A586507290403CB004A6794 /* InicioScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioScrollView.xib; sourceTree = "<group>"; };
 		3A6260F7290C2CFA008791D9 /* PromotionalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeView.swift; sourceTree = "<group>"; };
+		3A6DACE429376A5000B86788 /* bankCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bankCodes.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/Models/IBAN/Banks/bankCodes.json; sourceTree = "<absolute>"; };
+		3A6DACE529376A6F00B86788 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		3A78874E292FE94B005FCB72 /* DataPersistenceJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = DataPersistenceJson.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/LotsOf/DataPersistance/Model/DataPersistenceJson.json; sourceTree = "<absolute>"; };
 		3A78874F292FEB71005FCB72 /* DataPersistenceLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceLocalProvider.swift; sourceTree = "<group>"; };
 		3A788751292FEDC1005FCB72 /* TestDataPersistenceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataPersistenceViewModel.swift; sourceTree = "<group>"; };
@@ -510,6 +520,8 @@
 		3AF22510289A873D008BEAF0 /* LinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewController.swift; sourceTree = "<group>"; };
 		3AF22513289A8A94008BEAF0 /* LinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewModel.swift; sourceTree = "<group>"; };
 		3AF22515289A8AEB008BEAF0 /* LinesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesProvider.swift; sourceTree = "<group>"; };
+		3AF72033293776B900F8D1FD /* BankProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankProvider.swift; sourceTree = "<group>"; };
+		3AF720362937812100F8D1FD /* testBankCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBankCode.swift; sourceTree = "<group>"; };
 		3AF7BEFD290C31A2005EAB58 /* PromotionalCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionalCodeView.xib; sourceTree = "<group>"; };
 		3AF7BEFF290C35F2005EAB58 /* promotionalCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = promotionalCodes.json; path = /Users/adrian/Desktop/xCode/LotsOfUrlSessions/promotionalCodes.json; sourceTree = "<absolute>"; };
 		3AF7BF02290C36FC005EAB58 /* PromotionalCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalCodeViewModel.swift; sourceTree = "<group>"; };
@@ -959,7 +971,7 @@
 			isa = PBXGroup;
 			children = (
 				3A2B43EB2932B9F100360B30 /* SeguridadSocial */,
-				3A2B43EA2932B9C500360B30 /* CuentaBancaria */,
+				3A2B43EA2932B9C500360B30 /* IBAN */,
 				3A2B43E92932B9B700360B30 /* GTIN */,
 				3A2B43E82932B96D00360B30 /* ISBN */,
 				3A2B43E72932B96800360B30 /* IMEI */,
@@ -1014,11 +1026,14 @@
 			path = GTIN;
 			sourceTree = "<group>";
 		};
-		3A2B43EA2932B9C500360B30 /* CuentaBancaria */ = {
+		3A2B43EA2932B9C500360B30 /* IBAN */ = {
 			isa = PBXGroup;
 			children = (
+				3AF72032293776A500F8D1FD /* Banks */,
+				3A2C2F0629363714000BF1F6 /* IBAN.swift */,
+				3A2C2F0829363721000BF1F6 /* testIBAN.swift */,
 			);
-			path = CuentaBancaria;
+			path = IBAN;
 			sourceTree = "<group>";
 		};
 		3A2B43EB2932B9F100360B30 /* SeguridadSocial */ = {
@@ -1535,6 +1550,17 @@
 			path = LineasAutobus;
 			sourceTree = "<group>";
 		};
+		3AF72032293776A500F8D1FD /* Banks */ = {
+			isa = PBXGroup;
+			children = (
+				3A6DACE429376A5000B86788 /* bankCodes.json */,
+				3A6DACE529376A6F00B86788 /* Bank.swift */,
+				3AF72033293776B900F8D1FD /* BankProvider.swift */,
+				3AF720362937812100F8D1FD /* testBankCode.swift */,
+			);
+			path = Banks;
+			sourceTree = "<group>";
+		};
 		3AF7BF04290C3846005EAB58 /* Antojitos */ = {
 			isa = PBXGroup;
 			children = (
@@ -1719,6 +1745,7 @@
 				3A14BD9E28D8CB260040117C /* LineDetailViewController.storyboard in Resources */,
 				3A586508290403CB004A6794 /* InicioScrollView.xib in Resources */,
 				3A2B7DF729217E5500F13111 /* exclusiveCell.xib in Resources */,
+				3AF72035293776DF00F8D1FD /* bankCodes.json in Resources */,
 				3A54726428E44BC0003CFE4F /* LotsOfAnimationsViewController.storyboard in Resources */,
 				3A0D5D6628FE9D1200D71B4E /* OneViewAppsViewController.storyboard in Resources */,
 				3AA9F2F82923EFC50030E3AD /* QatarWorldCupGroups.json in Resources */,
@@ -1789,6 +1816,7 @@
 				3AF7BF0C290C59D9005EAB58 /* ImagePicker.swift in Sources */,
 				3AA8D04C29104BDC004E192A /* NewTaskViewController.swift in Sources */,
 				3A86953D28C64B4B001CC044 /* PokemonTableViewCell.swift in Sources */,
+				3AF72034293776B900F8D1FD /* BankProvider.swift in Sources */,
 				3AA8D0412910466E004E192A /* CountDownBox.swift in Sources */,
 				3ACCA172290D6B3C003A7ABE /* PermissionsViewController.swift in Sources */,
 				3A02BB8D28C9356C00D168AE /* GetViewController.swift in Sources */,
@@ -1930,6 +1958,7 @@
 				3A099D3D291E616400F5E498 /* PromocionesAntojitosViewController.swift in Sources */,
 				3ADAF5A328CFC7CB00C31731 /* DogViewModel.swift in Sources */,
 				3A86954828C65724001CC044 /* RickAndMortyCollectionViewCell.swift in Sources */,
+				3A6DACE629376A6F00B86788 /* Bank.swift in Sources */,
 				3A042418292BEDD20085EDC0 /* QatarWorldCupProtocols.swift in Sources */,
 				3AA9F2EF2923B8780030E3AD /* UserNameValidator.swift in Sources */,
 				3AF224E1289A7B34008BEAF0 /* LotsOfUrlSessions.xcdatamodeld in Sources */,
@@ -1963,10 +1992,13 @@
 				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
 				3A2C2F0329360CF6000BF1F6 /* testNSS.swift in Sources */,
 				3A560FE12933D718002A98C0 /* testDNI.swift in Sources */,
+				3A2C2F0729363714000BF1F6 /* IBAN.swift in Sources */,
+				3AF720372937812100F8D1FD /* testBankCode.swift in Sources */,
 				3AA9F2F12923B8B50030E3AD /* TestUserNameValidator.swift in Sources */,
 				3A2B43E4293278D700360B30 /* TestICCID.swift in Sources */,
 				3A2B7E0429218B3B00F13111 /* TestInicioAntojitos.swift in Sources */,
 				3AF224F1289A7B36008BEAF0 /* LotsOfUrlSessionsTests.swift in Sources */,
+				3A2C2F0929363721000BF1F6 /* testIBAN.swift in Sources */,
 				3AA8D04A291049FF004E192A /* TestTaskCountdown.swift in Sources */,
 				3A560FEB2933EF02002A98C0 /* ISBN.swift in Sources */,
 				3A560FE32933D721002A98C0 /* DNI.swift in Sources */,

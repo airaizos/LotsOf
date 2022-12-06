@@ -43,4 +43,6 @@ final class testBankCode: XCTestCase {
         XCTAssertEqual(bankData[0].code, 2103)
         XCTAssertEqual(bankData[1].name, "VIDA CAIXA")
     }
+    
+  
 }

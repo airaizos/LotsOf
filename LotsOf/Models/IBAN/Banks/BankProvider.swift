@@ -13,20 +13,32 @@ final class BankProvider {
     
     var banks = [Bank]()
     
-    func fetch() {
+    func getFilePath() -> String {
         guard let filePath = Bundle.main
             .path(forResource: "bankCodes", ofType: "json") else {
             LogManager.shared.log("BankProvider: FilePath")
-            return }
+            return "" }
         
-        guard let json = try? String(contentsOfFile: filePath, encoding: .utf8) else {
+        return filePath
+        
+    }
+    
+    func getJsonDataFrom(filePath: String) -> Data {
+        guard let json = try? String(contentsOfFile: getFilePath(), encoding: .utf8) else {
             LogManager.shared.log("BankProvider: jsonData")
-            return
-            
+            return "".data(using: .utf8)!
         }
         
+        guard let jsonData = json.data(using: .utf8) else { return "".data(using: .utf8)! }
+        
+        print(try! JSONDecoder().decode([Bank].self, from: jsonData))
+        return jsonData
+    }
+    
+    func fetch() {
+       
         do {
-            let jsonData = json.data(using: .utf8)!
+            let jsonData = getJsonDataFrom(filePath: getFilePath())
             let banksCodes = try JSONDecoder().decode([Bank].self, from: jsonData)
             
             self.banks = banksCodes

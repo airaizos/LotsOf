@@ -69,6 +69,10 @@
 		3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */; };
 		3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */; };
 		3A0DD67E294259A10071BC8F /* TestQatarMatchesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD67D294259A10071BC8F /* TestQatarMatchesProvider.swift */; };
+		3A0DD680294260780071BC8F /* QatarMatchesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DD67F294260780071BC8F /* QatarMatchesViewController.storyboard */; };
+		3A0DD682294260890071BC8F /* QatarMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD681294260890071BC8F /* QatarMatchesViewController.swift */; };
+		3A0DD687294261000071BC8F /* MatchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD685294261000071BC8F /* MatchViewCell.swift */; };
+		3A0DD688294261000071BC8F /* MatchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DD686294261000071BC8F /* MatchViewCell.xib */; };
 		3A0E6BBC290015E6006FF6B2 /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */; };
 		3A104B1929052CEF00ACC903 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1829052CEF00ACC903 /* QuotesViewController.swift */; };
 		3A104B1C29052D1500ACC903 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1B29052D1500ACC903 /* Quotes.swift */; };
@@ -344,6 +348,10 @@
 		3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
 		3A0DD67D294259A10071BC8F /* TestQatarMatchesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQatarMatchesProvider.swift; sourceTree = "<group>"; };
+		3A0DD67F294260780071BC8F /* QatarMatchesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QatarMatchesViewController.storyboard; sourceTree = "<group>"; };
+		3A0DD681294260890071BC8F /* QatarMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QatarMatchesViewController.swift; sourceTree = "<group>"; };
+		3A0DD685294261000071BC8F /* MatchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewCell.swift; sourceTree = "<group>"; };
+		3A0DD686294261000071BC8F /* MatchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchViewCell.xib; sourceTree = "<group>"; };
 		3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
 		3A104B1829052CEF00ACC903 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		3A104B1B29052D1500ACC903 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
@@ -603,6 +611,10 @@
 				3A144FF22926D6E50083D7B1 /* QatarMatchesProvider.swift */,
 				3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */,
 				3A0DD67D294259A10071BC8F /* TestQatarMatchesProvider.swift */,
+				3A0DD67F294260780071BC8F /* QatarMatchesViewController.storyboard */,
+				3A0DD681294260890071BC8F /* QatarMatchesViewController.swift */,
+				3A0DD685294261000071BC8F /* MatchViewCell.swift */,
+				3A0DD686294261000071BC8F /* MatchViewCell.xib */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -1734,6 +1746,7 @@
 				3A099D40291E618800F5E498 /* CestaAntojitosViewController.storyboard in Resources */,
 				3A146DAF28DA336300CB1C90 /* Main.storyboard in Resources */,
 				3A05D22628C9EB9A00C5E396 /* UpdateViewController.storyboard in Resources */,
+				3A0DD688294261000071BC8F /* MatchViewCell.xib in Resources */,
 				3A08B51528EEDB41004173F5 /* PostPPSViewController.storyboard in Resources */,
 				3A04241A292BEE710085EDC0 /* QatarGroupsViewController.storyboard in Resources */,
 				3AB6CED92905B7B7002654CD /* InfoplistQuotes.plist in Resources */,
@@ -1778,6 +1791,7 @@
 				3AA19ACE2914404B007D7835 /* TaskListViewController.storyboard in Resources */,
 				3AF224E3289A7B36008BEAF0 /* Assets.xcassets in Resources */,
 				3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */,
+				3A0DD680294260780071BC8F /* QatarMatchesViewController.storyboard in Resources */,
 				3AFB0F51290164CB00B12B9B /* NuevoPedidoAntojitosViewController.storyboard in Resources */,
 				3A788753292FF0F8005FCB72 /* DataPersistenceJson.json in Resources */,
 				3A262E9928D366DC0050D8A3 /* UsersCollectionViewController.storyboard in Resources */,
@@ -1870,6 +1884,7 @@
 				3A134F4D28F6002400673B79 /* FactModel.swift in Sources */,
 				3AB2B80528FB57060021BB3C /* OfertaListViewModel.swift in Sources */,
 				3A195D3E28F47697004E0477 /* PPSCollection.swift in Sources */,
+				3A0DD682294260890071BC8F /* QatarMatchesViewController.swift in Sources */,
 				3A0D5D7328FEADD600D71B4E /* CalendarCell.swift in Sources */,
 				3A86953528C641A9001CC044 /* PokemonsViewModel.swift in Sources */,
 				3A3A46D429099D9C00581F10 /* HackerRankAlgoritmos.swift in Sources */,
@@ -1892,6 +1907,7 @@
 				3A262E9128D340320050D8A3 /* UserModel.swift in Sources */,
 				3A2B7E0629218C3E00F13111 /* ExclusivesPromosJsonProvider.swift in Sources */,
 				3AFB00AE28F88450003BE6CA /* DataPersistenceViewController.swift in Sources */,
+				3A0DD687294261000071BC8F /* MatchViewCell.swift in Sources */,
 				3AA9F2FF2924311F0030E3AD /* WorldCupViewModel.swift in Sources */,
 				3A02BB8428C8B97E00D168AE /* OdenzaModel.swift in Sources */,
 				3A115C3929282AED0068BBB2 /* WorldCupMatchModel.swift in Sources */,

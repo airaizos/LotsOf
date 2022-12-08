@@ -23,7 +23,7 @@ final class TestDataPersistenceViewModel: XCTestCase {
     
     """
         let jsonData = json.data(using: .utf8)!
-        let appInfo = try! JSONDecoder().decode(appInfo.self, from: jsonData)
+        let appInfo = try! JSONDecoder().decode(AppInfo.self, from: jsonData)
         
         XCTAssertEqual(appInfo.name, "Enum")
         XCTAssertEqual(appInfo.backgroundColor, "ffbb6c")

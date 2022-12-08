@@ -9,12 +9,11 @@ import UIKit
 
 final class DataPersistenceCell: UICollectionViewCell {
     //MARK: Variables
-    var item: appInfo! {
+    var item: AppInfo! {
         didSet {
             self.updateUI()
         }
     }
-    
     
     //MARK: Outlets
     @IBOutlet weak var titleLabel: UILabel!
@@ -23,7 +22,7 @@ final class DataPersistenceCell: UICollectionViewCell {
     @IBOutlet weak var backgroundCell: UIView!
     
     //MARK: Functions
-        func configure(with model: appInfo) {
+        func configure(with model: AppInfo) {
             
             let appImage = model.image ??  "AppIcon"
             

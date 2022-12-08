@@ -10,13 +10,13 @@ import UIKit
 
 final class OneViewAppsViewModel {
     
-    var appList: [appInfo] = [
-            appInfo(name: "Calendar", detail: "CalendarView. which display a list of events of selectedDate",viewController: "MonthlyCalendarViewController"),
-            appInfo(name: "Task Countdown", detail: "Reloj temporizador de tareas", viewController: "NewTaskViewController")]
+    var appList: [AppInfo] = [
+            AppInfo(name: "Calendar", detail: "CalendarView. which display a list of events of selectedDate",viewController: "MonthlyCalendarViewController"),
+            AppInfo(name: "Task Countdown", detail: "Reloj temporizador de tareas", viewController: "NewTaskViewController")]
 
 }
 
-struct appInfo: Decodable {
+struct AppInfo: Decodable {
     var name: String
     var detail: String
     var image: String?

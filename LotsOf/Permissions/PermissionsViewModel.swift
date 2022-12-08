@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 final class PermissionsViewModel {
-    var appList: [appInfo] = [
-        appInfo(name: "Acceso a la cámara", detail: "📷", image: "camera", viewController: "PermissionsToUseCameraViewController")
+    var appList: [AppInfo] = [
+        AppInfo(name: "Acceso a la cámara", detail: "📷", image: "camera", viewController: "PermissionsToUseCameraViewController")
     
     
     

@@ -49,7 +49,7 @@ final class QuotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        modelController.provider.getQuotes()
+        modelController.getQuote()
         setupView()
         setupQuote()
     }

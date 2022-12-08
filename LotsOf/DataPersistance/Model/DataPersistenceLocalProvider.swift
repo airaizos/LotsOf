@@ -9,7 +9,7 @@ import Foundation
 
 
 final class DataPersistenceLocalProvider: DataPersistenceProvider {
-    var apps = [appInfo]()
+    var apps = [AppInfo]()
     
     func fetch() {
         guard let filePath = Bundle.main.path(forResource: "DataPersistenceJson", ofType: "json") else { LogManager.shared.log("DataPersistence:\(ProviderError.badFilePath)")
@@ -24,7 +24,7 @@ final class DataPersistenceLocalProvider: DataPersistenceProvider {
         
         do {
             let jsonData = json.data(using: .utf8)!
-            let appsInfo = try JSONDecoder().decode([appInfo].self, from: jsonData)
+            let appsInfo = try JSONDecoder().decode([AppInfo].self, from: jsonData)
             
             self.apps = appsInfo
         } catch {
@@ -35,6 +35,6 @@ final class DataPersistenceLocalProvider: DataPersistenceProvider {
 
 
 protocol DataPersistenceProvider {
-    var apps: [appInfo] { get set }
+    var apps: [AppInfo] { get set }
     func fetch()
 }

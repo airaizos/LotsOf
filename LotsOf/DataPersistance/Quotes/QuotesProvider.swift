@@ -40,7 +40,7 @@ final class QuotesProvider {
     func getQuotesOne() {
         let decoder = PropertyListDecoder()
         
-        if let url = Bundle.main.url(forResource: "InfoplistQuotes", withExtension: "plist") {
+        if let url = Bundle.main.url(forResource: "Info", withExtension: "plist") {
             
             if let data = try? Data(contentsOf: url) {
                 if let quotes = try? decoder.decode([String].self, from: data) {

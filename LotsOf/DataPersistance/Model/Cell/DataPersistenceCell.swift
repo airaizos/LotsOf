@@ -24,12 +24,26 @@ final class DataPersistenceCell: UICollectionViewCell {
     
     //MARK: Functions
         func configure(with model: appInfo) {
+            
             let appImage = model.image ??  "AppIcon"
+            
+            //TODO: Se puede hacer mejor, seguro
+            if appImage.hasPrefix("http") {
+                image.loadImageUsingCache(withUrl: appImage)
+            } else if UIImage(systemName: appImage) == nil {
+                image.image = UIImage(named: appImage)
+                image.tintColor = .white
+            } else {
+                image.image = UIImage(systemName: appImage)
+            }
+
             let color = model.backgroundColor ?? "#44d1df"
+           
+            
             
             titleLabel.text = model.name
             descriptionLabel.text = model.detail
-            image.loadImageUsingCache(withUrl: appImage)
+           
             backgroundCell.backgroundColor = UIColor(hex: color)
          
             image.layer.cornerRadius = 10.0

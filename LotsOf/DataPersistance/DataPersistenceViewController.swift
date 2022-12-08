@@ -40,6 +40,7 @@ final class DataPersistenceViewController: UIViewController {
     }
     
     func setupCollectionView() {
+        /*
         let screenSize = UIScreen.main.bounds.size
                let cellWidth = floor(screenSize.width * cellScale )
                let cellHeight = floor(screenSize.height * cellScale)
@@ -49,6 +50,7 @@ final class DataPersistenceViewController: UIViewController {
                
                layout.itemSize = CGSize(width: cellWidth, height: cellHeight )
                collectionView.contentInset = UIEdgeInsets(top: instY , left: instX , bottom: instY, right: instX )
+        */
                collectionView.dataSource = self
         
         collectionView.register(UINib(nibName: "DataPersistenceCell", bundle: .main), forCellWithReuseIdentifier: "dataPersistenceCell" )

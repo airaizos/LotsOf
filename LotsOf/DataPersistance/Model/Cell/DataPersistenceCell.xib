@@ -56,7 +56,6 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="FsY-HS-lDq" firstAttribute="top" secondItem="p7c-qC-3BJ" secondAttribute="top" id="JeL-b8-jrT"/>
                     <constraint firstAttribute="bottom" secondItem="FsY-HS-lDq" secondAttribute="bottom" id="fqj-4P-Lm0"/>
@@ -66,6 +65,7 @@
             </collectionViewCellContentView>
             <size key="customSize" width="290" height="443"/>
             <connections>
+                <outlet property="backgroundCell" destination="FsY-HS-lDq" id="13k-P0-mSD"/>
                 <outlet property="backgroundView" destination="FsY-HS-lDq" id="w4l-GO-aXF"/>
                 <outlet property="descriptionLabel" destination="vNA-qv-DSs" id="6xj-rE-D1D"/>
                 <outlet property="image" destination="PYv-Z2-pOE" id="2bc-cW-nuI"/>

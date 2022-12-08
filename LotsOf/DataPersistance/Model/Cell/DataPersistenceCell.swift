@@ -31,7 +31,7 @@ final class DataPersistenceCell: UICollectionViewCell {
             descriptionLabel.text = model.detail
             image.loadImageUsingCache(withUrl: appImage)
             backgroundCell.backgroundColor = UIColor(hex: color)
-           //TODO: Color nil
+         
             image.layer.cornerRadius = 10.0
             image.layer.masksToBounds = true
             

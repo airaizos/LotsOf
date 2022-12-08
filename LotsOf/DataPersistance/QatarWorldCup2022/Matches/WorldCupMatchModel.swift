@@ -46,11 +46,11 @@ struct WorldCupMatch: Decodable {
     
     let matchNumber: Int
     let roundNumber: Int
-    let dateUTC: String
+  //  let dateUtc: String
     let location: String
     let homeTeam: Nation
     let awayTeam: Nation
-    let group: Group
+  //  let group: Group
     let homeTeamScore: Int?
     let awayTeamScore: Int?
     
@@ -61,12 +61,12 @@ struct WorldCupMatch: Decodable {
         case location = "Location"
         case homeTeam = "HomeTeam"
         case awayTeam = "AwayTeam"
-        case group = "Group"
+   //     case group = "Group"
         case homeTeamScore = "HomeTeamScore"
         case awayTeamScore = "AwayTeamScore"
-        case dateUTC
+   //   case dateUtc
     }
-    
+    /*
     var matchDate: Date  {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ssZ"
@@ -75,8 +75,9 @@ struct WorldCupMatch: Decodable {
         
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
-        guard let dateD = dateFormatter.date(from: dateUTC) else { return Date() }
+        guard let dateD = dateFormatter.date(from: dateUtc) else { return Date() }
         
         return dateD.addingTimeInterval(3600)
     }
+     */
 }

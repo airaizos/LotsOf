@@ -68,6 +68,7 @@
 		3A0D5D7A28FEC2B500D71B4E /* TaskTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */; };
 		3A0D5D7E28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */; };
 		3A0D5D8028FECF7E00D71B4E /* WeeklyCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */; };
+		3A0DD67E294259A10071BC8F /* TestQatarMatchesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0DD67D294259A10071BC8F /* TestQatarMatchesProvider.swift */; };
 		3A0E6BBC290015E6006FF6B2 /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */; };
 		3A104B1929052CEF00ACC903 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1829052CEF00ACC903 /* QuotesViewController.swift */; };
 		3A104B1C29052D1500ACC903 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104B1B29052D1500ACC903 /* Quotes.swift */; };
@@ -342,6 +343,7 @@
 		3A0D5D7928FEC2B500D71B4E /* TaskTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerViewController.swift; sourceTree = "<group>"; };
 		3A0D5D7D28FECF7200D71B4E /* WeeklyCalendarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyCalendarViewController.storyboard; sourceTree = "<group>"; };
 		3A0D5D7F28FECF7E00D71B4E /* WeeklyCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewController.swift; sourceTree = "<group>"; };
+		3A0DD67D294259A10071BC8F /* TestQatarMatchesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQatarMatchesProvider.swift; sourceTree = "<group>"; };
 		3A0E6BBB290015E6006FF6B2 /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
 		3A104B1829052CEF00ACC903 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		3A104B1B29052D1500ACC903 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
@@ -600,6 +602,7 @@
 			children = (
 				3A144FF22926D6E50083D7B1 /* QatarMatchesProvider.swift */,
 				3A115C3829282AED0068BBB2 /* WorldCupMatchModel.swift */,
+				3A0DD67D294259A10071BC8F /* TestQatarMatchesProvider.swift */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -1991,6 +1994,7 @@
 				3A115C3B29282B610068BBB2 /* TestWorldCupViewModel.swift in Sources */,
 				3A173BA62915B7EE00622E77 /* ChampionsLeagueTests.swift in Sources */,
 				3A2C2F0329360CF6000BF1F6 /* testNSS.swift in Sources */,
+				3A0DD67E294259A10071BC8F /* TestQatarMatchesProvider.swift in Sources */,
 				3A560FE12933D718002A98C0 /* testDNI.swift in Sources */,
 				3A2C2F0729363714000BF1F6 /* IBAN.swift in Sources */,
 				3AF720372937812100F8D1FD /* testBankCode.swift in Sources */,

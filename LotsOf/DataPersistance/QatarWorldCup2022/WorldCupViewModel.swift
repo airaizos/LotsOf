@@ -43,7 +43,5 @@ final class WorldCupViewModel {
         groupsProvider.fetchWorldCupGroups()
         groups = groupsProvider.worldCupGroups
     }
-    
-  
-    
+
 }
